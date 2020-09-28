@@ -1,0 +1,97 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    dexOptions {
+        jumboMode true
+        javaMaxHeapSize "4g"
+        preDexLibraries = false
+
+    }
+
+    def versionPropsFile = file('version.properties')
+    def versionBuild
+
+    // Setting default value for versionBuild which is the last incremented value stored in the file
+    if (versionPropsFile.canRead()) {
+        def Properties versionProps = new Properties()
+        versionProps.load(new FileInputStream(versionPropsFile))
+        versionBuild = versionProps['VERSION_BUILD'].toInteger()
+    }
+
+    ext.autoIncrementBuildNumber = {
+
+        if (versionPropsFile.canRead()) {
+            def Properties versionProps = new Properties()
+            versionProps.load(new FileInputStream(versionPropsFile))
+            versionBuild = versionProps['VERSION_BUILD'].toInteger() + 1
+            versionProps['VERSION_BUILD'] = versionBuild.toString()
+            versionProps.store(versionPropsFile.newWriter(), null)
+        }
+    }
+
+    versionBuild = 9
+    defaultConfig {
+        applicationId "com.hutchsystems.hutchconnect"
+        minSdkVersion 22
+        targetSdkVersion 29
+        versionCode 9
+        versionName "2.1.6." + versionBuild
+        // Enabling multidex support.
+        multiDexEnabled true
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    // Hook to check if the release/debug task is among the tasks to be executed.
+    //Let's make use of it
+    gradle.taskGraph.whenReady { taskGraph -> autoIncrementBuildNumber()
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+    }
+    useLibrary 'org.apache.http.legacy'
+}
+
+repositories {
+    maven { url "https://jitpack.io" }
+
+    flatDir {
+
+        dirs 'libs'
+
+    }
+}
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    /*  implementation 'com.android.support:multidex:1.0.0'*/
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.itextpdf:itextpdf:5.5.10'
+    implementation 'com.flurry.android:analytics:6.3.1'
+    implementation 'com.google.firebase:firebase-auth:11.8.0'
+    implementation 'com.google.android.gms:play-services:11.8.0'
+    implementation project(':ReverseGeocode')
+
+    implementation project(':terminalio')
+    implementation project(':HoursofServiceLib')
+    implementation files('libs/usbserial.jar')
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.journeyapps:zxing-android-embedded:3.0.1@aar'
+    implementation 'com.google.zxing:core:3.2.0'
+
+    implementation 'com.github.ctodobom:OpenCV-3.1.0-Android:9e00ee4218ca0c9e60a905c9f09bf499f9dc5115'
+}

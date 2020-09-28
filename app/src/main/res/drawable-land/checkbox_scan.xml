@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true">
+        <bitmap android:src="@drawable/ic_scan_multi_mode"></bitmap>
+    </item>
+    <item>
+        <bitmap android:src="@drawable/ic_scan_single_mode"></bitmap>
+    </item>
+</selector>

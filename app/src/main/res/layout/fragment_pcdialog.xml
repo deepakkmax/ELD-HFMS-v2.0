@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/f5f5f5"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/dialog_icon_size"
+            android:layout_height="@dimen/dialog_icon_size"
+            style="@style/DialogIconStyle" />
+
+        <TextView
+            style="@style/DialogTitleStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="@string/pc_confirmation" />
+    </LinearLayout>
+
+    <View
+        style="@style/DialogTitleSeprator"
+        android:layout_width="match_parent"
+        android:layout_height="2dp">
+
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/_10sdp"
+        >
+
+
+        <TextView
+            android:id="@+id/dialogMessage"
+            style="@style/DialogMessageTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_18sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:text="@string/continue_personal_user_confirmation" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnYes"
+                style="@style/BigButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button_bg"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/yes" />
+
+            <Button
+                android:id="@+id/btnNo"
+                style="@style/BigButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:background="@drawable/button_bg"
+                android:text="@string/no" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

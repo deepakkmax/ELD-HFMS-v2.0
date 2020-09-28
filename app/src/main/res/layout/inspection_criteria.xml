@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/layout_bg_round_nine"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/SettingsLabelStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:paddingEnd="6dp"
+        android:paddingStart="6dp"
+        android:textSize="@dimen/font_size_18"
+        android:text="@string/bumper" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="2"
+        android:paddingBottom="6dp"
+        android:paddingEnd="6dp"
+        android:paddingStart="6dp"
+        >
+
+        <TextView
+            android:id="@+id/subtitle"
+            style="@style/SettingsLabelStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_size_16"
+            android:layout_weight="1"
+            android:text="@string/user_mirror_inspect" />
+
+
+        <RadioGroup
+            android:id="@+id/rgInspectionResult"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbPass"
+                style="@style/BigTextLabelStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:text="@string/pass" />
+
+            <RadioButton
+                android:id="@+id/rbFail"
+                style="@style/BigTextLabelStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fail" />
+            <RadioButton
+                android:id="@+id/rbNA"
+                style="@style/BigTextLabelStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/na" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+
+</LinearLayout>
+

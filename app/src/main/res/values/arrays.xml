@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string-array name="duty_status">
+        <item>Off Duty</item>
+        <item>Sleeper</item>
+        <item>Driving</item>
+        <item>On Duty</item>
+        <item>Personal Use</item>
+        <item>Yard Move</item>
+    </string-array>
+
+    <string-array name="rule_list">
+        <item>Canada 70hr/7days - Cycle 1</item>
+        <item>Canada 120hr/14days - Cycle 2</item>
+        <item>US 70hr/8days</item>
+        <item>US 60hr/7days</item>
+<!--        <item>Canada Rule Of Alberta</item>
+        <item>Logging Truck Hours</item>
+        <item>Oil Well Service</item>-->
+    </string-array>
+
+    <string-array name="date_filter">
+        <item>Today</item>
+        <item>Yesterday</item>
+        <item>This Week</item>
+        <item>This Month</item>
+    </string-array>
+
+    <!-- Let the user choose between map views -->
+    <string-array name="map_type_entries">
+        <item>Map View</item>
+        <item>Hybrid View</item>
+        <item>Satellite View</item>
+        <item>Terrain View</item>
+    </string-array>
+
+    <!-- These contants above and below match those in GoogleMap object:
+        https://developers.google.com/maps/documentation/android/reference/com/google/android/gms/maps/GoogleMap -->
+    <string-array name="map_type_values">
+        <item>1</item>
+        <item>4</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="annotation_templates">
+        <item>Arrived</item>
+        <item>BreakDown</item>
+        <item>Depart</item>
+        <item>Loading</item>
+        <item>UnLoading</item>
+        <item>Waiting</item>
+    </string-array>
+
+    <string-array name="cvsa_result">
+        <item>Level 1</item>
+        <item>Level 2</item>
+        <item>Level 3</item>
+        <item>Level 4</item>
+        <item>Level 5</item>
+        <item>Level 6</item>
+    </string-array>
+
+
+    <string-array name="notice_order_result">
+        <item>Box 1</item>
+        <item>Box 2</item>
+        <item>Box 3</item>
+    </string-array>
+
+
+    <string-array name="instruction_list">
+        <item> Turn on ignition (do not start vehicle yet)</item>
+        <item> Login</item>
+        <item> Assume any unidentified events</item>
+        <item> Certify Record of Duty Status (ROD)</item>
+        <item> Enter Shipping and Trailer Info</item>
+        <item> Use ELD according to specifications</item>
+        <item> Turn OFF Vehicle before Logout</item>
+        <item> Logout when no longer in control of vehicle</item>
+    </string-array>
+
+    <string-array name="maintenance_item_list">
+        <item>Body</item>
+        <item>Brake System</item>
+        <item>Driveline/Axle</item>
+        <item>Engine</item>
+        <item>Lighting</item>
+        <item>Safety Equipment</item>
+        <item>Suspension System</item>
+        <item>Tires</item>
+        <item>Transmission</item>
+    </string-array>
+    <string-array name="currency">
+        <item>CAD</item>
+        <item>USD</item>
+    </string-array>
+    <string-array name="document_type">
+        <item>BOL</item>
+        <item>POD</item>
+        <item>Custom</item>
+        <item>Other</item>
+    </string-array>
+
+    // Protocol List
+    <string-array name="protocol_support">
+        <item>N/A</item>
+        <item>OBD2</item>
+        <item>J1939</item>
+        <item>J1708</item>
+    </string-array>
+
+
+    <string-array name="language_list">
+        <item>English</item>
+        <item>Punjabi</item>
+        <item>Spanish</item>
+        <item>French</item>
+
+    </string-array>
+
+    <string-array name="screen_dispplay">
+        <item>Graph</item>
+        <item>Vehicle Data</item>
+        <item>Gauge Cluster</item>
+
+    </string-array>
+
+
+    <string-array name="result_notice_order">
+        <item>Select</item>
+        <item>@string/hos</item>
+        <item>@string/mechanical</item>
+        <item>@string/speeding</item>
+        <item>@string/seat_belt</item>
+        <item>@string/others</item>
+
+    </string-array>
+
+
+    <string-array name="result_cvsa">
+        <item>Select</item>
+        <item>@string/pass</item>
+        <item>@string/fail</item>
+        <item>@string/violation_present</item>
+        <item>@string/out_of_service</item>
+
+    </string-array>
+</resources>

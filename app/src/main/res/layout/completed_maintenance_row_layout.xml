@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hutchsystems.hutchconnect.common.SwipeHolder xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- hide content must inside this layout -->
+    <com.hutchsystems.hutchconnect.common.HideContentHolder
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+
+        android:layout_margin="@dimen/_15sdp">
+        <!-- you can put anything here to let it show when swipe left,
+         note that HideContentHolder need a width to let SwipeHolder know how big your view wanna be.
+         this hideItem onClick event is notifed in SwipeOnItemTouchAdapter when you register it in
+         RecyclerView.addOnItemTouchListener.
+         -->
+        <ImageView
+            android:id="@+id/ivCompleteMaintenanceQrCode"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_margin="@dimen/_15sdp"
+            android:gravity="center"
+            android:layout_gravity="center"
+
+            android:src="@drawable/ic_barcode_scan"/>
+    </com.hutchsystems.hutchconnect.common.HideContentHolder>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:padding="@dimen/_10sdp"
+            android:background="@drawable/layout_bg_round_nine">
+            <TextView
+                android:id="@+id/tvTitle"
+                style="@style/list_title_text.Blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Unit No: 2054 | Item: Brake System" />
+
+
+            <TextView
+                android:id="@+id/tvSubTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/MaintenanceSubTitle"
+                android:text="Odometer: 283164 | Invoice No: IN454646" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvCost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Cost: $246.4" />
+
+                <TextView
+                    android:id="@+id/tvDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="3 Jan 2017"
+                    android:textStyle="italic|bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</com.hutchsystems.hutchconnect.common.SwipeHolder>
+
+
+

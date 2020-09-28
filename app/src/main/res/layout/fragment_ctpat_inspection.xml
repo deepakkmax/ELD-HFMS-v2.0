@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8"
+    android:scrollbars="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@drawable/bg_card_fuel"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tvDriver"
+                    style="@style/HeaderCardTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="14dp"
+                    android:paddingRight="14dp"
+                    android:text="Driver: Baljit Singh Gharyal" />
+
+
+                <TextView
+                    android:id="@+id/tvCompany"
+                    style="@style/HeaderCardTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="14dp"
+                    android:paddingRight="14dp"
+                    android:text="Company Name: KMAX" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvDate"
+                    style="@style/HeaderCardTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="14dp"
+                    android:paddingRight="14dp"
+                    android:text="Date : 2019-05-15" />
+
+                <TextView
+                    android:id="@+id/tvPowerUnit"
+                    style="@style/HeaderCardTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="14dp"
+                    android:paddingRight="14dp"
+                    android:text="Time: 05:09:02" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lvInspectionList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/eee"
+            android:dividerHeight="0dp"
+            android:layout_marginTop="100dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/btnSave"
+                android:layout_width="@dimen/fab_size"
+                android:layout_height="@dimen/fab_size"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="@dimen/fab_margin_right"
+                android:layout_marginBottom="26dp"
+                android:background="@drawable/custom_fab_button_bg"
+                android:src="@drawable/ic_fab_save" />
+        </RelativeLayout>
+
+</FrameLayout>
+

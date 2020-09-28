@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/_12sdp"
+    android:paddingEnd="@dimen/_12sdp"
+    android:paddingTop="@dimen/_5sdp"
+    android:paddingBottom="@dimen/_5sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tvTicketID"
+        android:textColor="@color/blue1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/EventInformationTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="12345" />
+
+    <TextView
+        android:id="@+id/tvticketDiscription"
+        style="@style/EventInformationTextStyle.small"
+       android:textColor="@color/colorPrimaryLight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTicketID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ticket Discription" />
+
+    <RatingBar
+        android:id="@+id/ratingbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvticketDiscription"
+        android:isIndicator="false"
+        android:numStars="5"
+        android:stepSize="1"
+        android:visibility="gone"
+        style="?android:attr/ratingBarStyleSmall" />
+
+    <TextView
+        android:id="@+id/tvticketUserFeedback"
+        app:layout_constraintTop_toBottomOf="@id/ratingbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:textColor="@color/colorPrimaryLight"
+        style="@style/EventInformationTextStyle.small"
+        android:text="feedback" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvticketStatus"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue1"
+            android:layout_gravity="center_horizontal"
+            style="@style/EventInformationTextStyle.small"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/width_2dp"
+            android:text="Status" />
+        <ImageView
+            android:id="@+id/imgfeedback"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="right|end"
+            android:visibility="gone"
+            android:src="@drawable/feedbackicon" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/e5e5e5"
+        android:layout_marginTop="@dimen/_4sdp"
+        app:layout_constraintTop_toBottomOf="@id/tvticketUserFeedback"
+        android:layout_height="1dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

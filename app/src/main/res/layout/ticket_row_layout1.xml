@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="@dimen/li_checkbox_margin"
+        android:layout_marginRight="@dimen/li_checkbox_margin"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.4"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTicketID"
+                android:textColor="@color/blue1"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/width_2dp"
+                android:text="12345" />
+            <TextView
+                android:id="@+id/tvticketDiscription"
+                style="@style/list_subtitle_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginTop="@dimen/width_2dp"
+                android:text="Ticket Discription" />
+            <RatingBar
+                android:id="@+id/ratingbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:isIndicator="false"
+                android:numStars="5"
+                android:stepSize="1"
+                android:visibility="gone"
+                style="?android:attr/ratingBarStyleSmall"
+                />
+
+            <TextView
+                android:id="@+id/tvticketUserFeedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="italic"
+                android:textColor="@color/colorPrimaryLight"
+                android:textSize="18sp"
+                android:layout_marginTop="@dimen/width_2dp"
+                android:text="feedback" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|end"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tvticketStatus"
+                style="@style/list_subtitle_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blue1"
+                android:textSize="18sp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/width_2dp"
+                android:gravity="right|end"
+                android:text="Status" />
+            <ImageView
+                android:id="@+id/imgfeedback"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_gravity="right|end"
+                android:visibility="gone"
+                android:src="@drawable/feedbackicon" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="18dp"
+        android:background="@color/ccc"/>
+
+</LinearLayout>

@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/clvUpper"
+        android:background="@drawable/orange_panel_bg"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/_3sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.49"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tvSBSplit"
+            style="@style/InformationTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SB: 06:30"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></TextView>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clvTimer"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:padding="@dimen/_5sdp"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/whiteProgressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@drawable/white_circle_progressbar_bg"
+                android:indeterminate="false"
+                android:max="500"
+                android:progress="340"
+                android:progressDrawable="@drawable/white_circle_progressbar" />
+
+
+
+            <LinearLayout
+                android:id="@+id/llRemaining"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/remaining_caption"
+                android:orientation="vertical"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:gravity="center"
+                android:weightSum="2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_margin="@dimen/_10sdp"
+                app:layout_constraintHeight_percent="0.27">
+
+                <TextView
+                    android:id="@+id/tvSleeperOff"
+                    style="@style/DutyTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="bottom|center_horizontal"
+                    android:text="@string/sb_off"
+                    android:layout_weight="0.9"
+                    android:textSize="@dimen/_6ssp"
+                    android:visibility="invisible"/>
+
+                <Button
+                    android:id="@+id/butRemainingTime"
+                    style="@style/DutyTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.1"
+                    android:background="@android:color/transparent"
+                    android:gravity="top|center_horizontal"
+                    android:text="@string/remaining"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/_9sdp">
+
+                </Button>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvRemaingTime"
+                style="@style/CircleTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+
+                android:gravity="center"
+                android:text="@string/na"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintTop_toBottomOf="@+id/llRemaining"
+                app:layout_constraintHeight_percent="0.25"
+                android:visibility="visible" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintHeight_percent="0.27"
+                android:orientation="horizontal"
+                android:background="@drawable/duty_status_button_bg"
+                android:layout_marginRight="@dimen/_12sdp"
+                android:layout_marginLeft="@dimen/_12sdp"
+                app:layout_constraintTop_toBottomOf="@+id/tvRemaingTime">
+                <Button
+                    android:id="@+id/butDutyStatus"
+                    style="@style/DutyTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:textSize="@dimen/_8sdp"
+                    android:text="@string/off_duty_long"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:background="@android:color/transparent"
+
+
+                    app:layout_constraintTop_toBottomOf="@id/tvRemaingTime"/>
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <CheckBox
+            android:id="@+id/chkRules"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:background="@android:color/transparent"
+            android:button="@drawable/checkbox_flag"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textOff=""
+            android:textOn="" />
+        <TextView
+            android:id="@+id/tvSpecialStatus"
+            style="@style/InformationTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/chkRules"
+
+            />
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/clvTimer"
+            app:layout_constraintTop_toTopOf="@+id/clvTimer"
+            app:layout_constraintBottom_toBottomOf="@+id/clvTimer"
+            android:paddingBottom="@dimen/_6sdp"
+            android:paddingTop="@dimen/_6sdp"
+            android:paddingRight="@dimen/_6sdp">
+
+            <TextView
+                android:id="@+id/tvTimeZone"
+                style="@style/LabelTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/time_zone"
+                />
+
+            <TextView
+                android:id="@+id/tvTimeZoneValue"
+                style="@style/InformationTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/tvTimeZone"
+                android:gravity="right"
+                android:text="UTC - 08:00"/>
+
+            <TextView
+                android:id="@+id/tvCoDriver"
+                style="@style/LabelTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTimeZone"
+                android:text="@string/co_driver" />
+
+            <TextView
+                android:id="@+id/tvCoDriverValue"
+                style="@style/InformationTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tvTimeZoneValue"
+                android:layout_toRightOf="@+id/tvCoDriver"
+                android:gravity="right"
+                android:text="Click here to Login" />
+
+
+            <TextView
+                android:id="@+id/tvVehicleMiles"
+                style="@style/LabelTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvCoDriver"
+                android:text="@string/total_miles_hours" />
+
+            <TextView
+                android:id="@+id/tvVehicleMilesValue"
+                style="@style/InformationTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tvCoDriverValue"
+                android:layout_toRightOf="@+id/tvVehicleMiles"
+                android:gravity="right"
+                android:text="--"/>
+
+            <TextView
+                android:id="@+id/tvTotalDistance"
+                style="@style/LabelTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvVehicleMiles"
+                android:text="@string/driven_today"/>
+
+            <TextView
+                android:id="@+id/tvTotalDistanceValue"
+                style="@style/InformationTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tvVehicleMilesValue"
+                android:layout_toRightOf="@+id/tvTotalDistance"
+                android:gravity="right"
+                android:text="-" />
+
+            <TextView
+                android:id="@+id/tvAccumulatedMiles"
+                style="@style/LabelTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTotalDistance"
+                android:text="@string/accumulated_miles"
+                />
+
+            <TextView
+                android:id="@+id/tvAccumulatedMilesValue"
+                style="@style/InformationTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tvTotalDistanceValue"
+                android:layout_toRightOf="@+id/tvAccumulatedMiles"
+                android:gravity="right"
+                android:text="--"
+                />
+
+
+        </RelativeLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clvProgress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintLeft_toRightOf="@+id/clvUpper"
+        android:background="@drawable/dark_panel_bg"
+        app:layout_constraintWidth_percent="0.49"
+        android:layout_margin="@dimen/_3sdp">
+
+
+
+        <ImageButton
+            android:id="@+id/btnShipmentDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_event_shipment_24"
+            android:gravity="center" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/hoursClock"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:padding="@dimen/_5sdp">
+
+            <ProgressBar
+                android:id="@+id/redProgressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="@dimen/_90sdp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:background="@drawable/black_circle_progressbar_bg"
+                android:indeterminate="false"
+                android:max="500"
+                android:progress="355"
+                android:progressDrawable="@drawable/yellow_circle_progressbar" />
+
+            <ProgressBar
+                android:id="@+id/blueProgressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="@dimen/_75sdp"
+                android:layout_height="@dimen/_75sdp"
+                app:layout_constraintTop_toTopOf="@+id/redProgressBar"
+                app:layout_constraintBottom_toBottomOf="@+id/redProgressBar"
+                app:layout_constraintLeft_toLeftOf="@+id/redProgressBar"
+                app:layout_constraintRight_toRightOf="@+id/redProgressBar"
+                android:background="@drawable/black_circle_progressbar_bg"
+
+                android:indeterminate="false"
+                android:max="500"
+                android:progress="295"
+                android:progressDrawable="@drawable/blue_circle_progressbar" />
+
+            <ProgressBar
+                android:id="@+id/greenProgressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                app:layout_constraintTop_toTopOf="@+id/redProgressBar"
+                app:layout_constraintBottom_toBottomOf="@+id/redProgressBar"
+                app:layout_constraintLeft_toLeftOf="@+id/redProgressBar"
+                app:layout_constraintRight_toRightOf="@+id/redProgressBar"
+                android:background="@drawable/black_circle_progressbar_bg"
+                android:indeterminate="false"
+                android:max="500"
+                android:progress="250"
+                android:progressDrawable="@drawable/green_circle_progressbar" />
+
+            <ProgressBar
+                android:id="@+id/yellowProgressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="@dimen/_44sdp"
+                android:layout_height="@dimen/_44sdp"
+                app:layout_constraintTop_toTopOf="@+id/redProgressBar"
+                app:layout_constraintBottom_toBottomOf="@+id/redProgressBar"
+                app:layout_constraintLeft_toLeftOf="@+id/redProgressBar"
+                app:layout_constraintRight_toRightOf="@+id/redProgressBar"
+                android:background="@drawable/black_circle_progressbar_bg"
+                android:indeterminate="false"
+                android:max="500"
+                android:progress="180"
+                android:progressDrawable="@drawable/red_circle_progressbar" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/hoursClock"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingRight="@dimen/_6sdp"
+            android:paddingTop="@dimen/_6sdp"
+            android:paddingBottom="@dimen/_6sdp">
+
+            <TextView
+                android:id="@+id/tvDrivingHours"
+                style="@style/LabelTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/driving_hours"
+                android:textColor="@color/yellow1"/>
+
+            <TextView
+                android:id="@+id/tvDrivingHoursValue"
+                style="@style/InformationTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/tvDrivingHours"
+                android:gravity="right"
+                android:text="@string/na"
+                android:textColor="@color/yellow1"/>
+
+            <TextView
+                android:id="@+id/tvWorkShift"
+                style="@style/LabelTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvDrivingHours"
+                android:text="@string/work_shift_hour"
+                android:textColor="#00d7e5" />
+
+            <TextView
+                android:id="@+id/tvWorkShiftValue"
+                style="@style/InformationTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tvDrivingHoursValue"
+                android:layout_toRightOf="@+id/tvWorkShift"
+                android:gravity="right"
+                android:text="@string/na"
+                android:textColor="#00d7e5" />
+
+            <TextView
+                android:id="@+id/tvCanadaRule"
+                style="@style/LabelTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvWorkShift"
+                android:text="@string/canada_rule_2"
+                android:textColor="#aff00f" />
+
+            <TextView
+                android:id="@+id/tvCanadaRuleValue"
+                style="@style/InformationTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tvWorkShiftValue"
+                android:layout_toRightOf="@+id/tvCanadaRule"
+                android:gravity="right"
+                android:text="@string/na"
+                android:textColor="#aff00f"/>
+
+            <TextView
+                android:id="@+id/tvUSRuleValue"
+                style="@style/InformationTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tvCanadaRule"
+                android:layout_toRightOf="@+id/tvUSRule"
+                android:gravity="right"
+                android:text="@string/na"
+                android:textColor="#ffc9dc"/>
+
+            <TextView
+                android:id="@+id/tvUSRule"
+                style="@style/LabelTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tvUSRuleValue"
+                android:layout_alignBottom="@+id/tvUSRuleValue"
+                android:layout_alignParentStart="true"
+                android:text="@string/us_rule_1"
+                android:textColor="#ffc9dc" />
+            <TextView
+                android:id="@+id/tvRestTime"
+                style="@style/LabelTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvUSRule"
+                android:text="@string/rest_time" />
+
+            <TextView
+                android:id="@+id/tvRestTimeValue"
+                style="@style/InformationTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/tvRestTime"
+                android:layout_below="@+id/tvUSRuleValue"
+                android:gravity="right"
+                android:text="-"/>
+
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/llDriving"
+        android:layout_margin="@dimen/_3sdp"
+        app:layout_constraintTop_toBottomOf="@+id/clvProgress"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:background="@drawable/elog_status" />
+
+        <ImageView
+            android:id="@+id/imgDutyStatus_portrait"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/imgStatus"
+            app:layout_constraintRight_toLeftOf="@+id/llTotal"
+            android:background="@drawable/elog_graph" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/elog_total"
+            android:gravity="center"
+            android:id="@+id/llTotal"
+            app:layout_constraintRight_toRightOf="parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/_6ssp"
+                android:gravity="center"
+
+                android:layout_height="0dp"
+                android:layout_weight="1"></TextView>
+
+            <TextView
+                android:id="@+id/tvOffDutyTime"
+                android:layout_width="match_parent"
+                android:textSize="@dimen/_6ssp"
+                android:gravity="center"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                />
+
+
+            <TextView
+                android:id="@+id/tvSleeperTime"
+                android:textSize="@dimen/_6ssp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+
+            <TextView
+                android:id="@+id/tvDrivingTime"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="@dimen/_6ssp"
+                android:gravity="center" />
+
+
+            <TextView
+                android:id="@+id/tvOnDutyTime"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="@dimen/_6ssp"
+                android:gravity="center" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@+id/llDriving"
+        style="@style/LayoutBGRound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:visibility="visible">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_flagbar_violation"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/tvViolation"
+            style="@style/BoldBottomInformationTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:ellipsize="marquee"
+            android:gravity="center_vertical"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="@string/na"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/tvViolationDate"
+            style="@style/BottomInformationTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="right|center_vertical"
+            android:paddingRight="8dp"
+            android:text="sdsadas "
+            android:textColor="@color/sixsix"
+            android:textSize="@dimen/text_size_16" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <LinearLayout
+        android:id="@+id/layout_slide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/width_32_neg"
+        android:background="@color/red1"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageButton
+            android:id="@+id/btnDelete"
+            style="@style/EventIconTextStyleMarginRight"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_delete"
+            android:visibility="visible" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tvNotificationTitle"
+                style="@style/EventInformationTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Notification Message"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_2sdp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/tvDate"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/tvNotificationComment"
+                style="@style/EventInformationTextStyle.small"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:text="Notification Message"
+                android:paddingBottom="@dimen/_3sdp"
+                app:layout_constraintEnd_toStartOf="@+id/tvDate"
+                app:layout_constraintTop_toBottomOf="@+id/tvNotificationTitle"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/tvTime"
+                style="@style/EventInformationTextStyle.small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11:30 PM"
+                android:textStyle="bold"
+                android:layout_marginEnd="@dimen/_2sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/tvDate"
+                style="@style/EventInformationTextStyle.small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:text="26 July 2018"
+                android:textStyle="bold"
+                android:layout_marginEnd="@dimen/_2sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTime"/>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+    <View
+        style="@style/tpmsSeprator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        app:layout_constraintTop_toBottomOf="@+id/layout_slide"></View>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

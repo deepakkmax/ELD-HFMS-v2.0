@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+   <ScrollView
+       android:id="@+id/svLogin"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintRight_toRightOf="parent"
+       app:layout_constraintTop_toTopOf="parent">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+           <androidx.constraintlayout.widget.ConstraintLayout
+               android:id="@+id/cvLogin"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="@dimen/_35sdp"
+               android:layout_marginRight="@dimen/_35sdp"
+               android:layout_marginTop="@dimen/_25sdp"
+               >
+
+               <ImageView
+                   android:id="@+id/ivLogo"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:adjustViewBounds="true"
+                   android:src="@drawable/ic_app_logo"
+                   app:layout_constraintLeft_toLeftOf="parent"
+                   app:layout_constraintRight_toRightOf="parent"
+                   app:layout_constraintTop_toTopOf="parent" />
+
+
+               <com.google.android.material.textfield.TextInputLayout
+                   android:id="@+id/tipLogin"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:gravity="center"
+                   app:layout_constraintTop_toBottomOf="@+id/ivLogo">
+
+                   <AutoCompleteTextView
+                       android:id="@+id/etUserName"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:drawableLeft="@drawable/ic_login_user"
+                       android:drawablePadding="10dp"
+
+                       android:hint="@string/prompt_email"
+                       android:imeOptions="actionNext"
+                       android:inputType="text"
+                       android:maxLines="1"
+                       android:singleLine="true" />
+
+               </com.google.android.material.textfield.TextInputLayout>
+
+               <androidx.constraintlayout.widget.ConstraintLayout
+
+                   android:id="@+id/rvtipPassword"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   app:layout_constraintTop_toBottomOf="@+id/tipLogin">
+
+                   <com.google.android.material.textfield.TextInputLayout
+                       android:id="@+id/tipPassword"
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_marginTop="10dp"
+                       android:layout_toLeftOf="@+id/tvShowHidePassword"
+                       android:gravity="center"
+                       app:layout_constraintLeft_toLeftOf="parent"
+                       app:layout_constraintRight_toRightOf="parent"
+                       app:layout_constraintTop_toTopOf="parent">
+
+                       <EditText
+                           android:id="@+id/etPassword"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:drawableLeft="@drawable/ic_login_password"
+                           android:drawablePadding="10dp"
+                           android:hint="@string/prompt_password"
+
+                           android:imeOptions="actionDone"
+                           android:inputType="textPassword"
+                           android:maxLength="20"
+                           android:maxLines="1"
+                           android:singleLine="true" />
+
+
+                   </com.google.android.material.textfield.TextInputLayout>
+
+                   <TextView
+                       android:id="@+id/tvShowHidePassword"
+                       android:layout_width="wrap_content"
+                       android:layout_height="match_parent"
+                       android:layout_centerVertical="true"
+                       android:gravity="center"
+                       android:paddingTop="@dimen/_10sdp"
+                       android:src="@drawable/layout_bg_round_nine"
+                       android:text="Show"
+                       android:textStyle="bold"
+                       app:layout_constraintBottom_toBottomOf="parent"
+                       app:layout_constraintRight_toRightOf="parent"
+                       app:layout_constraintTop_toTopOf="parent" />
+               </androidx.constraintlayout.widget.ConstraintLayout>
+
+               <Button
+                   android:id="@+id/btnLogin"
+                   style="@style/LoginButton"
+                   android:layout_width="match_parent"
+                   android:layout_height="@dimen/login_button_height"
+                   android:text="@string/action_sign_in_short"
+                   app:layout_constraintTop_toBottomOf="@+id/rvtipPassword" />
+
+               <TextView
+                   android:id="@+id/tvVersion"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_horizontal"
+                   android:text="@string/version"
+                   android:textStyle="bold|italic"
+                   android:textSize="@dimen/_8sdp"
+                   android:layout_marginTop="@dimen/_5sdp"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+
+           </androidx.constraintlayout.widget.ConstraintLayout>
+           <TextView
+               android:id="@+id/tvUnitNo"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:textStyle="bold"
+               android:layout_marginTop="5dp"
+               android:text="Unit NO: 888"/>
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+              <ImageButton
+                  android:id="@+id/btnInfo"
+                  style="@style/fab_btn_style_new"
+                  android:layout_marginLeft="@dimen/_15sdp"
+                  android:src="@drawable/ic_instructions"
+                android:layout_alignParentLeft="true" />
+              <ImageButton
+                  android:src="@drawable/ic_canbus"
+                  android:id="@+id/btnVehicleData"
+                  style="@style/fab_btn_style_new"
+
+                  android:layout_toEndOf="@id/btnInfo"
+
+                  />
+              <TextView
+                  android:id="@+id/tvSwitch"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                 android:layout_centerHorizontal="true"
+                 android:layout_marginTop="@dimen/_10sdp"
+                  android:layout_weight="1"
+                  android:drawableLeft="@drawable/ic_switch"
+                  android:drawablePadding="@dimen/_7sdp"
+                  android:gravity="center"
+                  android:scaleType="fitCenter"
+                  android:text="Switch"
+                  android:textSize="@dimen/_10sdp"
+                  app:layout_constraintBottom_toBottomOf="parent"
+                  app:layout_constraintLeft_toLeftOf="parent"
+                  app:layout_constraintRight_toRightOf="parent" />
+              <ImageButton
+                  android:id="@+id/fab"
+                  style="@style/fab_btn_style_new"
+                  android:src="@drawable/ic_fab_sync"
+                 android:layout_alignParentRight="true" />
+          </RelativeLayout>
+
+
+
+       </LinearLayout>
+   </ScrollView>
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_back_relogin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tvCurrentDriver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Please wait.."
+        />
+
+
+    <ImageButton
+        android:id="@+id/btnWifiHotspot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_wifi_hotspot"
+        app:layout_constraintRight_toLeftOf="@+id/btnMalfunction"
+        app:layout_constraintTop_toTopOf="parent" android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/btnMalfunction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_freeze_malfunction"
+        app:layout_constraintRight_toLeftOf="@+id/btnDiagnostic"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnDiagnostic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_freeze_diagnostic"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutInstruction"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/setup_screen_bg"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/btnBackInstructions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:background="@android:color/transparent"
+                android:padding="@dimen/_3sdp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_arrow_back_white_24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                style="@style/InstructionTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Quick Reference Guide"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/btnBackInstructions"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvInstruction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            app:layout_constraintTop_toBottomOf="@+id/cls" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

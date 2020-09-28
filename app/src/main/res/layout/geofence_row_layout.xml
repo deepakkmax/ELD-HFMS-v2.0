@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="16dp"
+        android:orientation="horizontal">
+
+        <ToggleButton
+            android:id="@+id/swSerialNo"
+            style="@style/list_serial_no"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginRight="12dp"
+            android:layout_gravity="center"
+            android:background="@drawable/fence_in_out"
+            android:gravity="center"
+            android:clickable="false"
+            android:textOff=""
+            android:textOn="" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvPortName"
+                style="@style/list_title_text.Blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home Yard" />
+
+            <TextView
+                android:id="@+id/tvDuration"
+                style="@style/list_subtitle_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Duration: 09:23" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTime"
+                style="@style/ListTopRight"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="04:25 AM" />
+
+            <TextView
+                android:id="@+id/tvDate"
+                style="@style/ListTopRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Jan 28, 2016" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/ccc"></View>
+</LinearLayout>

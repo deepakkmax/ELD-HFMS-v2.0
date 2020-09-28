@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutBalanceAlert"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000"
+    android:clickable="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="@dimen/_20sdp"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/_10sdp"
+        android:elevation="8dp">
+        <View
+            android:id="@+id/viewBalanceAlert"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_3sdp"
+            android:background="@color/yellow2"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView
+            android:id="@+id/ivBalanceAlert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_margin="@dimen/_12sdp"
+            android:src="@drawable/ic_flagbar_violation_upcoming" />
+
+        <TextView
+            android:id="@+id/tvBalanceAlertTitle"
+            app:layout_constraintLeft_toRightOf="@+id/ivBalanceAlert"
+            style="@style/DialogTitleStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="Device Balance is very Low"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:textColor="@color/yellow3" />
+
+        <TextView android:id="@+id/tvBalance"
+            app:layout_constraintTop_toBottomOf="@+id/tvBalanceAlertTitle"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:inputType="textMultiLine"
+            android:text="Remaining Balance in your device is 29.99 $ "
+            android:layout_marginTop="@dimen/_5sdp"
+            app:layout_constraintLeft_toLeftOf="@+id/tvBalanceAlertTitle"
+            android:textSize="@dimen/_12sdp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvBalance"
+
+                >
+
+                <Button android:id="@+id/btnRecharge"
+                    style="@style/ButtonStyle"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:text="Recharge"
+
+                    />
+
+                <Button android:id="@+id/btnCheckBalance"
+                    style="@style/ButtonStyle"
+                    android:padding="@dimen/_5sdp"
+
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:text="Refresh Balance"
+
+                    />
+            </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

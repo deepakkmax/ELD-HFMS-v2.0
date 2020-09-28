@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_texture_permission_screen">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/bg_permission_screen" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_15sdp"
+        android:paddingLeft="@dimen/_15sdp"
+        android:paddingRight="@dimen/_15sdp"
+        android:paddingTop="@dimen/_15sdp"
+        android:background="@drawable/input_bg">
+        <RelativeLayout
+            android:id="@+id/layoutHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_bluetooth_setup_"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:text=" Hutch Connect Connectivity"
+                android:textColor="@color/darkBlue_fab"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/appLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/hutch_logo_header" />
+            <TextView
+                android:id="@+id/tvAppVersion"
+                style="@style/list_subtitle_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/appLogo"
+                android:text="@string/version"
+                android:textSize="10sp" />
+        </RelativeLayout>
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            app:layout_constraintTop_toBottomOf="@+id/layoutHeader"
+            android:background="@color/e5e5e5" />
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:drawableStart="@drawable/permission_yellow_img"
+            android:drawablePadding="@dimen/_9sdp"
+            android:lineSpacingExtra="@dimen/_7sdp"
+            android:text="The system will search Hutch Connect device assigned to vehicle. It will automatically pair, connect and test the heart beat of  Hutch Connect device and ask to start vehicle."
+            android:textColor="@color/darkBlue_fab"
+            android:textSize="@dimen/_10ssp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            app:layout_constraintBottom_toTopOf="@+id/tvNotes"
+            app:layout_constraintTop_toBottomOf="@+id/tvDescription">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/icBluetoothEnable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_setup_passed"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tvCheckingBluetoothEnable"
+                    android:textSize="@dimen/_12ssp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/checking_bluetooth"
+                    android:textColor="@color/green2"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    app:layout_constraintBottom_toBottomOf="@id/icBluetoothEnable"
+                    app:layout_constraintStart_toEndOf="@id/icBluetoothEnable"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+
+                <ImageView
+                    android:id="@+id/icBluetoothSearching"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_setup_processing"
+
+                    android:layout_marginTop="@dimen/_7sdp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/icBluetoothEnable"/>
+
+                <TextView
+                    android:id="@+id/tvBluetoothSearching"
+                    android:textSize="@dimen/_12ssp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/searching_for_btb"
+                    android:textColor="@color/green2"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    app:layout_constraintStart_toEndOf="@id/icBluetoothSearching"
+                    app:layout_constraintBottom_toBottomOf="@id/icBluetoothSearching"
+                    app:layout_constraintTop_toTopOf="@id/icBluetoothSearching"/>
+
+                <LinearLayout
+                    android:id="@+id/layoutBluetooth"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_145sdp"
+                    android:background="@drawable/input_bg"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:visibility="gone"
+                    app:layout_constraintTop_toBottomOf="@id/icBluetoothSearching">
+
+                    <TextView
+                        android:id="@+id/tvAvailableDevicesLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:drawableLeft="@drawable/ic_btb_available"
+                        android:drawablePadding="@dimen/_7sdp"
+                        android:gravity="center"
+                        android:padding="@dimen/_7sdp"
+                        android:text="@string/available_devices"
+                        android:textStyle="bold|italic" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_2sdp"
+                        android:background="@color/e5e5e5" />
+
+                    <ListView
+                        android:id="@+id/lvAvailableDevices"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:layout_weight="1"
+                        android:divider="@color/e5e5e5"
+                        android:dividerHeight="1dp"
+                        tools:listitem="@layout/bluetooth_item_">
+
+                    </ListView>
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/ivPairDevice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_setup_processing"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/layoutBluetooth"
+                    />
+
+                <TextView
+                    android:id="@+id/tvPairDevice"
+                    android:textSize="@dimen/_12ssp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pairing Hutch Connect"
+                    android:textColor="@color/green2"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    app:layout_constraintStart_toEndOf="@id/ivPairDevice"
+                    app:layout_constraintBottom_toBottomOf="@id/ivPairDevice"
+                    app:layout_constraintTop_toTopOf="@id/ivPairDevice"/>
+
+                <ImageView
+                    android:id="@+id/icEstablishConnection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_setup_passed"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/ivPairDevice"
+                    />
+
+                <TextView
+                    android:id="@+id/tvEstablishConnection"
+                    android:textSize="@dimen/_12ssp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/connecting_with_btb"
+                    android:textColor="@color/green2"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    app:layout_constraintStart_toEndOf="@id/icEstablishConnection"
+                    app:layout_constraintBottom_toBottomOf="@id/icEstablishConnection"
+                    app:layout_constraintTop_toTopOf="@id/icEstablishConnection"/>
+
+                <ImageView
+                    android:id="@+id/icBTBHearBeat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_setup_processing"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/icEstablishConnection"
+                    />
+
+                <TextView
+                    android:id="@+id/tvCheckingBTBHeartbeat"
+                    android:textSize="@dimen/_12ssp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bluetooth_checking_heartbeat"
+                    android:textColor="@color/green2"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    app:layout_constraintStart_toEndOf="@id/icBTBHearBeat"
+                    app:layout_constraintBottom_toBottomOf="@id/icBTBHearBeat"
+                    app:layout_constraintTop_toTopOf="@id/icBTBHearBeat"/>
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!--
+
+
+
+
+
+
+
+
+
+          <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>-->
+
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/tvNotes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="* On failure of any process a button will apear to retry the whole process."
+            android:textSize="@dimen/_9ssp"
+            android:textStyle="italic"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_3sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnRetry"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btnRetry"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:background="@drawable/setup_screen_button"
+            android:padding="@dimen/_7sdp"
+            android:elevation="@dimen/_3sdp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_arrow_retry_white_48dp"
+            android:text="@string/retry"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:id="@+id/layoutStartVehicle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#4D000000"
+        android:paddingLeft="@dimen/width_percent_5"
+        android:paddingRight="@dimen/width_percent_5"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_percent_60"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="7"
+            android:background="#fff"
+            android:elevation="16dp"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/width_percent_2"
+            android:paddingRight="@dimen/width_percent_2">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_weight="5"
+                android:src="@drawable/ignition_start" />
+
+            <TextView
+                style="@style/SetupTitle"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="0dp"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:text="@string/if_safe_please_start_your_vehicle_now"
+                android:textSize="24sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

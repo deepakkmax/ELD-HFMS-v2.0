@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/f5f5f5"
+        android:orientation="horizontal">
+
+        <ImageView
+            style="@style/DialogIconStyle"
+            android:layout_width="@dimen/dialog_icon_size"
+            android:layout_height="@dimen/dialog_icon_size" />
+
+        <TextView
+            style="@style/DialogTitleStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="Feedback " />
+
+        <ImageButton
+            android:id="@+id/imgCancel"
+            style="@style/DialogCloseStyle"
+            android:layout_width="@dimen/dialog_close_icon_size"
+            android:layout_height="@dimen/dialog_close_icon_size"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+
+    <View
+        style="@style/DialogTitleSeprator"
+        android:layout_width="match_parent"
+        android:layout_height="2dp">
+
+    </View>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+        <TextView
+            android:id="@+id/tvTicketID"
+            style="@style/DialogMessageTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Ticket ID : 5678."
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+
+
+        <RatingBar
+            android:id="@+id/ratingbar"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_gravity="center"
+            android:numStars="5"
+            android:stepSize="1"
+            android:isIndicator="false"/>
+
+
+
+        <EditText
+            android:id="@+id/etComment"
+            style="@style/TextValStyle"
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/layout_bg_round_nine"
+            android:gravity="top"
+            android:hint="@string/instruction_text"
+            android:maxLength="100"
+            android:paddingBottom="@dimen/layoutbg_padding_bottom"
+            android:paddingLeft="@dimen/layoutbg_padding_left"
+            android:paddingRight="@dimen/layoutbg_padding_right"
+            android:paddingTop="@dimen/layoutbg_padding_top" />
+
+    </LinearLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:id="@+id/loadingPanel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="5dp"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            style="@style/ButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/footer_button_height"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:background="@drawable/button_bg"
+            android:text="Submit Feedback" />
+    </FrameLayout>
+
+
+
+</LinearLayout>

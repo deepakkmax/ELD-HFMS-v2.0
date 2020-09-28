@@ -1,0 +1,25 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hutchsystems.hutchconnect.fragments.DvirFragment">
+
+
+    <ListView
+        android:id="@+id/lvCTPATInspections"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/eee"
+        android:dividerHeight="1dp"
+        android:listSelector="@android:color/transparent"/>
+
+
+    <ImageButton
+        android:id="@+id/btnNewInspection"
+        style="@style/fab_btn_style_new"
+        android:layout_gravity="end|bottom"
+        android:layout_marginBottom="@dimen/fab_margin_bottom"
+        android:src="@drawable/add_plus_button" />
+
+</FrameLayout>

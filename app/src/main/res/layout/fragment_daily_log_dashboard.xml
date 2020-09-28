@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:paddingBottom="@dimen/_24sdp">
+
+            <ImageButton
+                android:id="@+id/btnELog"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_drawer_daliy_log"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.33" />
+
+            <TextView
+                android:id="@+id/tvElog"
+                style="@style/DrawerMenuLink"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="@string/menu_daily_log"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnELog"
+                app:layout_constraintWidth_percent="0.33" />
+
+
+            <ImageButton
+                android:id="@+id/btnInspectELog"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_drawer_daliy_log_inspect"
+                app:layout_constraintStart_toEndOf="@+id/btnELog"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.33" />
+
+            <TextView
+                android:id="@+id/tvInspectELog"
+                style="@style/DrawerMenuLink"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="@string/menu_inspect_dailylog"
+                app:layout_constraintStart_toEndOf="@+id/tvElog"
+                app:layout_constraintTop_toBottomOf="@+id/btnInspectELog"
+                app:layout_constraintWidth_percent="0.33" />
+
+            <ImageButton
+                android:id="@+id/btnCreateEvent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_drawer_create_event"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/btnInspectELog"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.33" />
+
+
+            <TextView
+                android:id="@+id/tvCreateEvent"
+                style="@style/DrawerMenuLink"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="@string/menu_create_event"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/tvInspectELog"
+                app:layout_constraintTop_toBottomOf="@+id/btnCreateEvent"
+                app:layout_constraintWidth_percent="0.33" />
+
+
+            <ImageButton
+                android:id="@+id/btnEditRequest"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_drawer_edit_request"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvInspectELog"
+                app:layout_constraintWidth_percent="0.33" />
+            <!--   ic_drawer_edit_request-->
+
+            <TextView
+                android:id="@+id/tvEditRequest"
+                style="@style/DrawerMenuLink"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="@string/menu_edit_request"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnEditRequest"
+                app:layout_constraintWidth_percent="0.33" />
+
+            <ImageButton
+                android:id="@+id/btnUnidentified"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_drawer_unidentify"
+                app:layout_constraintStart_toEndOf="@+id/btnEditRequest"
+                app:layout_constraintTop_toBottomOf="@+id/tvInspectELog"
+                app:layout_constraintWidth_percent="0.33" />
+
+            <TextView
+                android:id="@+id/tvUnidentified"
+                style="@style/DrawerMenuLink"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:maxLines="1"
+                android:text="@string/menu_unidentified_data"
+                app:layout_constraintStart_toEndOf="@+id/tvEditRequest"
+                app:layout_constraintTop_toBottomOf="@+id/btnUnidentified"
+                app:layout_constraintWidth_percent="0.33" />
+
+            <ImageButton
+                android:id="@+id/btnCertify"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_drawer_certify"
+                app:layout_constraintStart_toEndOf="@+id/btnUnidentified"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.33" />
+
+            <TextView
+                android:id="@+id/tvCertify"
+                style="@style/DrawerMenuLink"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="@string/certify"
+                app:layout_constraintStart_toEndOf="@+id/tvUnidentified"
+                app:layout_constraintTop_toBottomOf="@+id/btnCertify"
+                app:layout_constraintWidth_percent="0.33" />
+
+            <ImageButton
+                android:id="@+id/btnViolationHistory"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_drawer_violation_history"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvEditRequest"
+                app:layout_constraintWidth_percent="0.33" />
+
+            <TextView
+                android:id="@+id/tvViolationHistory"
+                style="@style/DrawerMenuLink"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="@string/menu_violation_history"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnViolationHistory"
+                app:layout_constraintWidth_percent="0.33" />
+
+            <ImageButton
+                android:id="@+id/btnRule"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_drawer_incidents"
+                android:layout_marginTop="@dimen/_30sdp"
+
+                app:layout_constraintStart_toEndOf="@+id/btnViolationHistory"
+                app:layout_constraintTop_toBottomOf="@+id/tvUnidentified"
+                app:layout_constraintWidth_percent="0.33"
+                />
+
+            <TextView
+                android:id="@+id/tvRuleList"
+                style="@style/DrawerMenuLink"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="@string/rule_list"
+                app:layout_constraintStart_toEndOf="@+id/tvViolationHistory"
+                app:layout_constraintTop_toBottomOf="@+id/btnRule"
+                app:layout_constraintWidth_percent="0.33" />
+
+            <ImageButton
+                android:id="@+id/btnRecap"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_drawer_violation_history"
+                android:layout_marginTop="@dimen/_30sdp"
+
+                app:layout_constraintStart_toEndOf="@+id/btnRule"
+                app:layout_constraintTop_toBottomOf="@+id/tvInspectorMode"
+                app:layout_constraintWidth_percent="0.33"
+                />
+
+            <TextView
+                android:id="@+id/tvRecap"
+                style="@style/DrawerMenuLink"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="@string/recap"
+                app:layout_constraintStart_toEndOf="@+id/tvRuleList"
+                app:layout_constraintTop_toBottomOf="@+id/btnRecap"
+                app:layout_constraintWidth_percent="0.33" />
+            <ImageButton
+                android:id="@+id/btnDriverProfile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_drawer_driver_profile"
+                app:layout_constraintStart_toEndOf="@+id/btnInspectELog"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.33" />
+
+            <TextView
+                android:id="@+id/tvDriverProfile"
+                style="@style/DrawerMenuLink"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="@string/menu_driver_profile"
+                app:layout_constraintStart_toEndOf="@+id/tvViolationHistory"
+                app:layout_constraintTop_toBottomOf="@+id/btnDriverProfile"
+                app:layout_constraintWidth_percent="0.33" />
+
+            <ImageButton
+                android:id="@+id/btnInspectorMode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_drawer_inspector_mode"
+                app:layout_constraintStart_toEndOf="@+id/btnDriverProfile"
+                app:layout_constraintTop_toBottomOf="@+id/tvCertify"
+                app:layout_constraintWidth_percent="0.33" />
+
+            <TextView android:id="@+id/tvInspectorMode"
+                style="@style/DrawerMenuLink"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="@string/inspector_mode"
+                app:layout_constraintStart_toEndOf="@+id/tvDriverProfile"
+                app:layout_constraintTop_toBottomOf="@+id/btnInspectorMode"
+                app:layout_constraintWidth_percent="0.33" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>

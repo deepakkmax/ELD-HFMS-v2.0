@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="@drawable/layout_bg_round_nine"
+        android:orientation="vertical"
+        android:padding="@dimen/_12sdp">
+
+        <TextView
+            style="@style/SettingsTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_12sdp"
+            android:text="@string/date_time_system" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_time"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvTimeZoneName"
+                style="@style/SettingsLabelStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:text="sadbgcfdj"
+                app:layout_constraintStart_toEndOf="@id/ivTime"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvTimeZone"
+                style="@style/BigTextLabelStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:text="tgdyj"
+                app:layout_constraintStart_toEndOf="@id/ivTime"
+                app:layout_constraintTop_toBottomOf="@id/tvTimeZoneName" />
+
+            <Spinner
+                android:id="@+id/spinnerTimeZone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@id/tvTimeZoneName"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <include layout="@layout/setting_view_layout" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivTimeFormat"
+                android:layout_width="11dp"
+                android:layout_height="17dp"
+                android:src="@drawable/ic_time_format"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvTimeFormat"
+                style="@style/SettingsLabelStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:text="@string/settings_time_format"
+                app:layout_constraintStart_toEndOf="@id/ivTimeFormat"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RadioGroup
+                android:id="@+id/rgSelectTimeFormat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/width_percent_1"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toEndOf="@id/ivTimeFormat"
+                app:layout_constraintTop_toBottomOf="@id/tvTimeFormat">
+
+                <RadioButton
+                    android:id="@+id/rbTime12"
+                    style="@style/BigTextLabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="12dp"
+                    android:checked="true"
+                    android:text="12 Hr" />
+
+                <RadioButton
+                    android:id="@+id/rbTime24"
+                    style="@style/BigTextLabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="24 Hr" />
+            </RadioGroup>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <include layout="@layout/setting_view_layout" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivStartTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_start_time"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvStartTimeLabel"
+                style="@style/SettingsLabelStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:text="@string/settings_start_time"
+                app:layout_constraintStart_toEndOf="@id/ivStartTime"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                style="@style/BigTextLabelStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:text="12:00 AM"
+                app:layout_constraintStart_toEndOf="@id/ivStartTime"
+                app:layout_constraintTop_toBottomOf="@id/tvStartTimeLabel" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="@drawable/layout_bg_round_nine"
+        android:orientation="vertical"
+        android:padding="@dimen/_12sdp">
+
+        <TextView
+            style="@style/SettingsTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_12sdp"
+            android:text="@string/rules_system" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivRuleBook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_rule_book"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvDefaultRule"
+                style="@style/SettingsLabelStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="@string/settings_default_rule"
+                app:layout_constraintStart_toEndOf="@id/ivRuleBook"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvRule"
+                style="@style/BigTextLabelStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                app:layout_constraintStart_toEndOf="@id/ivRuleBook"
+                app:layout_constraintTop_toBottomOf="@id/tvDefaultRule" />
+            <TextView android:id="@+id/tvChangeUnit"
+                style="@style/SettingsLabelStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/ic_change"
+                android:drawablePadding="@dimen/_8sdp"
+                android:gravity="center"
+                android:text="Change Unit on Rule Change"
+                app:layout_constraintStart_toStartOf="@id/ivRuleBook"
+                app:layout_constraintTop_toBottomOf="@id/tvRule" />
+
+            <Switch
+                android:id="@+id/switchChangeUnitOnRule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:switchMinWidth="@dimen/_24sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintTop_toBottomOf="@id/tvRule"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text=""
+                android:textOff=""
+                android:textOn=""
+                android:thumb="@drawable/switch_thumb"
+                android:track="@drawable/switch_track" />
+
+            <TextView
+                android:id="@+id/tvNewUSRule"
+                style="@style/SettingsLabelStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/ic_change"
+                android:drawablePadding="@dimen/_8sdp"
+                android:gravity="center"
+                android:text="Auto Rule Change"
+                app:layout_constraintStart_toStartOf="@id/ivRuleBook"
+                app:layout_constraintTop_toBottomOf="@id/tvChangeUnit" />
+
+            <Switch
+                android:id="@+id/switchAutoRuleChange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:switchMinWidth="@dimen/_24sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintTop_toBottomOf="@id/switchChangeUnitOnRule"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text=""
+                android:textOff=""
+                android:textOn=""
+                android:thumb="@drawable/switch_thumb"
+                android:track="@drawable/switch_track" />
+
+            <TextView
+                style="@style/SettingsLabelStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/ic_change"
+                android:drawablePadding="@dimen/_8sdp"
+                android:gravity="center"
+                android:text="Enable New US Split Sleep"
+                app:layout_constraintStart_toStartOf="@id/ivRuleBook"
+                app:layout_constraintTop_toBottomOf="@id/tvNewUSRule" />
+
+            <Switch
+                android:id="@+id/switchNewUSSplit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:switchMinWidth="@dimen/_24sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintTop_toBottomOf="@id/switchAutoRuleChange"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text=""
+                android:textOff=""
+                android:textOn=""
+                android:thumb="@drawable/switch_thumb"
+                android:track="@drawable/switch_track" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="@drawable/layout_bg_round_nine"
+        android:orientation="vertical"
+        android:padding="@dimen/_12sdp"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/SettingsTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_12sdp"
+            android:text="Auto Location System" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/_12sdp">
+
+            <ImageView
+                android:id="@+id/ivLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_event_location_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvLocation"
+                style="@style/SettingsLabelStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:text="Location Source"
+                app:layout_constraintStart_toEndOf="@id/ivLocation"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/width_percent_1"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toEndOf="@id/ivLocation"
+                app:layout_constraintTop_toBottomOf="@id/tvLocation">
+
+                <RadioButton
+                    android:id="@+id/rbSygic"
+                    style="@style/BigTextLabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="12dp"
+                    android:checked="true"
+                    android:text="Sygic"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/rbtext"
+                    style="@style/BigTextLabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="12dp"
+                    android:checked="true"
+                    android:text="Text File" />
+
+                <RadioButton
+                    android:id="@+id/rbgoogleMap"
+                    style="@style/BigTextLabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="12dp"
+
+                    android:text="Google"
+                    android:visibility="gone" />
+            </RadioGroup>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="@drawable/layout_bg_round_nine"
+        android:orientation="vertical"
+        android:padding="@dimen/_12sdp">
+
+        <TextView
+            style="@style/SettingsTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/system_information_system" android:layout_marginBottom="@dimen/_5sdp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnSystemInformation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/settings_system_infor"
+                android:background="@drawable/button_bg_primary"
+                 />
+
+            <Button
+                android:id="@+id/btnProtocol"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_bg_primary"
+                android:text="Vehicle Data" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="@drawable/layout_bg_round_nine"
+        android:orientation="horizontal"
+        android:padding="@dimen/_12sdp">
+
+        <TextView
+            style="@style/SettingsLabelStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:drawablePadding="@dimen/_8sdp"
+            android:drawableStart="@drawable/ic_copy_trailer"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:gravity="center_vertical"
+            android:text="@string/settings_copy_trailers" />
+
+        <Switch
+            android:id="@+id/switchCopyTrailer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:switchMinWidth="@dimen/_24sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text=""
+            android:textOff=""
+            android:textOn=""
+            android:thumb="@drawable/switch_thumb"
+            android:track="@drawable/switch_track" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--End of Systems Tab-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="@drawable/layout_bg_round_nine"
+        android:orientation="vertical"
+        android:padding="@dimen/_12sdp">
+
+        <TextView
+            style="@style/SettingsTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_12sdp"
+            android:text="Split Sleep - System" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/SettingsLabelStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/ic_change"
+                android:drawablePadding="@dimen/_8sdp"
+                android:gravity="center"
+                android:text="Enable Split Sleep"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Switch
+                android:id="@+id/switchEnableSplitSleep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:switchMinWidth="16dp"
+                android:text=""
+                android:textOff=""
+                android:textOn=""
+                android:thumb="@drawable/switch_thumb"
+                android:track="@drawable/switch_track"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                style="@style/SettingsLabelStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="24dp"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/ic_change"
+                android:drawablePadding="@dimen/_8sdp"
+                android:gravity="center"
+                android:text="Show Alert Split Sleep"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/switchEnableSplitSleep" />
+
+            <Switch
+                android:id="@+id/switchShowAlertSplitSleep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:switchMinWidth="16dp"
+                android:text=""
+                android:textOff=""
+                android:textOn=""
+                android:thumb="@drawable/switch_thumb"
+                android:track="@drawable/switch_track"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/switchEnableSplitSleep" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="@drawable/layout_bg_round_nine"
+        android:orientation="vertical"
+        android:padding="@dimen/_12sdp">
+
+        <TextView
+            android:id="@+id/tvSupportLAbel"
+            style="@style/SettingsTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_12sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/support_language_system" />
+
+        <TextView
+            android:id="@+id/tvLanguage"
+            style="@style/SettingsLabelStyle"
+            android:layout_width="wrap_content"
+            android:drawableStart="@drawable/ic_rule_book"
+            android:drawablePadding="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvSupportLAbel"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_support_language" />
+
+        <Spinner
+            android:id="@+id/spinnerLanguage"
+            android:layout_width="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tvSupportLAbel"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_gravity="end"
+            android:layout_height="wrap_content"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="@drawable/layout_bg_round_nine"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvLegal"
+            style="@style/SettingsLabelStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_rule_book"
+            android:drawablePadding="@dimen/_8sdp"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_12sdp"
+            android:text="@string/settings_legal" />
+
+    </LinearLayout>
+</LinearLayout>

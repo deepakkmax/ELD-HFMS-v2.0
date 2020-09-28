@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/tvFreeze"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/freeze_background"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:visibility="visible"
+        tools:context="com.hutchsystems.hutchconnect.dashboard.DashboardWithGauageCluster">
+
+        <include
+            layout="@layout/freeze_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <include layout="@layout/content_drawer" />
+
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-60dp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:src="@drawable/ic_back_relogin"
+       android:background="@android:color/transparent"/>
+
+</LinearLayout>

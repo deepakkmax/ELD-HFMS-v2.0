@@ -1,0 +1,450 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/GreyLight"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/layoutSystemInfor"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_6sdp"
+            android:background="@drawable/layout_bg_round_nine"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/_12sdp"
+            android:paddingBottom="@dimen/_12sdp">
+
+            <TextView
+                android:id="@+id/tvSystsemTitle"
+                style="@style/SettingsTitleStyle"
+                android:layout_width="wrap_content"
+                android:paddingStart="@dimen/_12sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_12sdp"
+                android:text="@string/system_information_system" />
+
+            <!--        <View-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="1dp"-->
+            <!--            android:background="#e5e5e5"-->
+            <!--            android:layout_marginBottom="@dimen/_12sdp"-->
+            <!--            android:layout_marginTop="@dimen/_12sdp"/>-->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/_12sdp">
+
+                <ImageView
+                    android:id="@+id/ivAndroidVersion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_setting_android_ver1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvAndroidVersionLabel"
+                    style="@style/SettingsLabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:text="@string/settings_android_version"
+                    app:layout_constraintStart_toEndOf="@id/ivAndroidVersion"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvAndroidVersion"
+                    style="@style/BigTextLabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    app:layout_constraintStart_toEndOf="@id/ivAndroidVersion"
+                    app:layout_constraintTop_toBottomOf="@id/tvAndroidVersionLabel" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <include layout="@layout/setting_view_layout" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/_12sdp">
+
+                <ImageView
+                    android:id="@+id/ivAppVersion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:src="@drawable/ic_setting_eld_ver1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvAppVersionLabel"
+                    style="@style/SettingsLabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:text="@string/settings_app_version"
+                    app:layout_constraintStart_toEndOf="@id/ivAppVersion"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvAppVersion"
+                    style="@style/BigTextLabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    app:layout_constraintStart_toEndOf="@id/ivAppVersion"
+                    app:layout_constraintTop_toBottomOf="@id/tvAppVersionLabel" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <include layout="@layout/setting_view_layout" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/_12sdp">
+
+                <ImageView
+                    android:id="@+id/ivProductCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:src="@drawable/ic_setting_eld_ver1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvProductCodeLabel"
+                    style="@style/SettingsLabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:text="@string/product_code"
+                    app:layout_constraintStart_toEndOf="@id/ivProductCode"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvProductCode"
+                    style="@style/BigTextLabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    app:layout_constraintStart_toEndOf="@id/ivProductCode"
+                    app:layout_constraintTop_toBottomOf="@id/tvProductCodeLabel" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <include layout="@layout/setting_view_layout" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/_12sdp">
+
+                <ImageView
+                    android:id="@+id/ivSystemIMei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:src="@drawable/ic_setting_imei1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvSystemImeiLabel"
+                    style="@style/SettingsLabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:text="@string/settings_imei"
+                    app:layout_constraintStart_toEndOf="@id/ivSystemIMei"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvIMEI"
+                    style="@style/BigTextLabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    app:layout_constraintStart_toEndOf="@id/ivSystemIMei"
+                    app:layout_constraintTop_toBottomOf="@id/tvSystemImeiLabel" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <include layout="@layout/setting_view_layout" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/_12sdp">
+
+                <ImageView
+                    android:id="@+id/ivBatteryLevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:src="@drawable/ic_setting_battery1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvBatteryLevelLabel"
+                    style="@style/SettingsLabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:text="@string/settings_battery_level"
+                    app:layout_constraintStart_toEndOf="@id/ivBatteryLevel"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvBatteryLevel"
+                    style="@style/BigTextLabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    app:layout_constraintStart_toEndOf="@id/ivBatteryLevel"
+                    app:layout_constraintTop_toBottomOf="@id/tvBatteryLevelLabel" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <include layout="@layout/setting_view_layout" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/_12sdp">
+
+                <ImageView
+                    android:id="@+id/ivBluetoothName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:src="@drawable/ic_setting_bluetooth1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvBluetoothNameLabel"
+                    style="@style/SettingsLabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:text="@string/settings_bluetooth_name"
+                    app:layout_constraintStart_toEndOf="@id/ivBluetoothName"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvBluetoothName"
+                    style="@style/BigTextLabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    app:layout_constraintStart_toEndOf="@id/ivBluetoothName"
+                    app:layout_constraintTop_toBottomOf="@id/tvBluetoothNameLabel" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <include layout="@layout/setting_view_layout" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/_12sdp">
+
+                <ImageView
+                    android:id="@+id/ivBTBMacAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:src="@drawable/ic_setting_bluetooth1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvBTBMacAddressLabel"
+                    style="@style/SettingsLabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:text="Hutch Connect MAC Address"
+                    app:layout_constraintStart_toEndOf="@id/ivBTBMacAddress"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvBTBMacAddress"
+                    style="@style/BigTextLabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    app:layout_constraintStart_toEndOf="@id/ivBTBMacAddress"
+                    app:layout_constraintTop_toBottomOf="@id/tvBTBMacAddressLabel" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/layoutSettingsScroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fillViewport="false"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/layoutSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@color/light_blue"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="@dimen/height_percent_40"
+                    android:background="@color/colorPrimary"
+                    android:visibility="gone"/>
+
+                <LinearLayout
+                    android:layout_width="@dimen/height_percent_16"
+                    android:layout_height="@dimen/height_percent_16"
+                    android:layout_gravity="center|top"
+                    android:layout_marginTop="@dimen/height_percent_5"
+                    android:background="@drawable/circle_button_white"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="@dimen/height_percent_12"
+                        android:layout_height="@dimen/height_percent_12"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_drawer_settings" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.tabs.TabLayout
+                        android:id="@+id/tab_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="?attr/actionBarSize"
+                        app:tabGravity="fill"
+                        android:background="@color/light_blue"
+                        app:tabMaxWidth="0dp"
+                        app:tabMode="fixed" />
+
+                    <com.hutchsystems.hutchconnect.fragments.ScrollableViewpager
+                        android:id="@+id/pager"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </FrameLayout>
+
+        </LinearLayout>
+
+
+        <!--        <RelativeLayout-->
+<!--            android:id="@+id/layoutSettings"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <View-->
+<!--                android:id="@+id/view"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/_160sdp"-->
+<!--                android:background="@color/light_blue"-->
+<!--                android:orientation="vertical"/>-->
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/llSettingLogo"-->
+<!--                android:layout_width="@dimen/_60sdp"-->
+<!--                android:layout_height="@dimen/_60sdp"-->
+<!--               android:layout_centerHorizontal="true"-->
+<!--                android:layout_marginTop="@dimen/_30sdp"-->
+<!--                android:background="@drawable/circle_button_white"-->
+<!--                android:gravity="center">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:src="@drawable/ic_drawer_settings" />-->
+<!--            </LinearLayout>-->
+
+<!--            <View-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_below="@id/view"-->
+<!--                android:layout_height="@dimen/width_2dp"-->
+<!--                android:background="@color/colorPrimary" />-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_below="@id/llSettingLogo"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:paddingStart="@dimen/_6sdp"-->
+<!--                android:paddingEnd="@dimen/_6sdp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/_4sdp"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <com.google.android.material.tabs.TabLayout-->
+<!--                    android:id="@+id/tab_layout"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:minHeight="?attr/actionBarSize"-->
+<!--                    app:tabGravity="fill"-->
+<!--                    app:tabMaxWidth="0dp"-->
+<!--                    app:tabMode="fixed" />-->
+
+<!--                <com.hutchsystems.eld2020.fragments.ScrollableViewpager-->
+<!--                    android:id="@+id/pager"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content" />-->
+
+<!--            </LinearLayout>-->
+
+<!--        </RelativeLayout>-->
+    </ScrollView>
+
+    <Button
+        android:id="@+id/butBack"
+        style="@style/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:background="@drawable/button_bg"
+        android:text="@string/button_back"
+        android:textSize="@dimen/_15ssp"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,331 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.hutchsystems.hutchconnect.fragments.HelpFragment"
+    android:orientation="vertical"
+    android:padding="@dimen/_10sdp">
+
+    <TextView
+        android:id="@+id/tvCallBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Callback Number"
+        android:textSize="@dimen/header_text_size"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/edCallbackNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@+id/tvCallBack"
+        android:hint="@string/callback_no_hint"
+        android:paddingLeft="@dimen/_10sdp"
+        android:background="@drawable/input_bg"/>
+
+    <TextView
+        android:id="@+id/tvNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Note: This number will be used by support team to call you back. Calls may be recorded for training and quality purposes."
+        android:textStyle="italic"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@+id/edCallbackNumber"/>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+
+        app:layout_constraintTop_toBottomOf="@+id/tvNote"
+        android:background="@color/e5e5e5" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/btb"
+                style="@style/DrawerMenuLink"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="@string/bluetooth"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:textStyle="bold"
+                app:layout_constraintWidth_percent="0.50"/>
+
+            <ImageButton
+                android:id="@+id/btnBTB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/button_bg"
+                app:layout_constraintTop_toBottomOf="@+id/btb"
+                app:layout_constraintLeft_toLeftOf="@+id/btb"
+                app:layout_constraintRight_toRightOf="@+id/btb"
+                android:src="@drawable/help_btb" />
+
+            <TextView
+                android:id="@+id/tvBTB_TicketNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#0000000021"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintTop_toBottomOf="@+id/btnBTB"
+                app:layout_constraintLeft_toLeftOf="@+id/btnBTB"
+                app:layout_constraintRight_toRightOf="@+id/btnBTB"/>
+
+            <TextView
+                android:id="@+id/tvBTB_Status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_14sdp"
+                android:text="Pending"
+                app:layout_constraintTop_toBottomOf="@+id/tvBTB_TicketNo"
+                app:layout_constraintLeft_toLeftOf="@+id/tvBTB_TicketNo"
+                app:layout_constraintRight_toRightOf="@+id/tvBTB_TicketNo"/>
+
+            <TextView
+                android:id="@+id/hos"
+                style="@style/DrawerMenuLink"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="@string/hos"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textStyle="bold"
+                app:layout_constraintWidth_percent="0.50"/>
+            <ImageButton
+                android:id="@+id/btbHOS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/button_bg"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:layout_constraintTop_toBottomOf="@+id/hos"
+                app:layout_constraintLeft_toLeftOf="@+id/hos"
+                app:layout_constraintRight_toRightOf="@+id/hos"
+                android:src="@drawable/help_hos" />
+            <TextView
+                android:id="@+id/tvHOS_TicketNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#0000000245"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintTop_toBottomOf="@+id/btbHOS"
+                app:layout_constraintLeft_toLeftOf="@+id/btbHOS"
+                app:layout_constraintRight_toRightOf="@+id/btbHOS"/>
+
+            <TextView
+                android:id="@+id/tvHOS_Status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_14sdp"
+                android:text="Pending"
+                app:layout_constraintTop_toBottomOf="@+id/tvHOS_TicketNo"
+                app:layout_constraintLeft_toLeftOf="@+id/tvHOS_TicketNo"
+                app:layout_constraintRight_toRightOf="@+id/tvHOS_TicketNo"/>
+
+
+            <TextView
+                android:id="@+id/gps"
+                style="@style/DrawerMenuLink"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/location"
+                android:layout_marginTop="@dimen/_20sdp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvBTB_Status"
+                android:textStyle="bold"
+                app:layout_constraintWidth_percent="0.50"/>
+
+            <ImageButton
+                android:id="@+id/btbGPS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/button_bg"
+                app:layout_constraintTop_toBottomOf="@+id/gps"
+                app:layout_constraintLeft_toLeftOf="@+id/gps"
+                app:layout_constraintRight_toRightOf="@+id/gps"
+                android:src="@drawable/help_gps" />
+            <TextView
+                android:id="@+id/tvGPS_TicketNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#0000000245"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintTop_toBottomOf="@+id/btbGPS"
+                app:layout_constraintLeft_toLeftOf="@+id/btbGPS"
+                app:layout_constraintRight_toRightOf="@+id/btbGPS"/>
+
+            <TextView
+                android:id="@+id/tvGPS_Status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_14sdp"
+                android:text="Pending"
+                app:layout_constraintTop_toBottomOf="@+id/tvGPS_TicketNo"
+                app:layout_constraintLeft_toLeftOf="@+id/tvGPS_TicketNo"
+                app:layout_constraintRight_toRightOf="@+id/tvGPS_TicketNo"/>
+
+
+
+
+            <TextView
+                android:id="@+id/Technical"
+                style="@style/DrawerMenuLink"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="@string/technical"
+                android:layout_marginTop="@dimen/_20sdp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvHOS_Status"
+                android:textStyle="bold"
+                app:layout_constraintWidth_percent="0.50"/>
+            <ImageButton
+                android:id="@+id/btnTechnical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/button_bg"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:layout_constraintTop_toBottomOf="@+id/Technical"
+                app:layout_constraintLeft_toLeftOf="@+id/Technical"
+                app:layout_constraintRight_toRightOf="@+id/Technical"
+                android:src="@drawable/help_technical" />
+            <TextView
+                android:id="@+id/tvTechnical_TicketNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#0000000021"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintTop_toBottomOf="@+id/btnTechnical"
+                app:layout_constraintLeft_toLeftOf="@+id/btnTechnical"
+                app:layout_constraintRight_toRightOf="@+id/btnTechnical"/>
+
+            <TextView
+                android:id="@+id/tvTechnical_Status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_14sdp"
+                android:text="Pending"
+                app:layout_constraintTop_toBottomOf="@+id/tvTechnical_TicketNo"
+                app:layout_constraintLeft_toLeftOf="@+id/tvTechnical_TicketNo"
+                app:layout_constraintRight_toRightOf="@+id/tvTechnical_TicketNo"/>
+
+            <TextView
+                android:id="@+id/RI"
+                style="@style/DrawerMenuLink"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/roadside_inspection"
+                android:layout_marginTop="@dimen/_20sdp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvGPS_Status"
+                android:textStyle="bold"
+                app:layout_constraintWidth_percent="0.50"/>
+
+            <ImageButton
+                android:id="@+id/btnRI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/button_bg"
+                app:layout_constraintTop_toBottomOf="@+id/RI"
+                app:layout_constraintLeft_toLeftOf="@+id/RI"
+                app:layout_constraintRight_toRightOf="@+id/RI"
+                android:src="@drawable/help_r_inspection" />
+            <TextView
+                android:id="@+id/tvRI_TicketNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#0000000021"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintTop_toBottomOf="@+id/btnRI"
+                app:layout_constraintLeft_toLeftOf="@+id/btnRI"
+                app:layout_constraintRight_toRightOf="@+id/btnRI"/>
+
+            <TextView
+                android:id="@+id/tvRI_Status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_14sdp"
+                android:text="Pending"
+                app:layout_constraintTop_toBottomOf="@+id/tvRI_TicketNo"
+                app:layout_constraintLeft_toLeftOf="@+id/tvRI_TicketNo"
+                app:layout_constraintRight_toRightOf="@+id/tvRI_TicketNo"/>
+
+
+
+
+            <TextView
+                android:id="@+id/Training"
+                style="@style/DrawerMenuLink"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="@string/training"
+                android:layout_marginTop="@dimen/_20sdp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTechnical_Status"
+                android:textStyle="bold"
+                app:layout_constraintWidth_percent="0.50"/>
+            <ImageButton
+                android:id="@+id/btnTraining"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/button_bg"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:layout_constraintTop_toBottomOf="@+id/Training"
+                app:layout_constraintLeft_toLeftOf="@+id/Training"
+                app:layout_constraintRight_toRightOf="@+id/Training"
+                android:src="@drawable/help_training" />
+            <TextView
+                android:id="@+id/tvTraining_TicketNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#0000000021"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintTop_toBottomOf="@+id/btnTraining"
+                app:layout_constraintLeft_toLeftOf="@+id/btnTraining"
+                app:layout_constraintRight_toRightOf="@+id/btnTraining"/>
+
+            <TextView
+                android:id="@+id/tvTraining_Status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_14sdp"
+                android:text="Pending"
+                app:layout_constraintTop_toBottomOf="@+id/tvTraining_TicketNo"
+                app:layout_constraintLeft_toLeftOf="@+id/tvTraining_TicketNo"
+                app:layout_constraintRight_toRightOf="@+id/tvTraining_TicketNo"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    >
+
+
+
+    <ScrollView
+        android:id="@+id/scrollViewFileSend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="vertical"
+        android:isScrollContainer="true"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/tvBottomText">
+
+
+        <LinearLayout
+            android:id="@+id/llViews"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:orientation="vertical">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/llOutputFileHeader"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:background="@color/f5f5f5"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/iv"
+                    style="@style/DialogIconStyleNew"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <TextView
+                    app:layout_constraintLeft_toRightOf="@+id/iv"
+                    style="@style/DialogTitleStyleNew"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="@string/send_eld_data" />
+
+                <ImageButton
+                    android:id="@+id/imgCancel"
+                    style="@style/DialogCloseStyleNew"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    app:layout_constraintDimensionRatio="1:1"
+                    android:layout_margin="@dimen/_5sdp"
+                    app:layout_constraintRight_toRightOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+            <View
+                android:id="@+id/ViewOutputFile"
+                style="@style/DialogTitleSeprator"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/llOutputFileHeader"
+                android:layout_height="@dimen/_2sdp">
+
+            </View>
+
+            <EditText
+                android:id="@+id/etComment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:hint="enter output file comment"
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:maxLength="60"
+                android:padding="@dimen/_5sdp" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:hint="enter password"
+                android:inputType="textPassword"
+                android:visibility="gone" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rdUsbDrive"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:text="@string/action_usb_drive" />
+
+                <RadioButton
+                    android:id="@+id/rdBluetooth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:text="@string/bluetooth" />
+
+                <RadioButton
+                    android:id="@+id/rdEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:text="@string/action_email" />
+
+                <RadioButton
+                    android:id="@+id/rdWebService"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:checked="true"
+                    android:text="@string/action_webservice" />
+
+                <RadioButton
+                    android:id="@+id/rdEmailTo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:text="@string/email_to" />
+
+                <RadioButton
+                    android:id="@+id/rdFax"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:text="@string/fax_to" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+
+        android:id="@+id/tvBottomText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textStyle="bold"
+
+        android:layout_above="@+id/frameBottomButton"
+        android:text="* Data will be sent in pdf format."/>
+
+    <FrameLayout
+        android:id="@+id/frameBottomButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btnSend"
+            style="@style/ButtonStyleNew"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/footer_button_height"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_marginLeft="@dimen/_4sdp"
+            android:layout_marginRight="@dimen/_4sdp"
+            android:background="@drawable/button_bg"
+            android:text="@string/send"
+
+            />
+
+        <RelativeLayout
+            android:id="@+id/loadingPanel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="@dimen/_3sdp"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true" />
+        </RelativeLayout>
+
+    </FrameLayout>
+</RelativeLayout>

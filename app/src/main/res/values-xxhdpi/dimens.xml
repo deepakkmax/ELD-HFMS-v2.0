@@ -1,0 +1,81 @@
+<resources>
+
+    <dimen name="width_percent_17">124dp</dimen>
+    <dimen name="width_percent_19">142dp</dimen>
+    <dimen name="width_percent_30">192dp</dimen>
+    <dimen name="width_percent_100">424dp</dimen>
+
+    <dimen name="elog_card_margin">6dp</dimen>
+    <dimen name="elog_card_height">152dp</dimen>
+
+    <dimen name="clock_size">130dp</dimen>
+    <dimen name="inside_clock_size">98dp</dimen>
+    <dimen name="blue_clock_size">106dp</dimen>
+    <dimen name="green_clock_size">79dp</dimen>
+    <dimen name="yellow_clock_size">52dp</dimen>
+
+    <dimen name="duty_status_height">32dp</dimen>
+
+    <dimen name="elog_card_checkbox">20dp</dimen>
+    <dimen name="elog_card_text_margin">5dp</dimen>
+    <dimen name="elog_grid_width">412dp</dimen>
+
+    <dimen name="li_checkbox_size">48dp</dimen>
+    <dimen name="li_checkbox_margin">12dp</dimen>
+    <dimen name="width_32_neg">-72dp</dimen>
+    <dimen name="width_neg">-97dp</dimen>
+    <dimen name="list_content_text_size">16sp</dimen>
+    <dimen name="li_divider_height">1dp</dimen>
+    <dimen name="li_padding">16dp</dimen>
+
+
+    <dimen name="width_2dp">2dp</dimen>
+    <dimen name="width_4dp">4dp</dimen>
+
+
+    <dimen name="login_form_width">324dp</dimen>
+
+    <dimen name="login_button_height">56dp</dimen>
+    <dimen name="login_btn_textsize">18sp</dimen>
+    <dimen name="login_btn_margin_top">24dp</dimen>
+    <dimen name="login_btn_margin_bottom">24dp</dimen>
+
+
+    <dimen name="fab_size">64dp</dimen>
+    <dimen name="fab_padding">16dp</dimen>
+    <dimen name="fab_margin_right">16dp</dimen>
+    <dimen name="fab_margin_bottom">16dp</dimen>
+    <dimen name="fab_margin_bottom_secondary">98dp</dimen>
+
+
+    <dimen name="driver_name_text_size">16sp</dimen>
+
+
+
+    <dimen name="text_size_16">14sp</dimen>
+    <dimen name="text_size_15">13sp</dimen>
+    <dimen name="text_size_14">12sp</dimen>
+    <dimen name="text_size_13">11sp</dimen>
+    <dimen name="text_size_12">7sp</dimen>
+    <dimen name="textsize_12">12sp</dimen>
+
+    <dimen name="duty_status_textsize">11sp</dimen>
+
+    <dimen name="dashboard_icon_size">72dp</dimen>
+    <dimen name="dashboard_text_size">16sp</dimen>
+
+    <dimen name="circle_button_size_portrait">72dp</dimen>
+    <dimen name="annotation_textsize">14sp</dimen>
+    <dimen name="annotation_string_height">42dp</dimen>
+    <dimen name="footer_button_height">56dp</dimen>
+
+
+
+
+    <dimen name="dialog_title_text_size">18sp</dimen>
+    <dimen name="dialog_icon_size">64dp</dimen>
+    <dimen name="dialog_icon_padding">12dp</dimen>
+    <dimen name="dialog_close_icon_size">64dp</dimen>
+    <dimen name="dialog_close_icon_padding">18dp</dimen>
+
+</resources>

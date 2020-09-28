@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_bg_round_nine"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvDVIRTypeLabel"
+                        style="@style/SettingsLabelStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_weight="1"
+                        android:text="@string/inspection_type" />
+
+
+                    <RadioGroup
+                        android:id="@+id/rbgType"
+                        style="@style/BigTextLabelStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rbPre"
+                            style="@style/BigTextLabelStyle.Margin0"
+                            android:layout_width="122dp"
+                            android:layout_height="52dp"
+                            android:background="@drawable/pre_radio_background"
+                            android:button="@android:color/transparent"
+                            android:checked="true"
+                            android:gravity="center"
+                            android:text="@string/pretrip"
+                            android:textColor="@drawable/radio_text_color" />
+
+                        <RadioButton
+                            android:id="@+id/rbPreArrival"
+                            style="@style/BigTextLabelStyle.Margin0"
+                            android:layout_width="122dp"
+                            android:layout_height="52dp"
+                            android:layout_marginTop="-9dp"
+                            android:background="@drawable/inter_radio_background"
+                            android:button="@android:color/transparent"
+                            android:gravity="center"
+                            android:text="@string/prearrival"
+                            android:textColor="@drawable/radio_text_color" />
+
+                        <RadioButton
+                            android:id="@+id/rbPreArrivalBorder"
+                            style="@style/BigTextLabelStyle.Margin0"
+                            android:layout_width="122dp"
+                            android:layout_height="52dp"
+                            android:layout_marginTop="-9dp"
+                            android:background="@drawable/post_radio_background"
+                            android:button="@android:color/transparent"
+                            android:gravity="center"
+                            android:text="@string/prearrival_border"
+                            android:textColor="@drawable/radio_text_color" />
+
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvTrailerLabel"
+                        style="@style/SettingsLabelStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/trailer" />
+
+
+                    <Spinner
+                        android:id="@+id/spinnerTrailerValue"
+                        style="@style/BigTextLabelStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                style="@style/SettingSeprator"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/tvSealLabel"
+                        style="@style/SettingsLabelStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Seal" />
+
+                    <TextView
+                        android:id="@+id/tvCommentsLabel"
+                        style="@style/SettingsLabelStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/comments" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <EditText
+                        android:id="@+id/edSealValue"
+                        style="@style/BigTextLabelStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:focusableInTouchMode="true"
+                        android:hint="@string/instruction_text"
+                        android:maxLength="50"
+                        android:singleLine="true"
+                        android:text="" />
+
+
+                    <EditText
+                        android:id="@+id/edComments"
+                        style="@style/BigTextLabelStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/instruction_text"
+                        android:focusableInTouchMode="true"
+                        android:maxLength="50"
+                        android:singleLine="true"
+                        android:textColorHint="@color/ccc" />
+                </LinearLayout>
+
+                <View
+                    style="@style/SettingSeprator"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="0dp"></View>
+
+                <TextView
+
+                    style="@style/SettingsLabelStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/signature" />
+
+                <Button
+                    android:id="@+id/btnAddSignature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button_bg_primary"
+                    android:padding="5dp"
+                    android:text="@string/add_signature" />
+
+                <ImageView
+                    android:id="@+id/imgSignature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    style="@style/SettingSeprator"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="0dp"></View>
+
+                <TextView
+                    style="@style/SettingsLabelStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-10dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:text="Inspection Criteria"
+                    android:textSize="@dimen/font_size_16"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

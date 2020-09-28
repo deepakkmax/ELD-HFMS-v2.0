@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#f8f8f8"
+android:orientation="vertical">
+
+<ScrollView
+    android:id="@+id/sv_grid"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/llTopLsyout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/_12sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tvDriver"
+                    style="@style/HeaderCardTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/ic_scorecard_driving"
+                    android:drawablePadding="@dimen/_8sdp"
+                    android:text="Driver: Baljit Singh Gharyal"
+                    android:textSize="@dimen/title_text_size" />
+                <ImageView
+                    android:id="@+id/ivAddImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                   android:layout_marginRight="@dimen/_10sdp"
+                    android:src="@drawable/ic_camera_alt_white_24dp" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tvPowerUnit"
+                style="@style/HeaderCardTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/ic_scorecard_vehicle_info"
+                android:drawablePadding="@dimen/_5sdp"
+                android:text="Power Unit: PU5685415"
+
+                android:textSize="@dimen/title_text_size" />
+
+            <TextView
+                android:id="@+id/tvTrailer"
+                style="@style/HeaderCardTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/ic_trailer"
+                android:drawablePadding="@dimen/_6sdp"
+                android:text="Trailer: TR45643256872"
+                android:textSize="@dimen/title_text_size" />
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:padding="@dimen/_12sdp"
+            app:layout_constraintTop_toBottomOf="@id/llTopLsyout">
+
+            <TextView
+                android:id="@+id/tvDurationLabel"
+                style="@style/SettingsLabelStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/duration_in_minutes"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvDuration"
+                style="@style/BigTextLabelStyle.Blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="00:00"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvDurationLabel" />
+
+            <View
+                android:id="@+id/viewDuration"
+                style="@style/SettingSeprator"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                app:layout_constraintTop_toBottomOf="@id/tvDuration" />
+
+            <TextView
+                android:id="@+id/tvOdometerLabel"
+                style="@style/SettingsLabelStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:text="@string/fuel_card_no"
+                app:layout_constraintTop_toBottomOf="@id/viewDuration" />
+
+            <Spinner
+                android:id="@+id/spFuelCardNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/tvOdometerLabel" />
+
+            <View
+                android:id="@+id/viewFuel"
+                style="@style/SettingSeprator"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                app:layout_constraintTop_toBottomOf="@id/spFuelCardNo" />
+
+            <TextView
+                android:id="@+id/tvFuelUnit"
+                style="@style/SettingsLabelStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fuel_unit"
+                app:layout_constraintTop_toBottomOf="@id/viewFuel" />
+
+            <RadioGroup
+                android:id="@+id/rgFuelUnit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/width_percent_1"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/tvFuelUnit">
+
+                <RadioButton
+                    android:id="@+id/rbLitre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_marginEnd="12dp"
+                    android:checked="true"
+                    android:text="@string/litres"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/title_text_size"/>
+
+                <RadioButton
+                    android:id="@+id/rbGallon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:text="@string/gallons"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/title_text_size" />
+            </RadioGroup>
+
+            <View
+                android:id="@+id/viewFuelUnit"
+                style="@style/SettingSeprator"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                app:layout_constraintTop_toBottomOf="@id/rgFuelUnit" />
+
+            <TextView
+                android:id="@+id/tvTruckNumberLabel"
+                style="@style/SettingsLabelStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/fuel_quantity_ltr"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/viewFuelUnit"
+                app:layout_constraintWidth_percent="0.50" />
+
+
+            <TextView
+                style="@style/SettingsLabelStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/fuel_amount"
+                app:layout_constraintStart_toEndOf="@id/tvTruckNumberLabel"
+                app:layout_constraintTop_toBottomOf="@id/viewFuelUnit"
+                app:layout_constraintWidth_percent="0.50" />
+
+            <EditText
+                android:id="@+id/etQuantity"
+                style="@style/BigTextLabelStyle.Blue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:focusableInTouchMode="true"
+                android:hint="0"
+                android:inputType="numberDecimal"
+                android:nextFocusDown="@+id/etPrice"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvTruckNumberLabel"
+                app:layout_constraintWidth_percent="0.50" />
+
+            <EditText
+                android:id="@+id/etPrice"
+                style="@style/BigTextLabelStyle.Blue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:focusableInTouchMode="true"
+                android:hint="0.00"
+                android:inputType="numberDecimal"
+                android:nextFocusDown="@+id/etDEFFuelQuantity"
+                app:layout_constraintStart_toEndOf="@id/etQuantity"
+                app:layout_constraintTop_toBottomOf="@id/tvTruckNumberLabel"
+                app:layout_constraintWidth_percent="0.50" />
+
+            <View
+                android:id="@+id/view1"
+                style="@style/SettingSeprator"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                app:layout_constraintTop_toBottomOf="@id/etQuantity" />
+
+            <TextView
+                android:id="@+id/tvDefQuality"
+                style="@style/SettingsLabelStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/def_fuel_quantity_ltr"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view1"
+                app:layout_constraintWidth_percent="0.50" />
+
+            <TextView
+                style="@style/SettingsLabelStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/def_fuel_amount"
+                app:layout_constraintStart_toEndOf="@id/etQuantity"
+                app:layout_constraintTop_toBottomOf="@id/view1"
+                app:layout_constraintWidth_percent="0.50" />
+
+            <EditText
+                android:id="@+id/etDEFFuelQuantity"
+                style="@style/BigTextLabelStyle.Blue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:focusableInTouchMode="true"
+                android:hint="0"
+                android:inputType="numberDecimal"
+                android:nextFocusDown="@+id/etDEFFuelPrice"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvDefQuality"
+                app:layout_constraintWidth_percent="0.50" />
+
+            <EditText
+                android:id="@+id/etDEFFuelPrice"
+                style="@style/BigTextLabelStyle.Blue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:focusableInTouchMode="true"
+                android:hint="0.00"
+                android:inputType="numberDecimal"
+                android:nextFocusDown="@+id/etReeferFuelQuantity"
+                app:layout_constraintStart_toEndOf="@id/etDEFFuelQuantity"
+                app:layout_constraintTop_toBottomOf="@id/tvDefQuality"
+                app:layout_constraintWidth_percent="0.50" />
+
+            <View
+                android:id="@+id/viewDEf"
+                style="@style/SettingSeprator"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                app:layout_constraintTop_toBottomOf="@id/etDEFFuelQuantity" />
+
+            <TextView
+                android:id="@+id/tvFuelQuality"
+                style="@style/SettingsLabelStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/reefer_fuel_quantity_ltr"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/viewDEf"
+                app:layout_constraintWidth_percent="0.50" />
+
+
+            <TextView
+                style="@style/SettingsLabelStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/reefer_fuel_amount"
+                app:layout_constraintStart_toEndOf="@id/etDEFFuelQuantity"
+                app:layout_constraintTop_toBottomOf="@id/viewDEf"
+                app:layout_constraintWidth_percent="0.50" />
+
+            <EditText
+                android:id="@+id/etReeferFuelQuantity"
+                style="@style/BigTextLabelStyle.Blue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:focusableInTouchMode="true"
+                android:hint="0"
+                android:inputType="numberDecimal"
+                android:nextFocusDown="@+id/etReeferFuelPrice"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvFuelQuality"
+                app:layout_constraintWidth_percent="0.50" />
+
+            <EditText
+                android:id="@+id/etReeferFuelPrice"
+                style="@style/BigTextLabelStyle.Blue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:focusableInTouchMode="true"
+                android:hint="0.00"
+                android:inputType="numberDecimal"
+                app:layout_constraintStart_toEndOf="@id/etReeferFuelQuantity"
+                app:layout_constraintTop_toBottomOf="@id/tvFuelQuality"
+                app:layout_constraintWidth_percent="0.50" />
+
+
+            <View
+                android:id="@+id/view2"
+                style="@style/SettingSeprator"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                app:layout_constraintTop_toBottomOf="@id/etReeferFuelQuantity" />
+
+            <TextView
+                android:id="@+id/tvCashAdvanceLabel"
+                style="@style/SettingsLabelStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cash_advance"
+                app:layout_constraintTop_toBottomOf="@id/view2" />
+
+            <EditText
+                android:id="@+id/etCashAdvance"
+                style="@style/BigTextLabelStyle.Blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:focusableInTouchMode="true"
+                android:hint="0.00"
+                android:inputType="numberDecimal"
+                app:layout_constraintTop_toBottomOf="@id/tvCashAdvanceLabel" />
+
+            <View
+                android:id="@+id/view3"
+                style="@style/SettingSeprator"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                app:layout_constraintTop_toBottomOf="@id/etCashAdvance" />
+
+            <Button
+                android:id="@+id/btnAttach"
+                style="@style/buttonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_bg"
+                android:text="@string/scan"
+                android:textAllCaps="false"
+                app:layout_constraintTop_toBottomOf="@id/view3" />
+            <ImageView
+                android:id="@+id/imgScanned"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/red"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnAttach" />
+
+            <ImageView
+                android:id="@+id/ivDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_delete"
+                android:visibility="gone"
+                android:layout_margin="@dimen/_10sdp"
+                app:layout_constraintTop_toTopOf="@+id/imgScanned"
+                app:layout_constraintEnd_toEndOf="@+id/imgScanned"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
+<ImageButton
+    android:id="@+id/btnSave"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentBottom="true"
+    style="@style/fab_btn_style_new"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fab_save" />
+
+</RelativeLayout>

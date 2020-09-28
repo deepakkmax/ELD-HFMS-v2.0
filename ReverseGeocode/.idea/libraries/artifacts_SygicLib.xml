@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="artifacts:SygicLib">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/SygicLib.aar/95f54b096d8978c6fa0803b4f050abf4/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/SygicLib.aar/95f54b096d8978c6fa0803b4f050abf4/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

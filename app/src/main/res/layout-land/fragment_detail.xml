@@ -1,0 +1,874 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/GreyLight">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layout_bg_round_nine"
+                android:orientation="vertical"
+                android:paddingBottom="6dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:paddingTop="2dp">
+
+                <TabHost
+                    android:id="@+id/tabHost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TabWidget
+                            android:id="@android:id/tabs"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <FrameLayout
+                            android:id="@android:id/tabcontent"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="@dimen/_10sdp">
+
+                            <LinearLayout
+                                android:id="@+id/tabDriver"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/tvDriverID"
+                                        style="@style/InspectLogTextValStyle"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="N/A" />
+
+                                    <View
+                                        android:layout_width="20dp"
+                                        android:layout_height="0dp"/>
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/tvCoDriverID"
+                                            style="@style/InspectLogTextValStyle"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="N" />
+
+
+                                        <TextView
+                                            style="@style/InspectLogTextValStyle"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginLeft="2dp"
+                                            android:layout_marginRight="2dp"
+                                            android:text="/" />
+
+
+                                        <TextView
+                                            android:id="@+id/tvCoDriverName"
+                                            style="@style/InspectLogTextValStyle"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="A" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/tvDriverIDLabel"
+                                        style="@style/InspectLogTextLabStyle"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="@string/driver_id" />
+
+                                    <View
+                                        android:layout_width="20dp"
+                                        android:layout_height="0dp"/>
+
+                                    <TextView
+                                        style="@style/InspectLogTextLabStyle"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="@string/codriver_id_name" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <View
+                                        style="@style/InspectLogSeprator"
+                                        android:layout_width="0dp"
+                                        android:layout_height="1dp"
+                                        android:layout_weight="1"/>
+
+                                    <View
+                                        android:layout_width="24dp"
+                                        android:layout_height="0dp"/>
+
+                                    <View
+                                        style="@style/InspectLogSeprator"
+                                        android:layout_width="0dp"
+                                        android:layout_height="1dp"
+                                        android:layout_weight="1"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/tvELDMalfunction"
+                                        style="@style/InspectLogTextValStyle"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_column="1"
+                                        android:layout_weight="1"
+                                        android:text="N/A" />
+
+                                    <View
+                                        android:layout_width="20dp"
+                                        android:layout_height="0dp"/>
+
+                                    <TextView
+                                        android:id="@+id/tvDataDiagnostic"
+                                        style="@style/InspectLogTextValStyle"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_column="0"
+                                        android:layout_marginBottom="0dp"
+                                        android:layout_weight="1"
+                                        android:text="N/A" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/tvExemptDriverStatusLabel"
+                                        style="@style/InspectLogTextLabStyle"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="@string/eld_malfunction_indicators" />
+
+                                    <View
+                                        android:layout_width="20dp"
+                                        android:layout_height="0dp"/>
+
+                                    <TextView
+                                        android:id="@+id/tvDataDiagnosticLabel"
+                                        style="@style/InspectLogTextLabStyle"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="@string/data_diagnostic_indicators" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <View
+                                        style="@style/InspectLogSeprator"
+                                        android:layout_width="0dp"
+                                        android:layout_height="1dp"
+                                        android:layout_weight="1"/>
+
+                                    <View
+                                        android:layout_width="20dp"
+                                        android:layout_height="0dp"/>
+
+                                    <View
+                                        style="@style/InspectLogSeprator"
+                                        android:layout_width="0dp"
+                                        android:layout_height="1dp"
+                                        android:layout_weight="1"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/tvUnidentifiedDriverRecords"
+                                        style="@style/InspectLogTextValStyle"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_column="0"
+                                        android:layout_weight="1"
+                                        android:text="N/A" />
+
+                                    <View
+                                        android:layout_width="20dp"
+                                        android:layout_height="0dp"/>
+
+                                    <TextView
+                                        android:id="@+id/tvExemptDriverStatus"
+                                        style="@style/InspectLogTextValStyle"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="N/A" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/tvUnidentifiedDriverRecordsLabel"
+                                        style="@style/InspectLogTextLabStyle"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_column="0"
+                                        android:layout_weight="1"
+                                        android:text="@string/unidentified_driver_records" />
+
+                                    <View
+                                        android:layout_width="20dp"
+                                        android:layout_height="0dp"/>
+
+                                    <TextView
+                                        android:id="@+id/tvELDMalfunctionLabel"
+                                        style="@style/InspectLogTextLabStyle"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_column="1"
+                                        android:layout_weight="1"
+                                        android:text="@string/exempt_driver_status" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <View
+                                        style="@style/InspectLogSeprator"
+                                        android:layout_width="0dp"
+                                        android:layout_height="1dp"
+                                        android:layout_weight="1"/>
+
+                                    <View
+                                        android:layout_width="20dp"
+                                        android:layout_height="0dp"/>
+
+                                    <View
+                                        style="@style/InspectLogSeprator"
+                                        android:layout_width="0dp"
+                                        android:layout_height="1dp"
+                                        android:layout_weight="1"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+
+                                    <TextView
+                                        android:id="@+id/tvTimeZoneText"
+                                        style="@style/InspectLogTextValStyle"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:focusable="false"
+                                        android:text="N/A" />
+                                    <View
+                                        android:layout_width="20dp"
+                                        android:layout_height="0dp"/>
+                                    <TextView
+                                        android:id="@+id/tvHomeTerminalAddress"
+                                        style="@style/InspectLogTextValStyle"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="N/A" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/tvTimeZoneLabel"
+                                        style="@style/InspectLogTextLabStyle"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="@string/time_zone" />
+                                    <View
+                                        android:layout_width="20dp"
+                                        android:layout_height="0dp"/>
+                                    <TextView
+                                        android:id="@+id/tvHomeTerminalAddressLabel"
+                                        style="@style/InspectLogTextLabStyle"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="@string/home_terminal_address" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/tabVehicle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <EditText
+                                        android:id="@+id/tvTruckTractorID"
+                                        style="@style/InspectLogTextValStyle"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:focusable="false"
+                                        android:text="Unit #" />
+
+                                    <View
+                                        android:layout_width="20dp"
+                                        android:layout_height="0dp"/>
+
+                                    <TextView
+                                        android:id="@+id/tvTruckTractorVIN"
+                                        style="@style/InspectLogTextValStyle"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="0dp"
+                                        android:layout_weight="1"
+                                        android:text="N/A" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/tvTruckTractorIDLabel"
+                                        style="@style/InspectLogTextLabStyle"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="@string/truck_tractor_id" />
+
+                                    <View
+                                        android:layout_width="20dp"
+                                        android:layout_height="0dp"></View>
+
+                                    <TextView
+                                        android:id="@+id/tvTruckTractorVINLabel"
+                                        style="@style/InspectLogTextLabStyle"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="@string/truck_tractor_vin" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <View
+                                        style="@style/InspectLogSeprator"
+                                        android:layout_width="0dp"
+                                        android:layout_height="1dp"
+                                        android:layout_weight="1"></View>
+
+                                    <View
+                                        android:layout_width="20dp"
+                                        android:layout_height="0dp"></View>
+
+                                    <View
+                                        style="@style/InspectLogSeprator"
+                                        android:layout_width="0dp"
+                                        android:layout_height="1dp"
+                                        android:layout_weight="1"></View>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+
+                                    <TextView
+                                        android:id="@+id/tvMilesToday"
+                                        style="@style/InspectLogTextValStyle"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="N/A" />
+
+                                    <View
+                                        android:layout_width="20dp"
+                                        android:layout_height="0dp"></View>
+
+                                    <EditText
+                                        android:id="@+id/edTrailerID"
+                                        style="@style/InspectLogTextValStyle"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:focusable="false"
+                                        android:text="Unit #" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/tvMilesTodayLabel"
+                                        style="@style/InspectLogTextLabStyle"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="@string/miles_today" />
+
+                                    <View
+                                        android:layout_width="20dp"
+                                        android:layout_height="0dp"></View>
+
+                                    <TextView
+                                        android:id="@+id/tvTrailerIDLabel"
+                                        style="@style/InspectLogTextLabStyle"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="@string/trailer_id" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <View
+                                        style="@style/InspectLogSeprator"
+                                        android:layout_width="0dp"
+                                        android:layout_height="1dp"
+                                        android:layout_weight="1"></View>
+
+                                    <View
+                                        android:layout_width="20dp"
+                                        android:layout_height="0dp"></View>
+
+                                    <View
+                                        style="@style/InspectLogSeprator"
+                                        android:layout_width="0dp"
+                                        android:layout_height="1dp"
+                                        android:layout_weight="1"></View>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/tvStartEndOdometer"
+                                        style="@style/InspectLogTextValStyle"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="N/A" />
+
+                                    <View
+                                        android:layout_width="20dp"
+                                        android:layout_height="0dp"></View>
+
+                                    <TextView
+                                        android:id="@+id/tvStartEndEngineHours"
+                                        style="@style/InspectLogTextValStyle"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="N/A" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/tvStartEndOdometerLabel"
+                                        style="@style/InspectLogTextLabStyle"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="@string/start_end_odometer" />
+
+                                    <View
+                                        android:layout_width="20dp"
+                                        android:layout_height="0dp"></View>
+
+                                    <TextView
+                                        android:id="@+id/tvStartEndEngineHoursLabel"
+                                        style="@style/InspectLogTextLabStyle"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="@string/start_end_engine_hours" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/tabCompany"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/tvUsDot"
+                                        style="@style/InspectLogTextValStyle"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="N/A" />
+
+                                    <View
+                                        android:layout_width="20dp"
+                                        android:layout_height="0dp"></View>
+
+                                    <EditText
+                                        android:id="@+id/edShippingID"
+                                        style="@style/InspectLogTextValStyle"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:focusable="false"
+                                        android:text="N/A" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/tvUsDotLabel"
+                                        style="@style/InspectLogTextLabStyle"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="@string/usdot" />
+
+                                    <View
+                                        android:layout_width="20dp"
+                                        android:layout_height="0dp"></View>
+
+                                    <TextView
+                                        android:id="@+id/tvShippingIDLabel"
+                                        style="@style/InspectLogTextLabStyle"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="@string/shipping_number" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <View
+                                        style="@style/InspectLogSeprator"
+                                        android:layout_width="0dp"
+                                        android:layout_height="1dp"
+                                        android:layout_weight="1"></View>
+
+                                    <View
+                                        android:layout_width="20dp"
+                                        android:layout_height="0dp"></View>
+
+                                    <View
+                                        style="@style/InspectLogSeprator"
+                                        android:layout_width="0dp"
+                                        android:layout_height="1dp"
+                                        android:layout_weight="1"></View>
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/tvCarrier"
+                                        style="@style/InspectLogTextValStyle"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="Trucking" />
+
+                                    <View
+                                        android:layout_width="20dp"
+                                        android:layout_height="0dp"></View>
+
+                                    <TextView
+                                        android:id="@+id/tvELDManufacturer"
+                                        style="@style/InspectLogTextValStyle"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="Acme ELDs" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/tvCarrierLabel"
+                                        style="@style/InspectLogTextLabStyle"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="@string/carrier" />
+
+                                    <View
+                                        android:layout_width="20dp"
+                                        android:layout_height="0dp"></View>
+
+
+                                    <TextView
+                                        android:id="@+id/tvELDManufacturerLabel"
+                                        style="@style/InspectLogTextLabStyle"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="@string/eld_manufacturer" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <View
+                                        style="@style/InspectLogSeprator"
+                                        android:layout_width="0dp"
+                                        android:layout_height="1dp"
+                                        android:layout_weight="1"></View>
+
+                                    <View
+                                        android:layout_width="20dp"
+                                        android:layout_height="0dp"></View>
+
+                                    <View
+                                        style="@style/InspectLogSeprator"
+                                        android:layout_width="0dp"
+                                        android:layout_height="1dp"
+                                        android:layout_weight="1"></View>
+                                </LinearLayout>
+
+
+                                <TextView
+                                    android:id="@+id/tvAddress"
+                                    style="@style/InspectLogTextValStyle"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="N/A" />
+
+                                <TextView
+                                    android:id="@+id/tvAddressLabel"
+                                    style="@style/InspectLogTextLabStyle"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/head_office_address" />
+                            </LinearLayout>
+
+                        </FrameLayout>
+                    </LinearLayout>
+                </TabHost>
+            </LinearLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                android:id="@+id/llDriving"
+                android:layout_margin="@dimen/_3sdp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:background="@drawable/elog_status" />
+
+                <ImageView
+                    android:id="@+id/imgDutyStatus_portrait"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toRightOf="@+id/imgStatus"
+                    app:layout_constraintRight_toLeftOf="@+id/llTotal"
+                    android:background="@drawable/elog_graph" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/elog_total"
+                    android:gravity="center"
+                    android:id="@+id/llTotal"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textSize="@dimen/_6ssp"
+                        android:gravity="center"
+
+                        android:layout_height="0dp"
+                        android:layout_weight="1"></TextView>
+
+                    <TextView
+                        android:id="@+id/tvOffDutyTime"
+                        android:layout_width="match_parent"
+                        android:textSize="@dimen/_6ssp"
+                        android:gravity="center"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/tvSleeperTime"
+                        android:textSize="@dimen/_6ssp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+
+                    <TextView
+                        android:id="@+id/tvDrivingTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/_6ssp"
+                        android:gravity="center" />
+
+
+                    <TextView
+                        android:id="@+id/tvOnDutyTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/_6ssp"
+                        android:gravity="center" />
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/butBack"
+            style="@style/ButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg"
+            android:text="@string/button_back" />
+
+        <Button
+            android:id="@+id/butSave"
+            style="@style/ButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg"
+            android:text="@string/button_save" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,1082 @@
+<resources>
+    <string name="app_name">Напечатайте</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">имя пользователя</string>
+    <string name="prompt_password">пароль</string>
+    <string name="action_sign_in">войти в систему или зарегистрироваться</string>
+    <string name="action_sign_in_short">войти</string>
+    <string name="action_back">снова</string>
+    <string name="action_installer_id">сделать</string>
+    <string name="action_dock">док</string>
+    <string name="error_invalid_email">это док-недействительный адрес электронной почты</string>
+    <string name="error_invalid_password">Пароль слишком короткий</string>
+    <string name="error_incorrect_password">пароль неправильный</string>
+    <string name="error_field_required">это поле является обязательным для заполнения</string>
+    <string name="permission_rationale">"Контакты разрешения необходимы для предоставления по электронной почте
+одну наносекунду."
+   </string>
+    <string name="title_activity_drawer">ящик</string>
+
+    <string name="navigation_drawer_open">открытой навигации ящик</string>
+    <string name="navigation_drawer_close">закрыть ящик для навигации</string>
+
+    <string name="action_settings">настройки</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">привет пустой фрагмент</string>
+
+    <string name="current_rule">нынешнее правило</string>
+    <string name="time_zone">пояс</string>
+    <string name="co_driver">Co-Driver</string>
+    <string name="vehicle_miles">автомобиля в милях</string>
+    <string name="total_distance">общее расстояние</string>
+    <string name="total_miles_hours">. АВТ. Ми/ч</string>
+
+
+    <!-- strings for Hours & Rules Status -->
+    <string name="driving_hours">движения часов</string>
+    <string name="work_shift_hour">рабочей смены час</string>
+    <string name="driving_hours_phone">Вождение</string>
+    <string name="work_shift_hour_phone">работы при движении</string>
+
+    <!-- strings for Duty Status Change -->
+    <string name="button_back">назад переключения</string>
+    <string name="button_save">сохранить</string>
+    <string name="duty_status_change_activity_title">обязанность изменение состояния</string>
+    <string name="duty_status_label">выберите Состояние службы</string>
+    <string name="annotation">аннотацию</string>
+    <string name="annotation_string_1">пункта пересечения границы</string>
+    <string name="annotation_string_2">груза проверьте</string>
+    <string name="annotation_string_3">DOT ИНСПЕКЦИОННОЙ</string>
+    <string name="annotation_string_4">DVIR</string>
+    <string name="annotation_string_5">запитывание</string>
+    <string name="annotation_string_6">загрузка</string>
+    <string name="annotation_string_7">разгрузка</string>
+    <string name="instruction_text">Введите текст здесь...</string>
+    <string name="button_skip">Пропустить</string>
+    <string name="location_man">Место нахождения</string>
+
+    <string name="off_duty">OFF</string>
+    <string name="sleeper">SB</string>
+    <string name="driving">D</string>
+    <string name="on_duty">ON</string>
+    <string name="personal_use">PC</string>
+    <string name="yard_move">YM</string>
+    <string name="ILC">ILC</string>
+    <string name="ILR">ILR</string>
+
+    <string name="off_duty_long">OFF DUTY</string>
+    <string name="sleeper_long">SLEEPER-BERTH</string>
+    <string name="driving_long">DRIVING</string>
+    <string name="on_duty_long">ON DUTY</string>
+    <string name="personal_use_long">PERSONAL USE</string>
+    <string name="yard_move_long">YARD MOVE</string>
+
+    <!-- strings for Rule Change -->
+    <string name="rule_change_activity_title">правило изменения</string>
+    <string name="rule_label">выберите правило</string>
+    <!-- strings for Rules -->
+    <string name="canada_rule_1">Канада 70HR/7дней</string>
+    <string name="canada_rule_2">Канада 120HR/14дней</string>
+    <string name="us_rule_1">нам 70HR/8 дней</string>
+    <string name="us_rule_2">нам 60HR/7 дней</string>
+    <string name="phone_canada_rule_1">Канады\n70hr/7дней</string>
+    <string name="phone_canada_rule_2">Канада\n120hr/14дней</string>
+    <string name="phone_us_rule_1">нам\n70hr/8 дней</string>
+    <string name="phone_us_rule_2">нам\n70hr/8 дней USV изъятия</string>
+    <!--<string name="us_rule_2">US 60hr/7days</string> -->
+
+    <string name="login">IN</string>
+    <string name="logout">OUT</string>
+    <string name="certified_record">CR</string>
+    <string name="engine_up">EU</string>
+    <string name="engine_down">ED</string>
+    <string name="malfunction">MF</string>
+    <string name="data_diagnostic">DD</string>
+
+    <!-- strings for New Event -->
+    <string name="new_event_activity_title">новое событие</string>
+    <string name="event_type">тип события</string>
+    <string name="event_time">времени</string>
+    <string name="odometer">пробега</string>
+    <string name="engine_hours">часов работы двигателя</string>
+    <string name="shipping_document_number">транспортировочные номер документа</string>
+    <string name="latitude">Latitude</string>
+    <string name="longtitude">Longtitude</string>
+    <string name="origin">происхождения</string>
+    <string name="location_description">описание местонахождения</string>
+    <string name="comments">комментарии</string>
+
+    <string name="odo">Odo</string>
+    <string name="eng_hrs">Eng Hr</string>
+    <string name="phone_eventtype">тип</string>
+    <string name="phone_shipping_number">доставки</string>
+    <string name="hrs">часов</string>
+    <string name="record_automatically">автоматический</string>
+    <string name="record_manually">ручной</string>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <string name="duty_status_changed_to_off_duty">Driver\'s обязанность состояние изменяется на OFF обязанность</string>
+    <string name="duty_status_changed_to_sleeper_berth">Driver\'s обязанность Статус изменен на диван причала</string>
+    <string name="duty_status_changed_to_driving">Driver\'s обязанность Статус изменен на движении</string>
+    <string name="duty_status_changed_to_on_duty">Driver\'s обязанность Статус изменен на местах</string>
+    <string name="duty_status_changed_to_personal_use">драйвер указывает на "уполномоченным личного использования CMV"</string>
+    <string name="duty_status_changed_to_yard_move">драйвер указывает на "Двор перемещается"</string>
+
+    <string name="texttospeech_duty_status_changed_to_off_duty">вы изменили обязанность статус ВЫКЛ Обязанность</string>
+    <string name="texttospeech_duty_status_changed_to_sleeper_berth">вы изменили обязанность статус слипер причала</string>
+    <string name="texttospeech_duty_status_changed_to_driving">вы изменили состояние службы в движении</string>
+    <string name="texttospeech_duty_status_changed_to_on_duty">вы изменили состояние службы на местах</string>
+    <string name="texttospeech_duty_status_changed_to_personal_use">вы изменили обязанность состояние для личного использования</string>
+    <string name="texttospeech_duty_status_changed_to_yard_move">вы изменили обязанность статус на дворе перемещается</string>
+
+    <string name="hours">часов</string>
+    <string name="record_status_active">активного</string>
+    <string name="record_status_inactive">Inactive-Changed</string>
+    <string name="record_status_inactive_change_request">неактивно - Изменение просил</string>
+    <string name="record_status_inactive_change_rejected">неактивно - изменение отклонено</string>
+    <string name="event">событие</string>
+    <string name="record_origin_automatically">записывается автоматически с помощью драйвера </string>
+    <string name="record_origin_edited">или изменить введенные драйвер </string>
+    <string name="record_origin_edited_by_other">редактировать с просьбой прошедший проверку подлинности пользователь (не-драйвера) </string>
+    <string name="record_origin_assumed">взяла на себя от неопознанных драйвер профиль </string>
+
+    <string name="record_date">запишите дату</string>
+    <string name="usdot">USDOT</string>
+    <string name="carrier">перевозчика</string>
+    <string name="current_location">текущее местоположение</string>
+    <string name="driver_name">название драйвера</string>
+    <string name="driver_id">идентификатор водителя</string>
+    <string name="start_end_odometer">Начало Конец одометр</string>
+    <string name="driver_license_number">драйвера номер лицензии</string>
+    <string name="driver_license_number_and_state">драйвера Лицензия / Государство</string>
+    <string name="co_driver_name">Co-Driver имя</string>
+    <string name="co_driver_id">Co-Driver ID</string>
+    <string name="miles_today">миль сегодня</string>
+    <string name="driver_license_state">драйвера состояние лицензии</string>
+    <string name="eld_manufacturer">напечатайте производителя</string>
+    <string name="truck_tractor_id">погрузчика трактора</string>
+    <string name="truck_tractor_vin">погрузчик ID номер VIN трактора</string>
+    <string name="eld_id">напечатайте ID</string>
+    <string name="shipping_id">доставка</string>
+    <string name="unidentified_driver_records">Неизвестный идентификатор водителя отчеты</string>
+    <string name="exempt_driver_status">освобождает водителя состояние</string>
+    <string name="trailer_id">прицепа ID</string>
+    <string name="data_diagnostic_indicators">Данные диагностические индикаторы</string>
+    <string name="eld_malfunction_indicators">неисправности напечатайте показателей</string>
+    <string name="start_end_engine_hours">Начало Конец часов работы двигателя</string>
+    <string name="commodity">сырьевые</string>
+    <string name="shipping_number">номер доставки/сырьевых товаров</string>
+    <string name="trailer_number">номер прицепа</string>
+
+    <string name="rule">используется правило</string>
+
+    <string name="menu_daily_log">ежедневный журнал</string>
+    <string name="menu_inspect_dailylog">осмотр Dailylog</string>
+    <string name="menu_create_event">создать событие</string>
+    <string name="menu_uncertified_log_book">несертифицированных Журнал</string>
+    <string name="menu_unidentified_data">неизвестный</string>
+    <string name="menu_edit_request">редактирование данных запроса</string>
+    <string name="menu_violation_history">нарушение истории</string>
+    <string name="menu_driver_profile">драйвер профиль</string>
+    <string name="menu_Message">сообщения</string>
+    <string name="menu_logout">выход</string>
+    <string name="menu_unidentified_event">неопознанным летательным аппаратом в случае</string>
+    <string name="menu_send_report">отправки электронной почты</string>
+    <string name="menu_dvir">DVIR</string>
+    <string name="menu_tpms">TPMS</string>
+
+    <string name="title_eld">напечатайте</string>
+    <string name="title_daily_log">ежедневный журнал</string>
+    <string name="title_inspect_elog">осмотр электронном журнале (elog)</string>
+    <string name="title_create_event">создать событие</string>
+    <string name="title_certify_log_book">сертифицировать журнал</string>
+    <string name="title_edit_request">редактировать запрос</string>
+    <string name="title_violation_history">нарушение истории</string>
+    <string name="title_driver_profile">драйвер профиль</string>
+    <string name="title_Message">сообщение</string>
+    <string name="title_unidentified_event">НЕИЗВЕСТНЫЙ событие</string>
+    <string name="title_dvir">DVIR</string>
+    <string name="title_new_inspection">новый</string>
+    <string name="title_inspection">вид инспекции инспекционная</string>
+    <string name="title_shipping_trailers">доставка и прицепов</string>
+    <string name="title_tpms">TPMS</string>
+    <string name="title_edit_event">Edit Event</string>
+    <string name="title_inspect_dailylog">Log дата:</string>
+    <string name="title_dtc">DTC</string>
+    <string name="title_score_card">драйвер балл карты</string>
+    <string name="title_trailer_management">управления прицепа </string>
+    <string name="title_vehicle_info">автомобиля Info </string>
+    <string name="title_new_Fuel">топлива подробно </string>
+    <string name="title_incident_detail">детали инцидента </string>
+    <string name="title_maintenance_detail">подробная информация по техническому обслуживанию </string>
+
+    <string name="event_origin_automatically">автоматически</string>
+    <string name="event_origin_edited">редактировать</string>
+
+    <string name="action_confirm_web_event">подтверждения</string>
+    <string name="action_reject_web_event">отклонить</string>
+    <string name="action_back_edit_event">назад</string>
+    <string name="action_edit_event">редактировать</string>
+    <string name="action_back_one_day">Назад</string>
+    <string name="action_forward_one_day">Вперед</string>
+    <string name="action_set_active">установить Active</string>
+    <string name="action_post_all">после</string>
+    <string name="action_sync_all">Sync Post</string>
+    <string name="action_change_rule">изменить правила</string>
+    <string name="action_certify_log">сертификации журнал</string>
+    <string name="action_usb_drive">диск USB</string>
+    <string name="action_bluetooth">Bluetooth</string>
+    <string name="action_email">сообщения электронной почты</string>
+    <string name="action_webservice">веб-службы</string>
+    <string name="input_information_activity_title">ввода информации</string>
+
+    <string name="button_change_status">Изменить\Nстатус</string>
+    <string name="button_keep_driving">держать\Nзоны транспортной доступности в</string>
+
+    <string name="paired_devices">пару устройств</string>
+    <string name="available_devices">доступных устройств</string>
+    <string name="bluetooth_connection_infos">подождите Hutch напечатайте подключается к вашей машины!</string>
+    <string name="setup_error_msg">К сожалению, связи с автомобиля не может быть создан. Обратитесь Hutch системы!</string>
+    <string name="bluetooth_connection_ok">Соединение установлено успешно! Нажмите на кнопку OK для продолжения!</string>
+
+    <string name="can_bus_error">К сожалению, ошибка подключения. Обратитесь Hutch системы!</string>
+
+    <string name="vin_number">Номер VIN</string>
+    <string name="speed">скорости вращения (</string>
+    <string name="rpm">об/мин)</string>
+    <string name="select_protocol">Hutch система обнаружила следующий протокол на вашем автомобиле</string>
+    <string name="j1708_protocol">J1708</string>
+    <string name="j1939_protocol">J1939,</string>
+    <string name="both_protocols">J1708 и J1939</string>
+
+    <string name="internet_connection">проверка соединения с Интернетом...</string>
+    <string name="no_internet">Hutch напечатайте не подключен к Интернету. Повторите попытку позже!</string>
+    <string name="web_service">Проверка веб-службы ...</string>
+    <string name="web_service_ok">Web-службы. Щелкните на кнопке СЛЕДУЮЩИЙ для продолжения!</string>
+    <string name="no_web_service">Web-служба недоступна. Повторите попытку позже!</string>
+    <string name="latitude_longitude">Широта и Долгота</string>
+
+    <string name="can_data_ok">Пожалуйста щелкните на кнопке СЛЕДУЮЩИЙ для продолжения!</string>
+
+    <string name="default_cycle">По умолчанию цикл/Правило по умолчанию</string>
+    <string name="unit_no">блок №</string>
+    <string name="start_time">Время начала</string>
+
+    <string name="datetime">Дата/Время</string>
+    <string name="location">Место нахождения</string>
+    <string name="dvir_type">тип местоположения</string>
+    <string name="truck_number">погрузчика#</string>
+    <string name="trailer">прицеп(ы)</string>
+    <string name="defect">Резервный</string>
+    <string name="defect_repaired">резервный ремонт</string>
+    <string name="safe_to_drive">безопасных для привода</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+    <string name="button_certify">сертификации</string>
+    <string name="button_add_defect">добавить резервный</string>
+    <string name="button_add_picture">добавить изображение</string>
+    <string name="inspection_activity_title">новой инспекционной</string>
+    <string name="defect_item">резервный пункты</string>
+    <string name="button_close">закрыть</string>
+
+    <string-array name="dvir_types">
+        <item>предварительно</item>
+        <item>Post</item>
+        <item>в</item>
+    </string-array>
+
+    <string-array name="sync_time">
+        <item>5 минут</item>
+        <item>10 минут</item>
+        <item>20 минут</item>
+        <item>30 минут</item>
+        <item>60 минут</item>
+    </string-array>
+
+    <string-array name="graph_line">
+        <item>времени окончания</item>
+        <item>текущего времени</item>
+    </string-array>
+
+    <string-array name="vision_mode">
+        <item>день</item>
+        <item>ночь</item>
+        <item>Auto</item>
+    </string-array>
+
+    <string-array name="font_size">
+        <item>малых</item>
+        <item>нормальных</item>
+        <item>больших</item>
+    </string-array>
+
+    <string name="defect1">1) пневматической тормозной системы</string>
+    <string name="defect2">2) такси</string>
+    <string name="defect3">3) груза крепление к грузовику</string>
+    <string name="defect4">4) счальные устройства</string>
+    <string name="defect5">5) опасных грузов (если таковые имеются)</string>
+    <string name="defect6">6) Водитель контролирует</string>
+    <string name="defect7">7) Сиденье водителя</string>
+    <string name="defect8">8) электрического тормоза системы</string>
+    <string name="defect9">9) аварийного оборудования и устройств безопасности</string>
+    <string name="defect10">10) системы выпуска отработавших газов</string>
+    <string name="defect11">11) рамы и груза тела</string>
+    <string name="defect12">12) системы подачи топлива</string>
+    <string name="defect13">13) общие дефекты</string>
+    <string name="defect14">14) стекло &amp; зеркала</string>
+    <string name="defect15">15) обогревателя/стеклообогревателя</string>
+    <string name="defect16">16) звукового сигнала</string>
+    <string name="defect17">17) Hybraulic тормозной системы</string>
+    <string name="defect18">18) фонари и отражатели</string>
+    <string name="defect19">19) рулевого управления</string>
+    <string name="defect20">20) системы подвески</string>
+    <string name="defect21">На XXI век) Шины</string>
+    <string name="defect22">22) колеса/концентраторов/фиксаторы</string>
+    <string name="defect23">23) очистители ветрового стекла и шайбы</string>
+    <string name="defect24">24) других</string>
+
+    <string-array name="defect_items">
+        <item>@string/defect1</item>
+        <item>@string/defect2</item>
+        <item>@string/defect3</item>
+        <item>@string/defect4</item>
+        <item>@string/defect5</item>
+        <item>@string/defect6</item>
+        <item>@string/defect7</item>
+        <item>@string/defect8</item>
+        <item>@string/defect9</item>
+        <item>@string/defect10</item>
+        <item>@string/defect11</item>
+        <item>@string/defect12</item>
+        <item>@string/defect13</item>
+        <item>@string/defect14</item>
+        <item>@string/defect15</item>
+        <item>@string/defect16</item>
+        <item>@string/defect17</item>
+        <item>@string/defect18</item>
+        <item>@string/defect19</item>
+        <item>@string/defect20</item>
+        <item>@string/defect21</item>
+        <item>@string/defect22</item>
+        <item>@string/defect23</item>
+        <item>@string/defect24</item>
+    </string-array>
+
+    <string name="defect_msg">я обнаружил дефект не в моем автомобиле.</string>
+    <string name="repaired_msg">Резервный найдена(ы) в DVIR были исправлены.</string>
+    <string name="safetodrive_msg">Резервный найдена(ы) в DVIR не должны быть исправлены для безопасной эксплуатации автомобиля.</string>
+    <string name="no_safetodrive_msg">Пожалуйста не двигайтесь на автомобиле.</string>
+    <string name="button_view">Просмотр</string>
+
+
+    <string name="settings_time_zone">времени зоны</string>
+    <string name="settings_default_rule">правило по умолчанию</string>
+    <string name="settings_graph_line">график линии</string>
+    <string name="settings_color_line">цвет линии</string>
+    <string name="settings_us_color">США и</string>
+    <string name="settings_canada_color">Канада</string>
+    <string name="settings_violation_on_grid">показать нарушение на сетке</string>
+    <string name="settings_time_format">формат времени</string>
+    <string name="settings_unit_format">блок </string>
+    <string name="settings_reading_violation">считывания нарушение</string>
+    <string name="settings_automatic_change_rule">автоматическое изменение правила</string>
+    <string name="settings_reading_message">чтения сообщение</string>
+    <string name="settings_reading_status_change">прочитано обязанность состояние изменить </string>
+    <string name="settings_start_time">время начала</string>
+    <string name="settings_orientation">ориентации</string>
+    <string name="settings_vision_mode">видение режим</string>
+    <string name="settings_font_size">font size</string>
+    <string name="settings_brightness">яркость</string>
+    <string name="settings_check_update">Проверить обновления</string>
+    <string name="settings_system_infor">информации о системе</string>
+    <string name="settings_legal">просмотра правовой документ</string>
+    <string name="settings_sync_time">синхронизации времени</string>
+    <string name="settings_copy_trailers">копирования прицеп(ы)</string>
+    <string name="settings_volume_level">уровень громкости</string>
+    <string name="settings_list_violation">показать нарушения в местах состояние</string>
+    <string name="settings_android_version">Android версии</string>
+    <string name="settings_imei">IMEI</string>
+    <string name="settings_app_version">напечатайте версии</string>
+    <string name="settings_battery_level">уровень заряда батареи</string>
+    <string name="settings_bluetooth_name">Bluetooth имя</string>
+    <string name="settings_default_battery">80%</string>
+
+
+    <!-- GPS Activity -->
+    <string name="gps_status_tab">Статус</string>
+    <string name="gps_map_tab">карты</string>
+    <string name="gps_sky_tab">Sky</string>
+
+    <string name="gps_start">начала</string>
+    <string name="gps_pause">пауза</string>
+    <string name="menu_navigation">навигация</string>
+    <string name="menu_settings">Параметры навигации</string>
+    <string name="menu_extra">более</string>
+    <string name="delete_aiding_data">четко пособничество данных</string>
+    <string name="delete_aiding_data_success">успешно удален пособничество данных.</string>
+    <string name="delete_aiding_data_failure">Платформа не поддерживает удаление пособничество данных.
+   </string>
+    <string name="send_location">Отправить местоположение</string>
+    <string name="set_fix_frequency">установить исправление частоты</string>
+    <string name="force_time_injection">впрыск времени</string>
+    <string name="force_time_injection_success">успешно впрыскивается во время данных.</string>
+    <string name="force_time_injection_failure">Платформа не поддерживает путем инъекций время данных.
+   </string>
+    <string name="force_xtra_injection">Впрыск Xtra Fine данных</string>
+    <string name="force_xtra_injection_success">успешно впрыскивается Xtra Fine данных.</string>
+    <string name="force_xtra_injection_failure">Платформа не поддерживает путем инъекций Xtra Fine данных.
+   </string>
+
+    <string name="zoom_in">Зум в</string>
+    <string name="zoom_out">масштаб</string>
+    <string name="mode_map">Карты</string>
+    <string name="mode_satellite">спутниковых</string>
+
+    <string name="gps_latitude_label">Lat:</string>
+    <string name="gps_longitude_label">долго:</string>
+    <string name="gps_fix_time_label">Время:</string>
+    <string name="gps_ttff_label">TTFF:</string>
+    <string name="gps_altitude_label">Alt:</string>
+    <string name="gps_accuracy_label">АКК:</string>
+    <string name="gps_speed_label">Скорость:</string>
+    <string name="gps_bearing_label">Подшипник:</string>
+    <string name="gps_fix_label">No Fix</string>
+    <string name="gps_utc_time_label">Время системы:</string>
+
+    <string name="gps_prn_column_label">PRN</string>
+    <string name="gps_flag_image_label">ГНСС</string>
+    <string name="gps_snr_column_label">SNR</string>
+    <string name="gps_elevation_column_label">маской возвышения</string>
+    <string name="gps_azimuth_column_label">Азима</string>
+    <string name="gps_flags_column_label">флаги</string>
+    <string name="gps_not_supported">GPS не поддерживается. Выход из приложения…</string>
+    <string name="install">установите</string>
+    <string name="please_install_google_maps">Пожалуйста установите Google Maps</string>
+    <string name="enable_gps_message">GPS отключен. Чтобы она сейчас?</string>
+    <string name="enable_gps_positive_button">Включить GPS</string>
+    <string name="enable_gps_negative_button">не</string>
+    <string name="gps_set_location_listener">запущен GPS с Интервал = %1$ss, мин. Dist. = %2$sm
+   </string>
+
+    <!-- User tutorial -->
+    <string name="showcase_gps_on_off_title">управляет</string>
+    <string name="showcase_gps_on_off_message">• переключатель вкл./выкл. запускает и останавливает GPS\n•
+\"поделиться\" кнопка подает местоположение (показано после получения GPS привязка)\n\n
+       <i>(нажмите , чтобы закрыть)</i>
+   </string>
+
+    <!-- Preferences -->
+    <string name="pref_title">Настройки</string>
+    <string name="pref_map_category_title">Карта</string>
+    <string name="pref_map_type_title">Map Type</string>
+    <string name="pref_map_type_summary">задает тип карты плитки показано</string>
+    <string name="pref_map_type_dialog_title">выберите тип карты</string>
+
+    <string name="pref_rotate_map_with_compass_title">поворот карты с компасом</string>
+    <string name="pref_rotate_map_with_compass_summary">изменение ориентации карты на основе вашего
+направление
+   </string>
+
+    <string name="pref_tilt_map_with_sensors_title">наклона карты с устройством</string>
+    <string name="pref_tilt_map_with_sensors_summary">изменения в режиме от первого лица вид карты, когда вы
+держите устройство
+   </string>
+
+    <string name="pref_gps_category_title">GPS</string>
+    <string name="pref_auto_start_gps_title">GPS Auto-Start</string>
+    <string name="pref_auto_start_gps_summary">запуска GPS, когда приложение запускается</string>
+
+    <string name="pref_gps_min_time_title">интервал</string>
+    <string name="pref_gps_min_time_summary">времени между GPS фиксирует в секундах,</string>
+    <string name="pref_gps_min_time_dialog_title">введите интервал в секундах,</string>
+    <string name="pref_gps_min_time_invalid_entry">интервал должен быть числом</string>
+
+    <string name="pref_gps_min_distance_title">Min. Расстояние</string>
+    <string name="pref_gps_min_distance_summary">минимальное расстояние между GPS исправлений, в метрах
+   </string>
+    <string name="pref_gps_min_distance_dialog_title">введите минимальное расстояние в метрах</string>
+    <string name="pref_gps_min_distance_invalid_entry">Min. Расстояние должно быть числом</string>
+
+    <string name="pref_analyze_gps_accuracy_title">анализировать точность GPS</string>
+    <string name="pref_analyze_gps_accuracy_summary">использование GPS тест для измерения ошибки GPS</string>
+
+    <string name="pref_display_category_title">дисплея</string>
+    <string name="pref_keep_screen_on_title">держите экран</string>
+    <string name="pref_keep_screen_on_summary">предотвращает экран от выключения</string>
+    <string name="pref_true_north_title">точка компаса на истинный север</string>
+    <string name="pref_true_north_summary">компас будет истинный север вместо магнитный север
+   </string>
+
+    <string name="pref_about_category_title">о</string>
+    <string name="pref_show_tutorial_title">шоу tutorial</string>
+    <string name="pref_show_tutorial_summary">содержит инструкции по с помощью app</string>
+    <!-- End GPS activity -->
+
+
+    <!-- Wireless connectivity check -->
+    <string name="cellular_connection">Проверка сотовой связи</string>
+    <string name="wifi_connection">проверка соединения Wi-Fi</string>
+    <string name="hutch_connection">установление соединения с комодом систем</string>
+    <string name="download_configuration">загрузки конфигурации</string>
+
+    <string name="bluetooth_enable_checking">Проверка/отключения Bluetooth</string>
+    <string name="bluetooth_searching">поиск Bluetooth мост</string>
+    <string name="bluetooth_established_connection">устанавливается соединение с Владимир Якунин,</string>
+    <string name="bluetooth_checking_heartbeat">проверка Владимир Якунин, Heartbeat</string>
+    <string name="bluetooth_information">запустите автомобиль!</string>
+
+
+    <string name="finding_gps_satellite">Поиск спутника GPS</string>
+    <string name="checking_utc_time">Проверка время UTC</string>
+    <string name="checking_latitude_longitude">Проверка Latitude и Longtitude</string>
+    <string name="checking_current_location">проверка текущее местоположение</string>
+    <string name="your_location">вашего текущего местоположения</string>
+    <string name="terms_of_service_01">Hutch систем владеет или лицензий определенных технологий, что она разработала и делает коммерчески доступных для пользователей через мобильные услуги и/или веб-приложений для оказания помощи в эффективной работы погрузчика и на автобусе флотов в Северной Америке. В связи с использованием приложений и оказания поддержки, или приобретения или аренды оборудования (все как далее определено ниже), вы и/или вашей организации или корпорации ("Клиент") настоящим соглашаются с условиями обслуживания и условия, содержащиеся в настоящем документе (в совокупности - "Условия обслуживания").</string>
+
+
+    <string name="googleplay">Google Play</string>
+    <string name="install_opencv">установить по библиотеке OpenCV Manager</string>
+    <string name="ask_install_opencv">для работы, откройте Примечание сканер нуждается в услугах по библиотеке OpenCV Manager, который еще не установлен.</string>
+
+    <string name="activateunknown">Перейти к настройкам</string>
+    <string name="messageactivateunknown">Google играть закрывалась и установите из неизвестных источников отключен, перейдите к настройкам и активировать его.</string>
+
+    <string name="scanningToast">Поиск документа\nTap снова для сканирования изображения целиком</string>
+
+
+    <!-- Activity Bluetooth Conn Check-->
+    <string name="checking_btb...">проверка Владимир Якунин...</string>
+    <string name="checking_bluetooth">Проверка Bluetooth</string>
+    <string name="searching_for_btb">поиск Владимир Якунин,</string>
+    <string name="if_safe_please_start_your_vehicle_now">если безопасный, начните ваш автомобиль в настоящее время</string>
+    <string name="search_devices">поиск устройств</string>
+    <string name="connecting_with_btb">с подключением Владимир Якунин,</string>
+    <string name="checking_btb_heartbeat">проверка Владимир Якунин, Heartbeat</string>
+
+
+    <!-- Activity Certify Log-->
+    <string name="i_hearby_certify">Настоящим я подтверждаю, что моя записей данных и моей записи службы состояние для этого 24-часового периода являются подлинными.</string>
+    <string name="not_ready">Не готов</string>
+    <string name="reset_sign">подписать сброса</string>
+    <string name="certify">сертификации</string>
+
+    <!-- Activity Certify Log-->
+    <string name="select_defects">выберите резервный(s)</string>
+    <string name="add">добавить</string>
+
+    <!-- Activity First Time User-->
+    <string name="please_scroll_and_read_all_terms">пожалуйста прокрутки и прочитать все положения и условия, прежде чем в режиме handsfree!</string>
+    <string name="terms_and_conditions">Положения и условия</string>
+    <string name="accept">принимать</string>
+    <string name="first_time_user">первое время пользователь</string>
+    <string name="set_home_timezone">Set Home часовой пояс </string>
+    <string name="set_default_service_rule">по умолчанию правила обслуживания </string>
+
+    <!-- Activity GPS Check-->
+    <string name="global_position_satellite_check...">спутниковой системы глобального позиционирования проверьте...</string>
+    <string name="gps_satellite">Спутник GPS</string>
+    <string name="utc_time">время UTC </string>
+    <string name="prn">PRN</string>
+    <string name="gnss">ГНСС</string>
+    <string name="snr">SNR</string>
+    <string name="elev">маской возвышения</string>
+    <string name="azim">Азима</string>
+    <string name="flags">флаги</string>
+
+    <!-- Activity GPS Main-->
+    <string name="next">рядом</string>
+    <string name="transfer_record_to_codriver">передача запись на CoDriver</string>
+    <string name="time_format">ЧЧ:ММ:СС</string>
+
+    <!-- Activity GPS Main-->
+    <string name="pre">предварительно</string>
+    <string name="inter">в</string>
+    <string name="post">Post</string>
+
+    <!-- Activity Output File Send-->
+    <string name="send_eld_data">отправить напечатайте данных</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="send">отправлять</string>
+
+    <!-- Activity Rule Change-->
+    <string name="hutch_eld_supported_rules">Hutch напечатайте поддерживает правила</string>
+
+    <!-- Activity Select Country-->
+    <string name="select_country">выберите страну</string>
+
+
+    <!-- Activity Setup Complete-->
+    <string name="setup_completed">установки завершите</string>
+    <string name="your_eld_is_ready_for_use">напечатайте готов для использования</string>
+    <string name="cellular_connection_check">сотовой связи проверьте</string>
+    <string name="wifi_connection_check">соединение Wi-Fi проверьте</string>
+    <string name="hutch_systems_connection_check">Hutch систем проверьте подключение</string>
+    <string name="bluetooth_check">Bluetooth проверьте</string>
+    <string name="btb_connection">соединение Владимир Якунин</string>
+    <string name="btb_heartbeat">Владимир Якунин, Heartbeat</string>
+    <string name="utc_time_check">время UTC проверьте</string>
+    <string name="latitude_and_longitude_check">широта и долгота проверьте</string>
+    <string name="current_location_check">текущее местоположение проверьте</string>
+    <string name="please_enter_your_installer_id">введите Ваш ID установщика ниже для продолжения</string>
+    <string name="proceed">перейдите</string>
+
+
+    <!-- Activity Setup Welcome-->
+    <string name="welcome">приветствуем</string>
+    <string name="the_system_will_guide_you_through">системы проведет вас через пошаговое во время установки. Настройка будет выполнять следующие задачи:</string>
+    <string name="network_connectivity_check">подключения к сети проверьте</string>
+    <string name="hutch_systems_connectivity_check">Hutch систем подключения проверьте</string>
+    <string name="btb_connectivity_check">Владимир Якунин (Bluetooth) проверка подключения</string>
+    <string name="feel_free_to_contact_us">не стесняйтесь обращаться к нам на 604-776-3564, если вам требуется наша помощь.</string>
+
+
+    <!-- Activity View Image-->
+    <string name="defect_img">Резервный образ</string>
+
+
+    <!-- Activity Wireless Connectivity Check-->
+    <string name="establishing_wireless_connection...">создания беспроводного соединения...</string>
+    <string name="cellular_connection_lab">Сотовой Связи</string>
+    <string name="wifi_connection_lab">Wifi для подключения</string>
+    <string name="connection_with_hutch_systems">связи с комодом систем</string>
+    <string name="retry">Retry</string>
+
+
+    <!-- Alert BTB-->
+    <string name="btb_connection_in_progress">Владимир Якунин соединения в прогрессе</string>
+    <string name="please_wait_while_eld_is_connecting_to_btb">подождите напечатайте подключения к Владимир Якунин.</string>
+
+
+    <!-- Alert Layout-->
+    <string name="device_battery_low">Устройства низкий уровень заряда аккумуляторной батареи и</string>
+    <string name="please_reconnect_to_power_immediately">снова подключите к источнику питания немедленно.</string>
+
+
+    <!-- Defect Item-->
+    <string name="description">Описание</string>
+
+
+    <!-- DIalog Color Picker-->
+    <string name="select_color">выберите цвет</string>
+    <string name="selected_color">выбранного цвета</string>
+    <string name="set">установите</string>
+
+
+    <!-- DTC Item-->
+    <string name="spn_mid">SPN/MID</string>
+    <string name="fmi">FMI</string>
+    <string name="oc">OC</string>
+
+
+    <!-- eLog Scrollview-->
+    <string name="remaining">оставшихся</string>
+    <string name="na">N/A</string>
+    <string name="current_trip">тока</string>
+
+
+    <!-- Fab Layout-->
+    <string name="fab_btn_switch_user">Поменять пользователя</string>
+    <string name="fab_btn_undocking">отстыковка</string>
+
+
+    <!-- Fragment Add Notice Order -->
+    <string name="duration_in_minutes">продолжительность (в минутах)</string>
+    <string name="report_no">Доклад №</string>
+    <string name="level">уровня</string>
+    <string name="fine_amount">тонкой сумма</string>
+    <string name="results">результатов</string>
+    <string name="hos">ХОС</string>
+    <string name="mechanical">Механические узлы и агрегаты</string>
+    <string name="speeding">ускорения</string>
+    <string name="seat_belt">ремня</string>
+    <string name="others">другие</string>
+    <string name="pass">Pass</string>
+    <string name="fail">Fail</string>
+    <string name="violation">нарушение</string>
+    <string name="present">настоящего</string>
+    <string name="out_of_service">OOS</string>
+    <string name="scan">сканирование</string>
+
+
+    <!-- Fragment Daily Log Dashboard -->
+    <string name="inspector_mode">инспектор режим</string>
+    <string name="codriver_id_name">Co-Driver ID / Название</string>
+
+    <!-- Fragment Driver Profile -->
+    <string name="mobile_no">мобильных №</string>
+    <string name="dl_number">DL №</string>
+    <string name="dl_expiry">DL истечения</string>
+    <string name="dot_password">DOT пароль</string>
+    <string name="exemption">исключение</string>
+    <string name="special_category">специальной категории</string>
+    <string name="authorized_personal_use">уполномочен личного использования CMV, во дворе переместить</string>
+
+
+    <!-- Fragment Driver Scorecard Layout -->
+    <string name="view_score_card_last_30_days">просмотреть другие фотографии карты за последние 30 дней</string>
+    <string name="points_gained">точек накопленный</string>
+    <string name="low_washer_fluid">низкого уровня жидкости омывателя</string>
+    <string name="failure_to_warm_up_engine">неспособность прогрейте двигатель</string>
+    <string name="low_engine_oil">низкий уровень моторного масла</string>
+    <string name="low_coolant_level">Низкий уровень охлаждающей жидкости</string>
+    <string name="high_rpm">высокой</string>
+    <string name="speed_violation">скорости в об/мин нарушение</string>
+    <string name="hard_acceleration">жесткий ускорение</string>
+    <string name="hard_braking">жесткого торможения</string>
+    <string name="idling">на холостом ходу</string>
+    <string name="critical_warnings">критически важных предупреждений</string>
+    <string name="driving_with_engine_light_on">движении с фонаря освещения двигателя на</string>
+    <string name="sharp_turn_left">резкого поворота влево</string>
+    <string name="sharp_turn_right">резкого поворота вправо</string>
+    <string name="hours_of_service">часов</string>
+    <string name="failure_to_conduct_trip_inspection">сбой службы для проведения поездки инспекционной</string>
+
+
+    <!-- Fragment Extra -->
+    <string name="menu_dtc">ДКН</string>
+    <string name="menu_trailer_management">управления прицепа</string>
+    <string name="menu_scorecard">Scorecard</string>
+    <string name="menu_vehicle_info">автомобиль Info</string>
+    <string name="menu_fuel_detail">Подробно топлива</string>
+    <string name="menu_incident">инцидент</string>
+    <string name="menu_maintenance">техническое обслуживание</string>
+
+
+    <string name="fuel_card_no">топливных карт №</string>
+    <string name="fuel_quantity_ltr">количество топлива (в литрах)</string>
+    <string name="fuel_amount">Количество топлива ($)</string>
+    <string name="def_fuel_quantity_ltr">DEF количество топлива (в литрах)</string>
+    <string name="def_fuel_amount">DEF Количество топлива ($)</string>
+    <string name="reefer_fuel_quantity_ltr">рефрижераторные и количество топлива (в литрах)</string>
+    <string name="reefer_fuel_amount">рефрижераторные и количество топлива ($)</string>
+    <string name="cash_advance">аванс наличными ($)</string>
+
+
+    <string name="input_detail">Входной подробно</string>
+    <string name="edit_truck_id">редактировать погрузчик Id</string>
+
+    <string name="version">версии</string>
+    <string name="status_warning">состояние предупреждения</string>
+    <string name="countdown">отсчет времени</string>
+    <string name="do_you_want_to_continue_to_use_vehicle">вы хотите продолжать использовать автомобиль для вождения или нет?</string>
+
+
+    <string name="system_information_system">Информация о системе - Система</string>
+
+    <string name="protocol_ok">OK</string>
+    <string name="check_again">еще раз проверьте</string>
+
+
+    <string name="shutdown_device">Отключение устройства</string>
+    <string name="eld_device_is_shutting_down.">напечатайте устройство выключается.</string>
+
+    <string name="summary">Резюме</string>
+
+    <string name="hook_trailer">крюк прицепа</string>
+
+    <string name="vehicle_info_cvip_due">CVIP: </string>
+    <string name="vehicle_info_vin"> VIN:  </string>
+    <string name="vehicle_info_engine_no"> Серийный номер двигателя:  </string>
+    <string name="vehicle_info_engine_power"> двигатель Poewer:  </string>
+    <string name="vehicle_info_plate"> плиты:  </string>
+
+    <string name="fuel_consumed">Расход топлива</string>
+
+    <string name="boost_pressure">давление нагнетания</string>
+    <string name="fuel_pressure">давления топлива</string>
+    <string name="fuel_level">уровень топлива</string>
+    <string name="engine_oil_level">уровень масла двигателя</string>
+    <string name="engine_coolant_level">уровень охлаждающей жидкости двигателя -</string>
+    <string name="engine_coolant_temp">Температура охлаждающей жидкости двигателя</string>
+    <string name="air_inlet_temperature">температура воздуха на входе</string>
+    <string name="barometric_pressure">барометрического давления</string>
+    <string name="engine_oil_pressure">давление моторного масла</string>
+    <string name="engine_load">нагрузки двигателя</string>
+    <string name="washer_fluid_level">уровень жидкости в бачке стеклоомывателя</string>
+    <string name="def_fuel_level">DEF уровень топлива на</string>
+    <string name="idle_fuel_used">холостом ходу расход топлива</string>
+    <string name="engine_idle_hours">при работе двигателя на холостом ходу часов</string>
+    <string name="pto_hours">часов МОМ</string>
+    <string name="fuel_economy">экономии топлива</string>
+    <string name="battery_voltage">напряжение аккумуляторной батареи</string>
+    <string name="pto_fuel_used">ВОМ используемого топлива</string>
+    <string name="cruise_set_speed">регулятора заданной скорости</string>
+    <string name="brake_application_count">тормоза рассчитывать</string>
+    <string name="max_road_speed">макс скорости движения по дороге в</string>
+    <string name="total_cruise_time">общей сложности Cruise Time</string>
+    <string name="air_suspension_load">пневматической подвески нагрузки</string>
+    <string name="transmission_oil_level">уровень трансмиссионного масла</string>
+    <string name="transmission_gear_no">коробки передач нет</string>
+
+
+    <string name="label_diagnostic">диагностического</string>
+    <string name="label_malfunction">неисправность</string>
+    <string name="label_battery">аккумулятор</string>
+    <string name="label_coolant">системы охлаждения аккумуляторной батареи</string>
+    <string name="turbo_boost">Turbo Boost</string>
+    <string name="driving_remaining">движении оставшихся</string>
+
+
+    <string name="pre_trip">Pre-Trip</string>
+    <string name="schedule">график</string>
+    <string name="threshold">порога</string>
+
+
+    <string name="today">сегодня</string>
+
+    <string name="authenticated_driver_eld_login_activity">проверку подлинности Driver\'s напечатайте Введите логин и активности</string>
+
+
+    <string name="orientation_display">ориентация - Дисплей</string>
+    <string name="portrait">портрет</string>
+    <string name="landscape">пейзаж</string>
+    <string name="auto">Auto</string>
+    <string name="color_line_display">Color Line - На дисплее</string>
+    <string name="metric">метрических</string>
+    <string name="imperial">Imperial</string>
+    <string name="volume_level_sound">уровень громкости звука -</string>
+    <string name="date_time_system">дата и время -</string>
+    <string name="rules_system">Правила и процедуры системы - система</string>
+    <string name="check_for_updates">для проверки обновлений</string>
+    <string name="plate_no">пластину №</string>
+
+
+    <!-- Java Files -->
+
+    <string name="PLEASE_ENTER_REPORT_NO">Введите Доклад №</string>
+    <string name="PLEAE_ENTER_FINE_AMOUNT">введите сумму штрафа.</string>
+    <string name="DRIVER">Драйвер</string>
+    <string name="POWER_UNIT">блок питания</string>
+    <string name="TRAILER">прицепа</string>
+    <string name="NO_DOCUMENT_ATTACHED">не прилагаемый документ</string>
+    <string name="VIEW_DOCUMENT">просмотр документа</string>
+    <string name="low_fuel_economy">низкое экономии топлива</string>
+    <string name="driving_with_critical_warning">при движении с критически важными предупреждения</string>
+    <string name="unhook_confirmation">отцепите подтверждение</string>
+    <string name="unhook_trailer_alert">Вы действительно хотите чтобы отцепить прицеп?</string>
+    <string name="logbook_doesnot_exists">Журнал не существует!</string>
+    <string name="driver">Водитель</string>
+    <string name="vehicle">автомобиля</string>
+    <string name="company">компании</string>
+    <string name="certify_log_title">сертифицировать Log(ы) ?</string>
+    <string name="certify_log_message">Настоящим я подтверждаю, что моя записей данных и моей записи службы состояние для этого 24-часового периода являются подлинными.</string>
+    <string name="no_exemption">Освобождение</string>
+    <string name="exempt_user">от уплаты налогов</string>
+    <string name="none">не использовать</string>
+    <string name="personaluse">уполномочен личного использования CMV</string>
+    <string name="active">активно</string>
+    <string name="inactive">в активное состояние</string>
+    <string name="annotation_alert">Введите аннотацию от минимального 4 слова!</string>
+    <string name="change_duty_status_alert">Вы должны быть активным пользователем для изменения состояния на движении!</string>
+    <string name="change_dutystatus_personal_user">Вы должны быть активным пользователем, чтобы указать \"санкционировать личного использования CMV\"!</string>
+    <string name="change_dutystatus_yardmove">Вы должны быть активным пользователем, чтобы указать \"двор перемещается\"!</string>
+    <string name="comment_alert">Введите комментарий не менее 4 символов!</string>
+    <string name="location_alert">Введите местоположение перед сохранением событие!</string>
+    <string name="e_log">E-Log</string>
+    <string name="ok">OK</string>
+    <string name="dvir_add_alert">Вы должны быть на местах для завершения DVIR</string>
+    <string name="daily_log">ежедневный журнал</string>
+    <string name="codriver_change_dutystatus_off_sleeper_onduty">Co водитель должен изменить состояние службы в положение Off , кровать или на местах!</string>
+    <string name="driving_hour_expired">Пожалуйста Остановите вождение, ваши движения часов истек.</string>
+    <string name="caution_driving_hours_about_to_expire">"внимание вашего движения часов, истек. У вас есть "</string>
+    <string name="mintes_of_driving_time_remaining">" минут движения оставшееся время".</string>
+    <string name="stop_driving">Остановите вождение</string>
+    <string name="send_data_confirmation_title">отправить данные подтверждения?</string>
+    <string name="send_data_message">Вы действительно хотите отправить данные на сервер?</string>
+    <string name="at">" на "</string>
+    <string name="departed">" покинул "</string>
+    <string name="arrived_at">" прибыл в "</string>
+    <string name="kms">" км"</string>
+    <string name="miles">" мили"</string>
+    <string name="in">" в "</string>
+    <string name="vl">VL</string>
+    <string name="total_hours">"Итого В Час(s): "</string>
+    <string name="clr">CLR</string>
+    <string name="term_condition_scroll_alert"><![CDATA[Scroll down to read and accept terms & conditions!]]></string>
+    <string name="power_unit">блок питания</string>
+    <string name="no_document_attach">не прилагаемый документ</string>
+    <string name="view_document">просмотр документа</string>
+    <string name="fuel_card_alert">выберите карту топлива</string>
+    <string name="fuel_quantity_alert">введите количество топлива!</string>
+    <string name="fuel_price_alert">Введите стоимость топлива!</string>
+    <string name="def_fuel_alert">Введите DEF цена топлива!</string>
+    <string name="reefer_fuel_price_alert">Введите рефрижераторные цена топлива!</string>
+    <string name="add_fuel_onduty_alert">Вы должны быть на местах для добавления топлива</string>
+    <string name="exclude_sleeper_title">исключает Слипер часов ?</string>
+    <string name="exclude_sleeper_message">" Вы хотите исключить слипер часов с 16 часов?"</string>
+    <string name="A_12_title">максимальная 13 часов вождения в день</string>
+    <string name="A_12_warning">канадское законодательство позволяет привод для максимум 13 часов в течение суток в зависимости от вашего 24 часов период начинается. Большинство драйверов предпочитают середины ночи до середины ночи их 24 часов периода.</string>
+    <string name="B_12_title">Нет в движении после 14 часов на местах в день</string>
+    <string name="B_12_message">канадское законодательство позволяет быть на местах (на местах и во время движения) в течение 14 часов в 24 часов на базе когда ваш 24 часов период начинается. Вы не можете дисков после 14 часов на местах в день. Большинство драйверов предпочитают в середине ночь до середины ночи период.</string>
+    <string name="A_13_title">Не должны диск после 13 часов без учета 8 часов подряд off - обязанность</string>
+    <string name="A_13_message">канадское законодательство позволяет только диск 13 часов после 8 часов подряд при исполнении служебных обязанностей или диван-причала или любое сочетание службы и/или диван-причала. Вы должны принять еще 8 часов подряд off перед началом движения не допускается.</string>
+    <string name="B_13_title">Не должны дисков после 14 часов на местах времени, если 8 часов подряд от службы времени.</string>
+    <string name="B_13_message">Канадское законодательство позволяет только на местах в течение 14 часов после 8 часов подряд при исполнении служебных обязанностей или диван-причала или любое сочетание службы и/или диван-причала. Вам будет необходимо принять еще 8 часов подряд off перед началом движения не допускается.</string>
+    <string name="C_13_title">Не должны диск после 16 часов затраченного времени после последнего 8 часов подряд off - обязанность</string>
+    <string name="C_13_message">канадское законодательство позволяет только 16 часов затраченного времени после 8 часов подряд при исполнении служебных обязанностей или диван-причала или любое сочетание службы и/или диван-причала. Вы должны принять еще 8 часов подряд off перед началом движения не допускается. Драйверы обычно это как их работы-shift.</string>
+    <string name="A_14_title">Должно быть минимум 9 часов при исполнении служебных обязанностей в день.</string>
+    <string name="A_14_message">"канадское законодательство не требует как минимум 9 часов при исполнении служебных обязанностей или диван-причала или любое сочетание off - обязанность и диван-причала время в 24 часов в зависимости от того, когда вы рассмотреть ваши 24 часов для запуска. Большинство драйверов предпочитают середины ночи до середины ночи их 24 часов периода. "</string>
+    <string name="C_14_title">должно быть минимум 2 часов со службы в день, не является частью 8 последовательных требуется часов.</string>
+    <string name="C_14_message">Канадское законодательство требует минимум 2 часов при исполнении служебных обязанностей или диван-причала или любое сочетание off - обязанность и диван-причала, что не является частью 8 часов подряд. Off - время должно быть в нескольких кварталах от не менее 30 минут каждый, которые должны быть рассмотрены в направлении не менее десяти часов требуется при исполнении служебных обязанностей в день.</string>
+    <string name="B_16_title">Должны принять 20 часов со службы в 2 дней при переносе службы времени.</string>
+    <string name="B_16_message">Канадское законодательство требует минимального 20 часов со службы в 2 дней, если вы отсрочка от службы времени. Это в общей сложности 1 день и 2 день. Вы не можете отложить любую часть 8 часов подряд требуется службы времени.</string>
+    <string name="D_16_title">Не должны превышать 26 часов диск раз в 2 дней.</string>
+    <string name="D_16_message">Канадское законодательство позволяет только 26 часов диск раз в 2 дней, если вы отсрочка от службы времени. Это ваш день 1 и 2 день в общей сложности.</string>
+    <string name="V_25_title">Не должны диск Если 24 последовательных службы часов в предыдущем 14 дней.</string>
+    <string name="V_25_message">Канадское законодательство требует как минимум 24 последовательных службы часов или диван-причала часов или любое сочетание off - обязанность и диван-причала, которые должны быть приняты каждые 14 дней. Ваш 24 часов может быть частью цикла сброс если вы хотите.</string>
+    <string name="V_26_title">Не должны дисков после 70 часов работы на местах в течение 7 дней.</string>
+    <string name="V_26_message">"канадское законодательство не разрешает дисков после 70 часов на время в любой период от 7 дней. Вы можете воспользоваться 36 часов при исполнении служебных обязанностей или диван-причала или любое их сочетание для сброса цикл 1 или вы можете подождать пока 8 день для получения часов назад. "</string>
+    <string name="B_27_title">не должны дисков после 70 часов на местах пока 24 последовательных службы часов.</string>
+    <string name="B_27_message">Канадское законодательство не разрешает дисков после 70 часов на местах, если вы не приняли 24 часов подряд при исполнении служебных обязанностей или в диван-причала или любой их комбинации. Ваш 24 часов может быть частью цикла сброс если вы хотите.</string>
+    <string name="A_27_title">Не должны дисков после 120 часов на местах в 14 дней.</string>
+    <string name="A_27_message">Канадское законодательство не разрешает дисков после 120 часов на время в любой период в 14 дней. Вы можете воспользоваться 72 часов при исполнении служебных обязанностей или диван-причала или любой их комбинации для сброса 2 цикла или вы можете подождать пока пятнадцатый день для получения часов назад.</string>
+    <string name="A_29_title">Должен принять минимум 36 часов подряд при исполнении служебных обязанностей для переключения на 2 цикла из цикла 1.</string>
+    <string name="A_29_message">канадское законодательство требует как минимум 36 часов подряд при исполнении служебных обязанностей или диван-причала или любое сочетание off - обязанность и диван до переключения на 2 цикла из цикла 1.</string>
+    <string name="US_395_3_a_3_i_title">Не должны диск после 11 часов без десяти часов подряд off - обязанность</string>
+    <string name="US_395_3_a_3_i_message">нас закон позволяет только диск 11 часов после десяти часов подряд при исполнении служебных обязанностей или диван-причала или любое сочетание службы и/или диван-причала. Вы должны принять еще 10 часов подряд off перед началом движения не допускается.</string>
+    <string name="US_30min_rest_title">Не должны диск если более 8 часов прошло с момента окончания последнего минимум 30 минут от службы или диван-кровать.</string>
+    <string name="US_30min_rest_message">Нам права только позволяет привод для максимум 8 часов с момента последнего 30 минут от службы или диван-причала времени. Вы должны взять не менее 30 последовательных минуту при исполнении служебных обязанностей или диван-причала или любой их комбинации off - обязанность и диван-причала.</string>
+    <string name="US_395_3_a_2_title">"не должно дисков после 14 часов после десяти часов подряд службы "</string>
+    <string name="US_395_3_a_2_message">нас закон позволяет иметь только 14 часов затраченного времени после десяти часов подряд при исполнении служебных обязанностей или диван-причала или любое сочетание службы и/или диван-причала. Вы должны принять еще 10 часов подряд off перед началом движения не допускается. Драйверы обычно это как их работы-shift.</string>
+    <string name="US_70hr_title">Не должны дисков после 70 часов работы на местах в течение 8 дней.</string>
+    <string name="US_70hr_message">"Нас закон не позволят вам дисков после 70 часов на время в любом 8 дней периода. Вы можете воспользоваться 34 часов при исполнении служебных обязанностей или диван-причала или любой такой комбинации для сброса или вы можете подождать пока 9 день для получения часов назад. "</string>
+    <string name="notice_and_order">уведомления и Порядок</string>
+    <string name="box">коробка</string>
+    <string name="cvsa_inspection">осмотра CVSA</string>
+    <string name="violation_ticket">нарушение билета</string>
+    <string name="incident_add_alert">вы должны быть на местах для добавления инцидент!</string>
+    <string name="unidentified_driving_alert">Неизвестный драйвер вы должны остановить и войти в систему E L D</string>
+    <string name="internet_connection_alert">Проверьте ваше подключение к интернету!</string>
+    <string name="user_name_alert">Введите Имя пользователя</string>
+    <string name="password_alert">введите пароль</string>
+    <string name="login_event_description">аутентификации Driver\'s напечатайте Введите логин и активности</string>
+    <string name="term_condition_login"><![CDATA[You have to accept terms & conditions to proceed!!!]]></string>
+    <string name="altest_update_already_installed">последние обновления уже установлены.</string>
+    <string name="inspect_log_title">Осмотрите</string>
+    <string name="eld_title">Напечатайте журнал</string>
+    <string name="dvir_title">DVIR</string>
+    <string name="navigation_title">навигации</string>
+    <string name="message_title">сообщение</string>
+    <string name="tpms_title">TPMS</string>
+    <string name="more_title">больше</string>
+    <string name="settings_title">настроек</string>
+    <string name="logout_title">выход</string>
+    <string name="logout_offduty_alert">Вам не разрешается выход пока вы не в месте службы</string>
+    <string name="continue_personal_user_confirmation">вы хотите продолжить личного использования?</string>
+    <string name="contine_driving_confirmation">Вы хотите продолжить движение? В противном случае измените статус</string>
+    <string name="btb_connection_title">Владимир Якунин, ошибка подключения</string>
+    <string name="btb_connection_message">существует проблема при подключении к Владимир Якунин. Перезапустите устройство для продолжения.</string>
+    <string name="btb_connection_progress_title">Владимир Якунин соединения в прогрессе</string>
+    <string name="btb_connection_progress_message">подождите напечатайте подключения к Владимир Якунин...</string>
+    <string name="ignition_on_title">включить зажигание</string>
+    <string name="ignition_on_message">Пожалуйста включите ваш замка...</string>
+    <string name="driving_mode_message">Вы действительно хотите быть в режиме вождения?</string>
+    <string name="driving_mode_title">Режим движения подтверждение</string>
+    <string name="active_driver_message_inmotion">вы не можете быть активным драйвера когда автомобиль находится в движении!</string>
+    <string name="active_driver">Активный драйвер</string>
+    <string name="uncertified_log_message">вы несертифицированные журналы!!!!</string>
+    <string name="logout_confirmation">Подтверждение выхода из системы</string>
+    <string name="logout_alert">"Вы уверены, что хотите выйти из системы? "</string>
+    <string name="logout_event_description">проверку подлинности Driver\'s напечатайте выход активности</string>
+    <string name="powerup_event_conventional_description">мощности двигателя с помощью обычного местоположения precision</string>
+    <string name="powerup_event_reduced_description">мощность двигателя с снижение точности положения</string>
+    <string name="shutdown_event_conventional_description">выключения двигателя с обычными расположение precision</string>
+    <string name="shutdown_event_reduced_description">выключения двигателя с пониженной точностью расположения</string>
+    <string name="pc_ym_yt_cleared">индикация драйвера для ПК, Юм и WT удаляется</string>
+    <string name="IL_conventional_description">промежуточного log с обычными расположение precision</string>
+    <string name="IL_reduced_description">промежуточного входа с уменьшенной точностью местоположения</string>
+    <string name="device_BTB_unsupport">устройства не поднимаешь поддержка Bluetooth.</string>
+    <string name="inspection">осмотр</string>
+    <string name="new_inspection">Новые инспекции инспекционная</string>
+    <string name="edit_event">Редактировать событие</string>
+    <string name="progress_update">обновление уже выполняется Пожалуйста подождите...</string>
+    <string name="special_category_configure_PU">Настроенный категории уполномочен личного использования CMV</string>
+    <string name="special_category_configure_YM">настроенный категории перемещается во дворе</string>
+    <string name="special_category_configure_none">у вас нет категории настроен</string>
+    <string name="special_category_configure_PU_YM">ваш настроен категорий имеют право личного пользования CMV и маневренная перемещает</string>
+    <string name="uncertified_log_exists">вас несертифицированных журналы!!!!</string>
+    <string name="add_notice_order">Добавить уведомления и порядок</string>
+    <string name="map_initialized">инициализации карты</string>
+    <string name="upcoming_maintenance">предстоящего обслуживания</string>
+    <string name="maintenance_due">вследствие</string>
+    <string name="yesterday">вчера</string>
+    <string name="future_time_alert">пожалуйста не выберите время в будущем.</string>
+    <string name="valid_password">Введите действительный пароль!</string>
+    <string name="driving_shortening_alert">Сокращение времени привода не допускается!</string>
+    <string name="cancel">Отмена</string>
+    <string name="usb_attach_alert">Пожалуйста прикрепите диск USB первой</string>
+    <string name="send_method_alert">выберите способ отправки!</string>
+    <string name="pick_an_email_provider">Выбрать поставщика электронной почты</string>
+    <string name="file_not_found">файл не найден</string>
+    <string name="delete_page_title">удалить страницы</string>
+    <string name="delete_page_message">Вы уверены, что хотите удалить эту страницу?</string>
+    <string name="score_deducted">Баллы вычитаются</string>
+    <string name="duration">продолжительность</string>
+    <string name="driving_points_gained">"движении точек накопленного через время: "</string>
+    <string name="system">Система</string>
+    <string name="display">отображения</string>
+    <string name="sound">звука</string>
+    <string name="eld_app_exit">напечатайте App будет остановлена в течение 3 секунд.</string>
+    <string name="device_internet_not_connected">Устройство не подключено к сети Интернет. Повторите попытку позже!</string>
+    <string name="unidentified_driver_record_missing">Учетная запись с неопознанным летательным аппаратом в драйвер тип учетной записи отсутствует!</string>
+    <string name="hook_trailer_title">Крюк прицепа</string>
+    <string name="hook_trailer_message">вы уверены. Вы хотите крюк прицепа?</string>
+    <string name="please_select_record">Выберите запись!</string>
+    <string name="drivers">"водителя "</string>
+    <string name="th_certification">\'й сертификации ежедневной записи</string>
+    <string name="assuming_events_title">при условии события(s)</string>
+    <string name="today_hours">Всего Час(ы)</string>
+
+    <string name="violation_present">нарушение настоящего</string>
+    <string name="invoice_alert">Please enter Invoice No!</string>
+    <string name="part_cost_alert">Please enter Part Cost!</string>
+    <string name="labour_cost_alert">Please enter Labour Cost!</string>
+    <string name="pending">Pending</string>
+    <string name="completed">Completed</string>
+    <string name="upcoming_due_maintenance">Upcoming/Due Maintenance</string>
+    <string name="maintenance_completed">Maintenance Completed</string>
+    <string name="confirm">Confirm</string>
+    <string name="reject">Reject</string>
+    <string name="application_exit">Application Exit</string>
+    <string name="installer_id_valid_alert">Please enter valid Installer Id!</string>
+    <string name="feature_na_alert">This Feature is not available for your company. Please contact Hutch Systems to avail this feature.</string>
+    <string name="geofence_detail">Geofence Detail</string>
+    <string name="please_verify_if_navigation_is_loaded_properly_prior_to_proceeding">Please verify if navigation is loaded properly prior to proceeding!</string>
+    <string name="document_no">Document No</string>
+    <string name="document_type">Document Type</string>
+    <string name="document_detail">Document Detail</string>
+    <string name="add_document_onduty_alert">You must be on-duty to add document</string>
+    <string name="scanning">Scanning</string>
+    <string name="dispatch_no">Dispatch No</string>
+    <string name="booking_no">Booking No</string>
+    <string name="container_no">Container No</string>
+    <string name="manufacturing_date">Manufacturing Date</string>
+    <string name="max_gross_weight">Max Gross Weight</string>
+    <string name="tare_weight">Tare Weight</string>
+    <string name="seal_no1">Seal No 1</string>
+    <string name="seal_no2">Seal No 2</string>
+    <string name="max_pay_load">Max Pay Load</string>
+    <string name="container_no_alert">Please enter Container No!</string>
+    <string name="drayage">Drayage</string>
+    <string name="dispatch_detail">Dispatch Detail</string>
+    <string name="container_detail">Container Detail</string>
+    <string name="menu_exit">Exit</string>
+    <string name="allow_access">ALLOW ACCESS</string>
+    <string name="live">Live</string>
+ <string name="trial">Trial</string>
+    <string name="light_duty">Light Duty</string>
+    <string name="production">Production</string>
+    <string name="free_trial">Free Trial</string>
+    <string name="setting">Setting</string>
+    <string name="internet_connection_test">Internet Connection Test</string>
+    <string name="internet_connection_setup">Internet Connection</string>
+    <string name="title_set_protocol">Set Protocol</string>
+    <string name="configuration">Configuration</string>
+    <string name="split_sleep_alert">Previous event is qualified for Split Sleep. Do you want to use Split Sleep?</string>
+
+</resources>
+

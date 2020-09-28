@@ -1,0 +1,615 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#f8f8f8">
+
+
+    <LinearLayout
+        android:id="@+id/layoutTransfer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        android:padding="@dimen/_12sdp"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            style="@style/TextValStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/transfer_record_to_codriver" />
+
+        <Switch
+            android:id="@+id/swTransfer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_marginEnd="@dimen/width_percent_1"
+            android:switchMinWidth="48dp"
+            android:text=""
+            android:textOff=""
+            android:textOn=""
+            android:thumb="@drawable/switch_thumb"
+            android:track="@drawable/switch_track" />
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etPassword"
+        style="@style/TextValStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/txtvalbg"
+        android:hint="Enter CoDriver Password"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@+id/layoutTransfer"
+        android:padding="@dimen/_10sdp"
+        android:visibility="gone"/>
+    <ScrollView
+        android:id="@+id/sv_grid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btn">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+            <TextView
+                android:id="@+id/tvEventTypeLabel"
+                style="@style/EventLabelStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="@string/duty_status"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textColor="@color/sixsix" />
+
+            <TextView
+                android:id="@+id/tvEventType"
+                style="@style/ButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:padding="@dimen/_10sdp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:visibility="gone"
+                android:background="@drawable/button_bg_other"
+                android:gravity="center"
+
+                app:layout_constraintTop_toBottomOf="@+id/tvEventTypeLabel"
+                android:text="@string/event_type" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clButOffDuty"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvEventType"
+                app:layout_constraintWidth_percent="0.33">
+
+                <Button
+                    android:id="@+id/butOffDuty"
+                    style="@style/CircleButtonTextStyle"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:background="@drawable/circle_button"
+                    android:text="@string/off_duty"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clButSleeper"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toRightOf="@+id/clButOffDuty"
+                app:layout_constraintTop_toBottomOf="@+id/tvEventType"
+
+                app:layout_constraintWidth_percent="0.33">
+
+                <Button
+                    android:id="@+id/butSleeper"
+                    style="@style/CircleButtonTextStyle"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:background="@drawable/circle_button"
+                    android:text="@string/sleeper"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clButDriving"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/tvEventType"
+                app:layout_constraintLeft_toRightOf="@+id/clButSleeper"
+                app:layout_constraintWidth_percent="0.33">
+
+                <Button
+                    android:id="@+id/butDriving"
+                    style="@style/CircleButtonTextStyle"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:background="@drawable/circle_button"
+                    android:text="@string/driving"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clButOnDuty"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clButOffDuty"
+                app:layout_constraintWidth_percent="0.33">
+
+                <Button
+                    android:id="@+id/butOnDuty"
+                    style="@style/CircleButtonTextStyle"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:background="@drawable/circle_button"
+                    android:text="@string/on_duty"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/lPersonalUse"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp"
+
+                app:layout_constraintLeft_toRightOf="@+id/clButOnDuty"
+                app:layout_constraintTop_toBottomOf="@+id/clButSleeper"
+                app:layout_constraintWidth_percent="0.33">
+
+                <Button
+                    android:id="@+id/butPersonalUse"
+                    style="@style/CircleButtonTextStyle"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:background="@drawable/circle_button"
+                    android:text="@string/personal_use"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/lYardMove"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp"
+                app:layout_constraintLeft_toRightOf="@+id/lPersonalUse"
+                app:layout_constraintTop_toBottomOf="@+id/clButDriving"
+                app:layout_constraintWidth_percent="0.33">
+
+                <Button
+                    android:id="@+id/butYardMove"
+                    style="@style/CircleButtonTextStyle"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:background="@drawable/circle_button"
+                    android:text="@string/yard_move"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:id="@+id/tvEventDateLabel"
+                style="@style/EventLabelStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                app:layout_constraintTop_toBottomOf="@+id/lYardMove"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="@string/event_date"
+                android:visibility="gone"
+                android:textColor="@color/sixsix"
+                android:layout_marginTop="@dimen/_10sdp"/>
+            <TextView
+                android:id="@+id/tvDateValue"
+                style="@style/TextValStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:background="@drawable/input_bg"
+                app:layout_constraintTop_toBottomOf="@+id/tvEventDateLabel"
+                android:padding="@dimen/_10sdp"
+                android:visibility="gone"
+                android:text="@string/date_format"
+             />
+
+
+            <TextView
+                android:id="@+id/tvEventTimeLabel"
+                style="@style/EventLabelStyleSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/tvDateValue"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="@string/event_time"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintWidth_percent="0.46"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textColor="@color/sixsix" />
+
+            <TextView
+                android:id="@+id/tvTimeValue"
+                style="@style/TextValStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:background="@drawable/input_bg"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_10sdp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintWidth_percent="0.49"
+                app:layout_constraintTop_toBottomOf="@+id/tvEventTimeLabel"
+                android:text="@string/time_format" />
+            <TextView
+                android:id="@+id/tvOriginLabel"
+                style="@style/EventLabelStyleSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_goneMarginLeft="@dimen/_10sdp"
+                app:layout_constraintTop_toBottomOf="@+id/tvDateValue"
+                app:layout_constraintLeft_toRightOf="@+id/tvEventTimeLabel"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="@string/origin"
+                app:layout_constraintWidth_percent="0.46"
+                android:textColor="@color/sixsix" />
+
+            <TextView
+                android:id="@+id/tvOriginValue"
+                style="@style/TextValStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/tvOriginLabel"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:background="@drawable/input_bg"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintWidth_percent="0.49"
+                android:padding="@dimen/_10sdp"
+                android:text="Edited" />
+            <TextView
+                android:id="@+id/tvOdometerLabel"
+                style="@style/EventLabelStyleSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/tvTimeValue"
+                android:layout_marginLeft="@dimen/layoutbg_padding_top"
+                android:text="@string/odometer"
+                app:layout_constraintWidth_percent="0.46"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textColor="@color/sixsix" />
+
+            <TextView
+                android:id="@+id/tvOdometerValue"
+                style="@style/TextValStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                android:layout_marginTop="2dp"
+                app:layout_constraintWidth_percent="0.49"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:background="@drawable/input_bg"
+                app:layout_constraintTop_toBottomOf="@+id/tvOdometerLabel"
+                android:text="544654987964646" />
+
+            <TextView
+                android:id="@+id/tvEngineHoursLabel"
+                style="@style/EventLabelStyleSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/tvTimeValue"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                app:layout_constraintWidth_percent="0.46"
+                app:layout_constraintRight_toRightOf="parent"
+                android:text="@string/engine_hours"
+                android:textColor="@color/sixsix" />
+
+            <TextView
+                android:id="@+id/tvEngineHoursValue"
+                style="@style/TextValStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:background="@drawable/input_bg"
+                android:padding="@dimen/_10sdp"
+                app:layout_constraintWidth_percent="0.49"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvEngineHoursLabel"
+                android:text="38642:15:36" />
+
+
+
+            <TextView
+                android:id="@+id/tvDescriptionLabel"
+                style="@style/EventLabelStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/tvEngineHoursValue"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/location_description"
+                android:textColor="@color/sixsix" />
+
+            <EditText
+                android:id="@+id/edLocationDescription"
+                style="@style/TextValStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                app:layout_constraintTop_toBottomOf="@+id/tvDescriptionLabel"
+                android:background="@drawable/input_bg"
+                android:gravity="top"
+                android:hint="@string/instruction_text"
+                android:inputType="textMultiLine"
+
+                android:padding="@dimen/_10sdp"
+                android:maxLength="60"/>
+
+            <TextView
+                android:id="@+id/tvCommentsLabel"
+                style="@style/EventLabelStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/edLocationDescription"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="@string/comments"
+                android:textColor="@color/sixsix" />
+
+            <EditText
+                android:id="@+id/edComments"
+                style="@style/TextValStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                app:layout_constraintTop_toBottomOf="@+id/tvCommentsLabel"
+                android:background="@drawable/input_bg"
+                android:gravity="top"
+                android:hint="@string/instruction_text"
+                android:inputType="text"
+
+                android:padding="@dimen/_10sdp"
+                android:maxLength="60"/>
+
+            <TextView
+                android:id="@+id/tvRuleLabel"
+                style="@style/EventLabelStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_span="2"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintTop_toBottomOf="@+id/layoutWaitingTime"
+                android:text="Rule" />
+
+            <Spinner
+                android:id="@+id/spinnerRule"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               app:layout_constraintTop_toBottomOf="@+id/tvRuleLabel"
+                android:layout_span="2"
+                android:padding="@dimen/_10sdp"
+                android:background="@drawable/input_bg"
+                android:entries="@array/rule_list"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/splitSleeprow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_span="2"
+                android:background="@drawable/input_bg"
+                android:gravity="center"
+                app:layout_constraintTop_toBottomOf="@+id/edComments"
+                android:orientation="horizontal"
+                android:padding="@dimen/_8sdp">
+
+                <ImageView
+                    android:id="@+id/ivSplit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_margin="@dimen/_2sdp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:src="@drawable/ic_splitsleep" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="@+id/ivSplit"
+                        android:text="Enable Split Sleep"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:textColor="@color/ColorPrimaryDark"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <Switch
+                        android:id="@+id/switchShowAlertSplitSleep"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        android:thumb="@drawable/switch_thumb"
+                        android:track="@drawable/switch_track" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutReduceTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_span="2"
+                android:background="@drawable/input_bg"
+                android:gravity="center"
+                app:layout_constraintTop_toBottomOf="@+id/splitSleeprow"
+                android:orientation="horizontal"
+                android:padding="@dimen/_8sdp">
+
+                <ImageView
+                    android:id="@+id/ivSplitSleeprow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_margin="@dimen/_2sdp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:src="@drawable/ic_splitsleep" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@+id/ivSplitSleeprow"
+                    android:text="Reduce Workshift Reset"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:textColor="@color/ColorPrimaryDark"
+                    android:textSize="@dimen/_12sdp" />
+
+                <Switch
+                    android:id="@+id/switchReduceTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:thumb="@drawable/switch_thumb"
+                    android:track="@drawable/switch_track" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutWaitingTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_span="2"
+                android:background="@drawable/input_bg"
+                android:gravity="center"
+                app:layout_constraintTop_toBottomOf="@+id/layoutReduceTime"
+                android:orientation="horizontal"
+                android:padding="@dimen/_8sdp">
+
+                <ImageView
+                    android:id="@+id/ivWaitingTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_margin="@dimen/_2sdp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:src="@drawable/ic_splitsleep" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@+id/ivWaitingTime"
+                    android:text="Waiting or standby time"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:textColor="@color/ColorPrimaryDark"
+                    android:textSize="@dimen/_12sdp" />
+
+                <Switch
+                    android:id="@+id/switchWaitingTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:thumb="@drawable/switch_thumb"
+                    android:track="@drawable/switch_track" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+       app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/butEventBack"
+            style="@style/ButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg"
+            android:text="@string/button_back" />
+
+        <Button
+            android:id="@+id/butEventSave"
+            style="@style/ButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg"
+            android:text="@string/button_save" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/fabSave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        style="@style/fab_btn_style_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fab_save"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

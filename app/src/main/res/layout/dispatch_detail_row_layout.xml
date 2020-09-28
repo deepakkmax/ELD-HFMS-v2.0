@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/recycler_sub_item_width"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/borderwithshadowsubitem"
+        android:orientation="horizontal"
+        android:paddingLeft="130dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvAppointmentNo"
+                style="@style/ListTitleStyle.Dispatch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AppointmentNo: 1333343"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="3dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/colorPrimary"></View>
+
+            <TextView
+                android:id="@+id/tvAppointmentFor"
+                style="@style/list_subtitle_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fadingEdge="vertical"
+                android:overScrollMode="ifContentScrolls"
+                android:text="North Coast Country pvt ltd" />
+
+            <TextView
+                android:id="@+id/tvContainerType"
+                style="@style/list_subtitle_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fadingEdge="vertical"
+                android:overScrollMode="ifContentScrolls"
+                android:text="Container Type: Dry" />
+
+            <TextView
+                android:id="@+id/tvContainerGrade"
+                style="@style/list_subtitle_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fadingEdge="vertical"
+                android:overScrollMode="ifContentScrolls"
+                android:text="Container Grade: Food" />
+
+            <TextView
+                android:id="@+id/tvContainerSize"
+                style="@style/list_subtitle_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fadingEdge="vertical"
+                android:overScrollMode="ifContentScrolls"
+                android:text="Size: 20X80" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgAction"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@drawable/pickup_big_icon" />
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Pickup"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvAppointmentTime"
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@color/colorPrimary"
+        android:drawableLeft="@drawable/ic_time_clock"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+
+        android:text="02:23 PM"
+        android:textColor="@color/white" />
+</FrameLayout>

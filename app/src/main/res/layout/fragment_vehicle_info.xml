@@ -1,0 +1,1477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="2dp">
+
+    <LinearLayout
+        style="@style/Block.Main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/BlockTitleLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/BlockTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_vehicle_info" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"></View>
+
+            <ImageView
+                android:id="@+id/imgCruise"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="right|center"
+                android:layout_margin="2dp"
+                android:src="@drawable/ic_vehicleinfo_cruise_off" />
+
+            <ImageView
+                android:id="@+id/imgabspowerunit"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="right|center"
+                android:layout_margin="2dp"
+                android:src="@drawable/ic_vehicleinfo_abs_powerunit_off" />
+
+            <ImageView
+                android:id="@+id/imgabstrailer"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="right|center"
+                android:layout_margin="2dp"
+                android:src="@drawable/ic_vehicleinfo_abs_trailer_off" />
+
+            <ImageView
+                android:id="@+id/imgDeratedEngine"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="right|center"
+                android:layout_margin="2dp"
+                android:src="@drawable/ic_vehicleinfo_engine_rated_off" />
+
+            <ImageView
+                android:id="@+id/imgseatbelt"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="right|center"
+                android:layout_margin="2dp"
+                android:src="@drawable/ic_vehicleinfo_seatbelt_off" />
+
+            <ImageView
+                android:id="@+id/imgdef"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="right|center"
+                android:layout_margin="2dp"
+                android:src="@drawable/ic_vehicleinfo_def_off" />
+
+            <ImageView
+                android:id="@+id/imgwaterinfuel"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="right|center"
+                android:layout_margin="2dp"
+                android:src="@drawable/ic_vehicleinfo_water_in_fuel_off" />
+
+
+            <View
+                android:layout_width="16dp"
+                android:layout_height="0dp"></View>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="112dp"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_scorecard_vehicle_info" />
+
+
+            <LinearLayout
+                style="@style/BlockValue.Main"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvUnitNo"
+                    style="@style/BlockMainTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Unit: 59684" />
+
+                <TextView
+                    style="@style/BlockMainTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/vehicle_info_cvip_due" android:visibility="gone" />
+
+                <TextView
+                    style="@style/BlockMainTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="18 Jan, 2017" android:visibility="gone"  />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/BlockCaption.Main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/BlockCaptionVal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vehicle_info_vin" />
+
+                <TextView
+                    android:id="@+id/tvVinNo"
+                    style="@style/BlockCaptionVal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:text="4964654" />
+
+                <TextView
+                    style="@style/BlockCaptionVal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" | " />
+
+                <TextView
+                    style="@style/BlockCaptionVal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vehicle_info_engine_no" />
+
+                <TextView
+                    android:id="@+id/tvEngineNo"
+                    style="@style/BlockCaptionVal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="N/A" />
+
+                <TextView
+                    style="@style/BlockCaptionVal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" | " />
+
+                <TextView
+                    style="@style/BlockCaptionVal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vehicle_info_engine_power" />
+
+                <TextView
+                    android:id="@+id/tvEnginePower"
+                    style="@style/BlockCaptionVal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="N/A" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/BlockCaption.Main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/BlockCaptionVal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vehicle_info_plate" />
+
+                <TextView
+                    android:id="@+id/tvPlateNo"
+                    style="@style/BlockCaptionVal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="N/A" />
+
+                <TextView
+                       style="@style/BlockCaptionVal"
+                       android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                       android:text=" | " />
+
+                   <TextView
+                       style="@style/BlockCaptionVal"
+                       android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                       android:text="@string/vehicle_info_cvip_due" />
+
+                <TextView
+                    android:id="@+id/tvDate"
+                    style="@style/BlockCaptionVal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="N/A" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <LinearLayout
+                    style="@style/Block.Green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/BlockTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/odometer" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="92dp"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_scorecard_odometer" />
+
+                        <TextView
+                            android:id="@+id/tvOdometerReading"
+                            style="@style/BlockValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:text="N/A" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/Block.Green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/BlockTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/engine_hours" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="92dp"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_scorecard_engine_hours" />
+
+                        <TextView
+                            android:id="@+id/tvEngineHours"
+                            style="@style/BlockValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:text="N/A" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    style="@style/Block.Green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/BlockTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fuel_consumed" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="92dp"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_scorecard_fuel_used" />
+
+                        <TextView
+                            android:id="@+id/tvFuelUsed"
+                            style="@style/BlockValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:text="N/A" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/Block.Green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        style="@style/BlockTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/engine_coolant_level" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="92dp"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_scorecard_coolant_level" />
+
+                        <TextView
+                            android:id="@+id/tvCoolantLevel"
+                            style="@style/BlockValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:text="N/A" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    style="@style/Block.Green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/BlockTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/rpm" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="92dp"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_scorecard_rpm" />
+
+                        <TextView
+                            android:id="@+id/tvRPM"
+                            style="@style/BlockValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:text="N/A" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/Block.Green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/BlockTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/boost_pressure" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="92dp"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/tvBoost"
+                            style="@style/BlockValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:text="N/A" />
+
+                        <ImageView
+                            android:id="@+id/imageView"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_scorecard_boost" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    style="@style/Block.Green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/BlockTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fuel_pressure" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="92dp"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_scorecard_engine_oil_pressure" />
+
+                        <TextView
+                            android:id="@+id/tvFuelPressure"
+                            style="@style/BlockValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:text="N/A" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/Block.Green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/BlockTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fuel_level" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="92dp"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_scorecard_fuel_level" />
+
+                        <TextView
+                            android:id="@+id/tvFuelLevel"
+                            style="@style/BlockValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:text="N/A" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    style="@style/Block.Green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/BlockTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/engine_oil_level" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="92dp"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_scorecard_engine_oil" />
+
+                        <TextView
+                            android:id="@+id/tvEngineOilLevel"
+                            style="@style/BlockValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:text="N/A" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/Block.Green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/BlockTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/engine_coolant_temp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="92dp"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_scorecard_coolant_temp" />
+
+                        <TextView
+                            android:id="@+id/tvCoolantTemperature"
+                            style="@style/BlockValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:text="N/A" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    style="@style/Block.Green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/BlockTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/air_inlet_temperature" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="92dp"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_scorecard_air_inlet" />
+
+                        <TextView
+                            android:id="@+id/tvAirInletTemperature"
+                            style="@style/BlockValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:text="N/A" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/Block.Green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/BlockTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/barometric_pressure" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="92dp"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_scorecard_barometeric" />
+
+                        <TextView
+                            android:id="@+id/tvBarometricPressure"
+                            style="@style/BlockValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:text="N/A" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    style="@style/Block.Green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/BlockTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/engine_oil_pressure" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="92dp"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_scorecard_engine_oil_pressure" />
+
+                        <TextView
+                            android:id="@+id/tvEngineOilPressure"
+                            style="@style/BlockValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:text="N/A" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/Block.Green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/BlockTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/engine_load" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="92dp"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_scorecard_engine_load" />
+
+                        <TextView
+                            android:id="@+id/tvEngineLoad"
+                            style="@style/BlockValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:text="N/A" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    style="@style/Block.Green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/BlockTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/washer_fluid_level" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="92dp"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_scorecard_washer_level" />
+
+                        <TextView
+                            android:id="@+id/tvLowWasherFluidLevel"
+                            style="@style/BlockValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:text="N/A" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/Block.Green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/BlockTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/speed" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="92dp"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_scorecard_hard_acceleration" />
+
+                        <TextView
+                            android:id="@+id/tvSpeed"
+                            style="@style/BlockValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:text="N/A" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    style="@style/Block.Green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/BlockTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/def_fuel_level" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="92dp"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_scorecard_epf_fluid_level" />
+
+                        <TextView
+                            android:id="@+id/tvDefFuelLevel"
+                            style="@style/BlockValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:text="N/A" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/Block.Green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/BlockTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/idle_fuel_used" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="92dp"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_scorecard_idle_fuel_used" />
+
+                        <TextView
+                            android:id="@+id/tvIdleFuelUsed"
+                            style="@style/BlockValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:text="N/A" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    style="@style/Block.Green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/BlockTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/engine_idle_hours" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="92dp"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_scorecard_idleing" />
+
+                        <TextView
+                            android:id="@+id/tvEngineIdleHours"
+                            style="@style/BlockValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:text="N/A" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/Block.Green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/BlockTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pto_hours" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="92dp"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_scorecard_speed_violation" />
+
+                        <TextView
+                            android:id="@+id/tvPTOHours"
+                            style="@style/BlockValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:text="N/A" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    style="@style/Block.Green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/BlockTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fuel_economy" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="92dp"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_scorecard_fuel_economy" />
+
+                        <TextView
+                            android:id="@+id/tvFuelEconomy"
+                            style="@style/BlockValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:text="N/A" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/Block.Green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/BlockTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/battery_voltage" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="92dp"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_scorecard_battery_voltage" />
+
+                        <TextView
+                            android:id="@+id/tvBatteryVoltage"
+                            style="@style/BlockValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:text="N/A" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    style="@style/Block.Green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/BlockTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pto_fuel_used" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="92dp"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_scorecard_pto_fuel_used" />
+
+                        <TextView
+                            android:id="@+id/tvPTOFuelUsed"
+                            style="@style/BlockValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:text="N/A" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/Block.Green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/BlockTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cruise_set_speed" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="92dp"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_scorecard_cruise_speed" />
+
+                        <TextView
+                            android:id="@+id/tvCruiseSetSpeed"
+                            style="@style/BlockValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:text="N/A" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    style="@style/Block.Green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/BlockTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/brake_application_count" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="92dp"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_scorecard_brake_count" />
+
+                        <TextView
+                            android:id="@+id/tvBrakeApplicationCount"
+                            style="@style/BlockValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:text="N/A" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/Block.Green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/BlockTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/max_road_speed" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="92dp"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_scorecard_road_speed_limit" />
+
+                        <TextView
+                            android:id="@+id/tvMaxRoadSpeed"
+                            style="@style/BlockValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:text="N/A" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    style="@style/Block.Green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/BlockTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/total_cruise_time" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="92dp"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_scorecard_cruise_duration" />
+
+                        <TextView
+                            android:id="@+id/tvCruiseTime"
+                            style="@style/BlockValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:text="N/A" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/Block.Green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/BlockTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/air_suspension_load" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="92dp"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_scorecard_air_suspension" />
+
+                        <TextView
+                            android:id="@+id/tvAirSuspensionLoad"
+                            style="@style/BlockValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:text="N/A" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    style="@style/Block.Green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/BlockTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/transmission_oil_level" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="92dp"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_scorecard_transmission_oil" />
+
+                        <TextView
+                            android:id="@+id/tvTransmissionOilLevel"
+                            style="@style/BlockValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:text="N/A" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/Block.Green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/BlockTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/transmission_gear_no" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="92dp"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_scorecard_gear_number" />
+
+                        <TextView
+                            android:id="@+id/tvTransmissionGearNo"
+                            style="@style/BlockValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:text="N/A" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

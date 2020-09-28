@@ -1,0 +1,1081 @@
+<resources>
+    <string name="app_name">ELD</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">username</string>
+    <string name="prompt_password">password</string>
+    <string name="action_sign_in">Sign in O Registro</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="action_back">Back</string>
+    <string name="action_installer_id">hecho</string>
+    <string name="action_dock">Dock</string>
+    <string name="error_invalid_email">Esta dirección de correo electrónico no es válida</string>
+    <string name="error_invalid_password">esta contraseña es demasiado corta</string>
+    <string name="error_incorrect_password">la contraseña es incorrecta,</string>
+    <string name="error_field_required">este campo se requiere</string>
+    <string name="permission_rationale">"Contactos permisos son necesarios para proporcionar correo electrónico
+finalizaciones."
+   </string>
+    <string name="title_activity_drawer">Cajón</string>
+
+    <string name="navigation_drawer_open">Abrir Cajón Cajón</string>
+    <string name="navigation_drawer_close">Cajón de navegación Navegación cerrar</string>
+
+    <string name="action_settings">Configuración de la</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hola fragmento en blanco</string>
+
+    <string name="current_rule">regla actual de fragmento en blanco Hello</string>
+    <string name="time_zone">Time Zone</string>
+    <string name="co_driver">Co-Driver</string>
+    <string name="vehicle_miles">vehículo km</string>
+    <string name="total_distance">Distancia Total</string>
+    <string name="total_miles_hours">veh. Mi/h</string>
+
+
+    <!-- strings for Hours & Rules Status -->
+    <string name="driving_hours">Horas de conducción</string>
+    <string name="work_shift_hour">Hora de turno de trabajo</string>
+    <string name="driving_hours_phone">conducción en horas del turno de trabajo de</string>
+    <string name="work_shift_hour_phone">turno de trabajo</string>
+
+    <!-- strings for Duty Status Change -->
+    <string name="button_back">Volver</string>
+    <string name="button_save">Guardar</string>
+    <string name="duty_status_change_activity_title">Lugares de cambio de estado</string>
+    <string name="duty_status_label">deber seleccionar Estado</string>
+    <string name="annotation">Anotación</string>
+    <string name="annotation_string_1">fronterizo de anotación</string>
+    <string name="annotation_string_2">comprobación de carga</string>
+    <string name="annotation_string_3">inspección DOT</string>
+    <string name="annotation_string_4">DVIR</string>
+    <string name="annotation_string_5">Abastecimiento</string>
+    <string name="annotation_string_6">Cargando</string>
+    <string name="annotation_string_7">Descarga Carga combustible</string>
+    <string name="instruction_text">Escriba el texto aquí...</string>
+    <string name="button_skip">Saltar</string>
+    <string name="location_man">Ubicación</string>
+
+    <string name="off_duty">desactivada</string>
+    <string name="sleeper">SB</string>
+    <string name="driving">D</string>
+    <string name="on_duty">EN</string>
+    <string name="personal_use">PC</string>
+    <string name="yard_move">YM</string>
+    <string name="ILC">ILC</string>
+    <string name="ILR">ILR</string>
+
+    <string name="off_duty_long">OFF DUTY</string>
+    <string name="sleeper_long">SLEEPER-BERTH</string>
+    <string name="driving_long">DRIVING</string>
+    <string name="on_duty_long">ON DUTY</string>
+    <string name="personal_use_long">PERSONAL USE</string>
+    <string name="yard_move_long">YARD MOVE</string>
+
+    <!-- strings for Rule Change -->
+    <string name="rule_change_activity_title">Cambio de regla</string>
+    <string name="rule_label">regla seleccionar</string>
+    <!-- strings for Rules -->
+    <string name="canada_rule_1">Canadá 70horas/7días</string>
+    <string name="canada_rule_2">Canadá 120h/14días</string>
+    <string name="us_rule_1">US 70horas/8días</string>
+    <string name="us_rule_2">US 60horas/7días</string>
+    <string name="phone_canada_rule_1">Canadá\n70hr/7días</string>
+    <string name="phone_canada_rule_2">Canadá\n120HR/14días</string>
+    <string name="phone_us_rule_1">US\n70hr/8días</string>
+    <string name="phone_us_rule_2">US\n70hr/8días USV Exención</string>
+    <!--<string name="us_rule_2">US 60hr/7days</string> -->
+
+    <string name="login">IN</string>
+    <string name="logout">OUT</string>
+    <string name="certified_record">CR</string>
+    <string name="engine_up">EU</string>
+    <string name="engine_down">ED</string>
+    <string name="malfunction">MF</string>
+    <string name="data_diagnostic">DD</string>
+
+    <!-- strings for New Event -->
+    <string name="new_event_activity_title">Nuevo Evento</string>
+    <string name="event_type">Tipo de evento</string>
+    <string name="event_time">Hora</string>
+    <string name="odometer">odómetro tiempo</string>
+    <string name="engine_hours">Horas de motor</string>
+    <string name="shipping_document_number">número de documento de envío</string>
+    <string name="latitude">Latitude</string>
+    <string name="longtitude">Longtitude</string>
+    <string name="origin">Origen</string>
+    <string name="location_description">Ubicación Descripción</string>
+    <string name="comments">Comentarios</string>
+
+    <string name="odo">odo</string>
+    <string name="eng_hrs">Horas del motor</string>
+    <string name="phone_eventtype">tipo</string>
+    <string name="phone_shipping_number">Envío</string>
+    <string name="hrs">Horas </string>
+    <string name="record_automatically">Automático</string>
+    <string name="record_manually">Manual</string>
+
+    <string name="drawer_open">abierto</string>
+    <string name="drawer_close">cerrado</string>
+
+    <string name="duty_status_changed_to_off_duty">Driver\'s deber estado cambiado a FUERA DE SERVICIO</string>
+    <string name="duty_status_changed_to_sleeper_berth">Driver\'s deber estado cambiado a camarote durmiente</string>
+    <string name="duty_status_changed_to_driving">Driver\'s deber estado cambiado a conducir</string>
+    <string name="duty_status_changed_to_on_duty">Driver\'s deber estado cambiado a ON DUTY</string>
+    <string name="duty_status_changed_to_personal_use">Conductor indica "Uso personal autorizado del CMV"</string>
+    <string name="duty_status_changed_to_yard_move">conductor indica "Patio se mueve"</string>
+
+    <string name="texttospeech_duty_status_changed_to_off_duty">que han cambiado el estado de derecho en Off Deber</string>
+    <string name="texttospeech_duty_status_changed_to_sleeper_berth">que han cambiado el estado de derecho a camarote durmiente</string>
+    <string name="texttospeech_duty_status_changed_to_driving">ha cambiado el estado de derecho a conducir</string>
+    <string name="texttospeech_duty_status_changed_to_on_duty">se ha cambiado el estado de derecho en lugares</string>
+    <string name="texttospeech_duty_status_changed_to_personal_use">que han cambiado el estado de derecho para uso personal</string>
+    <string name="texttospeech_duty_status_changed_to_yard_move">ha cambiado el estado de derecho al patio pasa</string>
+
+    <string name="hours">horas</string>
+    <string name="record_status_active">activo</string>
+    <string name="record_status_inactive">Inactivo-modificado</string>
+    <string name="record_status_inactive_change_request">- inactivo Inactive-Changed Cambio solicitado</string>
+    <string name="record_status_inactive_change_rejected">inactivo - Cambio rechazada</string>
+    <string name="event">Evento</string>
+    <string name="record_origin_automatically">automáticamente eventos registrados por el controlador </string>
+    <string name="record_origin_edited">editado o introducido por el conductor </string>
+    <string name="record_origin_edited_by_other">Editar solicitada por un usuario autenticado (no conductor) </string>
+    <string name="record_origin_assumed">asume a partir del </string>
+
+    <string name="record_date">registro de perfil de conductor no identificado Fecha</string>
+    <string name="usdot">USDOT</string>
+    <string name="carrier">Transportista</string>
+    <string name="current_location">Ubicación actual</string>
+    <string name="driver_name">nombre de driver</string>
+    <string name="driver_id">controlador identificador</string>
+    <string name="start_end_odometer">Start End Cuentakilómetros</string>
+    <string name="driver_license_number">Número de Licencia de Conducir</string>
+    <string name="driver_license_number_and_state">Licencia de Conducir / Estado</string>
+    <string name="co_driver_name">Co-Driver Nombre</string>
+    <string name="co_driver_id">ID Co-Driver</string>
+    <string name="miles_today">millas hoy el</string>
+    <string name="driver_license_state">estado de la licencia de conductor de</string>
+    <string name="eld_manufacturer">ELD Fabricante</string>
+    <string name="truck_tractor_id">camiones fabricante ELD ID del tractor</string>
+    <string name="truck_tractor_vin">camión tractor VIN</string>
+    <string name="eld_id">ID ELD</string>
+    <string name="shipping_id">Envios ID</string>
+    <string name="unidentified_driver_records">del controlador no identificado registros</string>
+    <string name="exempt_driver_status">exentos de</string>
+    <string name="trailer_id">remolque del estado del controlador de</string>
+    <string name="data_diagnostic_indicators">datos de identificación de los indicadores de diagnóstico</string>
+    <string name="eld_malfunction_indicators">ELD Indicadores de funcionamiento incorrecto</string>
+    <string name="start_end_engine_hours">del motor Start End horas</string>
+    <string name="commodity">commodity</string>
+    <string name="shipping_number">/producto Número de envío</string>
+    <string name="trailer_number">número de remolque</string>
+
+    <string name="rule">regla de uso</string>
+
+    <string name="menu_daily_log">diario,</string>
+    <string name="menu_inspect_dailylog">Inspeccionar Registrodiario</string>
+    <string name="menu_create_event">Crear evento</string>
+    <string name="menu_uncertified_log_book">certificar el libro de registro de</string>
+    <string name="menu_unidentified_data">datos no identificados</string>
+    <string name="menu_edit_request">Editar solicitud</string>
+    <string name="menu_violation_history">violación Historia</string>
+    <string name="menu_driver_profile">Perfil del conductor del</string>
+    <string name="menu_Message">mensaje de</string>
+    <string name="menu_logout">Cerrar sesión</string>
+    <string name="menu_unidentified_event">Evento no identificado</string>
+    <string name="menu_send_report">correo electrónico Enviar eventos desconocidos Logout</string>
+    <string name="menu_dvir">DVIR</string>
+    <string name="menu_tpms">TPMS</string>
+
+    <string name="title_eld">ELD</string>
+    <string name="title_daily_log">Diario</string>
+    <string name="title_inspect_elog">inspeccionar eLog</string>
+    <string name="title_create_event">Crear evento</string>
+    <string name="title_certify_log_book">certificar Logbook</string>
+    <string name="title_edit_request">Editar solicitud</string>
+    <string name="title_violation_history">violación Historia</string>
+    <string name="title_driver_profile">Perfil del conductor</string>
+    <string name="title_Message">Mensaje Perfil de controlador de</string>
+    <string name="title_unidentified_event">eventos no identificado</string>
+    <string name="title_dvir">DVIR</string>
+    <string name="title_new_inspection">Nueva</string>
+    <string name="title_inspection">vista de inspección Inspección</string>
+    <string name="title_shipping_trailers">Envios/remolques</string>
+    <string name="title_tpms">TPMS</string>
+    <string name="title_edit_event">Editar Evento</string>
+    <string name="title_inspect_dailylog">Fecha de registro:</string>
+    <string name="title_dtc">DTC</string>
+    <string name="title_score_card">Conductor Score Card</string>
+    <string name="title_trailer_management">Gestión de remolque </string>
+    <string name="title_vehicle_info">del vehículo de </string>
+    <string name="title_new_Fuel">combustible Info </string>
+    <string name="title_incident_detail">Detalle del incidente </string>
+    <string name="title_maintenance_detail">detalle del mantenimiento </string>
+
+    <string name="event_origin_automatically">Automáticamente</string>
+    <string name="event_origin_edited">editadas automáticamente</string>
+
+    <string name="action_confirm_web_event">confirmar</string>
+    <string name="action_reject_web_event">rechazar</string>
+    <string name="action_back_edit_event">volver</string>
+    <string name="action_edit_event">Editar</string>
+    <string name="action_back_one_day">atrás</string>
+    <string name="action_forward_one_day">adelante Editar</string>
+    <string name="action_set_active">Set Active</string>
+    <string name="action_post_all">Enviar</string>
+    <string name="action_sync_all">Sync Post</string>
+    <string name="action_change_rule">Cambiar regla</string>
+    <string name="action_certify_log">certifica registro</string>
+    <string name="action_usb_drive">Unidad USB</string>
+    <string name="action_bluetooth">Bluetooth</string>
+    <string name="action_email">Email</string>
+    <string name="action_webservice">Servicio web</string>
+    <string name="input_information_activity_title">información de entrada del servicio Web de correo electrónico</string>
+
+    <string name="button_change_status">Cambiar\nEstado</string>
+    <string name="button_keep_driving">Sigue\nconduciendo</string>
+
+    <string name="paired_devices">dispositivos emparejados</string>
+    <string name="available_devices">los dispositivos disponibles</string>
+    <string name="bluetooth_connection_infos">por favor espere mientras la conejera ELD se conecta a tu vehículo!</string>
+    <string name="setup_error_msg">Lo sentimos, la conexión con el vehículo no pudo ser establecida. Póngase en contacto con el sistema de la Conejera!</string>
+    <string name="bluetooth_connection_ok">Se ha establecido conexión con éxito! Por favor, haga clic en el botón Aceptar para continuar.</string>
+
+    <string name="can_bus_error">Lo sentimos, la conexión ha fallado. Póngase en contacto con el sistema de la Conejera!</string>
+
+    <string name="vin_number">Número VIN</string>
+    <string name="speed">Velocidad</string>
+    <string name="rpm">RPM</string>
+    <string name="select_protocol">Conejera sistema ha detectado en su vehículo siguiente protocolo</string>
+    <string name="j1708_protocol">J1708</string>
+    <string name="j1939_protocol">J1939</string>
+    <string name="both_protocols">J1708 y J1939</string>
+
+    <string name="internet_connection">Comprobación de la conexión a Internet...</string>
+    <string name="no_internet">Hutch ELD no está conectado a Internet. Por favor, inténtelo de nuevo más tarde!</string>
+    <string name="web_service">Comprobación de servicio Web...</string>
+    <string name="web_service_ok">Servicio Web es buena. Haga clic en Siguiente para continuar.</string>
+    <string name="no_web_service">Servicio Web no está disponible. Por favor, inténtelo de nuevo más tarde!</string>
+    <string name="latitude_longitude">Latitud/Longitud</string>
+
+    <string name="can_data_ok">, haga clic en Siguiente para continuar.</string>
+
+    <string name="default_cycle">Ciclo predeterminado/regla predeterminada</string>
+    <string name="unit_no">Unidad </string>
+    <string name="start_time">Hora de inicio</string>
+
+    <string name="datetime">Fecha/Hora</string>
+    <string name="location">Lugar</string>
+    <string name="dvir_type">tipo</string>
+    <string name="truck_number">carretilla#</string>
+    <string name="trailer">remolque(s)</string>
+    <string name="defect">Defecto</string>
+    <string name="defect_repaired">defecto reparado</string>
+    <string name="safe_to_drive">seguro conducir</string>
+    <string name="yes">Sí</string>
+    <string name="no">No</string>
+    <string name="button_certify">certificar</string>
+    <string name="button_add_defect">defecto Agregar</string>
+    <string name="button_add_picture">Agregar imagen</string>
+    <string name="inspection_activity_title">nueva inspección</string>
+    <string name="defect_item">defecto temas</string>
+    <string name="button_close">cercanos</string>
+
+    <string-array name="dvir_types">
+        <item>Pre</item>
+        <item>Post</item>
+        <item>entre</item>
+    </string-array>
+
+    <string-array name="sync_time">
+        <item>5 minutos</item>
+        <item>10 minutos</item>
+        <item>20 minutos</item>
+        <item>30 minutos</item>
+        <item>60 minutos de la</item>
+    </string-array>
+
+    <string-array name="graph_line">
+        <item>hora de finalización del</item>
+        <item>tiempo actual</item>
+    </string-array>
+
+    <string-array name="vision_mode">
+        <item>Día</item>
+        <item>Noche</item>
+        <item>Auto</item>
+    </string-array>
+
+    <string-array name="font_size">
+        <item>Pequeña</item>
+        <item>Normal</item>
+        <item>Grande</item>
+    </string-array>
+
+    <string name="defect1">1) del sistema de frenos de aire</string>
+    <string name="defect2">2)</string>
+    <string name="defect3">3) de la cabina de sujecion de carga</string>
+    <string name="defect4">4) Dispositivos de acoplamiento</string>
+    <string name="defect5">5) Mercancías Peligrosas (si los hubiera)</string>
+    <string name="defect6">6) Conductor controla</string>
+    <string name="defect7">7) Asiento del conductor</string>
+    <string name="defect8">8) Sistema de freno eléctrico</string>
+    <string name="defect9">9) Equipo de emergencia y dispositivos de seguridad</string>
+    <string name="defect10">10) Sistema de escape</string>
+    <string name="defect11">11) Marco &amp; Cargo cuerpo</string>
+    <string name="defect12">12) Sistema de combustible</string>
+    <string name="defect13">13) defectos generales</string>
+    <string name="defect14">14) el vidrio y espejos</string>
+    <string name="defect15">15) El calefactor/descongelador</string>
+    <string name="defect16">16) Horn</string>
+    <string name="defect17">17) del sistema de freno Hybraulic</string>
+    <string name="defect18">18) lámparas y reflectores</string>
+    <string name="defect19">19) dirección</string>
+    <string name="defect20">20) Sistema de suspensión</string>
+    <string name="defect21">21)</string>
+    <string name="defect22">22) Los neumáticos Ruedas/hubs/Fijaciones</string>
+    <string name="defect23">23) parabrisas limpiaparabrisas y lavaparabrisas</string>
+    <string name="defect24">24) Otros</string>
+
+    <string-array name="defect_items">
+        <item>@string/defect1</item>
+        <item>@string/defect2</item>
+        <item>@string/defect3</item>
+        <item>@string/defect4</item>
+        <item>@string/defect5</item>
+        <item>@string/defect6</item>
+        <item>@string/defect7</item>
+        <item>@string/defect8</item>
+        <item>@string/defect9</item>
+        <item>@string/defect10</item>
+        <item>@string/defect11</item>
+        <item>@string/defect12</item>
+        <item>@string/defect13</item>
+        <item>@string/defect14</item>
+        <item>@string/defect15</item>
+        <item>@string/defect16</item>
+        <item>@string/defect17</item>
+        <item>@string/defect18</item>
+        <item>@string/defect19</item>
+        <item>@string/defect20</item>
+        <item>@string/defect21</item>
+        <item>@string/defect22</item>
+        <item>@string/defect23</item>
+        <item>@string/defect24</item>
+    </string-array>
+
+    <string name="defect_msg">he encontrado ningún defecto en mi vehículo.</string>
+    <string name="repaired_msg">Defecto(s) encontrado(s) en DVIR han sido corregidos.</string>
+    <string name="safetodrive_msg">Defecto(s) encontrado(s) en DVIR no necesita ser corregida para el funcionamiento seguro del vehículo.</string>
+    <string name="no_safetodrive_msg">Por favor, no conduzca el vehículo.</string>
+    <string name="button_view">Ver</string>
+
+
+    <string name="settings_time_zone">zona horaria</string>
+    <string name="settings_default_rule">Regla por defecto</string>
+    <string name="settings_graph_line">gráfico predeterminado de la regla de la línea de</string>
+    <string name="settings_color_line">Color de linea</string>
+    <string name="settings_us_color">EE.UU. y</string>
+    <string name="settings_canada_color">Canadá de color</string>
+    <string name="settings_violation_on_grid">muestran la violación en</string>
+    <string name="settings_time_format">tiempo de</string>
+    <string name="settings_unit_format">Unidad</string>
+    <string name="settings_reading_violation">lectura de la unidad de formato de cuadrícula la violación de</string>
+    <string name="settings_automatic_change_rule">reglas automáticas de</string>
+    <string name="settings_reading_message">Lectura de mensaje</string>
+    <string name="settings_reading_status_change">lectura lee el mensaje de cambio de estado deber cambiar </string>
+    <string name="settings_start_time">hora de inicio</string>
+    <string name="settings_orientation">Orientación</string>
+    <string name="settings_vision_mode">modo de visión orientación</string>
+    <string name="settings_font_size">font size</string>
+    <string name="settings_brightness">brillo</string>
+    <string name="settings_check_update">verificar actualizar</string>
+    <string name="settings_system_infor">información del sistema</string>
+    <string name="settings_legal">Ver documento legal</string>
+    <string name="settings_sync_time">sincronización</string>
+    <string name="settings_copy_trailers">copia remolque(s)</string>
+    <string name="settings_volume_level">El nivel de volumen</string>
+    <string name="settings_list_violation">muestran violaciones en lugares de estado</string>
+    <string name="settings_android_version">versión Android</string>
+    <string name="settings_imei">IMEI</string>
+    <string name="settings_app_version">ELD versión</string>
+    <string name="settings_battery_level">Nivel de bateria</string>
+    <string name="settings_bluetooth_name">nombre Bluetooth de nivel de batería</string>
+    <string name="settings_default_battery">80%</string>
+
+
+    <!-- GPS Activity -->
+    <string name="gps_status_tab">Estado</string>
+    <string name="gps_map_tab">Mapa</string>
+    <string name="gps_sky_tab">Sky</string>
+
+    <string name="gps_start">Iniciar</string>
+    <string name="gps_pause">Pausa</string>
+    <string name="menu_navigation">Navegación</string>
+    <string name="menu_settings">Ajustes de navegación</string>
+    <string name="menu_extra">más</string>
+    <string name="delete_aiding_data">clara la complicidad de datos</string>
+    <string name="delete_aiding_data_success">ayuda eliminado correctamente los datos.</string>
+    <string name="delete_aiding_data_failure">La plataforma no admite la eliminación de la complicidad de los datos.
+   </string>
+    <string name="send_location">Enviar ubicación</string>
+    <string name="set_fix_frequency">Establecer frecuencia Fix</string>
+    <string name="force_time_injection">inyectar tiempo</string>
+    <string name="force_time_injection_success">inyectado correctamente los datos de tiempo.</string>
+    <string name="force_time_injection_failure">Plataforma no admite inyectar datos de tiempo.
+   </string>
+    <string name="force_xtra_injection">Inyectar datos XTRA</string>
+    <string name="force_xtra_injection_success">XTRA inyectado correctamente los datos.</string>
+    <string name="force_xtra_injection_failure">Plataforma no admite inyectar XTRA datos.
+   </string>
+
+    <string name="zoom_in">Zoom In</string>
+    <string name="zoom_out">Zoom Out</string>
+    <string name="mode_map">mapa</string>
+    <string name="mode_satellite">satélite</string>
+
+    <string name="gps_latitude_label">Lat:</string>
+    <string name="gps_longitude_label">Largo:</string>
+    <string name="gps_fix_time_label">Tiempo:</string>
+    <string name="gps_ttff_label">TTFF:</string>
+    <string name="gps_altitude_label">Alt:</string>
+    <string name="gps_accuracy_label">Acc:</string>
+    <string name="gps_speed_label">Velocidad:</string>
+    <string name="gps_bearing_label">Cojinete:</string>
+    <string name="gps_fix_label">No fijar la</string>
+    <string name="gps_utc_time_label">hora del sistema:</string>
+
+    <string name="gps_prn_column_label">PRN</string>
+    <string name="gps_flag_image_label">GNSS</string>
+    <string name="gps_snr_column_label">SNR</string>
+    <string name="gps_elevation_column_label">Elev</string>
+    <string name="gps_azimuth_column_label">Azim</string>
+    <string name="gps_flags_column_label">banderas</string>
+    <string name="gps_not_supported">GPS no compatible. Salir de app…</string>
+    <string name="install">instalar</string>
+    <string name="please_install_google_maps">Instale Google Maps</string>
+    <string name="enable_gps_message">GPS está desactivado. Activar ahora?</string>
+    <string name="enable_gps_positive_button">Activar el GPS</string>
+    <string name="enable_gps_negative_button">sin</string>
+    <string name="gps_set_location_listener">GPS empezó con intervalo = %1$ss, min. dist. = %2$sm
+   </string>
+
+    <!-- User tutorial -->
+    <string name="showcase_gps_on_off_title">Controles</string>
+    <string name="showcase_gps_on_off_message">• El interruptor On/Off inicia/detiene el GPS\n•
+El \"Compartir\" envía una ubicación (se muestra después de obtener un posicionamiento de GPS)\n\n
+       <i>(toca despedir a)</i>
+   </string>
+
+    <!-- Preferences -->
+    <string name="pref_title">Ajustes</string>
+    <string name="pref_map_category_title">Mapa</string>
+    <string name="pref_map_type_title">tipo</string>
+    <string name="pref_map_type_summary">define el tipo de mosaicos de mapa se muestra</string>
+    <string name="pref_map_type_dialog_title">Seleccione Tipo de mapa</string>
+
+    <string name="pref_rotate_map_with_compass_title">Mapa rotar con brújula</string>
+    <string name="pref_rotate_map_with_compass_summary">cambiar la orientación del mapa según su
+dirección
+   </string>
+
+    <string name="pref_tilt_map_with_sensors_title">Mapa de inclinación con el dispositivo</string>
+    <string name="pref_tilt_map_with_sensors_summary">cambia a una vista de mapa en primera persona cuando
+mantenga el dispositivo
+   </string>
+
+    <string name="pref_gps_category_title">GPS</string>
+    <string name="pref_auto_start_gps_title">GPS</string>
+    <string name="pref_auto_start_gps_summary">Iniciar GPS cuando se inicia la aplicación</string>
+
+    <string name="pref_gps_min_time_title">intervalo de</string>
+    <string name="pref_gps_min_time_summary">tiempo entre revisiones de GPS, en segundos</string>
+    <string name="pref_gps_min_time_dialog_title">introducir un intervalo, en segundos del</string>
+    <string name="pref_gps_min_time_invalid_entry">intervalo debe ser un número</string>
+
+    <string name="pref_gps_min_distance_title">mínimo. Distancia</string>
+    <string name="pref_gps_min_distance_summary">Distancia mínima entre puntos de posición GPS, en metros
+   </string>
+    <string name="pref_gps_min_distance_dialog_title">Introduzca una distancia mínima en metros</string>
+    <string name="pref_gps_min_distance_invalid_entry">Mín. La distancia debe ser un número</string>
+
+    <string name="pref_analyze_gps_accuracy_title">analizar la precisión de GPS</string>
+    <string name="pref_analyze_gps_accuracy_summary">GPS de Uso comparativa para medir el error del GPS</string>
+
+    <string name="pref_display_category_title">Monitor</string>
+    <string name="pref_keep_screen_on_title">en la pantalla Pantalla Mantenga</string>
+    <string name="pref_keep_screen_on_summary">evita que la pantalla se apague el</string>
+    <string name="pref_true_north_title">punto al norte verdadero Brújula</string>
+    <string name="pref_true_north_summary">brújula se enfrentan el norte verdadero en lugar del norte magnético
+   </string>
+
+    <string name="pref_about_category_title">sobre</string>
+    <string name="pref_show_tutorial_title">Mostrar tutorial</string>
+    <string name="pref_show_tutorial_summary">muestra instrucciones para utilizar la aplicación</string>
+    <!-- End GPS activity -->
+
+
+    <!-- Wireless connectivity check -->
+    <string name="cellular_connection">comprobando conexión celular</string>
+    <string name="wifi_connection">Comprobando conexión Wi-Fi</string>
+    <string name="hutch_connection">estableciendo la conexión con los sistemas de la Conejera</string>
+    <string name="download_configuration">descargar configuraciones</string>
+
+    <string name="bluetooth_enable_checking">Bluetooth Control on/off</string>
+    <string name="bluetooth_searching">buscando</string>
+    <string name="bluetooth_established_connection">establecer puentes de conexión Bluetooth con BTB</string>
+    <string name="bluetooth_checking_heartbeat">Comprobación BTB Heartbeat</string>
+    <string name="bluetooth_information">inicie el vehículo!</string>
+
+
+    <string name="finding_gps_satellite">Búsqueda de satélite GPS</string>
+    <string name="checking_utc_time">comprobando la hora UTC</string>
+    <string name="checking_latitude_longitude">Controlar Latitud y Longtitude</string>
+    <string name="checking_current_location">Comprobación de la ubicación actual de</string>
+    <string name="your_location">su ubicación actual</string>
+    <string name="terms_of_service_01">Conejera Systems posee o licencias determinadas tecnologías que ha desarrollado y hace comercialmente disponible para los usuarios a través de servicios móviles y/o aplicaciones web para ayudar en las operaciones eficientes de flotas de camiones y ómnibus en América del Norte. En relación con el uso de las aplicaciones y la prestación de apoyo, o la compra o arrendamiento de hardware (como se define más abajo), usted y/o su organización o corporación (el "Cliente") acepta los términos de servicio y condiciones contenidos en el presente documento (colectivamente, los "Términos de Servicio").</string>
+
+
+    <string name="googleplay">Google jugar</string>
+    <string name="install_opencv">instalar OpenCV Manager</string>
+    <string name="ask_install_opencv">para poder trabajar, Abrir nota escáner necesita los servicios de gestor de OpenCV, que aún no está instalado.</string>
+
+    <string name="activateunknown">Ir a Ajustes de</string>
+    <string name="messageactivateunknown">Google Play isn\'t e instalar desde fuentes desconocidas está desactivada, vaya a Configuración y activarlo.</string>
+
+    <string name="scanningToast">Buscar documento\ntoque nuevamente para analizar toda la imagen</string>
+
+
+    <!-- Activity Bluetooth Conn Check-->
+    <string name="checking_btb...">comprobación BTB...</string>
+    <string name="checking_bluetooth">Comprobación</string>
+    <string name="searching_for_btb">buscando Bluetooth BTB</string>
+    <string name="if_safe_please_start_your_vehicle_now">Si está seguro, por favor, arrancar su vehículo ahora la</string>
+    <string name="search_devices">búsqueda de dispositivos que se</string>
+    <string name="connecting_with_btb">conectan con BTB</string>
+    <string name="checking_btb_heartbeat">Comprobación BTB Heartbeat</string>
+
+
+    <!-- Activity Certify Log-->
+    <string name="i_hearby_certify">certifico que mis datos y mi historial de servicio para este período de 24 horas son verdaderas y correctas.</string>
+    <string name="not_ready">No preparado para</string>
+    <string name="reset_sign">restablecer firmar</string>
+    <string name="certify">certificar</string>
+
+    <!-- Activity Certify Log-->
+    <string name="select_defects">Seleccione Defecto(s)</string>
+    <string name="add">Agregue</string>
+
+    <!-- Activity First Time User-->
+    <string name="please_scroll_and_read_all_terms">por favor desplácese y leer los Términos y condiciones antes de accpeting!</string>
+    <string name="terms_and_conditions">Términos y condiciones</string>
+    <string name="accept">Aceptar términos y condiciones del</string>
+    <string name="first_time_user">usuario por primera vez</string>
+    <string name="set_home_timezone">Set Home Zona horaria </string>
+    <string name="set_default_service_rule">predeterminada Regla del servicio de </string>
+
+    <!-- Activity GPS Check-->
+    <string name="global_position_satellite_check...">satélites de posicionamiento global comprobar...</string>
+    <string name="gps_satellite">GPS Satélite</string>
+    <string name="utc_time">Hora UTC del satélite GPS </string>
+    <string name="prn">PRN</string>
+    <string name="gnss">GNSS</string>
+    <string name="snr">SNR</string>
+    <string name="elev">Elev</string>
+    <string name="azim">Azim</string>
+    <string name="flags">Flags</string>
+
+    <!-- Activity GPS Main-->
+    <string name="next">próxima</string>
+    <string name="transfer_record_to_codriver">transferencia grabar CoDriver</string>
+    <string name="time_format">HH:MM:SS</string>
+
+    <!-- Activity GPS Main-->
+    <string name="pre">Pre</string>
+    <string name="inter">entre</string>
+    <string name="post">Post</string>
+
+    <!-- Activity Output File Send-->
+    <string name="send_eld_data">Enviar ELD Data</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="send">Enviar Bluetooth</string>
+
+    <!-- Activity Rule Change-->
+    <string name="hutch_eld_supported_rules">Conejera ELD reglas compatibles</string>
+
+    <!-- Activity Select Country-->
+    <string name="select_country">Seleccione</string>
+
+
+    <!-- Activity Setup Complete-->
+    <string name="setup_completed">Configuración de país completó</string>
+    <string name="your_eld_is_ready_for_use">su ELD está listo para usar</string>
+    <string name="cellular_connection_check">conexión celular verificar</string>
+    <string name="wifi_connection_check">conexión Wi-Fi verificar</string>
+    <string name="hutch_systems_connection_check">Conejera Comprobación de conexión de sistemas</string>
+    <string name="bluetooth_check">comprobar</string>
+    <string name="btb_connection">conexión Bluetooth BTB</string>
+    <string name="btb_heartbeat">Latido BTB</string>
+    <string name="utc_time_check">Hora UTC controlar</string>
+    <string name="latitude_and_longitude_check">Latitud y Longitud verificar</string>
+    <string name="current_location_check">Ubicación actual compruebe</string>
+    <string name="please_enter_your_installer_id">por favor introduzca su identificador de instalador de abajo para continuar</string>
+    <string name="proceed">continuar</string>
+
+
+    <!-- Activity Setup Welcome-->
+    <string name="welcome">Bienvenido</string>
+    <string name="the_system_will_guide_you_through">El sistema le guiará paso a paso durante la instalación. El programa de instalación realizará las siguientes tareas:</string>
+    <string name="network_connectivity_check">verificar la conectividad de red</string>
+    <string name="hutch_systems_connectivity_check">Conejera comprobar conectividad de sistemas</string>
+    <string name="btb_connectivity_check">BTB (Puente) comprobar conectividad Bluetooth</string>
+    <string name="feel_free_to_contact_us">Siéntase libre de contactarnos al 604-776-3564, si necesita nuestra asistencia</string>
+
+
+    <!-- Activity View Image-->
+    <string name="defect_img">Imagen degradado</string>
+
+
+    <!-- Activity Wireless Connectivity Check-->
+    <string name="establishing_wireless_connection...">Estableciendo conexión inalámbrica...</string>
+    <string name="cellular_connection_lab">Conexión celular la</string>
+    <string name="wifi_connection_lab">conexión</string>
+    <string name="connection_with_hutch_systems">con los sistemas de la Conejera</string>
+    <string name="retry">Rever</string>
+
+
+    <!-- Alert BTB-->
+    <string name="btb_connection_in_progress">BTB reintentar la conexión en curso,</string>
+    <string name="please_wait_while_eld_is_connecting_to_btb">espere por favor mientras que se está conectando a ELD BTB.</string>
+
+
+    <!-- Alert Layout-->
+    <string name="device_battery_low">Batería del dispositivo baja</string>
+    <string name="please_reconnect_to_power_immediately">Vuelva a conectar la batería baja del dispositivo para poder inmediatamente.</string>
+
+
+    <!-- Defect Item-->
+    <string name="description">Descripción</string>
+
+
+    <!-- DIalog Color Picker-->
+    <string name="select_color">Seleccione Color</string>
+    <string name="selected_color">Color seleccionado</string>
+    <string name="set">establecer</string>
+
+
+    <!-- DTC Item-->
+    <string name="spn_mid">SPN/</string>
+    <string name="fmi">FMI MEDIO</string>
+    <string name="oc">OC</string>
+
+
+    <!-- eLog Scrollview-->
+    <string name="remaining">Restante</string>
+    <string name="na">N/A</string>
+    <string name="current_trip">actual viaje</string>
+
+
+    <!-- Fab Layout-->
+    <string name="fab_btn_switch_user">Cambiar usuario</string>
+    <string name="fab_btn_undocking">desacoplar la</string>
+
+
+    <!-- Fragment Add Notice Order -->
+    <string name="duration_in_minutes">duración (en minutos)</string>
+    <string name="report_no">Informe Nº</string>
+    <string name="level">nivel</string>
+    <string name="fine_amount">Importe</string>
+    <string name="results">resultados</string>
+    <string name="hos">HOS</string>
+    <string name="mechanical">mecánica</string>
+    <string name="speeding">exceso de velocidad</string>
+    <string name="seat_belt">cinturón de seguridad</string>
+    <string name="others">Otros</string>
+    <string name="pass">pasar</string>
+    <string name="fail">fallar</string>
+    <string name="violation">violación</string>
+    <string name="present">presente</string>
+    <string name="out_of_service">OOS</string>
+    <string name="scan">Escanear</string>
+
+
+    <!-- Fragment Daily Log Dashboard -->
+    <string name="inspector_mode">Modo Inspector</string>
+    <string name="codriver_id_name">Copiloto ID / Nombre</string>
+
+    <!-- Fragment Driver Profile -->
+    <string name="mobile_no">móviles No.</string>
+    <string name="dl_number">DL No.</string>
+    <string name="dl_expiry">DL Expiración</string>
+    <string name="dot_password">DOT Contraseña</string>
+    <string name="exemption">Exención</string>
+    <string name="special_category">Categoría Especial</string>
+    <string name="authorized_personal_use">Uso personal autorizado de CMV, Yard Move</string>
+
+
+    <!-- Fragment Driver Scorecard Layout -->
+    <string name="view_score_card_last_30_days">vista Tarjeta de puntuación de los últimos 30 días</string>
+    <string name="points_gained">puntos ganados</string>
+    <string name="low_washer_fluid">líquido lavador bajo el</string>
+    <string name="failure_to_warm_up_engine">fracaso para calentar el motor</string>
+    <string name="low_engine_oil">baja de</string>
+    <string name="low_coolant_level">nivel bajo de refrigerante del aceite del motor</string>
+    <string name="high_rpm">alta</string>
+    <string name="speed_violation">velocidad RPM violación una</string>
+    <string name="hard_acceleration">fuerte aceleración de</string>
+    <string name="hard_braking">frenado brusco</string>
+    <string name="idling">al ralentí</string>
+    <string name="critical_warnings">Las advertencias críticas de</string>
+    <string name="driving_with_engine_light_on">conducción con luz de motor</string>
+    <string name="sharp_turn_left">SHARP</string>
+    <string name="sharp_turn_right">Sharp, gire a la izquierda, gire a la derecha</string>
+    <string name="hours_of_service">las horas de las</string>
+    <string name="failure_to_conduct_trip_inspection">fallas en el servicio para llevar a cabo la inspección de viaje</string>
+
+
+    <!-- Fragment Extra -->
+    <string name="menu_dtc">DTC</string>
+    <string name="menu_trailer_management">Tráiler</string>
+    <string name="menu_scorecard">Cuadro de mandos de gestión de</string>
+    <string name="menu_vehicle_info">información de vehículo</string>
+    <string name="menu_fuel_detail">Detalle del combustible</string>
+    <string name="menu_incident">Incidente</string>
+    <string name="menu_maintenance">Mantenimiento</string>
+
+
+    <string name="fuel_card_no">Tarjeta de combustible No.</string>
+    <string name="fuel_quantity_ltr">Cantidad de combustible (En litros)</string>
+    <string name="fuel_amount">Coste del combustible ($)</string>
+    <string name="def_fuel_quantity_ltr">DEF Cantidad de Combustible (En litros)</string>
+    <string name="def_fuel_amount">Coste de combustible DEF ($)</string>
+    <string name="reefer_fuel_quantity_ltr">Cantidad de combustible Reefer (En litros)</string>
+    <string name="reefer_fuel_amount">Coste de combustible Reefer ($)</string>
+    <string name="cash_advance">Adelanto en efectivo ($)</string>
+
+
+    <string name="input_detail">Detalle de entrada</string>
+    <string name="edit_truck_id">Editar ID de carretilla</string>
+
+    <string name="version">Versión</string>
+    <string name="status_warning">alerta Estado de Versión</string>
+    <string name="countdown">Countdown</string>
+    <string name="do_you_want_to_continue_to_use_vehicle">¿Quieres continuar usando el vehículo para conducir o no?</string>
+
+
+    <string name="system_information_system">Información del sistema - Sistema</string>
+
+    <string name="protocol_ok">OK</string>
+    <string name="check_again">Comprobar nuevamente</string>
+
+
+    <string name="shutdown_device">Apagar dispositivo</string>
+    <string name="eld_device_is_shutting_down.">Dispositivo ELD se está cerrando.</string>
+
+    <string name="summary">Resumen</string>
+
+    <string name="hook_trailer">Gancho de remolque</string>
+
+    <string name="vehicle_info_cvip_due">debido CVIP Resumen: </string>
+    <string name="vehicle_info_vin"> VIN:  </string>
+    <string name="vehicle_info_engine_no"> nº de serie del motor:  </string>
+    <string name="vehicle_info_engine_power"> Motor Poewer:  </string>
+    <string name="vehicle_info_plate"> Placa:  </string>
+
+    <string name="fuel_consumed">Combustible consumido</string>
+
+    <string name="boost_pressure">aumentar presión de</string>
+    <string name="fuel_pressure">combustible</string>
+    <string name="fuel_level">el nivel de combustible</string>
+    <string name="engine_oil_level">del nivel de aceite del motor de</string>
+    <string name="engine_coolant_level">Nivel de refrigerante del motor, la</string>
+    <string name="engine_coolant_temp">temperatura del refrigerante del motor,</string>
+    <string name="air_inlet_temperature">temperatura de entrada de aire de</string>
+    <string name="barometric_pressure">presión barométrica</string>
+    <string name="engine_oil_pressure">presión aceite motor</string>
+    <string name="engine_load">carga motor</string>
+    <string name="washer_fluid_level">Nivel del líquido lavaparabrisas</string>
+    <string name="def_fuel_level">DEF de nivel de combustible</string>
+    <string name="idle_fuel_used">utilizado combustible a ralentí</string>
+    <string name="engine_idle_hours">motor ralentí Horas</string>
+    <string name="pto_hours">Horas TDF</string>
+    <string name="fuel_economy">economía de combustible</string>
+    <string name="battery_voltage">voltaje de la batería</string>
+    <string name="pto_fuel_used">TDF Tensión de batería de economía de combustible el combustible usado la</string>
+    <string name="cruise_set_speed">Velocidad de crucero</string>
+    <string name="brake_application_count">aplicación del freno de velocidad de ajuste de crucero Conde</string>
+    <string name="max_road_speed">Max velocidad de carretera</string>
+    <string name="total_cruise_time">crucero Total del tiempo de</string>
+    <string name="air_suspension_load">carga de la suspensión de aire</string>
+    <string name="transmission_oil_level">del nivel de aceite de la transmisión de</string>
+    <string name="transmission_gear_no">engranajes de transmisión ninguna</string>
+
+
+    <string name="label_diagnostic">diagnóstico</string>
+    <string name="label_malfunction">Mal Funcionamiento</string>
+    <string name="label_battery">Batería</string>
+    <string name="label_coolant">Refrigerante</string>
+    <string name="turbo_boost">Turbo</string>
+    <string name="driving_remaining">Conducción restante</string>
+
+
+    <string name="pre_trip">Pre-Trip</string>
+    <string name="schedule">Programar</string>
+    <string name="threshold">Umbral</string>
+
+
+    <string name="today">Hoy</string>
+
+    <string name="authenticated_driver_eld_login_activity">Actividad de inicio de sesión de ELD del controlador autenticado</string>
+
+
+    <string name="orientation_display">Orientación - Pantalla</string>
+    <string name="portrait">vertical</string>
+    <string name="landscape">horizontal</string>
+    <string name="auto">Auto</string>
+    <string name="color_line_display">Línea de color - Pantalla</string>
+    <string name="metric">Métrico</string>
+    <string name="imperial">Imperial</string>
+    <string name="volume_level_sound">Nivel de volumen - Sonido</string>
+    <string name="date_time_system">Fecha y hora - Sistema</string>
+    <string name="rules_system">Reglas - Sistema</string>
+    <string name="check_for_updates">Buscar actualizaciones</string>
+    <string name="plate_no">Plato No.</string>
+
+
+    <!-- Java Files -->
+    <string name="PLEASE_ENTER_REPORT_NO">introduzca Informe No.</string>
+    <string name="PLEAE_ENTER_FINE_AMOUNT">Introduzca el importe de sanción.</string>
+    <string name="DRIVER">Conductor</string>
+    <string name="POWER_UNIT">Unidad de alimentación del controlador</string>
+    <string name="TRAILER">Tráiler</string>
+    <string name="NO_DOCUMENT_ATTACHED">ningún Documento adjunto</string>
+    <string name="VIEW_DOCUMENT">ver documento</string>
+    <string name="low_fuel_economy">bajo la</string>
+    <string name="driving_with_critical_warning">conducción de economía de combustible con alertas de advertencia crítica</string>
+    <string name="unhook_confirmation">desenganchar Confirmación</string>
+    <string name="unhook_trailer_alert">¿Está seguro de que desea desenganchar el remolque?</string>
+    <string name="logbook_doesnot_exists">Cuaderno de bitácora no existe!</string>
+    <string name="driver">Conductor</string>
+    <string name="vehicle">vehículo</string>
+    <string name="company">Empresa</string>
+    <string name="certify_log_title">certificar Log(s) ?</string>
+    <string name="certify_log_message">Por la presente certifico que mis datos y mi historial de servicio para este período de 24 horas son verdaderas y correctas.</string>
+    <string name="no_exemption">No</string>
+    <string name="exempt_user">utilice</string>
+    <string name="none">ninguno exento</string>
+    <string name="personaluse">uso personal autorizado de CMV</string>
+    <string name="active">Activo</string>
+    <string name="inactive">en activo-activo</string>
+    <string name="annotation_alert">introduzca la anotación de un mínimo de 4 palabras!</string>
+    <string name="change_duty_status_alert">Debes ser usuario activo para cambiar el estado de derecho para la conducción!</string>
+    <string name="change_dutystatus_personal_user">Debes ser usuario activo para indicar \"autorizar el uso personal del CMV\"!</string>
+    <string name="change_dutystatus_yardmove">Debes ser usuario activo para indicar \"Yard mueve\"!</string>
+    <string name="comment_alert">Introduzca un comentario de un mínimo de 4 caracteres de largo!</string>
+    <string name="location_alert">Introduzca la ubicación antes de guardar el evento!</string>
+    <string name="e_log">E-Log</string>
+    <string name="ok">Ok</string>
+    <string name="dvir_add_alert">Usted debe estar en la obligación de completar</string>
+    <string name="daily_log">Registro Diario DVIR</string>
+    <string name="codriver_change_dutystatus_off_sleeper_onduty">copiloto deber debe cambiar el estado a OFF ,cama o sobre-deber!</string>
+    <string name="driving_hour_expired">Por favor deje de conducir, su conducción horas han caducado.</string>
+    <string name="caution_driving_hours_about_to_expire">"Precaución sus horas de conducción se acerca a caducado. Tienes "</string>
+    <string name="mintes_of_driving_time_remaining">" minutos de tiempo de conducción restante."</string>
+    <string name="stop_driving">deje de conducir</string>
+    <string name="send_data_confirmation_title">enviar la confirmación de los datos?</string>
+    <string name="send_data_message">¿Está seguro de que desea enviar los datos al servidor?</string>
+    <string name="at">" "</string>
+    <string name="departed">" "</string>
+    <string name="arrived_at">" difuntos llegó a</string>
+    <string name="kms">Kms " ""</string>
+    <string name="miles">" Millas "</string>
+    <string name="in">en "</string>
+    <string name="vl">VL</string>
+    <string name="total_hours">"Total hora(s): "</string>
+    <string name="clr">CLR</string>
+    <string name="term_condition_scroll_alert"><![CDATA[Scroll down to read and accept terms & conditions!]]></string>
+    <string name="power_unit">Unidad de alimentación de CLR</string>
+    <string name="no_document_attach">ningún Documento adjunto</string>
+    <string name="view_document">ver documento</string>
+    <string name="fuel_card_alert">seleccione Tarjeta de carburante</string>
+    <string name="fuel_quantity_alert">Introduzca la cantidad de combustible!</string>
+    <string name="fuel_price_alert">Introduzca el precio del combustible!</string>
+    <string name="def_fuel_alert">Introduzca el precio del combustible DEF!</string>
+    <string name="reefer_fuel_price_alert">Introduzca el precio del combustible reefer!</string>
+    <string name="add_fuel_onduty_alert">Usted debe estar en el deber de añadir combustible</string>
+    <string name="exclude_sleeper_title">excluir Sleeper horas ?</string>
+    <string name="exclude_sleeper_message">" ¿Desea excluir sleeper horas desde 16 horas?"</string>
+    <string name="A_12_title">máximo 13 horas de conducción en un día</string>
+    <string name="A_12_warning">la ley canadiense permite a la unidad para un máximo de 13 horas en cualquier período de 24 horas basado en cuando su período de 24 horas comienza. La mayoría de los conductores prefieren a mediados de la noche a la media noche como su período de 24 horas.</string>
+    <string name="B_12_title">No conducir después de 14 horas de servicio en un día</string>
+    <string name="B_12_message">la ley canadiense le permite estar de guardia de turno (y conducir) durante 14 horas en un período de 24 horas basado en cuando su período de 24 horas comienza. No se puede conducir después de 14 horas de servicio en un día. La mayoría de los conductores prefieren a media noche a mediados del período nocturno.</string>
+    <string name="A_13_title">No debe conducir más allá de 13 horas sin tomar 8 horas consecutivas de descanso</string>
+    <string name="A_13_message">la ley canadiense permite que usted conduzca sólo 13 horas después de tomar 8 horas consecutivas de descanso o cama-litera o cualquier combinación de fuera de servicio y/o cama-litera. Usted está obligado a tomar otro 8 horas consecutivas fuera antes de conducir está permitido.</string>
+    <string name="B_13_title">No debe conducir después de 14 horas de tiempo de guardia a menos 8 horas consecutivas de fuera de servicio.</string>
+    <string name="B_13_message">La ley canadiense permite sólo en servicio durante 14 horas después de tomar 8 horas consecutivas de descanso o cama-litera o cualquier combinación de fuera de servicio y/o cama-litera. Será necesario tomar otro 8 horas consecutivas fuera antes de conducir está permitido.</string>
+    <string name="C_13_title">No debe conducir más allá de 16 horas de tiempo transcurrido después del pasado 8 horas consecutivas de descanso</string>
+    <string name="C_13_message">la ley canadiense permite sólo tienen 16 horas de tiempo transcurrido después de tomar 8 horas consecutivas de descanso o cama-litera o cualquier combinación de fuera de servicio y/o cama-litera. Usted está obligado a tomar otro 8 horas consecutivas fuera antes de conducir está permitido. Normalmente, los controladores se refieren a esto como su turno de trabajo.</string>
+    <string name="A_14_title">Debe tener un mínimo de 10 horas de descanso en un día.</string>
+    <string name="A_14_message">"La ley canadiense requiere que usted tenga un mínimo de 10 horas de descanso o cama-litera o cualquier combinación de off-duty y cama litera de tiempo en un período de 24 horas, dependiendo de cuando se considera la 24 horas para empezar. La mayoría de los conductores prefieren a mediados de la noche a la media noche como su período de 24 horas. "</string>
+    <string name="C_14_title">debe tener un mínimo de 2 horas de descanso en un día que no es parte de 8 horas obligatorias consecutivas.</string>
+    <string name="C_14_message">La ley canadiense requiere un mínimo de 2 horas de descanso o cama-litera o cualquier combinación de off-duty y cama litera-que no es parte de las 8 horas consecutivas. Fuera de servicio debe estar en bloques de no menos de 30 minutos cada uno para ser considerado hacia el mínimo requerido de 10 horas fuera de servicio en un día.</string>
+    <string name="B_16_title">Debe tener 20 horas de descanso en 2 días al aplazar el tiempo fuera de servicio.</string>
+    <string name="B_16_message">La ley canadiense requiere un mínimo de 20 horas de descanso en 2 días si están aplazando el tiempo fuera de servicio. Este es el total del día 1 y Día 2. No se puede aplazar cualquier parte de las 8 horas consecutivas de fuera de servicio.</string>
+    <string name="D_16_title">No debe exceder de 26 horas de tiempo de transmisión en 2 días.</string>
+    <string name="D_16_message">La ley canadiense le permite a usted que sólo tiene 26 horas de tiempo de transmisión en 2 días si están aplazando el tiempo fuera de servicio. Este es su día 1 y Día 2 en total.</string>
+    <string name="V_25_title">No debe conducir a menos de 24 horas consecutivas de fuera de servicio son tomadas en los 14 días anteriores.</string>
+    <string name="V_25_message">La ley canadiense requiere un mínimo de 24 horas consecutivas de fuera de servicio o cama litera de horas o cualquier combinación de fuera de servicio y literas litera para tomarse cada 14 días. Sus 24 horas puede ser parte del ciclo reset si lo desea.</string>
+    <string name="V_26_title">No debe conducir después de 70 horas de servicio en 7 días.</string>
+    <string name="V_26_message">"La legislación canadiense no permite conducir después de 70 horas de tiempo de servicio en cualquier período de 7 días. Usted puede tomar 36 horas de descanso o cama-litera o cualquier combinación de restablecer su ciclo 1 o puede esperar hasta el día 8 para ganar horas atrás. "</string>
+    <string name="B_27_title">no debe conducir después de 70 horas de servicio a menos de 24 horas consecutivas de fuera de servicio.</string>
+    <string name="B_27_message">La legislación canadiense no permite conducir después de 70 horas de servicio a menos que usted haya tardado 24 horas consecutivas de descanso en cama o literas o cualquier combinación de los mismos. Sus 24 horas puede ser parte del ciclo reset si lo desea.</string>
+    <string name="A_27_title">No debe conducir después de 120 horas de servicio en un plazo de 14 días.</string>
+    <string name="A_27_message">La legislación canadiense no permite que usted maneje después de 120 horas de tiempo de guardia en cualquier período de 14 días. Usted puede tomar 72 horas de descanso o cama-litera o cualquier combinación de los mismos para restablecer su ciclo 2 o puede esperar hasta el día 15 para ganar horas atrás.</string>
+    <string name="A_29_title">Debe tener un mínimo de 36 horas consecutivas de descanso para pasar al ciclo 2 de ciclo 1.</string>
+    <string name="A_29_message">La ley canadiense requiere un mínimo de 36 horas consecutivas de descanso o cama-litera o cualquier combinación de off-duty y traviesa antes de pasar al ciclo 2 de ciclo 1.</string>
+    <string name="US_395_3_a_3_i_title">No debe conducir más allá de 11 horas sin tomar 10 horas consecutivas de descanso la</string>
+    <string name="US_395_3_a_3_i_message">ley estadounidense permite que usted conduzca sólo 11 horas después de tomar 10 horas consecutivas de descanso o cama-litera o cualquier combinación de fuera de servicio y/o cama-litera. Usted está obligado a tomar otro 10 horas consecutivas fuera antes de conducir está permitido.</string>
+    <string name="US_30min_rest_title">No debe conducir si más de 8 horas han pasado desde finales del pasado 30 minutos mínimo fuera de servicio o sleeper.</string>
+    <string name="US_30min_rest_message">La ley estadounidense sólo permite a la unidad para un máximo de 8 horas desde la última 30 minutos fuera de servicio o cama litera-tiempo. Usted debe tener un mínimo de 30 minutos consecutivos de descanso o cama-litera o cualquier combinación de descanso y sleeper-amarradero.</string>
+    <string name="US_395_3_a_2_title">"no debe conducir después de 14 horas tras 10 horas consecutivas de descanso " La</string>
+    <string name="US_395_3_a_2_message">ley estadounidense permite que usted sólo tiene 14 horas de tiempo transcurrido después de 10 horas consecutivas de descanso o cama-litera o cualquier combinación de descanso y/o cama-litera. Usted está obligado a tomar otro 10 horas consecutivas fuera antes de conducir está permitido. Normalmente, los controladores se refieren a esto como su turno de trabajo.</string>
+    <string name="US_70hr_title">No debe conducir después de 70 horas de servicio dentro de los 8 días.</string>
+    <string name="US_70hr_message">"La ley estadounidense no permite conducir después de 70 horas de tiempo de servicio en cualquier período de 8 días. Usted puede tomar 34 horas de descanso o cama-litera o cualquier combinación para restablecer o usted puede esperar hasta el día 9 para obtener las horas atrás. "</string>
+    <string name="notice_and_order">Aviso y</string>
+    <string name="box">cuadro Orden de</string>
+    <string name="cvsa_inspection">inspección CVSA</string>
+    <string name="violation_ticket">violación billete</string>
+    <string name="incident_add_alert">debe ser de turno para agregar incidente!</string>
+    <string name="unidentified_driving_alert">Controlador desconocido debe detener e iniciar sesión en E L D</string>
+    <string name="internet_connection_alert">Compruebe su conexión a internet!</string>
+    <string name="user_name_alert">Introduzca su Nombre de Usuario</string>
+    <string name="password_alert">introduzca una contraseña</string>
+    <string name="login_event_description">autentificada Driver\'s ELD actividad de inicio de sesión</string>
+    <string name="term_condition_login"><![CDATA[You have to accept terms & conditions to proceed!!!]]></string>
+    <string name="altest_update_already_installed">las últimas actualizaciones ya han sido instalados.</string>
+    <string name="inspect_log_title">Inspeccionar el registro</string>
+    <string name="eld_title">ELD</string>
+    <string name="dvir_title">DVIR</string>
+    <string name="navigation_title">Navegación</string>
+    <string name="message_title">mensaje de navegación DVIR ELD</string>
+    <string name="tpms_title">TPMS</string>
+    <string name="more_title">Más</string>
+    <string name="settings_title">configuraciones</string>
+    <string name="logout_title">Logout</string>
+    <string name="logout_offduty_alert">no se le permite salir hasta que usted esté en OFF DUTY</string>
+    <string name="continue_personal_user_confirmation">¿desea continuar el uso personal?</string>
+    <string name="contine_driving_confirmation">¿Desea continuar la conducción? De lo contrario, cambie el estado de</string>
+    <string name="btb_connection_title">conexión BTB No</string>
+    <string name="btb_connection_message">hay problema mientras se conecta a BTB. Reinicie el dispositivo para continuar.</string>
+    <string name="btb_connection_progress_title">BTB Conexión en curso</string>
+    <string name="btb_connection_progress_message">Espere mientras el ELD se conecta a BTB...</string>
+    <string name="ignition_on_title">Conecte el Encendido</string>
+    <string name="ignition_on_message">Encienda el contacto...</string>
+    <string name="driving_mode_message">¿Está seguro de que desea estar en el modo de conducción?</string>
+    <string name="driving_mode_title">Confirmación del modo de conducción</string>
+    <string name="active_driver_message_inmotion">no puede ser un controlador activo cuando el vehículo está en movimiento!</string>
+    <string name="active_driver">Controlador activo</string>
+    <string name="uncertified_log_message">tiene registros no certificada!!!</string>
+    <string name="logout_confirmation">Logout</string>
+    <string name="logout_alert">"Confirmación ¿Está seguro de que desea cerrar la sesión? "</string>
+    <string name="logout_event_description">autentica Driver\'s ELD y desconexión del</string>
+    <string name="powerup_event_conventional_description">encendido del motor con precisión de ubicación convencional</string>
+    <string name="powerup_event_reduced_description">de potencia del motor con menor precisión de ubicación de</string>
+    <string name="shutdown_event_conventional_description">apagado del motor convencional con precisión de ubicación de</string>
+    <string name="shutdown_event_reduced_description">apagar el motor con menor precisión de ubicación</string>
+    <string name="pc_ym_yt_cleared">conductor indicación para PC, YM y WT borrar</string>
+    <string name="IL_conventional_description">registro intermedio con precisión de ubicación de</string>
+    <string name="IL_reduced_description">registro intermedio convencional con menor precisión de ubicación del</string>
+    <string name="device_BTB_unsupport">dispositivo no haces compatibles con Bluetooth.</string>
+    <string name="inspection">Inspección</string>
+    <string name="new_inspection">Nueva Inspección inspección</string>
+    <string name="edit_event">Editar evento</string>
+    <string name="progress_update">una actualización ya está en curso, espere por favor...</string>
+    <string name="special_category_configure_PU">Configura tu categoría está autorizado el uso personal de</string>
+    <string name="special_category_configure_YM">su categoría está configurado por CMV Yard se mueve</string>
+    <string name="special_category_configure_none">no tiene configurado</string>
+    <string name="special_category_configure_PU_YM">su categoría configurado categorías está autorizado el uso personal del CMV y el patio se mueve</string>
+    <string name="uncertified_log_exists">usted tiene registros no certificada!!!</string>
+    <string name="add_notice_order">Agregar aviso y orden</string>
+    <string name="map_initialized">inicializado Mapa</string>
+    <string name="upcoming_maintenance">Próximo mantenimiento</string>
+    <string name="maintenance_due">Mantenimiento debido</string>
+    <string name="yesterday">ayer</string>
+    <string name="future_time_alert">por favor no elija el tiempo futuro.</string>
+    <string name="valid_password">Introduzca una contraseña válida!</string>
+    <string name="driving_shortening_alert">Acortar el tiempo de conducción no está permitido!</string>
+    <string name="cancel">Cancelar</string>
+    <string name="usb_attach_alert">por favor conecte una unidad USB en primer lugar</string>
+    <string name="send_method_alert">seleccione el método de envío!</string>
+    <string name="pick_an_email_provider">Elija un proveedor de correo electrónico</string>
+    <string name="file_not_found">no se encuentra el archivo</string>
+    <string name="delete_page_title">Eliminar página</string>
+    <string name="delete_page_message">¿Está seguro de que desea eliminar esta página?</string>
+    <string name="score_deducted">Partituras deducido</string>
+    <string name="duration">duración</string>
+    <string name="driving_points_gained">"Conducción puntos ganados a través del tiempo: "</string>
+    <string name="system">Sistema de</string>
+    <string name="display">monitor</string>
+    <string name="sound">sonido Pantalla</string>
+    <string name="eld_app_exit">ELD App se apagará en 3 segundos.</string>
+    <string name="device_internet_not_connected">El dispositivo no está conectado a internet. Por favor, inténtelo de nuevo más tarde!</string>
+    <string name="unidentified_driver_record_missing">Cuenta con un controlador no identificado el tipo de cuenta que falta!</string>
+    <string name="hook_trailer_title">Gancho remolque</string>
+    <string name="hook_trailer_message">está seguro. Desea gancho remolque?</string>
+    <string name="please_select_record">Seleccione Record!</string>
+    <string name="drivers">"conductor "</string>
+    <string name="th_certification">\'th certificación de un registro diario</string>
+    <string name="assuming_events_title">asumiendo</string>
+    <string name="today_hours">Total evento(s) hora(s)</string>
+
+    <string name="violation_present">Violación presente</string>
+    <string name="invoice_alert">Please enter Invoice No!</string>
+    <string name="part_cost_alert">Please enter Part Cost!</string>
+    <string name="labour_cost_alert">Please enter Labour Cost!</string>
+    <string name="pending">Pending</string>
+    <string name="completed">Completed</string>
+    <string name="upcoming_due_maintenance">Upcoming/Due Maintenance</string>
+    <string name="maintenance_completed">Maintenance Completed</string>
+    <string name="confirm">Confirm</string>
+    <string name="reject">Reject</string>
+    <string name="application_exit">Application Exit</string>
+    <string name="installer_id_valid_alert">Please enter valid Installer Id!</string>
+    <string name="feature_na_alert">This Feature is not available for your company. Please contact Hutch Systems to avail this feature.</string>
+    <string name="geofence_detail">Geofence Detail</string>
+    <string name="please_verify_if_navigation_is_loaded_properly_prior_to_proceeding">Please verify if navigation is loaded properly prior to proceeding!</string>
+    <string name="document_no">Document No</string>
+    <string name="document_type">Document Type</string>
+    <string name="document_detail">Document Detail</string>
+    <string name="add_document_onduty_alert">You must be on-duty to add document</string>
+    <string name="scanning">Scanning</string>
+    <string name="dispatch_no">Dispatch No</string>
+    <string name="booking_no">Booking No</string>
+    <string name="container_no">Container No</string>
+    <string name="manufacturing_date">Manufacturing Date</string>
+    <string name="max_gross_weight">Max Gross Weight</string>
+    <string name="tare_weight">Tare Weight</string>
+    <string name="seal_no1">Seal No 1</string>
+    <string name="seal_no2">Seal No 2</string>
+    <string name="max_pay_load">Max Pay Load</string>
+    <string name="container_no_alert">Please enter Container No!</string>
+    <string name="drayage">Drayage</string>
+    <string name="dispatch_detail">Dispatch Detail</string>
+    <string name="container_detail">Container Detail</string>
+    <string name="menu_exit">Exit</string>
+    <string name="allow_access">ALLOW ACCESS</string>
+    <string name="live">Live</string>
+    <string name="trial">Trial</string>
+    <string name="light_duty">Light Duty</string>
+    <string name="production">Production</string>
+    <string name="free_trial">Free Trial</string>
+    <string name="setting">Setting</string>
+    <string name="internet_connection_test">Internet Connection Test</string>
+    <string name="internet_connection_setup">Internet Connection</string>
+    <string name="title_set_protocol">Set Protocol</string>
+    <string name="configuration">Configuration</string>
+    <string name="split_sleep_alert">Previous event is qualified for Split Sleep. Do you want to use Split Sleep?</string>
+
+</resources>
+

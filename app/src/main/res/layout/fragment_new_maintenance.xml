@@ -1,0 +1,351 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_maintenance_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hutchsystems.hutchconnect.fragments.NewMaintenanceFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/inspect_elog_header_land"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="52dp"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="14dp"
+                        android:paddingRight="14dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_scorecard_driving" />
+
+                    <TextView
+                        android:id="@+id/tvDriver"
+                        style="@style/HeaderCardTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="John Smith" />
+
+                    <ImageView
+                        android:layout_width="52dp"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="14dp"
+                        android:paddingRight="14dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_calendar_24" />
+
+                    <TextView
+                        android:id="@+id/tvDate"
+                        style="@style/HeaderCardTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Date: 24 May, 2017" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_width="52dp"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="14dp"
+                        android:paddingRight="14dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_odometer" />
+
+                    <TextView
+                        android:id="@+id/tvOdometer"
+                        style="@style/HeaderCardTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Odometer: 29542583" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/layout_bg_round_nine"
+                android:orientation="vertical"
+                android:paddingBottom="24dp"
+                android:paddingEnd="12dp"
+                android:paddingStart="12dp"
+                android:paddingTop="16dp">
+
+                <TextView
+                    android:id="@+id/tvOdometerLabel"
+                    style="@style/SettingsLabelStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_unit" />
+
+                <Spinner
+                    android:id="@+id/spUnitNo"
+                    style="@style/BigTextLabelStyle.Blue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    style="@style/SettingSeprator"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_height="1dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginStart="0dp"></View>
+
+                <TextView
+                    style="@style/SettingsLabelStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/invoice_no" />
+
+                <EditText
+                    android:id="@+id/etInvoice"
+                    android:background="@android:color/transparent"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:nextFocusDown="@+id/etRepairedBy" />
+
+                <View
+                    style="@style/SettingSeprator"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_height="1dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginStart="0dp"></View>
+
+                <TextView
+                    style="@style/SettingsLabelStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/repair_shop" />
+
+                <EditText
+                    android:id="@+id/etRepairedBy"
+                    android:background="@android:color/transparent"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:nextFocusDown="@+id/spCurrency" />
+
+                <View
+                    style="@style/SettingSeprator"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_height="1dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginStart="0dp"></View>
+
+                <TextView
+                    style="@style/SettingsLabelStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/currency" />
+
+                <Spinner
+                    android:id="@+id/spCurrency"
+                    style="@style/BigTextLabelStyle.Blue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/currency" />
+
+                <View
+                    style="@style/SettingSeprator"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_height="1dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginStart="0dp"></View>
+
+                <TextView
+                    style="@style/SettingsLabelStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/comments" />
+
+                <EditText
+                    android:id="@+id/etComments"
+                    android:background="@android:color/transparent"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:nextFocusDown="@id/etPartCost" />
+
+                <View
+                    style="@style/SettingSeprator"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_height="1dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginStart="0dp"></View>
+
+                <Button
+                    android:id="@+id/btnAttach"
+                    style="@style/buttonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:text="@string/scan"
+                    android:textAllCaps="false" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/layout_bg_round_nine"
+                android:orientation="vertical"
+                android:paddingBottom="24dp"
+                android:paddingEnd="12dp"
+                android:paddingStart="12dp"
+                android:paddingTop="16dp">
+
+                <TextView
+                    style="@style/SettingsLabelStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_item" />
+
+                <Spinner
+                    android:id="@+id/spItem"
+                    style="@style/BigTextLabelStyle.Blue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/maintenance_item_list" />
+
+                <View
+                    style="@style/SettingSeprator"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_height="1dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginStart="0dp"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/SettingsLabelStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/part_cost" />
+
+
+                    <TextView
+                        style="@style/SettingsLabelStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/labour_cost" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/etPartCost"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:clickable="true"
+                        android:focusableInTouchMode="true"
+                        android:hint="00.00"
+                        android:inputType="numberDecimal"
+                        android:nextFocusDown="@+id/etLabourCost" />
+
+                    <EditText
+                        android:id="@+id/etLabourCost"
+                        style="@style/BigTextLabelStyle.Blue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:padding="@dimen/_5sdp"
+                        android:clickable="true"
+                        android:focusableInTouchMode="true"
+                        android:hint="00.00"
+                        android:inputType="numberDecimal"
+                        android:nextFocusDown="@+id/etDescription" />
+
+                </LinearLayout>
+
+                <View
+                    style="@style/SettingSeprator"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_height="1dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginStart="0dp"></View>
+
+                <TextView
+                    style="@style/SettingsLabelStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/description" />
+
+                <EditText
+                    android:id="@+id/etDescription"
+                    android:background="@android:color/transparent"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:nextFocusDown="@+id/btnNewMaintenance" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/btnNewMaintenance"
+        android:layout_width="@dimen/fab_size"
+        android:layout_height="@dimen/fab_size"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="26dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="@dimen/fab_margin_right"
+        android:background="@drawable/custom_fab_button_bg"
+        android:src="@drawable/ic_fab_save" />
+</FrameLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../AOBRD7.1.iml" filepath="$PROJECT_DIR$/../AOBRD7.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ReverseGeocode.iml" filepath="$PROJECT_DIR$/ReverseGeocode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SygicLib/SygicLib.iml" filepath="$PROJECT_DIR$/../SygicLib/SygicLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SygicLib_armeabi-v7a/SygicLib_armeabi-v7a.iml" filepath="$PROJECT_DIR$/../SygicLib_armeabi-v7a/SygicLib_armeabi-v7a.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../app/app.iml" filepath="$PROJECT_DIR$/../app/app.iml" />
+    </modules>
+  </component>
+</project>

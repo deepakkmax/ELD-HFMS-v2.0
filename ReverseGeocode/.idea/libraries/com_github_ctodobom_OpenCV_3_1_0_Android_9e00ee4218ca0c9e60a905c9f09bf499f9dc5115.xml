@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="com.github.ctodobom:OpenCV-3.1.0-Android-9e00ee4218ca0c9e60a905c9f09bf499f9dc5115">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/OpenCV-3.1.0-Android-9e00ee4218ca0c9e60a905c9f09bf499f9dc5115.aar/007e6ebe2760fa9e09bbf47315f2ac39/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/OpenCV-3.1.0-Android-9e00ee4218ca0c9e60a905c9f09bf499f9dc5115.aar/007e6ebe2760fa9e09bbf47315f2ac39/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

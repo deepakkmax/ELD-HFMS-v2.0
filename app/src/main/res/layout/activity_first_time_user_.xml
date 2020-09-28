@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutTerms"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_terms_cond"
+        android:padding="@dimen/_6sdp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvTermsCondition"
+            style="@style/TermsTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/terms_and_conditions"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <com.hutchsystems.hutchconnect.common.ObservableWebView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/webViewTerms"
+            style="@style/TermText"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvTermsCondition"
+            app:layout_constraintBottom_toTopOf="@+id/btnAccept"
+            android:layout_marginBottom="@dimen/_12sdp"
+            />
+
+
+        <Button
+            android:id="@+id/btnAccept"
+            style="@style/TermsButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_12sdp"
+            android:background="@drawable/button_bg"
+            android:enabled="false"
+            android:text="@string/accept"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <ImageView
+            android:id="@+id/ivSetupUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/_25sdp"
+            android:src="@drawable/ic_setup_user"
+            android:background="@drawable/setup_screen_bg"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+
+        <TextView
+        android:id="@+id/tvFirstTimeUser"
+        style="@style/SetupTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/first_time_user"
+        app:layout_constraintTop_toBottomOf="@+id/ivSetupUser"/>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_12sdp"
+            app:layout_constraintTop_toBottomOf="@+id/tvFirstTimeUser">
+
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_25sdp"
+                    android:paddingRight="@dimen/_25sdp">
+                    <ImageView
+                        android:id="@+id/ivSchedule"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:src="@drawable/ic_setup_schedule"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                       />
+
+                    <TextView
+                        android:id="@+id/tvDefaultService"
+                        style="@style/SettingsLabelStyle"
+                        android:textSize="@dimen/_12ssp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:text="@string/set_default_service_rule"
+                        app:layout_constraintStart_toEndOf="@+id/ivSchedule"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <Spinner
+                        android:id="@+id/spinnerRule"
+                        style="@style/BigTextLabelStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:background="@drawable/bg_spinner"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/ivSchedule"
+                        app:layout_constraintTop_toBottomOf="@+id/tvDefaultService"/>
+
+                    <ImageView
+                        android:id="@+id/ivSchedule1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/width_8"
+                        android:src="@drawable/ic_setup_schedule"
+                        android:layout_marginTop="@dimen/_17sdp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/spinnerRule"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/tvLanguage"
+                        style="@style/SettingsLabelStyle"
+                        android:textSize="@dimen/_12ssp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:text="@string/settings_support_language"
+                        app:layout_constraintStart_toEndOf="@+id/ivSchedule1"
+                        app:layout_constraintTop_toBottomOf="@+id/spinnerRule"/>
+
+                    <Spinner
+                        android:id="@+id/spinnerLanguage"
+                        style="@style/BigTextLabelStyle"
+                        android:layout_width="0dp"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_height="@dimen/_30sdp"
+
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/bg_spinner"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/ivSchedule1"
+                        app:layout_constraintTop_toBottomOf="@+id/tvLanguage"/>
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+        </ScrollView>
+    <ImageButton
+        android:id="@+id/btnNext"
+        android:layout_width="@dimen/_45sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:background="@drawable/setup_screen_button"
+        android:elevation="@dimen/_3sdp"
+        android:padding="@dimen/_15sdp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/left_arrow"
+        android:tint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

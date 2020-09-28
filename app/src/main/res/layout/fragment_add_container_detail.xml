@@ -1,0 +1,347 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hutchsystems.hutchconnect.fragments.AddContainerDetailFragment">
+
+    <ScrollView
+        android:id="@+id/sv_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="132dp"
+                android:background="@drawable/bg_card_fuel"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="52dp"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="14dp"
+                        android:paddingRight="14dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_scorecard_driving" />
+
+                    <TextView
+                        android:id="@+id/tvDispatchNo"
+                        style="@style/HeaderCardTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Dispatch No: 399943" />
+
+                    <ImageView
+                        android:layout_width="52dp"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="14dp"
+                        android:paddingRight="14dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_scorecard_driving" />
+
+                    <TextView
+                        android:id="@+id/tvBookingNo"
+                        style="@style/HeaderCardTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Booking No: 74565" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="52dp"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="14dp"
+                        android:paddingRight="14dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_scorecard_vehicle_info" />
+
+                    <TextView
+                        android:id="@+id/tvContainerType"
+                        style="@style/HeaderCardTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Type: Flat Bed" />
+
+                    <ImageView
+                        android:layout_width="52dp"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="14dp"
+                        android:paddingRight="14dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_trailer" />
+
+                    <TextView
+                        android:id="@+id/tvGrade"
+                        style="@style/HeaderCardTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Grade: Food Grade" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/layout_bg_round_nine"
+                android:orientation="vertical"
+                android:paddingBottom="24dp"
+                android:paddingEnd="12dp"
+                android:paddingStart="12dp"
+                android:paddingTop="16dp">
+
+                <TextView
+                    style="@style/SettingsLabelStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/container_no" />
+
+                <EditText
+                    android:id="@+id/etContainerNo"
+                    style="@style/BigTextLabelStyle.Blue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    android:focusableInTouchMode="true"
+                    android:hint="enter container no"
+                    android:inputType="text"
+                    android:maxLength="20"
+                    android:nextFocusDown="@+id/etManufacturingDate" />
+
+                <View
+                    style="@style/SettingSeprator"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginStart="0dp"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/SettingsLabelStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/manufacturing_date" />
+
+                    <TextView
+                        style="@style/SettingsLabelStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/max_pay_load" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/etManufacturingDate"
+                        style="@style/BigTextLabelStyle.Blue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:clickable="true"
+                        android:hint="yyyy-MM-dd"
+                        android:nextFocusDown="@+id/etMaxPayLoad" />
+
+                    <EditText
+                        android:id="@+id/etMaxPayLoad"
+                        style="@style/BigTextLabelStyle.Blue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:clickable="true"
+                        android:focusableInTouchMode="true"
+                        android:hint="0"
+                        android:inputType="number"
+                        android:nextFocusDown="@+id/etMaxGrossWeight" />
+                </LinearLayout>
+
+                <View
+                    style="@style/SettingSeprator"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginStart="0dp"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/SettingsLabelStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/max_gross_weight" />
+
+                    <TextView
+                        style="@style/SettingsLabelStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/tare_weight" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/etMaxGrossWeight"
+                        style="@style/BigTextLabelStyle.Blue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:clickable="true"
+                        android:focusableInTouchMode="true"
+                        android:hint="0"
+                        android:inputType="number"
+                        android:nextFocusDown="@+id/etTareWeight" />
+
+                    <EditText
+                        android:id="@+id/etTareWeight"
+                        style="@style/BigTextLabelStyle.Blue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:clickable="true"
+                        android:focusableInTouchMode="true"
+                        android:hint="0"
+                        android:inputType="number"
+                        android:nextFocusDown="@+id/etSealNo1" />
+
+                </LinearLayout>
+
+                <View
+                    style="@style/SettingSeprator"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginStart="0dp"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/SettingsLabelStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/seal_no1" />
+
+
+                    <TextView
+                        style="@style/SettingsLabelStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/seal_no2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/etSealNo1"
+                        style="@style/BigTextLabelStyle.Blue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:clickable="true"
+                        android:focusableInTouchMode="true"
+                        android:inputType="text"
+                        android:nextFocusDown="@+id/etSealNo2" />
+
+                    <EditText
+                        android:id="@+id/etSealNo2"
+                        style="@style/BigTextLabelStyle.Blue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:clickable="true"
+                        android:focusableInTouchMode="true"
+                        android:inputType="text" />
+
+                </LinearLayout>
+
+
+                <View
+                    style="@style/SettingSeprator"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginStart="0dp"></View>
+
+                <Button
+                    android:id="@+id/btnAttach"
+                    style="@style/buttonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:text="@string/scan"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"></View>
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/btnSave"
+        android:layout_width="@dimen/fab_size"
+        android:layout_height="@dimen/fab_size"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="26dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="@dimen/fab_margin_right"
+        android:background="@drawable/custom_fab_button_bg"
+        android:src="@drawable/ic_fab_save" />
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_navigation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hutchsystems.hutchconnect.NavigationActivity">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+    <LinearLayout android:id="@+id/layoutBack"
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:layout_gravity="bottom|left"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/remaining_hour_clock_navigation"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/NavClockLabel.upper"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="@string/remaining" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+        <CheckBox
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:gravity="center"
+            android:checked="true"
+            android:button="@drawable/checkbox_nav_diag"
+            android:background="@android:color/transparent"
+            android:textOff=""
+            android:textOn="" />
+
+        <TextView
+            style="@style/NavClockTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="88:55" />
+
+            <CheckBox
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:gravity="center"
+                android:checked="true"
+                android:button="@drawable/checkbox_nav_mal"
+                android:background="@android:color/transparent"
+                android:textOff=""
+                android:textOn="" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/NavClockLabel.lower"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="@string/hours" />
+    </LinearLayout>
+
+</FrameLayout>

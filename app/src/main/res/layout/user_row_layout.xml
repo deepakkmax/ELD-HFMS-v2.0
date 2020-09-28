@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/llUSerStatus"
+        android:layout_marginStart="12dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvInitials"
+            android:layout_width="wrap_content"
+            android:text="SK"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:visibility="visible"
+            android:textSize="@dimen/_10ssp"
+            android:padding="@dimen/_6sdp"
+            android:background="@drawable/user_profile"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/imgOffline"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@drawable/offline" />
+
+        <ImageView
+            android:id="@+id/imgOnline"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@drawable/online" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvDisplayName"
+        app:layout_constraintStart_toEndOf="@id/llUSerStatus"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/PhoneEventInformationTextStyle.Bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blue1"
+        android:textSize="@dimen/_12ssp"
+        android:text="Deepak Sharma" />
+
+    <TextView
+        android:id="@+id/tvMessageTime"
+        style="@style/ListTopRight"
+        android:layout_marginEnd="@dimen/_12sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="@dimen/_10ssp"
+        android:text="04:25 AM" />
+
+    <TextView
+        android:id="@+id/tvCurrentMessage"
+        app:layout_constraintTop_toBottomOf="@id/tvDisplayName"
+        app:layout_constraintStart_toEndOf="@id/llUSerStatus"
+        style="@style/PhoneEventInformationTextStyle.Light"
+        android:layout_width="0dp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        app:layout_constraintEnd_toStartOf="@id/tvMessageTime"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_10ssp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:singleLine="true"
+        android:text="current message here..." />
+
+    <TextView android:id="@+id/tvUnreadCount"
+        style="@style/UnreadMsgCount"
+        android:layout_marginEnd="@dimen/_12sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvMessageTime"
+        android:layout_width="@dimen/_16sdp"
+        android:gravity="center"
+        android:textSize="@dimen/_8ssp"
+        android:layout_height="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:text="48" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/_8sdp"
+        app:layout_constraintTop_toBottomOf="@id/llUSerStatus"
+        android:background="@color/e5e5e5"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.hutchsystems.hutchconnect.fragments.GpsSignalFragment">
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/SetupTitle2"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/global_position_satellite_check..." />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/gpsSetellite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_8sdp">
+        <ImageView
+            android:id="@+id/icFindingSatellite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:padding="@dimen/_4sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:background="@drawable/ic_setup_processing" />
+
+        <TextView
+            android:id="@+id/tvFindingSatellite"
+            android:textSize="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:layout_marginLeft="@dimen/_8sdp"
+            app:layout_constraintTop_toTopOf="@+id/icFindingSatellite"
+            app:layout_constraintBottom_toBottomOf="@+id/icFindingSatellite"
+            app:layout_constraintLeft_toRightOf="@+id/icFindingSatellite"
+
+            android:text="@string/gps_satellite"
+
+            android:textColor="@color/green2"
+            />
+        <TextView
+            android:id="@+id/tvFindingSatelliteValue"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="3D"
+
+            android:textSize="@dimen/_10sdp"
+            android:textColor="@color/green2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/utcTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/gpsSetellite"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_8sdp">
+        <ImageView
+            android:id="@+id/icCheckingUTCTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_4sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:background="@drawable/double_tick_green" />
+
+        <TextView
+            android:id="@+id/tvCheckingUTCTime"
+            android:textSize="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_8sdp"
+            app:layout_constraintTop_toTopOf="@+id/icCheckingUTCTime"
+            app:layout_constraintLeft_toRightOf="@+id/icCheckingUTCTime"
+
+            android:text="@string/utc_time"
+            app:layout_constraintBottom_toBottomOf="@+id/icCheckingUTCTime"
+            android:textColor="@color/green2"
+            />
+        <TextView
+            android:id="@+id/tvCheckingUTCTimeValue"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="14:25"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="@color/green2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/lattitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/utcTime"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_8sdp">
+        <ImageView
+            android:id="@+id/icCheckingLatitude"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:padding="@dimen/_4sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:background="@drawable/double_tick_green" />
+
+        <TextView
+            android:id="@+id/tvCheckingLatitude"
+            android:textSize="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_8sdp"
+            app:layout_constraintTop_toTopOf="@+id/icCheckingLatitude"
+            app:layout_constraintLeft_toRightOf="@+id/icCheckingLatitude"
+            android:text="@string/latitude"
+            app:layout_constraintBottom_toBottomOf="@+id/icCheckingLatitude"
+            android:textColor="@color/green2"
+            />
+        <TextView
+            android:id="@+id/tvCheckingLatitudeValue"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="50.082393"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="@color/green2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/longitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/lattitude"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_8sdp">
+        <ImageView
+            android:id="@+id/icCheckingLongitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:padding="@dimen/_4sdp"
+            android:background="@drawable/ic_setup_processing" />
+
+        <TextView
+            android:id="@+id/tvCheckingLongitude"
+            android:textSize="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/_8sdp"
+            app:layout_constraintTop_toTopOf="@+id/icCheckingLongitude"
+            app:layout_constraintLeft_toRightOf="@+id/icCheckingLongitude"
+            android:gravity="center_vertical"
+            android:text="@string/longtitude"
+            app:layout_constraintBottom_toBottomOf="@+id/icCheckingLongitude"
+            android:textColor="@color/green2"
+            />
+        <TextView
+            android:id="@+id/tvCheckingLongitudeValue"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="-120.039063"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="@color/green2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/currentLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/longitude"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_8sdp">
+        <ImageView
+            android:id="@+id/icCheckingLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:padding="@dimen/_4sdp"
+            android:background="@drawable/double_tick_green" />
+
+        <TextView
+            android:id="@+id/tvCheckingLocation"
+            android:textSize="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_8sdp"
+            app:layout_constraintTop_toTopOf="@+id/icCheckingLocation"
+            app:layout_constraintStart_toEndOf="@+id/icCheckingLocation"
+            android:text="@string/current_location"
+            app:layout_constraintBottom_toBottomOf="@+id/icCheckingLocation"
+            android:textColor="@color/green2"
+            />
+        <TextView
+            android:id="@+id/tvCheckingLocationValue"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/tvCheckingLocation"
+            android:text=""
+            app:layout_constraintTop_toBottomOf="@id/tvCheckingLocation"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="@color/green2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/currentLocation"
+        android:paddingLeft="@dimen/width_4"
+        android:paddingRight="@dimen/width_4"
+        android:visibility="gone">
+
+        <LinearLayout
+            style="@style/Thead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+            <TextView
+                style="@style/TableTH"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/prn" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+                <TextView
+                    style="@style/TableTH"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gnss" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/TableTH"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/snr" />
+
+            <TextView
+                style="@style/TableTH"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/elev" />
+
+            <TextView
+                style="@style/TableTH"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/azim" />
+
+            <TextView
+                style="@style/TableTH"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/flags" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/sv_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+        </ListView>
+
+    </LinearLayout>
+
+
+
+
+
+
+    <ImageButton
+        android:id="@+id/butGPSNext"
+        android:layout_width="@dimen/width_32"
+        android:layout_height="@dimen/width_32"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/width_4"
+        android:layout_marginTop="@dimen/width_4"
+        android:background="@drawable/setup_screen_button"
+        android:elevation="6dp"
+        android:padding="22dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_arrow_next_white_48dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

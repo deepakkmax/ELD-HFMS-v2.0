@@ -1,0 +1,32 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hutchsystems.hutchconnect.fragments.ModifiedFragment">
+
+    <ListView
+        android:id="@+id/lvData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/eee"
+        android:dividerHeight="1dp"
+        android:listSelector="@android:color/transparent" />
+
+    <ImageButton
+        android:id="@+id/btnConfirm"
+       style="@style/fab_btn_style_new"
+        android:src="@drawable/ic_fab_assume"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnReject"
+        style="@style/fab_btn_style_new"
+        android:backgroundTint="@color/red1"
+        android:src="@drawable/ic_fab_uncertified"
+        app:layout_constraintBottom_toTopOf="@id/btnConfirm"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

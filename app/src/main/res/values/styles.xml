@@ -1,0 +1,1424 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:spinnerItemStyle">@style/MooSpinnerItem</item>
+        <item name="android:colorBackground">@color/white</item>
+        <item name="actionButtonStyle">@style/ActionButtonStyle</item>
+        <item name="BlueTextColor">@color/blue2</item>
+        <item name="WhiteTextColor">@color/white</item>
+        <item name="TextColor">@color/textcolor</item>
+    </style>
+
+    <style name="AppTheme.Launcher">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+
+    </style>
+
+    <style name="MooSpinnerItem" parent="android:Widget.TextView.SpinnerItem">
+        <item name="android:textAppearance">@style/MooTextAppearanceSpinnerItem</item>
+    </style>
+
+    <style name="MooTextAppearanceSpinnerItem" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+        <item name="android:textColor">#FFF</item>
+    </style>
+
+    <style name="list_serial_no">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="list_serial_no_new">
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="row_list_content">
+        <item name="android:paddingLeft">16dp</item>
+    </style>
+
+    <style name="list_title_text.Receive">
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:textColor">#B3000000</item>
+    </style>
+
+    <style name="list_title_text.Send">
+        <item name="android:layout_marginBottom">6dp</item>
+        <item name="android:textColor">#B3000000</item>
+    </style>
+
+    <style name="list_title_text_white" parent="list_title_text">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <style name="spiner_rule_style">
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="list_time.Time">
+        <item name="android:layout_marginLeft">12dp</item>
+    </style>
+
+    <style name="list_time.white">
+        <item name="android:textColor">#80FFFFFF</item>
+    </style>
+
+    <style name="buttonStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="textbox">
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="username">
+        <item name="android:textSize">@dimen/_10sdp</item>
+        <item name="android:paddingLeft">@dimen/_6sdp</item>
+        <item name="android:paddingTop">@dimen/_2sdp</item>
+        <item name="android:paddingBottom">@dimen/_2sdp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="username.xhdpi">
+        <item name="android:textSize">11sp</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingTop">1dp</item>
+        <item name="android:paddingBottom">1dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="drawer_list_style" parent="list_title_text">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="ButtonStyle">
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/_10ssp</item>
+
+        <item name="android:layout_marginStart">@dimen/_10sdp</item>
+        <item name="android:layout_marginEnd">@dimen/_10sdp</item>
+    </style>
+    <style name="ButtonStyleNew">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:gravity">center</item>
+
+        <item name="android:textSize">@dimen/_14ssp</item>
+        <item name="android:layout_marginLeft">@dimen/_3sdp</item>
+        <item name="android:layout_marginRight">@dimen/_3sdp</item>
+    </style>
+
+    <style name="FabButtonStyle" parent="ButtonStyle">
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="LabelTextStyle">
+        <item name="android:textSize">@dimen/_9ssp</item>
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:layout_marginTop">@dimen/elog_card_text_margin</item>
+        <item name="android:layout_marginBottom">@dimen/elog_card_text_margin</item>
+    </style>
+
+    <style name="LabelTextStyle.xhdpi">
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:layout_marginBottom">6dp</item>
+    </style>
+
+    <style name="LabelTextStyle.xhdpi.ClockLabelStyle">
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+    </style>
+
+    <style name="InspectionButtonTextStyle">
+        <item name="android:textSize">@dimen/text_size_15</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="InformationTextStyle">
+        <item name="android:textSize">@dimen/_9ssp</item>
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:layout_marginTop">@dimen/elog_card_text_margin</item>
+        <item name="android:layout_marginBottom">@dimen/elog_card_text_margin</item>
+        <item name="android:layout_marginLeft">4dp</item>
+    </style>
+
+    <style name="InformationTextStyle.xhdpi">
+        <item name="android:textSize">11sp</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:layout_marginBottom">6dp</item>
+    </style>
+
+    <style name="InformationTextStyle.xhdpi.ClockInfo">
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="BottomInformationTextStyle">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="BottomInformationTextStyle.xhdpi">
+        <item name="android:textSize">13sp</item>
+        <item name="android:layout_margin">0dp</item>
+    </style>
+
+    <style name="BoldBottomInformationTextStyle">
+        <item name="android:textSize">@dimen/text_size_1</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="BoldBottomInformationTextStyle.xhdpi">
+        <item name="android:textSize">@dimen/text_size_1</item>
+    </style>
+
+    <style name="CircleTextStyle">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:textColor">#FFF</item>
+    </style>
+
+    <style name="CircleTextStyle.xhdpi">
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="DutyTextStyle">
+        <item name="android:textSize">@dimen/textsize_12</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="DutyTextStyle.xhdpi">
+        <item name="android:textSize">8sp</item>
+    </style>
+
+    <style name="RuleTextStyle">
+        <item name="android:textSize">@dimen/font_size_20</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+    <style name="RuleTextStyleNew">
+        <item name="android:textSize">@dimen/title_text_size</item>
+        <item name="android:padding">@dimen/_8sdp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="InputRuleTextStyle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+
+    <style name="EventDescriptionTextStyle">
+        <item name="android:textColor">@color/ColorPrimary</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="FreezeTextStyle">
+        <item name="android:textColor">@color/ColorPrimary</item>
+        <item name="android:textSize">54sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="FreezeTextValueStyle">
+        <item name="android:textColor">@color/ColorPrimary</item>
+        <item name="android:textSize">54sp</item>
+    </style>
+
+    <style name="FreezeTextStyle.xhdpi">
+        <item name="android:textColor">@color/ColorPrimary</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="FreezeTextValueStyle.xhdpi">
+        <item name="android:textColor">@color/ColorPrimary</item>
+        <item name="android:textSize">28sp</item>
+    </style>
+
+    <style name="SmallEventDescriptionTextStyle">
+        <item name="android:textColor">@color/ColorPrimary</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="EventInformationTextStyle">
+        <item name="android:textColor">@color/ColorPrimary</item>
+        <item name="android:textSize">@dimen/list_text_title</item>
+    </style>
+
+    <style name="EventInformationTextStyle.small">
+        <item name="android:textSize">@dimen/list_text_value</item>
+    </style>
+
+    <style name="PhoneEventInformationTextStyle">
+        <item name="android:textColor">#E6000000</item>
+        <item name="android:textSize">@dimen/_9sdp</item>
+    </style>
+
+    <style name="PhoneEventInformationTextStyleNew">
+        <item name="android:textColor">#E6000000</item>
+        <item name="android:textSize">@dimen/_11ssp</item>
+    </style>
+
+    <style name="PhoneEventInformationTextStyle.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="PhoneEventInformationTextStyle.Light">
+        <item name="android:textColor">#8C000000</item>
+    </style>
+
+    <style name="ListTopRight">
+        <item name="android:textColor">#8C000000</item>
+        <item name="android:textSize">@dimen/list_text_value</item>
+    <!--    <item name="android:fontFamily">sans-serif-light</item>-->
+        <item name="android:layout_marginTop">12dp</item>
+    </style>
+
+    <style name="ListTopRight.xhdpi">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="PhoneEventInformationTextStyle.370">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="PhoneEventInformationTextStyle.xhdpi">
+        <item name="android:textColor">@color/ColorPrimaryDark</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+    </style>
+
+    <style name="DashboardTextStyle">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/rounded_layout</item>
+        <item name="android:textSize">@dimen/_10ssp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/_1sdp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/_1sdp</item>
+        <item name="android:paddingBottom">@dimen/_1sdp</item>
+        <item name="android:paddingStart">@dimen/_6sdp</item>
+        <item name="android:paddingEnd">@dimen/_6sdp</item>
+    </style>
+
+    <style name="CircleButtonTextStyle">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/button_text_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+
+    <style name="DisableCircleButtonTextStyle">
+        <item name="android:textColor">@color/ColorPrimary</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+
+    <style name="EventIconTextStyle">
+        <item name="android:textColor">@color/ColorPrimary</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_margin">@dimen/_9sdp</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+    </style>
+
+    <style name="EventIconTextStyleMarginRight">
+        <item name="android:textColor">@color/ColorPrimary</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">@dimen/list_content_text_size</item>
+        <item name="android:layout_marginTop">@dimen/li_checkbox_margin</item>
+        <item name="android:layout_marginBottom">@dimen/li_checkbox_margin</item>
+        <item name="android:layout_marginLeft">@dimen/li_checkbox_margin</item>
+        <item name="android:layout_marginRight">12dp</item>
+    </style>
+
+    <style name="EventIconTextStyle.370">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="EventIconTextStyle.xhdpi">
+        <item name="android:textColor">@color/ColorPrimary</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+
+    <style name="EventLabelStyle">
+        <item name="android:textColor">#999</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="EventLabelStyle.white">
+        <item name="android:textColor">#FFF</item>
+    </style>
+
+    <style name="EventLabelStyleSmall" parent="EventLabelStyle">
+        <item name="android:textSize">@dimen/text_size_13</item>
+    </style>
+
+    <style name="EventLabelStyleSmall.xhdpi">
+        <item name="android:textSize">@dimen/text_size_11</item>
+    </style>
+
+    <style name="InspectionLabelStyleSmall" parent="EventLabelStyle">
+        <item name="android:textSize">@dimen/text_lab_size</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="InspectionLabelStyleSmall.xhdpi" parent="EventLabelStyle">
+        <item name="android:textSize">11sp</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="EventTextStyle">
+        <item name="android:textColor">@color/ColorPrimary</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="DefectItemsStyle">
+        <item name="android:textColor">#999</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="DefectLabelStyleSmall" parent="EventLabelStyle">
+        <item name="android:textSize">@dimen/_10ssp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+
+        <item name="android:layout_marginLeft">@dimen/_5ssp</item>
+    </style>
+
+    <style name="DefectLabelStyleSmall.xhdpi">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/ColorPrimaryDark</item>
+        <item name="android:layout_marginLeft">3dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+    </style>
+
+
+    <style name="DialogMessageTextStyle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#757575</item>
+    </style>
+
+    <style name="BigButtonStyle">
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+    </style>
+
+    <style name="SettingsLabelStyle">
+        <item name="android:textSize">@dimen/small_title_text_size</item>
+        <item name="android:layout_marginStart">@dimen/_3sdp</item>
+        <item name="android:layout_marginEnd">@dimen/_3sdp</item>
+        <item name="android:textColor">#66000000</item>
+    </style>
+
+
+    <style name="SettingsLabelStyle.Margin0">
+        <item name="android:layout_marginStart">0dp</item>
+        <item name="android:layout_marginEnd">0dp</item>
+    </style>
+
+    <style name="SettingsTitleStyle">
+        <item name="android:textSize">@dimen/font_size_16</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="SettingsTitleStyleNew">
+        <item name="android:textSize">@dimen/_14ssp</item>
+        <item name="android:layout_marginLeft">12dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="SettingsSmallLabelStyle">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#66000000</item>
+    </style>
+
+    <style name="LabelStyle">
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_marginRight">6dp</item>
+        <item name="android:textColor">#66000000</item>
+    </style>
+
+    <style name="LabelStyle.xhdpi">
+        <item name="android:textSize">11sp</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:layout_marginRight">12dp</item>
+        <item name="android:textColor">#66000000</item>
+    </style>
+
+    <style name="BigTextLabelStyle">
+        <item name="android:textSize">@dimen/_10ssp</item>
+        <item name="android:layout_marginTop">@dimen/_1sdp</item>
+        <item name="android:layout_marginStart">@dimen/_3sdp</item>
+        <item name="android:layout_marginEnd">@dimen/_3sdp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="BigTextLabelStyle.Margin0">
+        <item name="android:layout_marginStart">0dp</item>
+        <item name="android:layout_marginEnd">0dp</item>
+    </style>
+
+    <style name="TextLabelStyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:textColor">#66000000</item>
+    </style>
+
+    <style name="TextValStyle">
+        <item name="android:textSize">@dimen/_10sdp</item>
+        <item name="android:layout_marginRight">@dimen/_4sdp</item>
+        <item name="android:layout_marginBottom">@dimen/_4sdp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="TextValStyle.xhdpi">
+        <item name="android:textSize">@dimen/text_size_13</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:layout_marginRight">12dp</item>
+        <item name="android:layout_marginBottom">12dp</item>
+    </style>
+
+    <style name="WhiteTextValStyle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:layout_marginRight">12dp</item>
+        <item name="android:layout_marginBottom">12dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="AppTheme.CustomDrawerTheme" parent="Theme.AppCompat.Light">
+        <item name="android:height">100dp</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="DrawerMenuLink">
+        <item name="android:textSize">@dimen/title_text_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#454545</item>
+    </style>
+
+    <style name="spiner_style">
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">#454545</item>
+    </style>
+
+    <style name="message_style">
+        <item name="android:textColor">#252525</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="message_style.Send">
+        <item name="android:layout_marginLeft">72dp</item>
+    </style>
+
+    <style name="message_style.Receive">
+        <item name="android:layout_marginRight">72dp</item>
+    </style>
+
+    <style name="SettingSeprator">
+        <item name="android:layout_marginTop">@dimen/_16sdp</item>
+        <item name="android:layout_marginBottom">@dimen/_16sdp</item>
+        <item name="android:layout_marginStart">@dimen/_32sdp</item>
+        <item name="android:background">@color/e5e5e5</item>
+    </style>
+
+    <style name="SettingSeprator.MarginLeft0">
+        <item name="android:layout_marginStart">0dp</item>
+    </style>
+
+    <style name="SettingSeprator.ChangeRule">
+        <item name="android:layout_marginStart">0dp</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginBottom">2dp</item>
+    </style>
+
+    <style name="DialogTitleSeprator" parent="SettingSeprator">
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginStart">0dp</item>
+        <item name="android:layout_marginEnd">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+    </style>
+
+    <!-- GPS Activity -->
+    <!-- <style name="Theme.Settings" parent="@style/GpsSwitchTheme">
+         <item name="android:windowNoTitle">true</item>
+         <item name="android:windowActionBar">false</item>
+
+         <item name="toolbarStyle">@style/Widget.Toolbar</item>
+     </style> -->
+
+    <style name="info_label">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingRight">4dip</item>
+    </style>
+
+    <style name="info_value">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <!-- GPS Activity -->
+
+
+    <style name="SetupTitle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginRight">32dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:layout_marginLeft">32dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="SetupTitle2">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <style name="SetupList">
+        <item name="android:textSize">@dimen/_10sdp</item>
+    </style>
+
+    <style name="SetupList.Caps">
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="SetupSeprator">
+        <item name="android:layout_marginTop">24dp</item>
+        <item name="android:layout_marginBottom">24dp</item>
+        <item name="android:background">@color/e5e5e5</item>
+    </style>
+
+    <style name="WelcomeTitle">
+        <item name="android:textSize">28sp</item>
+    </style>
+
+    <style name="WelcomeTitle.white">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="WelcomeText">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Thead">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingLeft">@dimen/width_2</item>
+        <item name="android:paddingRight">@dimen/width_2</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+    <style name="TheadRow">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingLeft">@dimen/width_2</item>
+        <item name="android:paddingRight">@dimen/width_2</item>
+        <item name="android:paddingBottom">2dp</item>
+    </style>
+
+    <style name="TableRow">
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingLeft">@dimen/width_2</item>
+        <item name="android:paddingRight">@dimen/width_2</item>
+        <item name="android:paddingBottom">2dp</item>
+    </style>
+
+    <style name="TableRow.Odd">
+        <item name="android:background">#f6f6f6</item>
+    </style>
+
+    <style name="TableRow.Even">
+        <item name="android:background">#eeeeee</item>
+    </style>
+
+    <style name="TableTH">
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">@dimen/text_size_13</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="TableTD">
+        <item name="android:textColor">#555</item>
+        <item name="android:textSize">@dimen/text_size_13</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="ButtonProceed">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+    <style name="TextLabel" parent="TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textSize">20sp</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">@color/yellow1</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlActivated">@color/yellow1</item>
+    </style>
+
+    <style name="ListView" parent="@android:style/Widget.ListView">
+        <item name="android:background">@color/white</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:divider">@android:color/transparent</item>
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="TermsTitle">
+        <item name="android:background">#1A000000</item>
+        <item name="android:padding">@dimen/_12sdp</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="TermsButtonStyle">
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textSize">@dimen/_14ssp</item>
+    </style>
+
+    <style name="TermText">
+        <item name="android:textColor">#454545</item>
+        <item name="android:textSize">@dimen/_9ssp</item>
+        <item name="android:lineSpacingExtra">@dimen/_2sdp</item>
+    </style>
+
+    <style name="SpeedStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="RPMStyle" parent="SpeedStyle">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="RPMStyle.small">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="RPMStyle.extrasmall">
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="ListTitleStyle">
+        <item name="android:textSize">@dimen/list_content_text_size</item>
+        <item name="android:color">@color/ColorPrimary</item>
+    </style>
+
+    <style name="ListTitleStyle.Bold">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/list_title_text_size</item>
+    </style>
+
+    <style name="ListTitleStyle.Dispatch">
+        <item name="android:fontFamily">roboto</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/list_title_text_size</item>
+    </style>
+
+    <style name="Fab_Menu_Style">
+        <item name="android:radius">48dp</item>
+    </style>
+
+    <style name="DialogTitleStyle">
+        <item name="android:textSize">@dimen/dialog_text_title</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:layout_marginLeft">6dp</item>
+    </style>
+
+    <style name="DialogTitleStyleNew">
+        <item name="android:textSize">@dimen/dialog_text_title</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:layout_marginLeft">@dimen/_8sdp</item>
+    </style>
+
+
+    <style name="DialogCloseStyle">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:background">@drawable/dialog_close_seprator</item>
+        <item name="android:drawablePadding">6dp</item>
+        <item name="android:padding">@dimen/_18sdp</item>
+        <item name="android:scaleType">fitCenter</item>
+       <item name="android:src">@drawable/close</item>
+    </style>
+
+    <style name="DialogCloseStyleNew">
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:background">@drawable/dialog_close_seprator_new</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:src">@drawable/close</item>
+    </style>
+
+    <style name="DialogIconStyle">
+
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:src">@drawable/ic_launcher</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:padding">@dimen/_7sdp</item>
+
+    </style>
+
+    <style name="DialogIconStyleNew">
+        <item name="android:layout_marginLeft">6dp</item>
+        <item name="android:src">@drawable/ic_launcher</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="DriverProfileName" parent="InformationTextStyle">
+        <item name="android:textSize">@dimen/driver_name_text_size</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/blue2</item>
+    </style>
+
+    <style name="DriverProfileName.xhdpi">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="tpmsSeprator">
+        <item name="android:background">@color/e5e5e5</item>
+    </style>
+
+    <style name="TPMSValue">
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/tpms_value_text_size</item>
+        <item name="android:textColor">#181f26</item>
+    </style>
+
+    <style name="TPMSValue.Margin0">
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+    </style>
+
+    <style name="TPMSValue.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TPMSTemp">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/tpms_temp_text_size</item>
+        <item name="android:textColor">@color/green2</item>
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:layout_marginRight">4dp</item>
+    </style>
+
+    <style name="TPMSTemp.Red">
+        <item name="android:textColor">@color/red1</item>
+    </style>
+
+    <style name="TPMSTemp.Green">
+        <item name="android:textColor">@color/green2</item>
+    </style>
+
+    <style name="TPMSTemp.Margin0">
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+    </style>
+
+    <style name="TPMSTemp.Yellow">
+        <item name="android:textColor">@color/yellow3</item>
+    </style>
+
+    <style name="CountryName">
+        <item name="android:textSize">@dimen/font_size_20</item>
+        <item name="android:textColor">@color/fourfive</item>
+    </style>
+
+    <style name="AnnotationStyle">
+        <item name="android:textSize">@dimen/annotation_textsize</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:layout_marginRight">@dimen/_6sdp</item>
+        <item name="android:layout_marginBottom">@dimen/_6sdp</item>
+        <item name="android:layout_gravity">top</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:paddingLeft">@dimen/_6sdp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingRight">@dimen/_6sdp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:background">@drawable/annotation_bg</item>
+    </style>
+
+
+    <style name="InspectLogPrimaryDetailStyle">
+        <item name="android:textColor">#FFF</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/title_text_size</item>
+    </style>
+
+    <style name="HeaderCardTextStyle" parent="InspectLogPrimaryDetailStyle">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="InspectLogTextValStyle">
+        <item name="android:textColor">@color/blue1</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textSize">@dimen/title_text_size</item>
+    </style>
+
+    <style name="InspectLogTextLabStyle">
+        <item name="android:textSize">@dimen/small_title_text_size</item>
+        <item name="android:textColor">#66000000</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="InspectLogSeprator">
+        <item name="android:layout_marginTop">@dimen/_10sdp</item>
+        <item name="android:layout_marginBottom">@dimen/_10sdp</item>
+        <item name="android:background">@color/e5e5e5</item>
+    </style>
+
+    <style name="TabStyle">
+        <item name="android:textSize">@dimen/title_text_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">bold</item>
+
+
+    </style>
+
+
+    <style name="UnreadMsgCount">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/blue_circle_bg</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_marginLeft">12dp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="DTC_list_label">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/_999</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="DTC_list_val">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">#5b8ed2</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="DTC_list_val.green">
+        <item name="android:textColor">#48cfae</item>
+    </style>
+
+    <style name="DTC_list_val.red">
+        <item name="android:textColor">#ed5564</item>
+    </style>
+
+
+    <style name="Block">
+        <item name="android:layout_margin">2dp</item>
+    </style>
+
+    <style name="Block.Main">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/blue1</item>
+    </style>
+
+    <style name="Block.Blue">
+        <item name="android:background">@color/blue1</item>
+    </style>
+
+    <style name="Block.Green">
+        <item name="android:background">@color/green2</item>
+    </style>
+
+    <style name="Block.Yellow">
+        <item name="android:background">#f5d011</item>
+    </style>
+
+    <style name="Block.Red">
+        <item name="android:background">#ea3653</item>
+    </style>
+
+
+    <style name="BlockTitleLayout">
+        <item name="android:background">@drawable/bg_scorecard_title</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="BlockTitleText">
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="BlockTitle">
+        <item name="android:background">@drawable/bg_scorecard_title</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="BlockValue.Main">
+        <item name="android:layout_marginLeft">72dp</item>
+    </style>
+
+    <style name="BlockMainTextStyle">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="BlockValue">
+        <item name="android:textSize">32sp</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginLeft">36dp</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="BlockCaption.Main">
+        <item name="android:layout_marginLeft">72dp</item>
+    </style>
+
+    <style name="BlockCaption">
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:gravity">right</item>
+        <item name="android:layout_marginLeft">36dp</item>
+        <item name="android:layout_marginTop">38dp</item>
+    </style>
+
+    <style name="BlockCaptionVal">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+
+    <style name="TabTextStyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#80262d33</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:paddingBottom">16dp</item>
+    </style>
+
+    <style name="TabTextStyle.Active">
+        <item name="android:textColor">@color/blue1</item>
+    </style>
+
+    <style name="MaintenanceDate">
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#CC262d33</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+    </style>
+
+    <style name="MaintenanceMonthYear">
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#80262d33</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+    </style>
+
+    <style name="list_title_text">
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#252525</item>
+    </style>
+
+    <style name="list_title_text.Red">
+        <item name="android:textColor">#ef283e</item>
+    </style>
+
+    <style name="list_title_text.Blue">
+        <item name="android:textColor">@color/blue1</item>
+    </style>
+
+    <style name="list_title_text.Green">
+        <item name="android:textColor">#04c387</item>
+    </style>
+
+    <style name="list_subtitle_text" parent="list_title_text">
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/colorPrimaryLight</item>
+    </style>
+
+    <style name="MaintenanceTitle" parent="list_title_text">
+        <item name="android:textColor">@color/blue1</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+    </style>
+
+    <style name="MaintenanceSubTitle" parent="list_subtitle_text">
+        <item name="android:textStyle">normal</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+    </style>
+
+    <style name="SubtitleLayout">
+
+        <item name="android:layout_marginTop">26dp</item>
+        <item name="android:layout_marginLeft">96dp</item>
+    </style>
+
+    <style name="list_time" parent="list_title_text">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#66000000</item>
+    </style>
+
+    <style name="BigTextLabelStyle.Green">
+        <item name="android:textColor">@color/green4</item>
+    </style>
+
+    <style name="BigTextLabelStyle.Red">
+        <item name="android:textColor">#ef283e</item>
+    </style>
+
+    <style name="BigTextLabelStyle.Blue">
+        <item name="android:textColor">@color/blue1</item>
+    </style>
+
+    <style name="StratStopButton">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+
+    <style name="StratStopButton.Green">
+        <item name="android:background">@color/green4</item>
+    </style>
+
+    <style name="StratStopButton.Red">
+        <item name="android:background">#ef283e</item>
+    </style>
+
+    <style name="StratStopButton.Blue">
+        <item name="android:background">@color/blue1</item>
+    </style>
+
+    <style name="NavClockLabel">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/ccc</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="NavClockLabel.upper">
+        <item name="android:gravity">center_horizontal|bottom</item>
+        <item name="android:paddingBottom">3dp</item>
+    </style>
+
+    <style name="NavClockLabel.lower">
+        <item name="android:gravity">center_horizontal|top</item>
+        <item name="android:paddingTop">4dp</item>
+    </style>
+
+    <style name="NavClockTime">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/f5f5f5</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="InstructionTitle">
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingLeft">12dp</item>
+    </style>
+
+
+    <style name="MaintenanceCost">
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textColor">#CC262d33</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginLeft">12dp</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+    <style name="MaintenanceCostLabel">
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textColor">#80262d33</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+    <style name="fab_btn_style">
+        <item name="android:layout_width">@dimen/_42sdp</item>
+        <item name="android:layout_height">@dimen/_42sdp</item>
+        <item name="android:layout_gravity">bottom|right</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginBottom">@dimen/_20sdp</item>
+        <item name="android:layout_marginRight">@dimen/_20sdp</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:background">@drawable/setup_screen_button_yellow</item>
+        <item name="android:padding">@dimen/_10sdp</item>
+        <item name="android:elevation">@dimen/_12sdp</item>
+    </style>
+
+    <style name="fab_btn_style_new">
+        <item name="android:layout_width">@dimen/_42sdp</item>
+        <item name="android:layout_height">@dimen/_42sdp</item>
+        <item name="android:layout_marginBottom">@dimen/_15sdp</item>
+        <item name="android:layout_marginRight">@dimen/_15sdp</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:background">@drawable/setup_screen_button_yellow</item>
+        <item name="android:padding">@dimen/_12sdp</item>
+        <item name="android:elevation">@dimen/_10sdp</item>
+        <item name="android:outlineProvider">none</item>
+
+    </style>
+
+    <style name="fab_btn_style.secondary">
+        <item name="android:layout_marginBottom">@dimen/fab_margin_bottom_secondary</item>
+        <item name="android:backgroundTint">@color/red1</item>
+    </style>
+
+    <style name="LoginButton">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@drawable/login_button_text</item>
+        <item name="android:background">@drawable/login_button</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginBottom">@dimen/login_btn_margin_bottom</item>
+        <item name="android:layout_marginTop">@dimen/login_btn_margin_top</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="LayoutBGRound">
+        <item name="android:background">@drawable/layout_bg_round_nine</item>
+        <item name="android:padding">@dimen/_5sdp</item>
+        <item name="android:layout_marginLeft">@dimen/_2sdp</item>
+        <item name="android:layout_marginRight">@dimen/_2sdp</item>
+    </style>
+
+    <style name="DutyStatusHours">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/_7sdp</item>
+        <item name="android:textColor">@color/dark_text_color</item>
+    </style>
+
+    <!-- Light base activity theme -->
+    <style name="ActivityTheme.Primary.Base.Light" parent="Theme.AppCompat.NoActionBar">
+        <item name="Background_layout">@drawable/rounded_layout</item>
+        <item name="BackgroundTintColor">@color/white</item>
+        <item name="WhiteTextColor">@color/white</item>
+        <item name="BlueTextColor">@color/blue2</item>
+        <item name="TextColor">@color/textcolor</item>
+        <item name="backgroundColor">@color/white</item>
+        <item name="dividerColor">@color/ccc</item>
+        <item name="progressbarSmall">@drawable/db_small_circle_progressbar</item>
+        <item name="progressbarBig">@drawable/db_big_circle_progressbar</item>
+        <item name="Header">@drawable/db_header</item>
+        <item name="IconBackground">@drawable/db_iconbg</item>
+        <item name="ProgressBarSmallBg">@drawable/db_bg</item>
+        <item name="ProgressBarBigBg">@drawable/db_big_bg</item>
+        <item name="BigCircle">@drawable/db_big_circle</item>
+        <item name="SmallCircle">@drawable/db_small_circle</item>
+        <item name="StatusBar">@drawable/elog_status</item>
+        <item name="Graph">@drawable/elog_graph</item>
+        <item name="DutyHour">@drawable/elog_total</item>
+        <item name="Bottom">@drawable/db_bottom</item>
+        <item name="OdometerBackGround">@drawable/db_bg_odometer</item>
+        <item name="TotalMilesBackground">@drawable/db_bg_totalmiles</item>
+        <item name="Bell">@drawable/db_bell_small</item>
+        <item name="BoxBackGround">@drawable/db_bg</item>
+        <item name="VehicleDataBg">@drawable/vehicledatabluebg</item>
+        <item name="VehicleDataRedBg">@drawable/vehicledataredbg</item>
+        <item name="Background">@drawable/input_bg</item>
+    </style>
+
+    <!-- Dark base activity theme -->
+    <style name="ActivityTheme.Primary.Base.Dark" parent="Theme.AppCompat.NoActionBar">
+        <item name="Background_layout">@drawable/rounded_layout_dark</item>
+        <item name="BackgroundTintColor">@color/purple</item>
+        <item name="BlueTextColor">@color/yellow_deep_dark</item>
+        <item name="WhiteTextColor">@color/yellow_deep_dark</item>
+        <item name="TextColor">@color/yellow_deep_dark</item>
+        <item name="backgroundColor">@color/purple</item>
+        <item name="dividerColor">@color/yellow_deep_dark</item>
+        <item name="progressbarSmall">@drawable/db_small_circle_progressbar_dark</item>
+        <item name="progressbarBig">@drawable/db_big_circle_progressbar_dark</item>
+        <item name="Header">@drawable/db_header_dark</item>
+        <item name="IconBackground">@drawable/db_iconbg_dark</item>
+        <item name="ProgressBarSmallBg">@drawable/db_bg_dark</item>
+        <item name="ProgressBarBigBg">@drawable/db_big_bg_dark</item>
+        <item name="BigCircle">@drawable/db_big_circle_dark</item>
+        <item name="SmallCircle">@drawable/db_small_circle_dark</item>
+        <item name="StatusBar">@drawable/elog_status_dark</item>
+        <item name="Graph">@drawable/elog_graph_dark</item>
+        <item name="DutyHour">@drawable/elog_total_dark</item>
+        <item name="Bottom">@drawable/db_bottom_dark</item>
+        <item name="OdometerBackGround">@drawable/db_bg_odometer_dark</item>
+        <item name="TotalMilesBackground">@drawable/db_bg_totalmiles_dark</item>
+        <item name="Bell">@drawable/bell_small_dark</item>
+        <item name="BoxBackGround">@drawable/db_bg_dark</item>
+        <item name="VehicleDataBg">@drawable/vehicledatabluebg_dark</item>
+        <item name="VehicleDataRedBg">@drawable/vehicledatabluebg_dark</item>
+        <item name="Background">@drawable/db_iconbg_dark</item>
+    </style>
+
+    <style name="DashboardWithGraphActivityThemeLight" parent="ActivityTheme.Primary.Base.Light">
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <style name="DashboardWithGraphActivityThemeDark" parent="ActivityTheme.Primary.Base.Dark">
+        <item name="android:windowBackground">@color/purple</item>
+    </style>
+
+    <style name="EditTextStyle">
+        <item name="android:textSize">@dimen/version_text_size</item>
+        <item name="android:layout_marginTop">@dimen/_5sdp</item>
+        <item name="android:drawablePadding">@dimen/_5sdp</item>
+        <item name="android:drawableLeft">@drawable/edit</item>
+        <item name="android:background">@drawable/input_bg</item>
+        <item name="android:paddingLeft">@dimen/_10sdp</item>
+    </style>
+
+    <style name="LabelSetupTextStyle">
+        <item name="android:textSize">@dimen/title_text_size</item>
+        <item name="android:layout_marginTop">@dimen/_8sdp</item>
+        <item name="android:drawablePadding">@dimen/_10sdp</item>
+        <item name="android:drawableLeft">@drawable/permission_icon</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/colorPrimaryLight</item>
+    </style>
+
+    <style name="HeaderTextStyle">
+        <item name="android:textSize">@dimen/_14ssp</item>
+        <item name="android:drawablePadding">@dimen/_5sdp</item>
+        <item name="android:drawableLeft">@drawable/welcome_icon</item>
+        <item name="android:textStyle">bold</item>
+
+        <item name="android:textColor">@color/darkBlue_fab</item>
+    </style>
+
+    <style name="ActionButtonStyle" parent="@android:style/Widget.Holo.Light.ActionButton">
+        <item name="android:minWidth">-67dp</item>
+        <item name="android:paddingLeft">-67dp</item>
+        <item name="android:paddingRight">-67dp</item>
+    </style>
+
+    <style name="toolbarStyle" parent="@style/Base.TextAppearance.AppCompat.Title">
+        <item name="android:textSize">@dimen/_10sdp</item>
+    </style>
+
+    <style name="SubTextView">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="event_edittext">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_event_edittext</item>
+        <item name="android:padding">@dimen/_9sdp</item>
+        <item name="android:textColorHint">@color/colorGrey</item>
+        <item name="android:layout_marginLeft">@dimen/_7sdp</item>
+        <item name="android:layout_marginRight">@dimen/_7sdp</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">@dimen/_9ssp</item>
+    </style>
+    <style name="dialog_theme" parent="android:Theme" >
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowIsFloating">false</item>
+</style>
+
+
+
+
+</resources>

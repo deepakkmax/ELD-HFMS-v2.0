@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hutchsystems.hutchconnect.fragments.UnidentifyFragment">
+
+
+    <ListView
+        android:id="@+id/lvUnidentified"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/eee"
+        android:dividerHeight="1dp"
+        android:listSelector="@android:color/transparent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btnAssume"
+            style="@style/ButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg"
+            android:text="Assume" />
+
+        <Button
+            android:id="@+id/btnSkip"
+            style="@style/ButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg"
+            android:text="Skip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/fab_margin_bottom"
+        android:layout_marginRight="@dimen/fab_margin_right"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/fabAll"
+            android:layout_width="@dimen/fab_size"
+            android:layout_height="@dimen/fab_size"
+            style="@style/fab_btn_style"
+            android:src="@drawable/ic_fab_check_double_circle"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/fabAssume"
+            style="@style/fab_btn_style_new"
+            android:src="@drawable/ic_fab_skip" />
+    </LinearLayout>
+</RelativeLayout>

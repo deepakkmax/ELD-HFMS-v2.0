@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/recycler_item_width"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/border"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"></View>
+
+        <LinearLayout
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/GreyLight"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgAction"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:src="@drawable/pending_icon" />
+
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pending"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ListTitleStyle.Dispatch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dispatch_no" />
+
+                <TextView
+                    style="@style/ListTitleStyle.Dispatch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=": " />
+
+                <TextView
+                    android:id="@+id/tvDispatchNo"
+                    style="@style/ListTitleStyle.Dispatch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    style="@style/ListTitleStyle.Dispatch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" | " />
+
+                <TextView
+                    style="@style/ListTitleStyle.Dispatch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/booking_no" />
+
+                <TextView
+                    style="@style/ListTitleStyle.Dispatch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=": " />
+
+                <TextView
+                    android:id="@+id/tvBookingNo"
+                    style="@style/ListTitleStyle.Dispatch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="3dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/colorPrimary"></View>
+
+            <TextView
+                android:id="@+id/tvPickupPoint"
+                style="@style/list_subtitle_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/pickup_icon"
+                android:drawablePadding="5dp" />
+
+            <TextView
+                android:id="@+id/tvDropPoint"
+                style="@style/list_subtitle_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/drop_icon"
+                android:drawablePadding="5dp" />
+
+            <TextView
+                android:id="@+id/tvEmptyReturnPoint"
+                style="@style/list_subtitle_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/empty_icon"
+                android:drawablePadding="5dp" />
+
+            <TextView
+                android:id="@+id/tvNotes"
+                style="@style/EventInformationTextStyle.small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha=".65"
+                android:drawableLeft="@drawable/note_icon"
+                android:drawablePadding="5dp"
+                android:ellipsize="marquee"
+                android:textStyle="italic"
+                android:visibility="visible" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgPlay"
+        android:layout_width="65dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center|right"
+        android:scaleType="fitCenter"
+        android:src="@drawable/play_icon" />
+</FrameLayout>

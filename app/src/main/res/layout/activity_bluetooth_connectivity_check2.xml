@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_texture_permission_screen">
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/bg_permission_screen" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_15sdp"
+        android:padding="@dimen/_15sdp"
+        android:background="@drawable/layout_bg_round_nine">
+        <RelativeLayout
+            android:id="@+id/layoutHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:drawableLeft="@drawable/ic_canbus"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:text="Canbus Data"
+
+                android:textColor="@color/darkBlue_fab"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/appLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/hutch_logo_header" />
+            <TextView
+                android:id="@+id/tvAppVersion"
+                style="@style/list_subtitle_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/appLogo"
+                android:text="@string/version"
+                android:textSize="10sp" />
+        </RelativeLayout>
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+
+            app:layout_constraintTop_toBottomOf="@+id/layoutHeader"
+            android:background="@color/e5e5e5" />
+
+        <LinearLayout  android:id="@+id/layoutProtocol" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvProtocol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Protocol"
+                android:layout_marginTop="@dimen/_5sdp"
+
+                android:layout_marginRight="@dimen/_5sdp"
+                android:textColor="@color/darkBlue_fab"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold" />
+            <Spinner
+                android:id="@+id/ddlProtocolSupport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_6sdp"
+                android:background="@drawable/spinner_background"
+                android:entries="@array/protocol_support"/>
+
+            <TextView
+                android:id="@+id/tvOdometerSource"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Odometer Source"
+                android:textColor="@color/darkBlue_fab"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textSize="@dimen/_10sdp"
+                android:layout_marginRight="5dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/dd2OdometerSource"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/tvOdometerSource"
+                android:padding="@dimen/_6sdp"
+                android:background="@drawable/spinner_background"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvCurrentTimeValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:textColor="?attr/TextColor"
+
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@+id/layoutProtocol"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <ListView
+            android:id="@+id/lvData"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+
+            app:layout_constraintTop_toBottomOf="@+id/tvCurrentTimeValue"
+            app:layout_constraintBottom_toTopOf="@+id/tvNotes"
+
+            android:divider="@android:color/transparent"
+            android:dividerHeight="@dimen/_6sdp"/>
+
+        <TextView
+            android:id="@+id/tvNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+
+            android:text="* After getting all data app will prompt to turn off Ignition."
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textStyle="italic" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btnProceed"
+        style="@style/ButtonProceed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="@drawable/btn_setup_proceed"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:visibility="gone"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutStartVehicle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#4D000000"
+        android:paddingLeft="@dimen/width_percent_5"
+        android:paddingRight="@dimen/width_percent_5"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_percent_60"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_weight="7"
+            android:background="#fff"
+            android:elevation="@dimen/_14sdp"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/width_percent_2"
+            android:paddingRight="@dimen/width_percent_2">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_weight="5"
+                android:src="@drawable/ignition_off" />
+
+            <TextView
+                style="@style/SetupTitle"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="0dp"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:text="Please Turn off your vehicle now"
+                android:textSize="24sp" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

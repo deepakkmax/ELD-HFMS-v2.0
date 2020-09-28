@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/_12sdp"
+    android:layout_marginEnd="@dimen/_5sdp"
+    android:background="@drawable/layout_bg_round_nine"
+    android:layout_marginStart="@dimen/_5sdp"
+    android:layout_marginBottom="@dimen/_5sdp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvVolumeLevel"
+        style="@style/SettingsTitleStyle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:paddingBottom="@dimen/_12sdp"
+        android:layout_height="wrap_content"
+        android:text="@string/volume_level_sound" />
+
+    <LinearLayout
+        android:id="@+id/llseekVolume"
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvVolumeLevel"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/width_8"
+            android:src="@drawable/ic_volume" />
+
+        <SeekBar
+            android:id="@+id/seekVolume"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:progress="20" />
+    </LinearLayout>
+
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e5e5e5"
+        android:layout_marginStart="@dimen/_28sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        app:layout_constraintTop_toBottomOf="@id/llseekVolume"
+        android:id="@+id/view1"/>
+
+    <TextView
+        style="@style/SettingsLabelStyle"
+        android:layout_width="wrap_content"
+        android:drawableStart="@drawable/ic_violation_settings"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/width_8"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:drawablePadding="@dimen/_8sdp"
+        app:layout_constraintTop_toBottomOf="@id/view1"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_weight="1"
+        android:text="@string/settings_reading_violation" />
+
+    <Switch
+        android:id="@+id/switchReadViolation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_marginTop="@dimen/_12sdp"
+        app:layout_constraintTop_toBottomOf="@id/view1"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/width_percent_1"
+        android:switchMinWidth="24dp"
+        android:text=""
+        android:textOff=""
+        android:textOn=""
+        android:thumb="@drawable/switch_thumb"
+        android:track="@drawable/switch_track" />
+
+
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e5e5e5"
+        android:layout_marginStart="@dimen/_28sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        app:layout_constraintTop_toBottomOf="@id/switchReadViolation"
+        android:id="@+id/view3"/>
+
+    <TextView
+        style="@style/SettingsLabelStyle"
+        android:layout_width="wrap_content"
+        android:drawableStart="@drawable/ic_change_duty_status"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/view3"
+        android:gravity="center"
+        android:layout_marginStart="@dimen/width_8"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:drawablePadding="@dimen/_8sdp"
+        android:text="@string/settings_reading_status_change" />
+
+    <Switch
+        android:id="@+id/switchReadDutyStatusChanged"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_marginTop="@dimen/_12sdp"
+        app:layout_constraintTop_toBottomOf="@id/view3"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/width_percent_1"
+        android:switchMinWidth="24dp"
+        android:text=""
+        android:textOff=""
+        android:textOn=""
+        android:thumb="@drawable/switch_thumb"
+        android:track="@drawable/switch_track" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

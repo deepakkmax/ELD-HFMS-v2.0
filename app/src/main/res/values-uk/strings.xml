@@ -1,0 +1,1090 @@
+<resources>
+    <string name="app_name"></string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Імя користувача виборні</string>
+    <string name="prompt_password">пароль</string>
+    <string name="action_sign_in">увійти в систему або Зареєструватися</string>
+    <string name="action_sign_in_short">Увійти в</string>
+    <string name="action_back">спину</string>
+    <string name="action_installer_id">зроблено</string>
+    <string name="action_dock">док</string>
+    <string name="error_invalid_email">цю адресу електронної пошти недійсна</string>
+    <string name="error_invalid_password">цей пароль надто короткий</string>
+    <string name="error_incorrect_password">цей пароль невірний</string>
+    <string name="error_field_required">цій галузі необхідна</string>
+   <string name="permission_rationale">"Контакти дозволи потрібні для забезпечення електронної
+доробки." та "
+   </string>
+    <string name="title_activity_drawer">тумбочка</string>
+
+    <string name="navigation_drawer_open">Відкрити навігацію ящик</string>
+    <string name="navigation_drawer_close">Закрити навігацію ящик</string>
+
+    <string name="action_settings">параметри</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">привіт порожні фрагмент</string>
+
+    <string name="current_rule">поточного правила</string>
+    <string name="time_zone">часових поясів</string>
+    <string name="co_driver">Co-Driver</string>
+    <string name="vehicle_miles">автомобіля Миль</string>
+    <string name="total_distance">загальну відстань</string>
+    <string name="total_miles_hours">Фех. 0103 год/</string>
+
+
+    <!-- strings for Hours & Rules Status -->
+    <string name="driving_hours">годин їзди</string>
+    <string name="work_shift_hour">робоча зміна годину</string>
+    <string name="driving_hours_phone">їзди</string>
+    <string name="work_shift_hour_phone">робоча зміна</string>
+
+    <!-- strings for Duty Status Change -->
+    <string name="button_back">назад</string>
+    <string name="button_save">зберегти</string>
+    <string name="duty_status_change_activity_title">мита зміна статусу</string>
+    <string name="duty_status_label">виберіть мита статус</string>
+    <string name="annotation">анотації</string>
+    <string name="annotation_string_1">Прикордонний</string>
+    <string name="annotation_string_2">вантажу перевірити</string>
+    <string name="annotation_string_3">точок огляду</string>
+    <string name="annotation_string_4">двір</string>
+    <string name="annotation_string_5">розпалює</string>
+    <string name="annotation_string_6">завантаження</string>
+    <string name="annotation_string_7">розвантаження</string>
+    <string name="instruction_text">типу Text тут...</string>
+    <string name="button_skip">Прокрутка</string>
+    <string name="location_man">розташування</string>
+
+ <string name="off_duty">OFF</string>
+ <string name="sleeper">SB</string>
+ <string name="driving">D</string>
+ <string name="on_duty">ON</string>
+ <string name="personal_use">PC</string>
+ <string name="yard_move">YM</string>
+ <string name="ILC">ILC</string>
+ <string name="ILR">ILR</string>
+
+ <string name="off_duty_long">OFF DUTY</string>
+ <string name="sleeper_long">SLEEPER-BERTH</string>
+ <string name="driving_long">DRIVING</string>
+ <string name="on_duty_long">ON DUTY</string>
+ <string name="personal_use_long">PERSONAL USE</string>
+ <string name="yard_move_long">YARD MOVE</string>
+
+    <!-- strings for Rule Change -->
+    <string name="rule_change_activity_title">правило змінити</string>
+    <string name="rule_label">правила вибору</string>
+    <!-- strings for Rules -->
+    <string name="canada_rule_1">Канади 70 грн./7днів</string>
+    <string name="canada_rule_2">Канада 120 грн./14 днів</string>
+    <string name="us_rule_1">нас 70 грн./8дні</string>
+    <string name="us_rule_2">нас 60 грн./7дні</string>
+    <string name="phone_canada_rule_1">Канади\n70hr/7днів</string>
+    <string name="phone_canada_rule_2">Канади\n120 грн./14 днів</string>
+    <string name="phone_us_rule_1">нас\n70hr/8дні</string>
+    <string name="phone_us_rule_2">нам\n70hr/8днів тому звільнення</string>
+    <!--<string name="us_rule_2">US 60hr/7days</string> -->
+
+ <string name="login">IN</string>
+ <string name="logout">OUT</string>
+ <string name="certified_record">CR</string>
+ <string name="engine_up">EU</string>
+ <string name="engine_down">ED</string>
+ <string name="malfunction">MF</string>
+ <string name="data_diagnostic">DD</string>
+
+    <!-- strings for New Event -->
+    <string name="new_event_activity_title">Нова подія</string>
+    <string name="event_type">тип події</string>
+    <string name="event_time">час</string>
+    <string name="odometer">Одометр</string>
+    <string name="engine_hours">години роботи двигуна</string>
+    <string name="shipping_document_number">судноплавства документ номер</string>
+    <string name="latitude">широта</string>
+    <string name="longtitude">Longtitude</string>
+    <string name="origin">походження</string>
+    <string name="location_description">розташування опис</string>
+    <string name="comments">коментарі</string>
+
+    <string name="odo">Odo</string>
+    <string name="eng_hrs">Eng Hr</string>
+    <string name="phone_eventtype">типу</string>
+    <string name="phone_shipping_number">судноплавства</string>
+    <string name="hrs">год</string>
+    <string name="record_automatically">автоматичне</string>
+    <string name="record_manually">ручного</string>
+
+    <string name="drawer_open">відкрити</string>
+    <string name="drawer_close">закрити</string>
+
+    <string name="duty_status_changed_to_off_duty">водій\s мита статус змінюється на "мита</string>
+    <string name="duty_status_changed_to_sleeper_berth">водій\s мита статус змінюється на "Рава-Руський шпалопросочувальний причалу</string>
+    <string name="duty_status_changed_to_driving">водій\s мита статус змінюється на водіння</string>
+    <string name="duty_status_changed_to_on_duty">водій\s мита статус змінюється на ЧЕРГУВАННЯ</string>
+    <string name="duty_status_changed_to_personal_use">водій вказує Уповноважена особистого користування, видима область 94 см</string>
+    <string name="duty_status_changed_to_yard_move">автомобіліста вказує "Двір Рухається</string>
+
+    <string name="texttospeech_duty_status_changed_to_off_duty">ви змінили мита статус у положення Вимк. Збір</string>
+    <string name="texttospeech_duty_status_changed_to_sleeper_berth">ви змінили мита статусу Руський шпалопросочувальний причалу</string>
+    <string name="texttospeech_duty_status_changed_to_driving">ви змінили мита статус на водіння</string>
+    <string name="texttospeech_duty_status_changed_to_on_duty">ви змінили мита статусу ЧЕРГУВАЛИ</string>
+    <string name="texttospeech_duty_status_changed_to_personal_use">ви змінили мита статусу особистого користування</string>
+    <string name="texttospeech_duty_status_changed_to_yard_move">ви змінили мита статусу дворі рухається</string>
+
+    <string name="hours">годин</string>
+    <string name="record_status_active">активних</string>
+    <string name="record_status_inactive">Inactive-Changed</string>
+    <string name="record_status_inactive_change_request">Неактивних - зміна просив</string>
+    <string name="record_status_inactive_change_rejected">неактивних - зміна відкинув</string>
+    <string name="event">подія</string>
+    <string name="record_origin_automatically">автоматично записаний водій </string>
+    <string name="record_origin_edited">змінити або ввели водій </string>
+    <string name="record_origin_edited_by_other">редагувати на запит на автентифікацію користувача (не-водія) </string>
+    <string name="record_origin_assumed">взяла від невідомих водій профіль </string>
+
+    <string name="record_date">дату</string>
+    <string name="usdot">USDOT</string>
+    <string name="carrier">Перевізник</string>
+    <string name="current_location">поточне розташування</string>
+    <string name="driver_name">водій назва</string>
+    <string name="driver_id">ідентифікатор водія</string>
+    <string name="start_end_odometer">розпочати наприкінці Одометр</string>
+    <string name="driver_license_number">Водійське посвідчення номер</string>
+    <string name="driver_license_number_and_state">водійське посвідчення / Державний</string>
+    <string name="co_driver_name">Co-Driver Назва</string>
+    <string name="co_driver_id">Co-Driver ID</string>
+    <string name="miles_today">миль сьогодні</string>
+    <string name="driver_license_state">водійське посвідчення державного</string>
+    <string name="eld_manufacturer">виборні виробника</string>
+    <string name="truck_tractor_id">гальмуванням тягач ID</string>
+    <string name="truck_tractor_vin">гальмуванням тягач VIN</string>
+    <string name="eld_id">ВИБОРНІ ID</string>
+    <string name="shipping_id">відвантаження Ід</string>
+    <string name="unidentified_driver_records">невідомі водій записи</string>
+    <string name="exempt_driver_status">звільнені статус водія</string>
+    <string name="trailer_id">трейлер ID</string>
+    <string name="data_diagnostic_indicators">дані діагностики показники</string>
+    <string name="eld_malfunction_indicators">виборні несправності показники</string>
+    <string name="start_end_engine_hours">початку Наприкінці години роботи двигуна</string>
+    <string name="commodity">товарних</string>
+    <string name="shipping_number">судноплавства номер/Товарні</string>
+    <string name="trailer_number">трейлер кількості</string>
+
+    <string name="rule">правило</string>
+
+    <string name="menu_daily_log">щодня Log</string>
+    <string name="menu_inspect_dailylog">Огляд Dailylog</string>
+    <string name="menu_create_event">створити подію</string>
+    <string name="menu_uncertified_log_book">Незавірених Бортовий журнал</string>
+    <string name="menu_unidentified_data">невідомі дані</string>
+    <string name="menu_edit_request">редагування запит</string>
+    <string name="menu_violation_history">порушення історії</string>
+    <string name="menu_driver_profile">водій профіль</string>
+    <string name="menu_Message">повідомлення</string>
+    <string name="menu_logout">Logout</string>
+    <string name="menu_unidentified_event">невідомі заходу</string>
+    <string name="menu_send_report">відправляти email</string>
+    <string name="menu_dvir">двір</string>
+    <string name="menu_tpms">контролю втрати тиску</string>
+
+    <string name="title_eld">виборні</string>
+    <string name="title_daily_log">Щоденно</string>
+    <string name="title_inspect_elog">перевіряйте журналу eLog</string>
+    <string name="title_create_event">створити події</string>
+    <string name="title_certify_log_book">засвідчують у судновому журналі</string>
+    <string name="title_edit_request">Редагувати прохання</string>
+    <string name="title_violation_history">порушення історії</string>
+    <string name="title_driver_profile">водій профіль</string>
+    <string name="title_Message">повідомлення</string>
+    <string name="title_unidentified_event">невідомі заходу</string>
+    <string name="title_dvir">двір</string>
+    <string name="title_new_inspection">нової інспекції</string>
+    <string name="title_inspection">переглянути інспекції</string>
+    <string name="title_shipping_trailers">судноплавства, трейлери</string>
+    <string name="title_tpms">контролю втрати тиску</string>
+    <string name="title_edit_event">редагування</string>
+    <string name="title_inspect_dailylog">журналу:</string>
+    <string name="title_dtc">ДН</string>
+    <string name="title_score_card">водій Score Card</string>
+    <string name="title_trailer_management">трейлер управління </string>
+    <string name="title_vehicle_info">транспортним засобом Info </string>
+    <string name="title_new_Fuel">палива деталі </string>
+    <string name="title_incident_detail">інциденту деталі </string>
+    <string name="title_maintenance_detail">ремонту деталі </string>
+
+    <string name="event_origin_automatically">Автоматично</string>
+    <string name="event_origin_edited">змінювати</string>
+
+    <string name="action_confirm_web_event">підтвердження</string>
+    <string name="action_reject_web_event">відхилити</string>
+    <string name="action_back_edit_event">назад</string>
+    <string name="action_edit_event">Редагувати</string>
+    <string name="action_back_one_day">назад</string>
+    <string name="action_forward_one_day">вперед</string>
+    <string name="action_set_active">встановити Допису</string>
+    <string name="action_post_all"></string>
+    <string name="action_sync_all">синхронізації</string>
+    <string name="action_change_rule">змін правил</string>
+    <string name="action_certify_log">сертифікації Log</string>
+    <string name="action_usb_drive">ФЛЕШКУ</string>
+    <string name="action_bluetooth">Bluetooth</string>
+    <string name="action_email">Email</string>
+    <string name="action_webservice">Web Service</string>
+    <string name="input_information_activity_title">Вхід інформації</string>
+
+    <string name="button_change_status">Змінити\nStatus</string>
+    <string name="button_keep_driving">зберегти\nруху</string>
+
+    <string name="paired_devices">спарених пристроїв</string>
+    <string name="available_devices">доступних пристроїв</string>
+    <string name="bluetooth_connection_infos">зачекайте, доки Hutch" ("Старскі й Хатч виборні підєднується до вашого автомобіля!</string>
+    <string name="setup_error_msg">Вибачте, повязані з транспортним засобом може бути не встановлено. Будь ласка, звяжіться Hutch" ("Старскі й Хатч системи!</string>
+    <string name="bluetooth_connection_ok">Встановлення звязку з успіхом! Будь ласка, натисніть кнопку Гаразд , щоб продовжити роботу!</string>
+
+    <string name="can_bus_error">Вибачте, виникла помилка. Будь ласка, звяжіться Hutch" ("Старскі й Хатч системи!</string>
+
+    <string name="vin_number">Кількість VIN</string>
+    <string name="speed">швидкість</string>
+    <string name="rpm">обертання</string>
+    <string name="select_protocol">Hutch" ("Старскі й Хатч системи виявила таких протокол про ваш автомобіль</string>
+    <string name="j1708_protocol">J1708</string>
+    <string name="j1939_protocol">J1939</string>
+    <string name="both_protocols">J1708 та J1939</string>
+
+    <string name="internet_connection">перевірки зєднання з Інтернетом...</string>
+    <string name="no_internet">Виборні Hutch" ("Старскі й Хатч" не підєднано до Інтернету. Будь ласка, повторіть спробу пізніше!</string>
+    <string name="web_service">Перевірка Web Service...</string>
+    <string name="web_service_ok">Web Service - це добре. Будь ласка, натисніть кнопку Далі , щоб продовжити роботу!</string>
+    <string name="no_web_service">Веб-служба недоступна. Будь ласка, повторіть спробу пізніше!</string>
+    <string name="latitude_longitude">Широта/довгота,</string>
+
+    <string name="can_data_ok">будь ласка, натисніть кнопку Далі , щоб продовжити роботу!</string>
+
+    <string name="default_cycle">Типовим цикл/Default правило</string>
+    <string name="unit_no">енергоблоку №</string>
+    <string name="start_time">Час початку</string>
+
+    <string name="datetime">дати/часу</string>
+    <string name="location">місцезнаходження</string>
+    <string name="dvir_type">типу</string>
+    <string name="truck_number">вантажівки#</string>
+    <string name="trailer">Трейлер(и)</string>
+    <string name="defect">Несправність</string>
+    <string name="defect_repaired">дефект відремонтовані</string>
+    <string name="safe_to_drive">безпечними для привода</string>
+    <string name="yes">Так</string>
+    <string name="no">Ні</string>
+    <string name="button_certify">сертифікувати</string>
+    <string name="button_add_defect">додати дефект</string>
+    <string name="button_add_picture">додати зображення</string>
+    <string name="inspection_activity_title">нової інспекції</string>
+    <string name="defect_item">дефект елементи</string>
+    <string name="button_close">закрити</string>
+
+    <string-array name="dvir_types">
+        <item>попередньо</item>
+        <item>пост</item>
+        <item>Інтер</item>
+    </string-array>
+
+    <string-array name="sync_time">
+        <item>5 хв.</item>
+        <item>10 хв</item>
+        <item>20 хв.</item>
+        <item>30 хв.</item>
+        <item>60 хв.</item>
+    </string-array>
+
+    <string-array name="graph_line">
+        <item>час завершення</item>
+        <item>поточного часу</item>
+    </string-array>
+
+    <string-array name="vision_mode">
+        <item>дня</item>
+        <item>ніч</item>
+        <item>авто</item>
+    </string-array>
+
+    <string-array name="font_size">
+        <item>малих</item>
+        <item>нормального</item>
+        <item>великих</item>
+    </string-array>
+
+    <string name="defect1">1) повітря гальмової системи</string>
+    <string name="defect2">2) таксі</string>
+    <string name="defect3">3) вантажів галузі енергетичної безпеки</string>
+    <string name="defect4">4) зєднання пристроїв,</string>
+    <string name="defect5">5) небезпечні вантажі (якщо такі є)</string>
+    <string name="defect6">6) водій керує</string>
+    <string name="defect7">7) сидіння водія</string>
+    <string name="defect8">8) електричних гальмової системи</string>
+    <string name="defect9">9) аварійної техніки та пристроїв безпеки</string>
+    <string name="defect10">10) вихлопної системи</string>
+    <string name="defect11">11) фоторамки та вантажу тіла</string>
+    <string name="defect12">12) паливної системи</string>
+    <string name="defect13">13) дефектів</string>
+    <string name="defect14">14) скла та Дзеркал</string>
+    <string name="defect15">15) Нагрівач/отвір розморожувача</string>
+    <string name="defect16">16) з протидії піратам поблизу Африканського рогу</string>
+    <string name="defect17">17) Hybraulic гальмової системи</string>
+    <string name="defect18">18) ламп і Рефлекторів</string>
+    <string name="defect19">19) рульового управління,</string>
+    <string name="defect20">20) Підвіска</string>
+    <string name="defect21">21) шин</string>
+    <string name="defect22">22) колеса/Маточини/Скріплення</string>
+    <string name="defect23">23) Склоочисники &amp; Шайби</string>
+    <string name="defect24">24) Інші</string>
+
+    <string-array name="defect_items">
+     <item>@string/defect1</item>
+     <item>@string/defect2</item>
+     <item>@string/defect3</item>
+     <item>@string/defect4</item>
+     <item>@string/defect5</item>
+     <item>@string/defect6</item>
+     <item>@string/defect7</item>
+     <item>@string/defect8</item>
+     <item>@string/defect9</item>
+     <item>@string/defect10</item>
+     <item>@string/defect11</item>
+     <item>@string/defect12</item>
+     <item>@string/defect13</item>
+     <item>@string/defect14</item>
+     <item>@string/defect15</item>
+     <item>@string/defect16</item>
+     <item>@string/defect17</item>
+     <item>@string/defect18</item>
+     <item>@string/defect19</item>
+     <item>@string/defect20</item>
+     <item>@string/defect21</item>
+     <item>@string/defect22</item>
+     <item>@string/defect23</item>
+     <item>@string/defect24</item>
+    </string-array>
+
+    <string name="defect_msg">я не знайшов вада у моєму транспортного засобу.</string>
+    <string name="repaired_msg">Несправність датчика(и) знайшли в двір були скориговані.</string>
+    <string name="safetodrive_msg">Несправність датчика(и) знайшли в двір не треба виправляти для безпечної експлуатації транспортного засобу.</string>
+    <string name="no_safetodrive_msg">Будь ласка, не керування автотранспортом.</string>
+    <string name="button_view">Переглянути</string>
+
+
+    <string name="settings_time_zone">часовий пояс</string>
+    <string name="settings_default_rule">за замовчуванням зазвичай</string>
+    <string name="settings_graph_line">графік лінії</string>
+    <string name="settings_color_line">рядковим кольоровим</string>
+    <string name="settings_us_color">нас</string>
+    <string name="settings_canada_color">Канади</string>
+    <string name="settings_violation_on_grid">шоу порушення на сітці</string>
+    <string name="settings_time_format">формат часу</string>
+    <string name="settings_unit_format">блок </string>
+    <string name="settings_reading_violation">читайте у звязку з порушенням</string>
+    <string name="settings_automatic_change_rule">правил автоматичне змінити</string>
+    <string name="settings_reading_message">читання повідомлення</string>
+    <string name="settings_reading_status_change">див мита зміна статусу </string>
+    <string name="settings_start_time">час початку</string>
+    <string name="settings_orientation">орієнтації</string>
+    <string name="settings_vision_mode">бачення режим</string>
+    <string name="settings_font_size">розмір шрифту</string>
+    <string name="settings_brightness">яскравість</string>
+    <string name="settings_check_update">перевірити оновлення</string>
+    <string name="settings_system_infor">інформації про систему</string>
+    <string name="settings_legal">перегляд юридичним документом</string>
+    <string name="settings_sync_time">синхронізувати час</string>
+    <string name="settings_copy_trailers">копіювання трейлер(и)</string>
+    <string name="settings_volume_level">рівня гучності</string>
+    <string name="settings_list_violation">шоу порушень у статусі обовязок</string>
+    <string name="settings_android_version">Android версія</string>
+    <string name="settings_imei">IMEI</string>
+    <string name="settings_app_version">ВИБОРНІ версія</string>
+    <string name="settings_battery_level">рівень заряду батареї</string>
+    <string name="settings_bluetooth_name">Bluetooth назву</string>
+    <string name="settings_default_battery">80%</string>
+
+
+    <!-- GPS Activity -->
+    <string name="gps_status_tab">статусу</string>
+    <string name="gps_map_tab">карти</string>
+    <string name="gps_sky_tab">неба</string>
+
+    <string name="gps_start">почати</string>
+    <string name="gps_pause">Пауза</string>
+    <string name="menu_navigation"></string>
+    <string name="menu_settings">Налаштування навігації</string>
+    <string name="menu_extra">більш</string>
+    <string name="delete_aiding_data">зрозумілим, сприяючи дані</string>
+    <string name="delete_aiding_data_success">успішно видалено пособництві даних.</string>
+   <string name="delete_aiding_data_failure">Платформа не підтримує видалення пособництві даних.
+   </string>
+    <string name="send_location">Надсилання даних про ваше місцезнаходження</string>
+    <string name="set_fix_frequency">встановити частоту виправити</string>
+    <string name="force_time_injection">закачування часу</string>
+    <string name="force_time_injection_success">успішно виведено часові дані.</string>
+   <string name="force_time_injection_failure">Платформа не підтримує закачування часові дані.
+   </string>
+    <string name="force_xtra_injection">Закачати XTRA Дані</string>
+    <string name="force_xtra_injection_success">успішно виведено XTRA даних.</string>
+   <string name="force_xtra_injection_failure">Платформа не підтримує закачування XTRA даних.
+   </string>
+
+    <string name="zoom_in">Збільшення</string>
+    <string name="zoom_out">масштабу</string>
+    <string name="mode_map">карти</string>
+    <string name="mode_satellite">супутникового</string>
+
+    <string name="gps_latitude_label">Lat:</string>
+    <string name="gps_longitude_label">давно:</string>
+    <string name="gps_fix_time_label">:</string>
+    <string name="gps_ttff_label">TTFF:</string>
+    <string name="gps_altitude_label">Alt:</string>
+    <string name="gps_accuracy_label">"АСС":</string>
+    <string name="gps_speed_label">швидкість:</string>
+    <string name="gps_bearing_label">НЕСУЧИЙ:</string>
+    <string name="gps_fix_label">Виправлення</string>
+    <string name="gps_utc_time_label">системи:</string>
+
+    <string name="gps_prn_column_label">PRN</string>
+    <string name="gps_flag_image_label">ГНСС</string>
+    <string name="gps_snr_column_label">SNR</string>
+    <string name="gps_elevation_column_label">Elev</string>
+    <string name="gps_azimuth_column_label">Azim</string>
+    <string name="gps_flags_column_label">прапори</string>
+    <string name="gps_not_supported">GPS не підтримується. Цікаві app…</string>
+    <string name="install">Встановити</string>
+    <string name="please_install_google_maps">інсталюйте Google Maps</string>
+    <string name="enable_gps_message">GPS вимкнено. Увімкнути його зараз?</string>
+    <string name="enable_gps_positive_button">Спутники GPS</string>
+    <string name="enable_gps_negative_button">не</string>
+   <string name="gps_set_location_listener">почав GPS з інтервалом = %1$ ss, мін Коротш. відст. = %2$ sm
+   </string>
+
+    <!-- User tutorial -->
+    <string name="showcase_gps_on_off_title">контролює</string>
+   <string name="showcase_gps_on_off_message">• перемикач "увімк./вимк." починає/зупиняє GPS.\n•
+\"частка\" направляє до обєкта (буде показано після одержання GPS fix)\n\n
+       <i>(натисніть відправити у відставку)</i>
+   </string>
+
+    <!-- Preferences -->
+    <string name="pref_title">Налаштування</string>
+    <string name="pref_map_category_title">карти</string>
+    <string name="pref_map_type_title">карта типу</string>
+    <string name="pref_map_type_summary">визначає тип карта плитки буде показано</string>
+    <string name="pref_map_type_dialog_title">вибору карти типу</string>
+
+    <string name="pref_rotate_map_with_compass_title">повернути карту з Компас</string>
+   <string name="pref_rotate_map_with_compass_summary">поміняти карту орієнтація на основі напрямком
+
+   </string>
+
+    <string name="pref_tilt_map_with_sensors_title">нахиліть карта з пристрою</string>
+   <string name="pref_tilt_map_with_sensors_summary">зміни до першої особи вигляд карти, тримаючи
+на пристрої
+   </string>
+
+    <string name="pref_gps_category_title">GPS-пристрій</string>
+    <string name="pref_auto_start_gps_title">GPS Auto-Start</string>
+    <string name="pref_auto_start_gps_summary">почати GPS, коли починається app</string>
+
+    <string name="pref_gps_min_time_title">інтервал</string>
+    <string name="pref_gps_min_time_summary">часу між GPS фіксує в секундах</string>
+    <string name="pref_gps_min_time_dialog_title">введіть інтервал в секундах</string>
+    <string name="pref_gps_min_time_invalid_entry">інтервал повинен бути числом</string>
+
+    <string name="pref_gps_min_distance_title">мін.</string>
+   <string name="pref_gps_min_distance_summary">Мінімальна відстань відстань між пристроєм GPS фіксує, в метрах
+   </string>
+    <string name="pref_gps_min_distance_dialog_title">ввести хв. відстань, в метрах</string>
+    <string name="pref_gps_min_distance_invalid_entry">мін. Відстань повинна бути числом</string>
+
+    <string name="pref_analyze_gps_accuracy_title">проаналізувати GPS точність</string>
+    <string name="pref_analyze_gps_accuracy_summary">користування GPS орієнтир для вимірювання GPS сталася помилка</string>
+
+    <string name="pref_display_category_title">відображення</string>
+    <string name="pref_keep_screen_on_title">тримати на екрані</string>
+    <string name="pref_keep_screen_on_summary">запобігає екран з вимкнувши</string>
+    <string name="pref_true_north_title">точки компас для справжніх Північної</string>
+   <string name="pref_true_north_summary">Компас зіткнеться true північної замість магнітної північної
+   </string>
+
+    <string name="pref_about_category_title">про</string>
+    <string name="pref_show_tutorial_title">шоу посібник</string>
+    <string name="pref_show_tutorial_summary">показує інструкції щодо використання app</string>
+    <!-- End GPS activity -->
+
+
+    <!-- Wireless connectivity check -->
+    <string name="cellular_connection">перевірки стільникового звязку</string>
+    <string name="wifi_connection">перевірки зєднання Wi-Fi</string>
+    <string name="hutch_connection">встановлення звязку із Hutch" ("Старскі й Хатч" систем</string>
+    <string name="download_configuration">завантаження конфігурацій</string>
+
+    <string name="bluetooth_enable_checking">при перевірці Bluetooth перемикач "увімк./вимк." на</string>
+    <string name="bluetooth_searching">пошук пристроїв Bluetooth мосту</string>
+    <string name="bluetooth_established_connection">встановлення звязку із  Hutch Connect</string>
+    <string name="bluetooth_checking_heartbeat">перевірки  Hutch Connect Серцебиття</string>
+    <string name="bluetooth_information">запустіть автомобіля!</string>
+
+
+    <string name="finding_gps_satellite">Пошук супутник GPS</string>
+    <string name="checking_utc_time">перевірки час UTC</string>
+    <string name="checking_latitude_longitude">перевірки широту та довготу Longtitude</string>
+    <string name="checking_current_location">перевірки місця знаходження</string>
+    <string name="your_location">вашого поточного місцезнаходження</string>
+    <string name="terms_of_service_01">Hutch" ("Старскі й Хатч" систем є власником або ліцензії певні технології, що розробив і робить комерційно доступна користувачам через послуги мобільного звязку та/або веб-додатки для того, щоб сприяти ефективної діяльності вантажівки, двигун тренер флотів у Північній Америці. У звязку з використанням програми та надання підтримки, або придбання або оренди обладнання (усі питання подальшого визначення), вас та/або вашого підприємства чи організації корпорації (клієнт) засновують погодитися з умовами обслуговування, умов, що міститься в ньому (надалі під спільним найменуванням "Умови обслуговування").</string>
+
+
+    <string name="googleplay">Google грати</string>
+    <string name="install_opencv">встановити OpenCV Менеджер</string>
+    <string name="ask_install_opencv">з метою роботи, відкрити відзначають сканера потрібно послугами OpenCV менеджер, який ще не встановлено.</string>
+
+    <string name="activateunknown">Перейти до параметрів</string>
+    <string name="messageactivateunknown">відтворення Google не забагато відведуть українців і встановити з невідомих джерел вимкнено, будь ласка, скористайтеся пунктом меню Параметри і активуйте його.</string>
+
+    <string name="scanningToast">Пошук документа\nTap знову для сканування всього зображення</string>
+
+
+    <!-- Activity Bluetooth Conn Check-->
+    <string name="checking_btb...">перевірки BTB...</string>
+    <string name="checking_bluetooth">Перевірка Bluetooth</string>
+    <string name="searching_for_btb">пошук BTB</string>
+    <string name="if_safe_please_start_your_vehicle_now">якщо безпечний, запустіть вашого автомобіля відтепер</string>
+    <string name="search_devices">пошук пристроїв</string>
+    <string name="connecting_with_btb">підключення за допомогою BTB</string>
+    <string name="checking_btb_heartbeat">перевірки BTB Серцебиття</string>
+
+
+    <!-- Activity Certify Log-->
+    <string name="i_hearby_certify">я цим підтверджую, що мої дані записи і залікову мита статус для цього 24-годинного періоду, коректні.</string>
+    <string name="not_ready">Не готові</string>
+    <string name="reset_sign">підписати скинути</string>
+    <string name="certify">сертифікувати</string>
+
+    <!-- Activity Certify Log-->
+    <string name="select_defects">виберіть дефект(и)</string>
+    <string name="add">Додайте</string>
+
+    <!-- Activity First Time User-->
+    <string name="please_scroll_and_read_all_terms">прокручуйте і читати всі умови перед accpeting!</string>
+    <string name="terms_and_conditions">Умови &amp; Правила</string>
+    <string name="accept">приймають</string>
+    <string name="first_time_user">Вперше</string>
+    <string name="set_home_timezone">набору користувачів часовий пояс </string>
+    <string name="set_default_service_rule">встановити типовий служби правило </string>
+
+    <!-- Activity GPS Check-->
+    <string name="global_position_satellite_check...">глобальної супутникової позицію перевірити...</string>
+    <string name="gps_satellite">Супутник GPS</string>
+    <string name="utc_time">час UTC </string>
+    <string name="prn">PRN</string>
+    <string name="gnss">ГНСС</string>
+    <string name="snr">SNR</string>
+    <string name="elev">Elev</string>
+    <string name="azim">Azim</string>
+    <string name="flags">прапори</string>
+
+    <!-- Activity GPS Main-->
+    <string name="next">майбутнього</string>
+    <string name="transfer_record_to_codriver">трансферу рекорд CoDriver</string>
+    <string name="time_format">ГГ:ХХ:СС</string>
+
+    <!-- Activity GPS Main-->
+    <string name="pre">попередньо</string>
+    <string name="inter">Інтер</string>
+    <string name="post">пост</string>
+
+    <!-- Activity Output File Send-->
+    <string name="send_eld_data">надіслати виборні даних</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="send">Надіслати</string>
+
+    <!-- Activity Rule Change-->
+    <string name="hutch_eld_supported_rules">Hutch" ("Старскі й Хатч виборні підтримав правила</string>
+
+    <!-- Activity Select Country-->
+    <string name="select_country">виберіть країну</string>
+
+
+    <!-- Activity Setup Complete-->
+    <string name="setup_completed">налаштування завершити</string>
+    <string name="your_eld_is_ready_for_use">виборні готовий до використання</string>
+    <string name="cellular_connection_check">мобільного звязку, перевірте</string>
+    <string name="wifi_connection_check">зєднання Wi-Fi перевірити</string>
+    <string name="hutch_systems_connection_check">Hutch" ("Старскі й Хатч" систем звязку перевірити</string>
+    <string name="bluetooth_check">Bluetooth</string>
+    <string name="btb_connection">BTB підключення</string>
+    <string name="btb_heartbeat">BTB Серцебиття</string>
+    <string name="utc_time_check">час UTC перевірити</string>
+    <string name="latitude_and_longitude_check">широта і довгота перевірити</string>
+    <string name="current_location_check">поточне розташування перевірити будь-</string>
+    <string name="please_enter_your_installer_id">ласка, вкажіть Вашу інсталятора ID внизу, щоб перейти</string>
+    <string name="proceed">далі</string>
+
+
+    <!-- Activity Setup Welcome-->
+    <string name="welcome">вітають</string>
+    <string name="the_system_will_guide_you_through">система допоможе вам крок за кроком зявляється під час інсталяції. Налаштування виступить такі завдання:</string>
+    <string name="network_connectivity_check">підєднання до мережі, перевірте</string>
+    <string name="hutch_systems_connectivity_check">Hutch" ("Старскі й Хатч" систем звязок, Перевірте</string>
+    <string name="btb_connectivity_check">BTB (Bluetooth мосту) підєднання перевірити</string>
+    <string name="feel_free_to_contact_us">звязатися з нами за 604-776-3564, якщо вам потрібна наша допомога.</string>
+
+
+    <!-- Activity View Image-->
+    <string name="defect_img">Несправність датчика зображення</string>
+
+
+    <!-- Activity Wireless Connectivity Check-->
+    <string name="establishing_wireless_connection...">встановлення бездротового звязку...</string>
+    <string name="cellular_connection_lab">Стільникова підключення</string>
+    <string name="wifi_connection_lab">Wi-Fi-звязок</string>
+    <string name="connection_with_hutch_systems">зєднання Hutch" ("Старскі й Хатч" систем</string>
+    <string name="retry">повторити</string>
+
+
+    <!-- Alert BTB-->
+    <string name="btb_connection_in_progress">BTB підключення до прогресу</string>
+    <string name="please_wait_while_eld_is_connecting_to_btb">зачекайте, поки не виборні підключення до BTB.</string>
+
+
+    <!-- Alert Layout-->
+    <string name="device_battery_low">Пристрій Battery Low</string>
+    <string name="please_reconnect_to_power_immediately">підєднайте до влади відразу.</string>
+
+
+    <!-- Defect Item-->
+    <string name="description">Опис</string>
+
+
+    <!-- DIalog Color Picker-->
+    <string name="select_color">вибрати колір,</string>
+    <string name="selected_color">вибраний колір</string>
+    <string name="set">встановити</string>
+
+
+    <!-- DTC Item-->
+    <string name="spn_mid">SPN/середні</string>
+    <string name="fmi">FMI</string>
+    <string name="oc">НК</string>
+
+
+    <!-- eLog Scrollview-->
+    <string name="remaining">залишилися</string>
+    <string name="na">N/A</string>
+    <string name="current_trip">Траєкторію</string>
+
+
+    <!-- Fab Layout-->
+    <string name="fab_btn_switch_user">Перемикання користувача</string>
+    <string name="fab_btn_undocking">швартування</string>
+
+
+    <!-- Fragment Add Notice Order -->
+    <string name="duration_in_minutes">тривалість (у хвилинах)</string>
+    <string name="report_no">Номер звіту</string>
+    <string name="level">рівень</string>
+    <string name="fine_amount">Штраф</string>
+    <string name="results">результати</string>
+    <string name="hos">шлюшка</string>
+    <string name="mechanical">механічних</string>
+    <string name="speeding">прискорення</string>
+    <string name="seat_belt">ременів безпеки</string>
+    <string name="others">інших</string>
+    <string name="pass">пройти</string>
+    <string name="fail">не</string>
+    <string name="violation">порушення</string>
+    <string name="present">присутні</string>
+    <string name="out_of_service">OOS</string>
+    <string name="scan">сканування</string>
+
+
+    <!-- Fragment Daily Log Dashboard -->
+    <string name="inspector_mode">інспектор режим</string>
+    <string name="codriver_id_name">Co-Driver ID Назва</string>
+
+    <!-- Fragment Driver Profile -->
+    <string name="mobile_no">мобільного №</string>
+    <string name="dl_number">DL №</string>
+    <string name="dl_expiry">DL придатності</string>
+    <string name="dot_password">точок пароль</string>
+    <string name="exemption">звільнення</string>
+    <string name="special_category">спеціальна категорія</string>
+    <string name="authorized_personal_use">уповноважених особистого користування, видима область 94 см, у дворі рухатися</string>
+
+
+    <!-- Fragment Driver Scorecard Layout -->
+    <string name="view_score_card_last_30_days">переглянути рахунком картки протягом останніх 30 днів</string>
+    <string name="points_gained">ю очками</string>
+    <string name="low_washer_fluid">низькі шайба рідини</string>
+    <string name="failure_to_warm_up_engine">провал грітися двигун</string>
+    <string name="low_engine_oil">низькі моторного масла</string>
+    <string name="low_coolant_level">низький рівень хладагента</string>
+    <string name="high_rpm">високої</string>
+    <string name="speed_violation">швидкості обертання порушення</string>
+    <string name="hard_acceleration">жорсткий прискорення</string>
+    <string name="hard_braking">жорстким гальмуванням</string>
+    <string name="idling">неодружених</string>
+    <string name="critical_warnings">критичних попередження</string>
+    <string name="driving_with_engine_light_on">руху з двигуном світло на</string>
+    <string name="sharp_turn_left">крутий поворот наліво</string>
+    <string name="sharp_turn_right">крутий поворот праворуч</string>
+    <string name="hours_of_service">годин</string>
+    <string name="failure_to_conduct_trip_inspection">проблеми з обслуговуванням провести перевірку поїздка</string>
+
+
+
+    <!-- Fragment Extra -->
+    <string name="menu_dtc">DTC</string>
+    <string name="menu_trailer_management">Трейлер управління</string>
+    <string name="menu_scorecard">система показателей</string>
+    <string name="menu_vehicle_info">транспортним засобом за допомогою ССП Info</string>
+    <string name="menu_fuel_detail">Паливно деталей</string>
+    <string name="menu_incident">інцидент</string>
+    <string name="menu_maintenance">утримання</string>
+
+
+
+    <string name="fuel_card_no">паливну картку №</string>
+    <string name="fuel_quantity_ltr">кількості палива (в л)</string>
+    <string name="fuel_amount">кількості палива ($)</string>
+    <string name="def_fuel_quantity_ltr">DEF кількості палива (в л)</string>
+    <string name="def_fuel_amount">DEF кількості палива ($)</string>
+    <string name="reefer_fuel_quantity_ltr">Reefer кількості палива (в л)</string>
+    <string name="reefer_fuel_amount">Reefer кількості палива ($)</string>
+    <string name="cash_advance">Готівки ($)</string>
+
+
+
+    <string name="input_detail">Вхід деталі</string>
+    <string name="edit_truck_id">Редагувати ідентифікатор вантажівки</string>
+
+    <string name="version">версія</string>
+    <string name="status_warning">статус попередження</string>
+    <string name="countdown">відлік</string>
+    <string name="do_you_want_to_continue_to_use_vehicle">хочете продовжити використання засобу керування автомобілем чи ні?</string>
+
+
+
+
+
+    <string name="system_information_system">Системні дані - Система</string>
+
+    <string name="protocol_ok">OK</string>
+    <string name="check_again">перевірте знову</string>
+
+
+    <string name="shutdown_device">закриють пристрій</string>
+    <string name="eld_device_is_shutting_down.">виборні пристрій перезавантажитися.</string>
+
+    <string name="summary">Резюме</string>
+
+    <string name="hook_trailer">гачок трейлер</string>
+
+    <string name="vehicle_info_cvip_due">CVIP через: </string>
+    <string name="vehicle_info_vin"> Він Дізел:  </string>
+    <string name="vehicle_info_engine_no"> двигун серійний номер:  </string>
+    <string name="vehicle_info_engine_power"> двигун Poewer:  </string>
+    <string name="vehicle_info_plate"> табличка:  </string>
+
+    <string name="fuel_consumed">споживаного палива</string>
+
+    <string name="boost_pressure">тиск наддування</string>
+    <string name="fuel_pressure">тиск палива</string>
+    <string name="fuel_level">рівень пального</string>
+    <string name="engine_oil_level">рівень масла у двигуні</string>
+    <string name="engine_coolant_level">двигуна рівень хладагента</string>
+    <string name="engine_coolant_temp">двигун температури теплоносія</string>
+    <string name="air_inlet_temperature">забору повітря температури</string>
+    <string name="barometric_pressure">барометричного тиску</string>
+    <string name="engine_oil_pressure">масла в двигуні</string>
+    <string name="engine_load">навантаження на двигун</string>
+    <string name="washer_fluid_level">шайба рівня рідини</string>
+    <string name="def_fuel_level">DEF Рівень пального під час невикористання телевізора</string>
+    <string name="idle_fuel_used">("Idle Використане пальне</string>
+    <string name="engine_idle_hours">двигуна під час невикористання телевізора ("Idle годин</string>
+    <string name="pto_hours">ВОМ годин</string>
+    <string name="fuel_economy">Пального</string>
+    <string name="battery_voltage">Напруга батареї</string>
+    <string name="pto_fuel_used">ВОМ Використане пальне</string>
+    <string name="cruise_set_speed">6.28 встановлена швидкість</string>
+    <string name="brake_application_count">Гальмування розраховувати</string>
+    <string name="max_road_speed">Max Швидкість на дорозі</string>
+    <string name="total_cruise_time">загальний час 6.28</string>
+    <string name="air_suspension_load">Криші навантаження</string>
+    <string name="transmission_oil_level">передачі рівня масла коробка</string>
+    <string name="transmission_gear_no">переач зубчаста Немає</string>
+
+
+    <string name="label_diagnostic">діагностичних</string>
+    <string name="label_malfunction">несправності</string>
+    <string name="label_battery">батареї</string>
+    <string name="label_coolant">теплоносія</string>
+    <string name="turbo_boost">Turbo Boost</string>
+    <string name="driving_remaining">водіння залишилися</string>
+
+
+    <string name="pre_trip">Pre-Trip</string>
+    <string name="schedule">графік</string>
+    <string name="threshold">поріг</string>
+
+
+    <string name="today">сьогодні</string>
+
+    <string name="authenticated_driver_eld_login_activity">автентифікацію водій\s виборні логін діяльність</string>
+
+
+
+    <string name="orientation_display">орієнтація - Відображення</string>
+    <string name="portrait">портрет</string>
+    <string name="landscape">пейзаж</string>
+    <string name="auto">авто</string>
+    <string name="color_line_display">Color Line - Відображення</string>
+    <string name="metric">метричних</string>
+    <string name="imperial">імперського</string>
+    <string name="volume_level_sound">рівень гучності звуку -</string>
+    <string name="date_time_system">Дата і час - система</string>
+    <string name="rules_system">правил - Системи</string>
+    <string name="check_for_updates">Перевірити наявність оновлень</string>
+    <string name="plate_no">плити №</string>
+
+
+
+    <!-- Java Files -->
+
+    <string name="PLEASE_ENTER_REPORT_NO">введіть номер звіту</string>
+    <string name="PLEAE_ENTER_FINE_AMOUNT">28.09.2010 Штраф.</string>
+    <string name="DRIVER">Водій</string>
+    <string name="POWER_UNIT">Енергоблоку</string>
+    <string name="TRAILER">трейлер</string>
+    <string name="NO_DOCUMENT_ATTACHED">жоден документ до нього зєднувальною деталлю</string>
+    <string name="VIEW_DOCUMENT">документ</string>
+    <string name="low_fuel_economy">низький коефіцієнт економії пального</string>
+    <string name="driving_with_critical_warning">руху з критичних попередження попередження</string>
+    <string name="unhook_confirmation">зніміть підтвердження</string>
+    <string name="unhook_trailer_alert">ви впевнені, що хочете зніміть причепився?</string>
+    <string name="logbook_doesnot_exists">Бортовий журнал не існує!</string>
+    <string name="driver">Водій</string>
+    <string name="vehicle">транспортного засобу</string>
+    <string name="company">компанії</string>
+    <string name="certify_log_title">сертифікувати Log(и) ?</string>
+    <string name="certify_log_message">Я цим підтверджую, що мої дані записи і залікову мита статус для цього 24-годинного періоду, коректні.</string>
+    <string name="no_exemption">Не допускається</string>
+    <string name="exempt_user">звільнені використовувати</string>
+    <string name="none">жоден</string>
+    <string name="personaluse">уповноважених особистого користування, видима область 94 см</string>
+    <string name="active">активний</string>
+    <string name="inactive">в активну</string>
+    <string name="annotation_alert">28.09.2010 анотації мінімальної 4 слова!</string>
+    <string name="change_duty_status_alert">Ви повинні бути активним користувачем змінити мита статусу водіння!</string>
+    <string name="change_dutystatus_personal_user">Ви повинні бути активним користувачем, вказуючи \"уповноважив особистого користування, видима область 94 см\"!</string>
+    <string name="change_dutystatus_yardmove">Ви повинні бути активним користувачем, вказуючи \"дворі рухається\"!</string>
+    <string name="comment_alert">Будь ласка, введіть коментар мінімальної 4 символи надовго!</string>
+    <string name="location_alert">Будь ласка, введіть місцезнаходження перед збереженням заходу!</string>
+    <string name="e_log">E-Log</string>
+    <string name="ok">OK</string>
+    <string name="dvir_add_alert">Ви повинні бути черговим завершити двір</string>
+    <string name="daily_log">щодня Log</string>
+    <string name="codriver_change_dutystatus_off_sleeper_onduty">Co водій повинен змінити статус мита на ,Руський шпалопросочувальний або черговим!</string>
+    <string name="driving_hour_expired">"стоп руху, годин їзди, закінчився.</string>
+    <string name="caution_driving_hours_about_to_expire">"Увага Вашого годин їзди - закінчився. У вас "</string>
+    <string name="mintes_of_driving_time_remaining">" хвилин їзди залишилося часу.</string>
+    <string name="stop_driving">Стоп руху</string>
+    <string name="send_data_confirmation_title">надсилати дані підтвердження?</string>
+    <string name="send_data_message">Ви впевнені, що хочете надіслати дані на сервері?</string>
+    <string name="at"> </string>
+    <string name="departed">їжджали "</string>
+    <string name="arrived_at">" дійшли "</string>
+    <string name="kms">" Kms</string>
+    <string name="miles">милі"</string>
+    <string name="in">у розділі </string>
+    <string name="vl">VI</string>
+    <string name="total_hours">"Загальна годину(и): </string>
+    <string name="clr">CLR</string>
+    <string name="term_condition_scroll_alert"><![CDATA[Scroll down to read and accept terms & conditions!]]></string>
+    <string name="power_unit">енергоблоку</string>
+    <string name="no_document_attach">No Бїльше їнформачїї</string>
+    <string name="view_document">Перегляд документа</string>
+    <string name="fuel_card_alert">виберіть паливну картку</string>
+    <string name="fuel_quantity_alert">введіть кількість палива!</string>
+    <string name="fuel_price_alert">Будь ласка, введіть ціну пального!</string>
+    <string name="def_fuel_alert">Будь ласка, введіть значення DEF ціну пального!</string>
+    <string name="reefer_fuel_price_alert">Будь ласка, введіть reefer ціну пального!</string>
+    <string name="add_fuel_onduty_alert">Ви повинні бути черговим додати палива</string>
+    <string name="exclude_sleeper_title">виключити Руський шпалопросочувальний годин?</string>
+    <string name="exclude_sleeper_message"> Ви хочете, щоб виключити Руський шпалопросочувальний години з 16 годин?</string>
+    <string name="A_12_title">максимально 13 годин їзди в день</string>
+    <string name="A_12_warning">Канадський закон дозволяє вам керувати щонайбільше 13 годин у будь-якому 24 годин часу на основі, коли ваші 24 години період починається. Більшість водіїв вважають за краще середини ночі до середини ночі їх протягом 24 годин.</string>
+    <string name="B_12_title">Немає водійських після 14 годин на бойовому чергуванні в день</string>
+    <string name="B_12_message">Канадський закон дозволяє вам бути черговим (черговим і водіння) за 14 годин на добу періоду, коли ваші 24 години період починається. Ви не можете диск після 14 годин на бойовому чергуванні в один день. Більшість водіїв вважають за краще в середині ніч до середини ночі.</string>
+    <string name="A_13_title">Не привід поза 13 годин без урахування 8 годин поспіль off-мита</string>
+    <string name="A_13_message">Канадський закон дозволяє лише привід 13 години після 8 годин поспіль off-мита та Руський шпалопросочувальний-причалу або будь-яка комбінація off-мита та/або Руський шпалопросочувальний-причалу. Вам необхідно пройти ще 8 послідовних години перед автомобілем дозволяється.</string>
+    <string name="B_13_title">Не привід після 14 годин на черговий раз, якщо 8 послідовних годин у режимі off-службового часу.</string>
+    <string name="B_13_message">Канадські дозволяє тільки по-мито на 14 години після 8 годин поспіль off-мита та Руський шпалопросочувальний-причалу або будь-яка комбінація off-мита та/або Руський шпалопросочувальний-причалу. Вам буде необхідно взяти ще 8 послідовних години перед автомобілем дозволяється.</string>
+    <string name="C_13_title">Не привід поза 16 годин минули після останніх 8 годин поспіль off-мита</string>
+    <string name="C_13_message">Канадський закон дозволяє лише 16 годин минули після прийняття 8 годин поспіль off-мита та Руський шпалопросочувальний-причалу або будь-яка комбінація off-мита та/або Руський шпалопросочувальний-причалу. Вам необхідно пройти ще 8 послідовних години перед автомобілем дозволяється. Водії зазвичай можна знайти на це як свою роботу-shift.</string>
+    <string name="A_14_title">Необхідно мати мінімум 10 годин у режимі off-мита на добу.</string>
+    <string name="A_14_message">Канадський закон вимагає, щоб ви щонайменше протягом 10 годин у режимі off-мита та Руський шпалопросочувальний-причалу або будь-яка комбінація off-мита та Руський шпалопросочувальний-причалу раз в 24 годин часу в залежності від того, коли ви оціните 24 годин до початку. Більшість водіїв вважають за краще середини ночі до середини ночі їх протягом 24 годин. </string>
+    <string name="C_14_title">повинні мати мінімум 2 годин у режимі off-мита на день, що не є частиною 8 послідовних необхідних годин.</string>
+    <string name="C_14_message">Канадський закон вимагає мінімальної 2 годин у режимі off-мита та Руський шпалопросочувальний-причалу або будь-яка комбінація off-мита та Руський шпалопросочувальний-причалу, що не є частиною 8 годин поспіль. Off-службового часу повинен бути в блоки не менш ніж за 30 хвилин кожної пропозиції будуть розглянуті на щонайменше протягом 10 годин, необхідних для збору за один день.</string>
+    <string name="B_16_title">Необхідно прийняти 20 годин у режимі off-чергування в 2 дні, коли відкладання off-службового часу.</string>
+    <string name="B_16_message">Канадський закон вимагає мінімум 20 годин у режимі off-мита за 2 дні до закінчення строку дії, якщо ви відкладання off-службового часу. Це загальна сума день 1 і 2 день. Ви не можете відкласти будь-яку частину 8 годин поспіль необхідних off-службового часу.</string>
+    <string name="D_16_title">Не повинна перевищувати 26 годин часу приводів за 2 дні до закінчення строку дії.</string>
+    <string name="D_16_message">Канадські дозволяє лише 26 годин часу приводів за 2 дні до закінчення строку дії, якщо ви відкладання off-службового часу. Це твій день 1 і 2 день.</string>
+    <string name="V_25_title">Не привід, якщо 24 послідовних off-години чергування приймаються за попередні 14 днів.</string>
+    <string name="V_25_message">Канадські потребує щонайменше 24 послідовних off-години чергування або Руський шпалопросочувальний-причалу годин або будь-яка комбінація off-мита та Руський шпалопросочувальний-причалу, які можуть бути вжиті всі 14 днів. Ваш 24 годин може бути частиною циклу скинути, якщо забажаєте.</string>
+    <string name="V_26_title">Не привід після 70 годин черговим за 7 днів.</string>
+    <string name="V_26_message">Канадський закон не дозволяє вам керувати після 70 годин на черговий раз за будь-який період на 7 днів. Ви можете скористатися 36 годин у режимі off-мита та Руський шпалопросочувальний-причалу або комбінації, щоб скинути цикл 1 або ви можете почекати, поки 8 день здобути годин назад. </string>
+    <string name="B_27_title">не повинні диск після 70 годин черговим хіба 24 послідовних off-години чергування.</string>
+    <string name="B_27_message">Канадський закон не дозволяє вам керувати після 70 годин черговим, якщо ви прийняли 24 годин поспіль off-мита або в спальне місце-причалу або в будь-якій комбінації. Ваш 24 годин може бути частиною циклу скинути, якщо забажаєте.</string>
+    <string name="A_27_title">Не привід після 120 годин черговим через 14 днів.</string>
+    <string name="A_27_message">Канадський закон не дозволяє вам керувати після 120 годин черговим часу в будь-якій 14 днів. Ви можете скористатися 72 годин у режимі off-мита та Руський шпалопросочувальний-причалу або будь-який їх поєднання, щоб скинути цикл 2 або ви можете почекати до 15 дня здобути годин назад.</string>
+    <string name="A_29_title">Необхідно прийняти мінімум 36 годин поспіль off-мита для переходу до другого циклу з циклу 1.</string>
+    <string name="A_29_message">Канадські потребує щонайменше 36 годин поспіль off-мита та Руський шпалопросочувальний-причалу або будь-яка комбінація off-мита та спальне місце перед переходом в цикл 2 від циклу 1.</string>
+    <string name="US_395_3_a_3_i_title">Не привід поза 11 годин без урахування 10 годин поспіль off-мита</string>
+    <string name="US_395_3_a_3_i_message">нас закон дозволяє лише привід 11 години після 10 годин поспіль off-мита та Руський шпалопросочувальний-причалу або будь-яка комбінація off-мита та/або Руський шпалопросочувальний-причалу. Вам необхідно пройти ще 10 послідовних години перед автомобілем дозволяється.</string>
+    <string name="US_30min_rest_title">Не привід, якщо більше 8 годин минули з кінця минулого мінімум 30 хвилин у режимі off-мита та спальне місце.</string>
+    <string name="US_30min_rest_message">Нам лише закону дозволяє вам керувати щонайбільше 8 годин з моменту останнього 30 хвилин у режимі off-мита та Руський шпалопросочувальний-причал. Ви повинні займати як мінімум 30 послідовних хвилині зняв збору або Руський шпалопросочувальний-причалу або в будь-якій комбінації off-мита та Руський шпалопросочувальний-причалу.</string>
+    <string name="US_395_3_a_2_title">не повинні диск після 14 годин після 10 годин поспіль off-мита </string>
+    <string name="US_395_3_a_2_message">нас закон дозволяє лише 14 годин минули після 10 годин поспіль off-мита та Руський шпалопросочувальний-причалу або в будь-якій комбінації off-мита та/або Руський шпалопросочувальний-причалу. Вам необхідно пройти ще 10 послідовних години перед автомобілем дозволяється. Водії зазвичай можна знайти на це як свою роботу-shift.</string>
+    <string name="US_70hr_title">Не привід після 70 годин черговим протягом 8 днів.</string>
+    <string name="US_70hr_message">Нам закон не дозволяє вам керувати після 70 годин на черговий раз в будь-якому 8 днів. Ви можете скористатися 34 годин у режимі off-мита та Руський шпалопросочувальний-причалу або будь-які комбінації, щоб скинути дані або ви можете почекати, поки 9 день завоювати годин назад. </string>
+    <string name="notice_and_order">Попередження і порядок</string>
+    <string name="box">КОРОБКА</string>
+    <string name="cvsa_inspection">CVSA Інспекції</string>
+    <string name="violation_ticket">порушення квиток на комп</string>
+    <string name="incident_add_alert">ютері має бути черговим додати подію!</string>
+    <string name="unidentified_driving_alert">Невідомі водій необхідно зупинити увійти в систему та перейти на електронну адресу L D,</string>
+    <string name="internet_connection_alert">будь ласка, перевірте підключення до інтернету!</string>
+    <string name="user_name_alert">Будь ласка, введіть імя користувача</string>
+    <string name="password_alert">введіть пароль</string>
+    <string name="login_event_description">автентифікацію водій\s виборні логін діяльність</string>
+    <string name="term_condition_login"><![CDATA[You have to accept terms & conditions to proceed!!!]]></string>
+    <string name="altest_update_already_installed">останніх оновлень вже встановлено.</string>
+    <string name="inspect_log_title">Огляд журналу</string>
+    <string name="eld_title">виборні</string>
+    <string name="dvir_title">двір</string>
+    <string name="navigation_title">навігації</string>
+    <string name="message_title">повідомлення</string>
+    <string name="tpms_title">контролю втрати тиску</string>
+    <string name="more_title">Додаткові</string>
+    <string name="settings_title">параметри</string>
+    <string name="logout_title">Logout</string>
+    <string name="logout_offduty_alert">ви не дозволили вийти, доки ви не в мита</string>
+    <string name="continue_personal_user_confirmation">ви бажаєте продовжити особистого користування?</string>
+    <string name="contine_driving_confirmation">Ви бажаєте продовжити водіння? Будь ласка, інакше зміна статусу</string>
+    <string name="btb_connection_title">BTB виникла помилка</string>
+    <string name="btb_connection_message">є проблема при підключенні до BTB. Перезапустіть пристрій для продовження.</string>
+    <string name="btb_connection_progress_title"> Hutch Connect підключення до прогресу</string>
+    <string name="btb_connection_progress_message">зачекайте, поки не виборні підключення до BTB...</string>
+    <string name="ignition_on_title">Увімкніть запалювання,</string>
+    <string name="ignition_on_message">будь ласка, увімкніть запалювання вашого...</string>
+    <string name="driving_mode_message">Ви впевнені, що хочете бути у режимі руху?</string>
+    <string name="driving_mode_title">Режим мотоцикла Підтвердження</string>
+    <string name="active_driver_message_inmotion">Ви не може бути активним водієві при руху транспортного засобу!</string>
+    <string name="active_driver">Активний водій</string>
+    <string name="uncertified_log_message">вас Незавірених колод!!!</string>
+    <string name="logout_confirmation">Мої покупки Профайл Вийти підтвердження</string>
+    <string name="logout_alert">"Ви впевнені, що хочете вийти?</string>
+    <string name="logout_event_description">Автентифікований \водій s виборні logout діяльність</string>
+    <string name="powerup_event_conventional_description">потужність двигуна із традиційними розташування точність</string>
+    <string name="powerup_event_reduced_description">потужність двигуна із зниженим розташування</string>
+    <string name="shutdown_event_conventional_description">двигуна точності закрили зі звичайними розташування</string>
+    <string name="shutdown_event_reduced_description">двигуна точності закрили зі зниженим розташування точність</string>
+    <string name="pc_ym_yt_cleared">водій індикація для ПК, YM і WT очистили</string>
+    <string name="IL_conventional_description">проміжних журналу з традиційними розташування точність</string>
+    <string name="IL_reduced_description">проміжних log зі зниженим розташування точність</string>
+    <string name="device_BTB_unsupport">пристрій doest не підтримує Bluetooth.</string>
+    <string name="inspection">Огляд</string>
+    <string name="new_inspection">нової інспекції</string>
+    <string name="edit_event">редагування події</string>
+    <string name="progress_update">оновлення вже йде зачекайте...</string>
+    <string name="special_category_configure_PU">Ваш налаштовано категорії уповноважений особистого користування</string>
+    <string name="special_category_configure_YM">вашим, видима область 94 см налаштовано категорії - Двір рухається у</string>
+    <string name="special_category_configure_none">вас немає категорії налаштованих</string>
+    <string name="special_category_configure_PU_YM">Вашого налаштовано категорій уповноважені особистого користування, видима область 94 см і двір рухається у</string>
+    <string name="uncertified_log_exists">вас Незавірених колод!!!</string>
+    <string name="add_notice_order">Додати повідомлення і порядок</string>
+    <string name="map_initialized">карт, ініціалізований</string>
+    <string name="upcoming_maintenance">майбутні обслуговування</string>
+    <string name="maintenance_due">за рахунок обслуговування,</string>
+    <string name="yesterday">Вчера</string>
+    <string name="future_time_alert">будь ласка, вчора не вибирайте найближчим часом.</string>
+    <string name="valid_password">Будь ласка, введіть дійсне пароль!</string>
+    <string name="driving_shortening_alert">Скорочення часу привід не допускається!</string>
+    <string name="cancel">Отмена</string>
+    <string name="usb_attach_alert">Будь ласка скасувати долучити ФЛЕШКУ перший</string>
+    <string name="send_method_alert">виберіть надіслати метод!</string>
+    <string name="pick_an_email_provider">Виконаєте постачальника послуг електронної пошти</string>
+    <string name="file_not_found">файл не знайдено</string>
+    <string name="delete_page_title">Вилучити сторінку</string>
+    <string name="delete_page_message">Ви справді бажаєте вилучити цю сторінку?</string>
+    <string name="score_deducted">Бали віднімається</string>
+    <string name="duration">тривалість</string>
+    <string name="driving_points_gained">"Рушiйнi ю очками крізь час: </string>
+    <string name="system">Система</string>
+    <string name="display">відображення</string>
+    <string name="sound">звук</string>
+    <string name="eld_app_exit">виборні App буде завершувати роботу в 3 секунд.</string>
+    <string name="device_internet_not_connected">Пристрій не приєднано до мережі інтернет. Будь ласка, повторіть спробу пізніше!</string>
+    <string name="unidentified_driver_record_missing">Обліковим записом невідомі водій типу рахунка відсутня!</string>
+    <string name="hook_trailer_title">Гачок трейлер</string>
+    <string name="hook_trailer_message">ви впевнені. Ви хочете гачок причепився?</string>
+    <string name="please_select_record">Будь ласка, оберіть запис!</string>
+    <string name="drivers">"водійського "</string>
+    <string name="th_certification">\th сертификация ежедневной записи</string>
+    <string name="assuming_events_title">Припускаючи Заходу(и)</string>
+    <string name="today_hours">загальна годину(и) у</string>
+
+    <string name="violation_present">порушенні сьогодення</string>
+    <string name="invoice_alert">Please enter Invoice No!</string>
+    <string name="part_cost_alert">Please enter Part Cost!</string>
+    <string name="labour_cost_alert">Please enter Labour Cost!</string>
+    <string name="pending">Pending</string>
+    <string name="completed">Completed</string>
+    <string name="upcoming_due_maintenance">Upcoming/Due Maintenance</string>
+    <string name="maintenance_completed">Maintenance Completed</string>
+    <string name="confirm">Confirm</string>
+    <string name="reject">Reject</string>
+    <string name="application_exit">Application Exit</string>
+    <string name="installer_id_valid_alert">Please enter valid Installer Id!</string>
+    <string name="feature_na_alert">This Feature is not available for your company. Please contact Hutch Systems to avail this feature.</string>
+    <string name="geofence_detail">Geofence Detail</string>
+    <string name="please_verify_if_navigation_is_loaded_properly_prior_to_proceeding">Please verify if navigation is loaded properly prior to proceeding!</string>
+    <string name="document_no">Document No</string>
+    <string name="document_type">Document Type</string>
+    <string name="document_detail">Document Detail</string>
+    <string name="add_document_onduty_alert">You must be on-duty to add document</string>
+    <string name="scanning">Scanning</string>
+    <string name="dispatch_no">Dispatch No</string>
+    <string name="booking_no">Booking No</string>
+    <string name="container_no">Container No</string>
+    <string name="manufacturing_date">Manufacturing Date</string>
+    <string name="max_gross_weight">Max Gross Weight</string>
+    <string name="tare_weight">Tare Weight</string>
+    <string name="seal_no1">Seal No 1</string>
+    <string name="seal_no2">Seal No 2</string>
+    <string name="max_pay_load">Max Pay Load</string>
+    <string name="container_no_alert">Please enter Container No!</string>
+    <string name="drayage">Drayage</string>
+    <string name="dispatch_detail">Dispatch Detail</string>
+    <string name="container_detail">Container Detail</string>
+    <string name="menu_exit">Exit</string>
+    <string name="allow_access">ALLOW ACCESS</string>
+    <string name="live">Live</string>
+    <string name="trial">Trial</string>
+    <string name="light_duty">Light Duty</string>
+    <string name="production">Production</string>
+    <string name="free_trial">Free Trial</string>
+    <string name="setting">Setting</string>
+    <string name="internet_connection_test">Internet Connection Test</string>
+    <string name="internet_connection_setup">Internet Connection</string>
+    <string name="title_set_protocol">Set Protocol</string>
+    <string name="configuration">Configuration</string>
+    <string name="split_sleep_alert">Previous event is qualified for Split Sleep. Do you want to use Split Sleep?</string>
+
+</resources>
+

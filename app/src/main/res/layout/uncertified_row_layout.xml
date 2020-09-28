@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/lRow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/_9sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingRight="@dimen/_9sdp"
+        android:paddingBottom="@dimen/_5sdp">
+
+        <ToggleButton
+            android:id="@+id/swSerialNo"
+            style="@style/list_serial_no_new"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/_9sdp"
+            android:background="@drawable/serial_no"
+            android:checked="true"
+            android:enabled="false"
+            android:gravity="center"
+            android:textOff="1"
+            android:textOn="" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvLogDate"
+                style="@style/EventInformationTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11 Jan, 2016"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvOdometerReading"
+                style="@style/EventInformationTextStyle.small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fadingEdge="vertical"
+                android:overScrollMode="ifContentScrolls"
+                android:text="Odometer: 0 - 0"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvLogData"
+                style="@style/EventInformationTextStyle.small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:overScrollMode="ifContentScrolls"
+                android:text="Distance: 0 KM, ShippintId: N/A, TrailerId: N/A" />
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

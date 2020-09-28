@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:paddingBottom="@dimen/_20sdp"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/activityHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:background="@color/f5f5f5"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv"
+            style="@style/DialogIconStyleNew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            app:layout_constraintLeft_toRightOf="@+id/iv"
+            style="@style/DialogTitleStyleNew"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="@string/recharge" />
+
+        <ImageButton
+            android:id="@+id/imgCancel"
+            style="@style/DialogCloseStyleNew"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintDimensionRatio="1:1"
+            android:layout_margin="@dimen/_5sdp"
+            app:layout_constraintRight_toRightOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/tvDeviceId"
+        android:text="@string/deviceId"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:layout_marginStart="@dimen/_14sdp"
+        app:layout_constraintTop_toBottomOf="@id/activityHeader"
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/SubTextView"/>
+
+    <EditText
+        android:id="@+id/etAmount"
+        app:layout_constraintTop_toBottomOf="@id/tvDeviceId"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="@dimen/_12sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:hint="@string/enterAmount"
+        android:inputType="number"
+        style="@style/event_edittext"
+        android:gravity="center_vertical" />
+
+    <Button
+        android:id="@+id/btnProceed"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        app:layout_constraintTop_toBottomOf="@id/etAmount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/button_bg"
+        android:gravity="center"
+        android:paddingLeft="@dimen/_40ssp"
+        android:paddingRight="@dimen/_40sdp"
+        android:text="@string/proceed"
+        android:textColor="@android:color/white" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

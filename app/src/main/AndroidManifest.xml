@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.hutchsystems.hutchconnect">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- <permission android:name="android.permission.REBOOT"/> -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+   <!-- <uses-permission android:name="android.permission.SEND_SMS" />-->
+    <uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions" />
+
+    <!-- Permissions that are needed by Copilot -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+
+    <!-- Android Maps API V2 -->
+    <permission
+        android:name="com.hutchsystems.hutchconnect.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+<!--    <uses-permission android:name="com.hutchgroup.elog.permission.MAPS_RECEIVE" />-->
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    <uses-feature android:name="android.hardware.usb.host" />
+
+    <!-- AOBRD Launcher:ic_launcher_aobrd, label: app_name:app_name_aobrd -->
+    <application
+        android:name="com.hutchsystems.hutchconnect.ELogApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/launcher_foreground"
+        android:roundIcon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        android:requestLegacyExternalStorage="true"
+        tools:replace="android:icon,android:name,android:theme,android:label">
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+        <!--
+          android:manageSpaceActivity="com.hutchgroup.elog.ManageSpaceActivity"
+             TODO
+                <meta-data android:name="SCANBOT_SDK_LICENSE_KEY" android:value="Insert your key here" />
+        -->
+        <activity
+            android:name="com.hutchsystems.hutchconnect.ElogActivity"
+            android:configChanges="orientation|screenSize|screenLayout" />
+        <activity
+            android:name="com.hutchsystems.hutchconnect.SetupActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity
+            android:name="com.hutchsystems.hutchconnect.FirstTimeUser"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.hutchsystems.hutchconnect.FirstActivity"></activity>
+
+        <activity
+            android:name="com.hutchsystems.hutchconnect.MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.Launcher"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                android:resource="@xml/device_filter" />
+        </activity>
+
+        <!-- this Activity need to add full package for Android System find it when user click on Manage Space -->
+        <activity
+            android:name="com.hutchsystems.hutchconnect.ManageSpaceActivity"
+            android:label="@string/rule_change_activity_title" />
+
+        <receiver android:name="com.hutchsystems.hutchconnect.tracklocations.GpsBroadCastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.SCREEN_ON" />
+                <action android:name="android.bluetooth.device.action.ACL_CONNECTED" />
+                <action android:name="android.bluetooth.device.action.ACL_DISCONNECTED" />
+                <action android:name="android.intent.action.ACTION_SHUTDOWN" />
+                <action android:name="android.bluetooth.device.action.BOND_STATE_CHANGED" />
+                <action android:name="android.bluetooth.device.action.FOUND" />
+                <action android:name="android.bluetooth.adapter.action.DISCOVERY_STARTED" />
+                <action android:name="android.bluetooth.adapter.action.DISCOVERY_FINISHED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.hutchsystems.hutchconnect.services.AutoStartService"
+            android:enabled="true" />
+        <service
+            android:name="com.hutchsystems.hutchconnect.services.UsbService"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.hutchsystems.hutchconnect.services.GeofenceTransitionsIntentService"
+            android:enabled="true" />
+
+        <!-- Service For Hutch connect-->
+        <service android:name="com.telit.terminalio.TIOService"></service>
+
+        <provider
+            android:name="com.hutchsystems.hutchconnect.common.CachedFileProvider"
+            android:authorities="com.hutchsystems.hutchconnect.common.provider" />
+
+        <!-- Configure file provider to store camera images-->
+        <!--        <provider-->
+        <!--            android:name="android.support.v4.content.FileProvider"-->
+        <!--            android:authorities="com.hutchgroup.elog"-->
+        <!--            android:exported="false"-->
+        <!--            android:grantUriPermissions="true">-->
+        <!--            <meta-data-->
+        <!--                android:name="android.support.FILE_PROVIDER_PATHS"-->
+        <!--                android:resource="@xml/file_paths"/>-->
+        <!--        </provider>-->
+
+        <activity android:name="com.hutchsystems.hutchconnect.daily_log_dashboard" />
+
+        <activity
+            android:name="com.hutchsystems.hutchconnect.dashboard.DashboardWithGraphActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@style/DashboardWithGraphActivityThemeDark" />
+        <activity
+            android:name="com.hutchsystems.hutchconnect.dashboard.DashboardWithEngineHourActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@style/DashboardWithGraphActivityThemeDark" />
+
+        <activity
+            android:name="com.hutchsystems.hutchconnect.dashboard.DashboardWithGauageCluster"
+            android:configChanges="keyboardHidden|orientation"/>
+
+        <activity
+            android:name="com.hutchsystems.hutchconnect.VideoPlayer"
+            android:configChanges="keyboardHidden|orientation"/>
+        <activity
+            android:name="com.hutchsystems.hutchconnect.scanapi.ScanActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+    </application>
+
+</manifest>

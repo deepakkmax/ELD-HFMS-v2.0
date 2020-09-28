@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dispatch_no">Dispatch No</string>
+    <string name="booking_no">Booking No</string>
+</resources>

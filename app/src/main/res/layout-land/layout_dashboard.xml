@@ -1,0 +1,706 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/toplayout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:weightSum="4"
+        android:background="?attr/Header"
+        android:orientation="horizontal"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/chkRules"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/transparent"
+                android:button="@drawable/db_checkbox_flag"
+                android:checked="true"
+                android:textOff=""
+                android:textOn="" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="14dp">
+
+                <TextView
+                    android:id="@+id/tvLoginName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="?attr/TextColor"
+                    android:textSize="14sp"
+                    android:singleLine="true"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvUnitNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:textColor="?attr/TextColor"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvPlateNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:textColor="?attr/TextColor"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="13dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="10dp"
+            android:background="?attr/dividerColor" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvCoDriverValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="?attr/TextColor"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="Co-driver"
+                android:textColor="?attr/TextColor"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="13dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="10dp"
+            android:background="?attr/dividerColor" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_currentAddresstitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Current Location"
+                android:textColor="?attr/TextColor"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_currentAddressValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:textColor="?attr/TextColor"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/dark_text_color"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:text="Poasted Road Speed"
+                android:textColor="?attr/TextColor"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_speedValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:layout_marginTop="1dp"
+                android:text="115 km/hr"
+                android:textColor="?attr/TextColor"
+
+                android:textSize="13sp" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="13dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="10dp"
+            android:background="?attr/dividerColor" />
+
+        <LinearLayout
+            android:id="@+id/llIocnsLayout"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:layout_marginTop="14dp"
+            android:background="?attr/IconBackground"
+            android:orientation="horizontal"
+            android:padding="9dp">
+
+                <ImageView
+                    android:id="@+id/icBattery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="3px"
+                    android:src="@drawable/ic_flagbar_battery_full" />
+
+                <ImageView
+                    android:id="@+id/icWifi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5px"
+                    android:background="@drawable/ic_flagbar_wifi_on" />
+
+                <ImageView
+                    android:id="@+id/icWebService"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5px"
+                    android:background="@drawable/ic_flagbar_web_service_on" />
+
+                <ImageView
+                    android:id="@+id/icGPS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5px"
+                    android:background="@drawable/ic_flagbar_gps_on" />
+
+                <ImageView
+                    android:id="@+id/icCanbus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5px"
+                    android:background="@drawable/ic_flagbar_canbus_connect" />
+
+                <ImageView
+                    android:id="@+id/icInspection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5px"
+                    android:background="@drawable/ic_flagbar_dvir_done" />
+
+                <ImageView
+                    android:id="@+id/icViolaton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5px"
+                    android:background="@drawable/ic_flagbar_violation" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/middlelayout"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/firstlayout"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/currentWorkShiftHour"
+                android:layout_width="match_parent"
+                android:layout_height="135dp"
+                android:background="?attr/ProgressBarSmallBg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvWorkShiftLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:text="Work Shift Hours"
+                    android:textColor="?attr/TextColor"
+                    android:textSize="@dimen/font_size_18"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvWorkShiftLabel">
+
+                <ProgressBar
+                    android:id="@+id/pbTotalWorkShiftHour"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:background="?attr/SmallCircle"
+                    android:max="500"
+                    android:progress="295"
+                    android:progressDrawable="?attr/progressbarSmall"
+                    android:textSize="@dimen/font_size_16" />
+
+                <TextView
+                    android:id="@+id/tvWorkShiftValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="-63dp"
+                    android:textColor="?attr/TextColor"
+                    android:textSize="16sp" />
+                </RelativeLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/canadaRemaningLayout"
+                android:layout_width="match_parent"
+                android:layout_height="135dp"
+                android:layout_margin="2dp"
+                android:background="?attr/ProgressBarSmallBg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCanadaRemainingLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:text="Canada Remaining Hours"
+                    android:textColor="?attr/TextColor"
+                    android:textSize="@dimen/font_size_18"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvCanadaRemainingLabel">
+
+                <ProgressBar
+                    android:id="@+id/pbTotalCanadaRule"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:background="?attr/SmallCircle"
+                    android:max="500"
+                    android:progress="295"
+                    android:progressDrawable="?attr/progressbarSmall"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvCanadaRuleValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="-63dp"
+                    android:textColor="?attr/TextColor"
+                    android:textSize="16sp" />
+                </RelativeLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/frameMiddleLayout"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:onClick="flipCard"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/notificationlayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/ProgressBarBigBg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="Message Received"
+                    android:textColor="?attr/TextColor"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/notificationIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="65dp"
+                    android:background="?attr/Bell"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/notificationCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="175dp"
+                    android:layout_marginTop="-85dp"
+                    android:background="@drawable/db_notification_bg"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/drivinghourslayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/ProgressBarBigBg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvDrivingRemainingLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:text="Driving Remaining Hours"
+                    android:textColor="?attr/TextColor"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvDrivingRemainingLabel">
+
+                <ProgressBar
+                    android:id="@+id/pbTotalDrivingHours"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="175dp"
+                    android:layout_height="175dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="28dp"
+                    android:background="?attr/BigCircle"
+                    android:max="500"
+                    android:progress="295"
+                    android:progressDrawable="?attr/progressbarBig" />
+
+                <TextView
+                    android:id="@+id/tvDrivingHoursValue"
+                    android:layout_width="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content"
+                    android:textColor="?attr/TextColor"
+                    android:layout_marginTop="-63dp"
+                    android:textSize="35sp"
+                    android:text="sdfsdgsdg"
+                    android:textStyle="bold" />
+                </RelativeLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/thirdlayout"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/currentTimeZone"
+                android:layout_width="match_parent"
+                android:layout_height="135dp"
+                android:background="?attr/ProgressBarSmallBg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvTodayDrivingLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:text="Today Driving"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:textColor="?attr/TextColor"
+                    android:textSize="@dimen/font_size_18"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvTotalMiles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="?attr/VehicleDataBg"
+                    android:gravity="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvTodayDrivingLabel"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_20"
+                    android:textStyle="bold" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/usRemaningLayout"
+                android:layout_width="match_parent"
+                android:layout_height="135dp"
+                android:background="?attr/ProgressBarSmallBg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvUsRemainingLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:text="US Remaining Hours"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:textColor="?attr/TextColor"
+                    android:textSize="@dimen/font_size_18"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvUsRemainingLabel">
+
+                <ProgressBar
+                    android:id="@+id/pbTotalUSRule"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:background="?attr/SmallCircle"
+                    android:max="500"
+                    android:progress="295"
+                    android:progressDrawable="?attr/progressbarSmall"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvUSRuleValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="-63dp"
+                    android:textColor="?attr/TextColor"
+                    android:textSize="16sp" />
+                </RelativeLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/endLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/Bottom"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgViolation"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ic_flagbar_violation" />
+
+        <TextView
+            android:id="@+id/tvViolation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textColor="?attr/TextColor"
+            android:textSize="16sp"
+            android:textStyle="italic|bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_graphLayout"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgStatus"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:background="?attr/StatusBar" />
+
+        <ImageView
+            android:id="@+id/imgDutyStatus"
+            android:layout_width="788dp"
+            android:layout_height="wrap_content"
+            android:background="?attr/Graph"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:id="@+id/llTotal"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="?attr/DutyHour"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:textSize="@dimen/_6ssp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tvOffDutyTime"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="?attr/TextColor"
+                android:textSize="@dimen/_6ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvSleeperTime"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="?attr/TextColor"
+                android:textSize="@dimen/_6ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvDrivingTime"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="?attr/TextColor"
+                android:textSize="@dimen/_6ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvOnDutyTime"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="?attr/TextColor"
+                android:textSize="@dimen/_6ssp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/fabback"
+        style="@style/fab_btn_style"
+        android:layout_width="@dimen/fab_size"
+        android:layout_height="@dimen/fab_size"
+        android:layout_gravity="top|left"
+        android:layout_marginTop="-100dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_back_relogin" />
+
+</LinearLayout>
+
+

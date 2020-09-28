@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inspection>
+    <inspection item="Bumper">Use mirror to inspect</inspection>
+    <inspection item="Engine">Check compartment</inspection>
+    <inspection item="Engine">Remove Filters</inspection>
+    <inspection item="Tires (truck and trailer)">Check spare</inspection>
+    <inspection item="Tires (truck and trailer)">Use tool to vibrate wheels</inspection>
+    <inspection item="Floor (inside truck)">Check for people</inspection>
+    <inspection item="Floor (inside truck)">Check flooring and new repairs</inspection>
+    <inspection item="Fuel Tanks">Tap for sound</inspection>
+    <inspection item="Fuel Tanks">Look inside tanks</inspection>
+    <inspection item="Cab/ Storage Compartments">Inspect inside and out – vents/ luggage/packages/loose speakers/sleeper area</inspection>
+    <inspection item="Cab/ Storage Compartments">Check locks</inspection>
+    <inspection item="Air Tanks">Tap for sound</inspection>
+    <inspection item="Air Tanks">Look for welding</inspection>
+    <inspection item="Drive Shafts">Look for repairs and new paint</inspection>
+    <inspection item="Drive Shafts">Tap for sound</inspection>
+    <inspection item="Fifth Wheel">Check battery area and empty spaces</inspection>
+    <inspection item="Outside/ Undercarriage">Use mirror to inspect</inspection>
+    <inspection item="Outside/ Undercarriage">Check rear lighting compartment</inspection>
+    <inspection item="Outside/ Inside Doors">Check locking mechanism</inspection>
+    <inspection item="Outside/ Inside Doors">Check for bolt &amp; fastener security</inspection>
+    <inspection item="Outside/ Inside Doors">Inspect door hinges</inspection>
+    <inspection item="Outside/ Inside Doors">Look for repairs</inspection>
+    <inspection item="Floor (inside trailer)">Planks bolted down</inspection>
+    <inspection item="Floor (inside trailer)">Flat floor</inspection>
+    <inspection item="Side Walls">Check for new or loose panels</inspection>
+    <inspection item="Side Walls">Use light to look inside</inspection>
+    <inspection item="Side Walls">Check beams</inspection>
+    <inspection item="Front Wall">Inspect for secure panels and repairs</inspection>
+    <inspection item="Front Wall">Measure walls</inspection>
+    <inspection item="Ceiling/ Roof">Measure height</inspection>
+    <inspection item="Ceiling/ Roof">Look for new rivets and repairs</inspection>
+    <inspection item="Refrigeration Unit">Open doors and check inside</inspection>
+    <inspection item="Refrigeration Unit">Check drain plugs</inspection>
+    <inspection item="Exhaust">Look for taped packages and rope</inspection>
+    <inspection item="Other">Air Deflector</inspection>
+    <inspection item="Other">Visible Leaks</inspection>
+    <inspection item="Other">Fittings, such as tie-downs, bolts &amp; rivets in good condition</inspection>
+    <inspection item="Other">Fiberglass/bondo repair normal for container</inspection>
+</inspection>
+
+

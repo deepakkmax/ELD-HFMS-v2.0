@@ -1,0 +1,1082 @@
+<resources>
+    <string name="app_name">ELD</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">用户名</string>
+    <string name="prompt_password">密码</string>
+    <string name="action_sign_in">登录注册或</string>
+    <string name="action_sign_in_short">登录</string>
+    <string name="action_back">后</string>
+    <string name="action_installer_id">进行</string>
+    <string name="action_dock">接</string>
+    <string name="error_invalid_email">此电子邮件地址是无效的</string>
+    <string name="error_invalid_password">密码太短。</string>
+    <string name="error_incorrect_password">密码不正确。</string>
+    <string name="error_field_required">此字段为必需字段</string>
+    <string name="permission_rationale">“联系人的权限是需要提供电子邮件
+完成。” 的
+   </string>
+    <string name="title_activity_drawer">纸盒</string>
+
+    <string name="navigation_drawer_open">打开导航吸盘</string>
+    <string name="navigation_drawer_close">关闭导航的纸盒</string>
+
+    <string name="action_settings">设置</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello 空白片段</string>
+
+    <string name="current_rule">当前规则</string>
+    <string name="time_zone">时区</string>
+    <string name="co_driver">Co-Driver</string>
+    <string name="vehicle_miles">车辆英里的</string>
+    <string name="total_distance">总距离的</string>
+    <string name="total_miles_hours">車輛。 Mi/小时</string>
+
+
+    <!-- strings for Hours & Rules Status -->
+    <string name="driving_hours">驾驶时间</string>
+    <string name="work_shift_hour">工作班次 1 小时</string>
+    <string name="driving_hours_phone">驾驶</string>
+    <string name="work_shift_hour_phone">工作班次</string>
+
+    <!-- strings for Duty Status Change -->
+    <string name="button_back">后</string>
+    <string name="button_save">保存</string>
+    <string name="duty_status_change_activity_title">工作状态的变化</string>
+    <string name="duty_status_label">选择工作状态</string>
+    <string name="annotation">注释</string>
+    <string name="annotation_string_1">过境</string>
+    <string name="annotation_string_2">货物的检查</string>
+    <string name="annotation_string_3">点检查</string>
+    <string name="annotation_string_4">DVIR 合作社</string>
+    <string name="annotation_string_5">加油</string>
+    <string name="annotation_string_6">加载</string>
+    <string name="annotation_string_7">卸载</string>
+    <string name="instruction_text">类型文本在这里...</string>
+    <string name="button_skip">跳过</string>
+    <string name="location_man">定位</string>
+
+    <string name="off_duty">OFF</string>
+    <string name="sleeper">SB</string>
+    <string name="driving">D</string>
+    <string name="on_duty">ON</string>
+    <string name="personal_use">PC</string>
+    <string name="yard_move">YM</string>
+    <string name="ILC">ILC</string>
+    <string name="ILR">ILR</string>
+
+    <string name="off_duty_long">OFF DUTY</string>
+    <string name="sleeper_long">SLEEPER-BERTH</string>
+    <string name="driving_long">DRIVING</string>
+    <string name="on_duty_long">ON DUTY</string>
+    <string name="personal_use_long">PERSONAL USE</string>
+    <string name="yard_move_long">YARD MOVE</string>
+
+    <!-- strings for Rule Change -->
+    <string name="rule_change_activity_title">规则的变化</string>
+    <string name="rule_label">选择规则</string>
+    <!-- strings for Rules -->
+    <string name="canada_rule_1">加拿大 70hr/7天</string>
+    <string name="canada_rule_2">加拿大 120hr/14天</string>
+    <string name="us_rule_1">我们 70hr/8天</string>
+    <string name="us_rule_2">我们 60hr/7天</string>
+    <string name="phone_canada_rule_1">加拿大\ n70hr/7天</string>
+    <string name="phone_canada_rule_2">加拿大\ n120hr/14天</string>
+    <string name="phone_us_rule_1">美\ n70hr/8天</string>
+    <string name="phone_us_rule_2">美\ n70hr/8天 USV 豁免</string>
+    <!--<string name="us_rule_2">US 60hr/7days</string> -->
+
+    <string name="login">IN</string>
+    <string name="logout">OUT</string>
+    <string name="certified_record">CR</string>
+    <string name="engine_up">EU</string>
+    <string name="engine_down">ED</string>
+    <string name="malfunction">MF</string>
+    <string name="data_diagnostic">DD</string>
+
+    <!-- strings for New Event -->
+    <string name="new_event_activity_title">新事件</string>
+    <string name="event_type">事件类型</string>
+    <string name="event_time">时间</string>
+    <string name="odometer">里程表</string>
+    <string name="engine_hours">发动机工作小时</string>
+    <string name="shipping_document_number">发货文档编号</string>
+    <string name="latitude">Latitude</string>
+    <string name="longtitude">Longtitude</string>
+    <string name="origin">起源</string>
+    <string name="location_description">位置描述</string>
+    <string name="comments">评论</string>
+
+    <string name="odo">Odo</string>
+    <string name="eng_hrs">Eng Hr</string>
+    <string name="phone_eventtype">类型</string>
+    <string name="phone_shipping_number">航运</string>
+    <string name="hrs">小时</string>
+    <string name="record_automatically">自动</string>
+    <string name="record_manually">手动</string>
+
+    <string name="drawer_open">打开</string>
+    <string name="drawer_close">关闭</string>
+
+    <string name="duty_status_changed_to_off_duty">驱动程序的工作状态已更改为 “关闭” 责任的</string>
+    <string name="duty_status_changed_to_sleeper_berth">驱动程序的工作状态更改为睡个泊位的</string>
+    <string name="duty_status_changed_to_driving">驱动程序的工作状态更改为驾驶的</string>
+    <string name="duty_status_changed_to_on_duty">司机的工作状态更改为 “工作地点在</string>
+    <string name="duty_status_changed_to_personal_use">驱动程序显示"授权的个人使用的 CMV "</string>
+    <string name="duty_status_changed_to_yard_move">驱动程序显示 “院子”</string>
+
+    <string name="texttospeech_duty_status_changed_to_off_duty">您已经改变了工作的状态为 “关闭” 工作地点</string>
+    <string name="texttospeech_duty_status_changed_to_sleeper_berth">在您更改了工作状态到卧铺停泊</string>
+    <string name="texttospeech_duty_status_changed_to_driving">在您更改了工作状态到驾驶</string>
+    <string name="texttospeech_duty_status_changed_to_on_duty">您更改了工作状态, 工作地点在</string>
+    <string name="texttospeech_duty_status_changed_to_personal_use">您更改了工作状态, 个人使用</string>
+    <string name="texttospeech_duty_status_changed_to_yard_move">您已更改工作状态到院子里的移动</string>
+
+    <string name="hours"></string>
+    <string name="record_status_active">活动小时</string>
+    <string name="record_status_inactive">Inactive-Changed</string>
+    <string name="record_status_inactive_change_request">Inactive -更改请求的</string>
+    <string name="record_status_inactive_change_rejected">非活动状态-更改已拒绝的</string>
+    <string name="event">事件</string>
+    <string name="record_origin_automatically">自动记录下的驱动程序 </string>
+    <string name="record_origin_edited">进行编辑或输入驱动程序的 </string>
+    <string name="record_origin_edited_by_other">编辑要求, 经过身份验证的用户(不是-驱动程序) </string>
+    <string name="record_origin_assumed">假设从不明身份的驱动程序配置文件 </string>
+
+    <string name="record_date">记录日期</string>
+    <string name="usdot">USDOT</string>
+    <string name="carrier">载体</string>
+    <string name="current_location">当前位置</string>
+    <string name="driver_name">驱动程序名称</string>
+    <string name="driver_id">驱动程序 ID</string>
+    <string name="start_end_odometer">开始结束里程表</string>
+    <string name="driver_license_number">驱动程序的许可证号</string>
+    <string name="driver_license_number_and_state">驾驶证/国家</string>
+    <string name="co_driver_name">名称 Co-Driver</string>
+    <string name="co_driver_id">Co-Driver ID</string>
+    <string name="miles_today">英里今天</string>
+    <string name="driver_license_state">驱动程序许可证的</string>
+    <string name="eld_manufacturer">许可证状态制造商</string>
+    <string name="truck_tractor_id">叉车拖拉机 ID</string>
+    <string name="truck_tractor_vin">车拖拉机 VIN</string>
+    <string name="eld_id">ELD ID</string>
+    <string name="shipping_id">航运 ID</string>
+    <string name="unidentified_driver_records">身份不明的驱动程序的记录</string>
+    <string name="exempt_driver_status">免驱动程序状态</string>
+    <string name="trailer_id">拖车 ID</string>
+    <string name="data_diagnostic_indicators">数据诊断指标</string>
+    <string name="eld_malfunction_indicators">ELD 故障指示灯</string>
+    <string name="start_end_engine_hours">开始结束发动机工作小时数的</string>
+    <string name="commodity">商品</string>
+    <string name="shipping_number">发货数量商品/</string>
+    <string name="trailer_number">拖车</string>
+
+    <string name="rule">使用的数量规则</string>
+
+    <string name="menu_daily_log">每日登录</string>
+    <string name="menu_inspect_dailylog">检查 Dailylog</string>
+    <string name="menu_create_event">创建事件</string>
+    <string name="menu_uncertified_log_book">未经验证的登录簿</string>
+    <string name="menu_unidentified_data">身份不明的数据</string>
+    <string name="menu_edit_request">编辑请求</string>
+    <string name="menu_violation_history">违规历史该</string>
+    <string name="menu_driver_profile">驱动程序的配置文件的</string>
+    <string name="menu_Message">信息</string>
+    <string name="menu_logout">注销</string>
+    <string name="menu_unidentified_event">身份不明的事件</string>
+    <string name="menu_send_report">发送电子邮件</string>
+    <string name="menu_dvir">DVIR 合作社</string>
+    <string name="menu_tpms">TPMS</string>
+
+    <string name="title_eld">ELD</string>
+    <string name="title_daily_log">每日登录</string>
+    <string name="title_inspect_elog">检查 eLog</string>
+    <string name="title_create_event">创建事件</string>
+    <string name="title_certify_log_book">日志认证</string>
+    <string name="title_edit_request">编辑请求</string>
+    <string name="title_violation_history">违规历史该</string>
+    <string name="title_driver_profile">驱动程序配置文件</string>
+    <string name="title_Message">信息</string>
+    <string name="title_unidentified_event">不明的事件</string>
+    <string name="title_dvir">DVIR 合作社</string>
+    <string name="title_new_inspection">新检查</string>
+    <string name="title_inspection">查看检查</string>
+    <string name="title_shipping_trailers">发货和拖车</string>
+    <string name="title_tpms">TPMS</string>
+    <string name="title_edit_event">编辑事件</string>
+    <string name="title_inspect_dailylog">日志日期:</string>
+    <string name="title_dtc">DTC</string>
+    <string name="title_score_card">驱动程序评分卡</string>
+    <string name="title_trailer_management">拖车管理 </string>
+    <string name="title_vehicle_info">车辆信息 </string>
+    <string name="title_new_Fuel">燃油详细 </string>
+    <string name="title_incident_detail">事件详细信息 </string>
+    <string name="title_maintenance_detail">维护详细信息 </string>
+
+    <string name="event_origin_automatically">自动</string>
+    <string name="event_origin_edited">编辑</string>
+
+    <string name="action_confirm_web_event">确认</string>
+    <string name="action_reject_web_event">拒绝</string>
+    <string name="action_back_edit_event">回</string>
+    <string name="action_edit_event">编辑</string>
+    <string name="action_back_one_day">后退</string>
+    <string name="action_forward_one_day">前进</string>
+    <string name="action_set_active">设置活动</string>
+    <string name="action_post_all">帖子</string>
+    <string name="action_sync_all">同步后</string>
+    <string name="action_change_rule">更改规则</string>
+    <string name="action_certify_log">认证登录</string>
+    <string name="action_usb_drive">USB 驱动器</string>
+    <string name="action_bluetooth">蓝牙</string>
+    <string name="action_email">电子邮件</string>
+    <string name="action_webservice">Web 服务的</string>
+    <string name="input_information_activity_title">输入信息。</string>
+
+    <string name="button_change_status">更改状态</string>
+    <string name="button_keep_driving">保持\驾驶</string>
+
+    <string name="paired_devices">已配对的设备</string>
+    <string name="available_devices">可用的设备</string>
+    <string name="bluetooth_connection_infos">请等待丁香 ELD 连接到您的车!</string>
+    <string name="setup_error_msg">我们很遗憾的是, 与车辆无法建立。 请联系丁香的系统!</string>
+    <string name="bluetooth_connection_ok">连接建立成功! 请单击 “确定” 按钮以继续。</string>
+
+    <string name="can_bus_error">很抱歉, 连接失败。 请联系丁香的系统!</string>
+
+    <string name="vin_number">VIN 号</string>
+    <string name="speed">转速</string>
+    <string name="rpm">RPM</string>
+    <string name="select_protocol">箱子系统已检测到以下协议在您的车辆上</string>
+    <string name="j1708_protocol">J1708</string>
+    <string name="j1939_protocol">J1939</string>
+    <string name="both_protocols">1708 J 和 J1939</string>
+
+    <string name="internet_connection">检查互联网连接...</string>
+    <string name="no_internet">丁香 ELD 未连接到互联网。 请稍后再试!</string>
+    <string name="web_service">检查 Web 服务...</string>
+    <string name="web_service_ok">Web 服务是良好的。 请单击 “下一页” 继续!</string>
+    <string name="no_web_service">Web 服务不可用。 请稍后再试!</string>
+    <string name="latitude_longitude">纬度经度/</string>
+
+    <string name="can_data_ok">请单击下一页继续!</string>
+
+    <string name="default_cycle">默认周期/默认规则</string>
+    <string name="unit_no">单位编号</string>
+    <string name="start_time">开始时间</string>
+
+    <string name="datetime">日期/时间的</string>
+    <string name="location">位置</string>
+    <string name="dvir_type">键入</string>
+    <string name="truck_number">#叉车</string>
+    <string name="trailer">拖车</string>
+    <string name="defect">缺陷</string>
+    <string name="defect_repaired">缺陷修复</string>
+    <string name="safe_to_drive">安全驱动器</string>
+    <string name="yes">是</string>
+    <string name="no">没有</string>
+    <string name="button_certify">证明</string>
+    <string name="button_add_defect">添加缺陷</string>
+    <string name="button_add_picture">图像添加</string>
+    <string name="inspection_activity_title">新的检查</string>
+    <string name="defect_item">缺陷项目</string>
+    <string name="button_close">关闭</string>
+
+    <string-array name="dvir_types">
+        <item>前</item>
+        <item>帖子</item>
+        <item>间</item>
+    </string-array>
+
+    <string-array name="sync_time">
+        <item>5 分钟</item>
+        <item>10 分钟</item>
+        <item>20 分钟</item>
+        <item>30 分钟</item>
+        <item>60 分钟</item>
+    </string-array>
+
+    <string-array name="graph_line">
+        <item>时间结束</item>
+        <item>当前时间</item>
+    </string-array>
+
+    <string-array name="vision_mode">
+        <item>一天</item>
+        <item>晚上</item>
+        <item>汽车</item>
+    </string-array>
+
+    <string-array name="font_size">
+        <item>小</item>
+        <item>正常</item>
+        <item>大</item>
+    </string-array>
+
+    <string name="defect1">1)空气制动系统</string>
+    <string name="defect2">2)士</string>
+    <string name="defect3">3)货物固定</string>
+    <string name="defect4">4)联轴器设备</string>
+    <string name="defect5">5)危险货物(如果有的话)</string>
+    <string name="defect6">6)驱动程序控件</string>
+    <string name="defect7">7)驾驶员座椅</string>
+    <string name="defect8">8)电子制动系统</string>
+    <string name="defect9">9)应急设备和安全装置</string>
+    <string name="defect10">10)排气系统</string>
+    <string name="defect11">11)帧和货物的机构</string>
+    <string name="defect12">)12 燃油系统</string>
+    <string name="defect13">13)常规缺陷</string>
+    <string name="defect14">14)玻璃和镜子</string>
+    <string name="defect15">15)加热器/除霜器</string>
+    <string name="defect16">16)喇叭</string>
+    <string name="defect17">17)Hybraulic 制动系统</string>
+    <string name="defect18">18)灯具灯反射镜</string>
+    <string name="defect19">19)转向</string>
+    <string name="defect20">20)悬架系统</string>
+    <string name="defect21">21)轮胎</string>
+    <string name="defect22">22)车轮轮毂//</string>
+    <string name="defect23">23 的紧固件)风挡玻璃雨刮器和清洗器</string>
+    <string name="defect24">24)其他</string>
+
+    <string-array name="defect_items">
+        <item>@string/defect1</item>
+        <item>@string/defect2</item>
+        <item>@string/defect3</item>
+        <item>@string/defect4</item>
+        <item>@string/defect5</item>
+        <item>@string/defect6</item>
+        <item>@string/defect7</item>
+        <item>@string/defect8</item>
+        <item>@string/defect9</item>
+        <item>@string/defect10</item>
+        <item>@string/defect11</item>
+        <item>@string/defect12</item>
+        <item>@string/defect13</item>
+        <item>@string/defect14</item>
+        <item>@string/defect15</item>
+        <item>@string/defect16</item>
+        <item>@string/defect17</item>
+        <item>@string/defect18</item>
+        <item>@string/defect19</item>
+        <item>@string/defect20</item>
+        <item>@string/defect21</item>
+        <item>@string/defect22</item>
+        <item>@string/defect23</item>
+        <item>@string/defect24</item>
+    </string-array>
+
+    <string name="defect_msg">我没有发现任何缺陷, 我的车辆。</string>
+    <string name="repaired_msg">缺陷在 Dvir 合作社已得到纠正。</string>
+    <string name="safetodrive_msg">缺陷在 Dvir 合作社不需要修正的安全操作车辆。</string>
+    <string name="no_safetodrive_msg">请不要驾驶车辆。</string>
+    <string name="button_view">查看</string>
+
+
+    <string name="settings_time_zone">时区</string>
+    <string name="settings_default_rule">默认规则</string>
+    <string name="settings_graph_line">图线</string>
+    <string name="settings_color_line">线的颜色</string>
+    <string name="settings_us_color">美国</string>
+    <string name="settings_canada_color">加拿大</string>
+    <string name="settings_violation_on_grid">显示违规上网格的</string>
+    <string name="settings_time_format">时间格式</string>
+    <string name="settings_unit_format">单元 </string>
+    <string name="settings_reading_violation">读取违规</string>
+    <string name="settings_automatic_change_rule">自动规则更改</string>
+    <string name="settings_reading_message">读取的消息</string>
+    <string name="settings_reading_status_change">读取工作状态更改 </string>
+    <string name="settings_start_time">开始时间的</string>
+    <string name="settings_orientation">方向</string>
+    <string name="settings_vision_mode">理想模式</string>
+    <string name="settings_font_size">字体大小</string>
+    <string name="settings_brightness">亮度</string>
+    <string name="settings_check_update">检查更新</string>
+    <string name="settings_system_infor">系统信息</string>
+    <string name="settings_legal">查看法律文件</string>
+    <string name="settings_sync_time">同步</string>
+    <string name="settings_copy_trailers">复制拖车)</string>
+    <string name="settings_volume_level">音量</string>
+    <string name="settings_list_violation">显示侵犯人权行为的责任状态</string>
+    <string name="settings_android_version">Android 版本</string>
+    <string name="settings_imei">IMEI</string>
+    <string name="settings_app_version">ELD 版本</string>
+    <string name="settings_battery_level">电池蓄电量级别的</string>
+    <string name="settings_bluetooth_name">蓝牙名称</string>
+    <string name="settings_default_battery">80%</string>
+
+
+    <!-- GPS Activity -->
+    <string name="gps_status_tab">状态</string>
+    <string name="gps_map_tab">地图</string>
+    <string name="gps_sky_tab">天空</string>
+
+    <string name="gps_start">开始</string>
+    <string name="gps_pause">暂停</string>
+    <string name="menu_navigation">导航</string>
+    <string name="menu_settings">设置</string>
+    <string name="menu_extra">更为</string>
+    <string name="delete_aiding_data">明确的辅助数据已</string>
+    <string name="delete_aiding_data_success">成功删除的辅助数据。</string>
+    <string name="delete_aiding_data_failure">平台不支持删除的辅助数据。
+   </string>
+    <string name="send_location">发送位置</string>
+    <string name="set_fix_frequency">设置固定频率</string>
+    <string name="force_time_injection">注入时间</string>
+    <string name="force_time_injection_success">成功注入的时间数据。</string>
+    <string name="force_time_injection_failure">平台不支持注射的时间数据。
+   </string>
+    <string name="force_xtra_injection">注入额外的数据</string>
+    <string name="force_xtra_injection_success">已成功注入额外的数据。</string>
+    <string name="force_xtra_injection_failure">平台不支持注入了额外的数据。
+   </string>
+
+    <string name="zoom_in">放大</string>
+    <string name="zoom_out">缩小</string>
+    <string name="mode_map">地图</string>
+    <string name="mode_satellite">卫星</string>
+
+    <string name="gps_latitude_label">经度:</string>
+    <string name="gps_longitude_label">长:</string>
+    <string name="gps_fix_time_label">时间:</string>
+    <string name="gps_ttff_label">首次定位时间(TTFF):</string>
+    <string name="gps_altitude_label">Alt:</string>
+    <string name="gps_accuracy_label">Acc:</string>
+    <string name="gps_speed_label">速度:</string>
+    <string name="gps_bearing_label">轴承:</string>
+    <string name="gps_fix_label">无修复</string>
+    <string name="gps_utc_time_label">系统时间:</string>
+
+    <string name="gps_prn_column_label">PRN 的</string>
+    <string name="gps_flag_image_label">全球导航卫星系统的</string>
+    <string name="gps_snr_column_label">SNR ST</string>
+    <string name="gps_elevation_column_label">段抬高</string>
+    <string name="gps_azimuth_column_label">Azim</string>
+    <string name="gps_flags_column_label">标志</string>
+    <string name="gps_not_supported">GPS 不支持。 正在退出应用程序...</string>
+    <string name="install">安装</string>
+    <string name="please_install_google_maps">请安装 Google Maps 的</string>
+    <string name="enable_gps_message">GPS 是禁用的。 使它吗?</string>
+    <string name="enable_gps_positive_button">启用 GPS</string>
+    <string name="enable_gps_negative_button">无</string>
+    <string name="gps_set_location_listener">GPS 开始的间隔= 1 元 ss、最小距离 =% 2 元 sm
+   </string>
+
+    <!-- User tutorial -->
+    <string name="showcase_gps_on_off_title">控件</string>
+    <string name="showcase_gps_on_off_message">•在/关闭开关开始/停止 GPS \ n •
+\ “分享” 按钮发送的位置(如图所示后获取 GPS 修正)\ n \ n
+       <i>(点击关闭)</i>
+   </string>
+
+    <!-- Preferences -->
+    <string name="pref_title">设置</string>
+    <string name="pref_map_category_title">地图</string>
+    <string name="pref_map_type_title">地图类型</string>
+    <string name="pref_map_type_summary">设置地图类型的瓷砖显示</string>
+    <string name="pref_map_type_dialog_title">选择地图类型</string>
+
+    <string name="pref_rotate_map_with_compass_title">旋转地图与罗盘</string>
+    <string name="pref_rotate_map_with_compass_summary">更改地图的方向基于您的
+方向
+   </string>
+
+    <string name="pref_tilt_map_with_sensors_title">倾斜映射与设备</string>
+    <string name="pref_tilt_map_with_sensors_summary">更改为第一人-地图视图当您
+按住设备上的
+   </string>
+
+    <string name="pref_gps_category_title">GPS</string>
+    <string name="pref_auto_start_gps_title">自动启动 GPS</string>
+    <string name="pref_auto_start_gps_summary">GPS 数据应用程序启动</string>
+
+    <string name="pref_gps_min_time_title">时间间隔</string>
+    <string name="pref_gps_min_time_summary">时间的 GPS 修正, 以秒为单位</string>
+    <string name="pref_gps_min_time_dialog_title">输入时间间隔, 以秒为单位的</string>
+    <string name="pref_gps_min_time_invalid_entry">时间间隔必须为数字</string>
+
+    <string name="pref_gps_min_distance_title">最小的。 间距</string>
+    <string name="pref_gps_min_distance_summary">最小间距的 GPS 修正, 以米为单位
+   </string>
+    <string name="pref_gps_min_distance_dialog_title">输入的最小距离, 以米为单位的</string>
+    <string name="pref_gps_min_distance_invalid_entry">最小。 距离必须为数字</string>
+
+    <string name="pref_analyze_gps_accuracy_title">分析 GPS 精度</string>
+    <string name="pref_analyze_gps_accuracy_summary">使用 GPS 基准来测量 GPS 错误</string>
+
+    <string name="pref_display_category_title">显示</string>
+    <string name="pref_keep_screen_on_title">保持屏幕上</string>
+    <string name="pref_keep_screen_on_summary">可以防止屏幕关闭</string>
+    <string name="pref_true_north_title">点罗盘真北的</string>
+    <string name="pref_true_north_summary">罗盘将面临 “真北” 而不是磁北
+   </string>
+
+    <string name="pref_about_category_title">约</string>
+    <string name="pref_show_tutorial_title">显示教程</string>
+    <string name="pref_show_tutorial_summary">显示了如何使用应用程序</string>
+    <!-- End GPS activity -->
+
+
+    <!-- Wireless connectivity check -->
+    <string name="cellular_connection">检查蜂窝连接</string>
+    <string name="wifi_connection">检查无线连接的</string>
+    <string name="hutch_connection">建立与丁香</string>
+    <string name="download_configuration">下载系统配置</string>
+
+    <string name="bluetooth_enable_checking">检查蓝牙关闭/</string>
+    <string name="bluetooth_searching">搜索蓝牙桥的</string>
+    <string name="bluetooth_established_connection">建立与</string>
+    <string name="bluetooth_checking_heartbeat">检查的  Hutch Connect 心跳</string>
+    <string name="bluetooth_information">请启动车辆!</string>
+
+
+    <string name="finding_gps_satellite">找到 GPS 卫星</string>
+    <string name="checking_utc_time">检查时间</string>
+    <string name="checking_latitude_longitude">检查 Latitude 和 Longtitude</string>
+    <string name="checking_current_location">检查当前的位置</string>
+    <string name="your_location">您当前的位置</string>
+    <string name="terms_of_service_01">丁香系统拥有许可证的某些技术, 它已开发并使商业用户可以通过移动服务和/或 web 应用程序, 有助于高效运作, 卡车和客车的舰队在北美。 在使用的应用程序和提供支持, 或购买或租用硬件(所有的再下面的定义), 您和/或您的组织或公司(“客户”)在此同意服务条款和条件(统称 “服务条款”)。</string>
+
+
+    <string name="googleplay">Google Play</string>
+    <string name="install_opencv">OpenCV 安装管理器</string>
+    <string name="ask_install_opencv">才能工作, 打开注扫描仪需要的服务的 OpenCV Manager, 它尚未安装。</string>
+
+    <string name="activateunknown">转到设置</string>
+    <string name="messageactivateunknown">Google Play isn \' t 可用并安装未知来源的被禁用, 请转至设置并激活它。</string>
+
+    <string name="scanningToast">搜索文档请点击 “再次扫描整个图像</string>
+
+
+    <!-- Activity Bluetooth Conn Check-->
+    <string name="checking_btb...">检查 BTB ...</string>
+    <string name="checking_bluetooth">检查蓝牙</string>
+    <string name="searching_for_btb">搜索的 BTB</string>
+    <string name="if_safe_please_start_your_vehicle_now">如果安全, 请启动您的车辆现在</string>
+    <string name="search_devices">搜索设备的</string>
+    <string name="connecting_with_btb">连接与</string>
+    <string name="checking_btb_heartbeat">检查 BTB BTB 的心跳</string>
+
+
+    <!-- Activity Certify Log-->
+    <string name="i_hearby_certify">我特此证明我的数据条目和我的记录工作状态的这 24 小时-期间是真实和正确的。</string>
+    <string name="not_ready">未就绪</string>
+    <string name="reset_sign">重置登录</string>
+    <string name="certify">认证</string>
+
+    <!-- Activity Certify Log-->
+    <string name="select_defects">选择缺陷</string>
+    <string name="add">添加</string>
+
+    <!-- Activity First Time User-->
+    <string name="please_scroll_and_read_all_terms">请向下滚动并阅读所有条款和条件才能 accpeting !</string>
+    <string name="terms_and_conditions">条款和条件</string>
+    <string name="accept">接受</string>
+    <string name="first_time_user">第一时间用户</string>
+    <string name="set_home_timezone">设置的首页的时区 </string>
+    <string name="set_default_service_rule">设置为默认的服务规则的 </string>
+
+    <!-- Activity GPS Check-->
+    <string name="global_position_satellite_check...">全球定位卫星检查...</string>
+    <string name="gps_satellite">GPS 卫星的</string>
+    <string name="utc_time">UTC 时间 </string>
+    <string name="prn">PRN 的</string>
+    <string name="gnss">全球导航卫星系统的</string>
+    <string name="snr">SNR ST</string>
+    <string name="elev">段抬高</string>
+    <string name="azim">Azim</string>
+    <string name="flags">旗</string>
+
+    <!-- Activity GPS Main-->
+    <string name="next">下</string>
+    <string name="transfer_record_to_codriver">传输记录 CoDriver</string>
+    <string name="time_format">HH: MM: SS</string>
+
+    <!-- Activity GPS Main-->
+    <string name="pre">前</string>
+    <string name="inter">除</string>
+    <string name="post">Post</string>
+
+    <!-- Activity Output File Send-->
+    <string name="send_eld_data">发送数据许可证</string>
+    <string name="bluetooth">蓝牙</string>
+    <string name="send">发送</string>
+
+    <!-- Activity Rule Change-->
+    <string name="hutch_eld_supported_rules">丁香 ELD 支持的规则</string>
+
+    <!-- Activity Select Country-->
+    <string name="select_country">选择国家/地区</string>
+
+
+    <!-- Activity Setup Complete-->
+    <string name="setup_completed">设置完成后</string>
+    <string name="your_eld_is_ready_for_use">您的许可证是可以使用</string>
+    <string name="cellular_connection_check">蜂窝连接检查</string>
+    <string name="wifi_connection_check">无线网络连接检查</string>
+    <string name="hutch_systems_connection_check">箱子系统连接检查选中</string>
+    <string name="bluetooth_check">蓝牙复选</string>
+    <string name="btb_connection">BTB</string>
+    <string name="btb_heartbeat">BTB 连接心跳的</string>
+    <string name="utc_time_check">UTC 时间检查的</string>
+    <string name="latitude_and_longitude_check">纬度和经度检查</string>
+    <string name="current_location_check">当前位置检查</string>
+    <string name="please_enter_your_installer_id">请输入您的安装程序 ID 下面的 “继续</string>
+    <string name="proceed">继续</string>
+
+
+    <!-- Activity Setup Welcome-->
+    <string name="welcome">欢迎</string>
+    <string name="the_system_will_guide_you_through">系统将指导您完成步骤--的步骤在安装过程中。 安装程序将执行以下任务:</string>
+    <string name="network_connectivity_check">网络连接检查</string>
+    <string name="hutch_systems_connectivity_check">箱子系统连接检查</string>
+    <string name="btb_connectivity_check">BTB(蓝牙桥)连接性检查与</string>
+    <string name="feel_free_to_contact_us">我们联系 604-776-3564、如果您需要我们的帮助。</string>
+
+
+    <!-- Activity View Image-->
+    <string name="defect_img">缺陷图像</string>
+
+
+    <!-- Activity Wireless Connectivity Check-->
+    <string name="establishing_wireless_connection...">建立无线连接...</string>
+    <string name="cellular_connection_lab">蜂窝连接</string>
+    <string name="wifi_connection_lab">无线网络连接</string>
+    <string name="connection_with_hutch_systems">与丁香系统</string>
+    <string name="retry">重试的</string>
+
+
+    <!-- Alert BTB-->
+    <string name="btb_connection_in_progress">BTB 连接进行中</string>
+    <string name="please_wait_while_eld_is_connecting_to_btb">请等待 ELD 是连接到的 BTB。</string>
+
+
+    <!-- Alert Layout-->
+    <string name="device_battery_low">设备的电池电量不足</string>
+    <string name="please_reconnect_to_power_immediately">请重新连接至电源。</string>
+
+
+    <!-- Defect Item-->
+    <string name="description">说明</string>
+
+
+    <!-- DIalog Color Picker-->
+    <string name="select_color">选择颜色</string>
+    <string name="selected_color">选择颜色</string>
+    <string name="set">设置</string>
+
+
+    <!-- DTC Item-->
+    <string name="spn_mid">SPN/MID</string>
+    <string name="fmi">FMI</string>
+    <string name="oc">业主立案法团的</string>
+
+
+    <!-- eLog Scrollview-->
+    <string name="remaining">其余</string>
+    <string name="na">N/</string>
+    <string name="current_trip">当前的行程</string>
+
+
+    <!-- Fab Layout-->
+    <string name="fab_btn_switch_user">开关用户</string>
+    <string name="fab_btn_undocking">断开与坞站的连接的</string>
+
+
+    <!-- Fragment Add Notice Order -->
+    <string name="duration_in_minutes">持续时间(分钟)</string>
+    <string name="report_no">第</string>
+    <string name="level">一级的</string>
+    <string name="fine_amount">罚款金额</string>
+    <string name="results">结果</string>
+    <string name="hos">居者有其屋的结果</string>
+    <string name="mechanical">机械</string>
+    <string name="speeding">超速驾驶</string>
+    <string name="seat_belt">座椅安全带</string>
+    <string name="others">其他人</string>
+    <string name="pass">通过</string>
+    <string name="fail">未通过</string>
+    <string name="violation">违反</string>
+    <string name="present">目前的</string>
+    <string name="out_of_service">缺货</string>
+    <string name="scan">扫描</string>
+
+
+    <!-- Fragment Daily Log Dashboard -->
+    <string name="inspector_mode">督察模式</string>
+    <string name="codriver_id_name">Co-Driver ID /名称</string>
+
+    <!-- Fragment Driver Profile -->
+    <string name="mobile_no">移动号</string>
+    <string name="dl_number">DL</string>
+    <string name="dl_expiry">DL 号到期</string>
+    <string name="dot_password">点密码</string>
+    <string name="exemption">豁免</string>
+    <string name="special_category">特别类</string>
+    <string name="authorized_personal_use">授权个人使用的 CMV、院子里的移动</string>
+
+
+    <!-- Fragment Driver Scorecard Layout -->
+    <string name="view_score_card_last_30_days">查看记分卡的最后一天 30</string>
+    <string name="points_gained">点获得了</string>
+    <string name="low_washer_fluid">较低的清洗液液位</string>
+    <string name="failure_to_warm_up_engine">故障要预热发动机</string>
+    <string name="low_engine_oil">发动机机油</string>
+    <string name="low_coolant_level">冷却液液位过低的</string>
+    <string name="high_rpm">高转速</string>
+    <string name="speed_violation">速度违规</string>
+    <string name="hard_acceleration">硬盘违规加速</string>
+    <string name="hard_braking">急刹车</string>
+    <string name="idling">怠速</string>
+    <string name="critical_warnings">严重警告</string>
+    <string name="driving_with_engine_light_on">驾驶带有发动机灯亮</string>
+    <string name="sharp_turn_left">急转弯向左</string>
+    <string name="sharp_turn_right">急转弯正确的</string>
+    <string name="hours_of_service">小时的服务</string>
+    <string name="failure_to_conduct_trip_inspection">出现故障时进行跳闸检查</string>
+
+
+    <!-- Fragment Extra -->
+    <string name="menu_dtc">DTC</string>
+    <string name="menu_trailer_management">拖车管理</string>
+    <string name="menu_scorecard">记分卡的</string>
+    <string name="menu_vehicle_info">车辆信息</string>
+    <string name="menu_fuel_detail">燃油详细说明</string>
+    <string name="menu_incident">事件的</string>
+    <string name="menu_maintenance">维护</string>
+
+
+    <string name="fuel_card_no">燃油卡号</string>
+    <string name="fuel_quantity_ltr">燃油量(升)</string>
+    <string name="fuel_amount">燃油量(元)</string>
+    <string name="def_fuel_quantity_ltr">清燃油量(升)</string>
+    <string name="def_fuel_amount">DEF 燃油量(元)</string>
+    <string name="reefer_fuel_quantity_ltr">冷藏箱燃油量(升)</string>
+    <string name="reefer_fuel_amount">冷藏箱燃油量(元)</string>
+    <string name="cash_advance">预借现金(元)</string>
+
+
+    <string name="input_detail">输入详细信息</string>
+    <string name="edit_truck_id">叉车编辑 Id</string>
+
+    <string name="version">版本</string>
+    <string name="status_warning">警告状态</string>
+    <string name="countdown">倒计时</string>
+    <string name="do_you_want_to_continue_to_use_vehicle">您想要继续使用车辆的驾驶执照或不?</string>
+
+
+    <string name="system_information_system">系统信息-系统</string>
+
+    <string name="protocol_ok">“确定”</string>
+    <string name="check_again">再次检查</string>
+
+
+    <string name="shutdown_device">关闭设备</string>
+    <string name="eld_device_is_shutting_down.">ELD 设备正在关闭。</string>
+
+    <string name="summary">摘要</string>
+
+    <string name="hook_trailer">钩拖车</string>
+
+    <string name="vehicle_info_cvip_due">CVIP 到期: </string>
+    <string name="vehicle_info_vin"> VIN:  </string>
+    <string name="vehicle_info_engine_no"> 发动机序列号:  </string>
+    <string name="vehicle_info_engine_power"> 发动机建设煤气发电:  </string>
+    <string name="vehicle_info_plate"> 板:  </string>
+
+    <string name="fuel_consumed">燃油消耗的</string>
+
+    <string name="boost_pressure">增压压力的</string>
+    <string name="fuel_pressure">燃油压力的</string>
+    <string name="fuel_level">燃油</string>
+    <string name="engine_oil_level">发动机的机油油位</string>
+    <string name="engine_coolant_level">发动机冷却液液位</string>
+    <string name="engine_coolant_temp">发动机冷却液温度的</string>
+    <string name="air_inlet_temperature">空气进口温度</string>
+    <string name="barometric_pressure">气压</string>
+    <string name="engine_oil_pressure">发动机油压力</string>
+    <string name="engine_load">发动机负荷的</string>
+    <string name="washer_fluid_level">清洗液液位</string>
+    <string name="def_fuel_level">清燃油油位</string>
+    <string name="idle_fuel_used">怠速燃油使用</string>
+    <string name="engine_idle_hours">发动机怠速运转时</string>
+    <string name="pto_hours">动力输出轴时的</string>
+    <string name="fuel_economy">燃油经济性</string>
+    <string name="battery_voltage">电池电压</string>
+    <string name="pto_fuel_used">动力输出轴燃油使用</string>
+    <string name="cruise_set_speed">巡航速度设定</string>
+    <string name="brake_application_count">制动应用程序计数</string>
+    <string name="max_road_speed">最大公路速度</string>
+    <string name="total_cruise_time">总巡航时间</string>
+    <string name="air_suspension_load">空气悬架装入</string>
+    <string name="transmission_oil_level">变速箱油油位</string>
+    <string name="transmission_gear_no">变速箱齿轮无</string>
+
+
+    <string name="label_diagnostic">诊断</string>
+    <string name="label_malfunction">故障的</string>
+    <string name="label_battery">电池</string>
+    <string name="label_coolant">冷却液</string>
+    <string name="turbo_boost">涡轮增压</string>
+    <string name="driving_remaining">驾驶其余</string>
+
+
+    <string name="pre_trip">前旅行</string>
+    <string name="schedule">时间表</string>
+    <string name="threshold">阈</string>
+
+
+    <string name="today">今天的阈值</string>
+
+    <string name="authenticated_driver_eld_login_activity">通过验证的驱动程序的许可证登录活动</string>
+
+
+    <string name="orientation_display">方向-显示</string>
+    <string name="portrait">纵向</string>
+    <string name="landscape">横向</string>
+    <string name="auto">自动</string>
+    <string name="color_line_display">颜色行-显示</string>
+    <string name="metric">公制</string>
+    <string name="imperial">英制</string>
+    <string name="volume_level_sound">音量的声音-</string>
+    <string name="date_time_system">日期和时间-系统</string>
+    <string name="rules_system">规则 -系统</string>
+    <string name="check_for_updates">检查更新</string>
+    <string name="plate_no">板编号</string>
+
+
+    <!-- Java Files -->
+
+    <string name="PLEASE_ENTER_REPORT_NO">请输入报告编号</string>
+    <string name="PLEAE_ENTER_FINE_AMOUNT">请输入罚款金额。</string>
+    <string name="DRIVER">驱动器</string>
+    <string name="POWER_UNIT">电源单元的</string>
+    <string name="TRAILER">尾部</string>
+    <string name="NO_DOCUMENT_ATTACHED">没有任何文档</string>
+    <string name="VIEW_DOCUMENT">查看文档</string>
+    <string name="low_fuel_economy">较低的燃油经济性</string>
+    <string name="driving_with_critical_warning">驾驶的严重警告警报</string>
+    <string name="unhook_confirmation">解开确认</string>
+    <string name="unhook_trailer_alert">您确实想要解开拖车吗?</string>
+    <string name="logbook_doesnot_exists">日志不存在!</string>
+    <string name="driver">驱动程序</string>
+    <string name="vehicle">车辆</string>
+    <string name="company">公司</string>
+    <string name="certify_log_title">认证登录吗?</string>
+    <string name="certify_log_message">兹证明我的数据条目和我的记录工作状态的这 24 小时-期间是真实和正确的。</string>
+    <string name="no_exemption">没有豁免</string>
+    <string name="exempt_user">豁免使用</string>
+    <string name="none">无</string>
+    <string name="personaluse">授权的个人使用的 CMV</string>
+    <string name="active">积极</string>
+    <string name="inactive">主动-</string>
+    <string name="annotation_alert">请输入注释的最小 4 字!</string>
+    <string name="change_duty_status_alert">您必须处于活动状态的用户更改工作状态的驾驶!</string>
+    <string name="change_dutystatus_personal_user">您必须处于活动状态的用户表示 “授权个人使用的 CMV \” !</string>
+    <string name="change_dutystatus_yardmove">您必须处于活动状态的用户表示 “院子里的移动” !</string>
+    <string name="comment_alert">请输入注释的最小 4 个字符长!</string>
+    <string name="location_alert">请输入位置之前保存的事件!</string>
+    <string name="e_log">E-日志</string>
+    <string name="ok">确定</string>
+    <string name="dvir_add_alert">您必须在-责任 DVIR 合作社</string>
+    <string name="daily_log">每日登录</string>
+    <string name="codriver_change_dutystatus_off_sleeper_onduty">Co 驱动程序必须改变工作状态为 Off, 卧铺或-责任!</string>
+    <string name="driving_hour_expired">请停止驾驶、驾驶时间已过期。</string>
+    <string name="caution_driving_hours_about_to_expire">“小心你的行车时间约为 “已过期”。 您有 “</string>
+    <string name="mintes_of_driving_time_remaining">” 几分钟的行驶时间剩余。 "</string>
+    <string name="stop_driving">停止驱动</string>
+    <string name="send_data_confirmation_title">发送数据的确认吗?</string>
+    <string name="send_data_message">您确定要发送数据到服务器?</string>
+    <string name="at">” 在 “</string>
+    <string name="departed">” 离 “</string>
+    <string name="arrived_at">” 抵达 “</string>
+    <string name="kms">” 公里”</string>
+    <string name="miles">“英里”</string>
+    <string name="in">” 中的 “</string>
+    <string name="vl">批量</string>
+    <string name="total_hours">“总时间(S): “</string>
+    <string name="clr">CLR</string>
+    <string name="term_condition_scroll_alert"><![CDATA[Scroll down to read and accept terms & conditions!]]></string>
+    <string name="power_unit">电源单元</string>
+    <string name="no_document_attach">没有文档</string>
+    <string name="view_document">查看文档</string>
+    <string name="fuel_card_alert">请选择燃油卡</string>
+    <string name="fuel_quantity_alert">请输入燃油量!</string>
+    <string name="fuel_price_alert">请输入油价!</string>
+    <string name="def_fuel_alert">请输入默认的燃油价格!</string>
+    <string name="reefer_fuel_price_alert">请输入冷藏船的燃油价格!</string>
+    <string name="add_fuel_onduty_alert">你必须在工作地点-添加燃油</string>
+    <string name="exclude_sleeper_title">排除睡时间?</string>
+    <string name="exclude_sleeper_message">"您是否想要排除睡时间从 16 小时?”</string>
+    <string name="A_12_title">最大 13 小时的驾驶在一天中的</string>
+    <string name="A_12_warning">加拿大法律允许您为驱动器最大可为 13 小时在任何 24 小时期间内根据您的 24 小时期间的开始日期。 大多数驱动程序都喜欢 mid-夜月中-夜作为其 24 小时的期限。</string>
+    <string name="B_12_title">没有驾驶执照后 14 小时值班-一天</string>
+    <string name="B_12_message">加拿大法律允许您在-责任(-责任和驾驶)的 14 小时, 24 小时内根据您的 24 小时期间的开始日期。 您不能在驱动器 14 小时值班-可在一天中。 大多数驱动程序都喜欢 mid-夜月中-夜期。</string>
+    <string name="A_13_title">必须在驱动器不超过 13 小时而不考虑 8 小时的连续关闭-税</string>
+    <string name="A_13_message">加拿大法律允许您为驱动器仅 13 小时之后连续 8 小时关闭-义务或卧铺-泊位或任何组合的关闭-责任和/或卧铺-停泊。 您必须采取的另一项连续 8 小时前关闭驾驶是允许的。</string>
+    <string name="B_13_title">后不驾驶 14 小时-税时间除非连续 8 小时的关闭-税时间。</string>
+    <string name="B_13_message">加拿大法律允许您只可以在工作地点-的 14 小时之后连续 8 小时关闭-义务或卧铺-泊位或任何组合的关闭-责任和/或卧铺-停泊。 您将需要采取另一种连续 8 小时前关闭驾驶是允许的。</string>
+    <string name="C_13_title">必须在驱动器不超过 16 小时的时间过去后连续 8 小时关闭-税</string>
+    <string name="C_13_message">加拿大法律允许您仅有 16 小时的播放时间在 8 小时的连续关闭-义务或卧铺-泊位或任何组合的关闭-责任和/或卧铺-停泊。 您必须采取的另一项连续 8 小时前关闭驾驶是允许的。 驱动程序通常会提到这是他们的工作-换档。</string>
+    <string name="A_14_title">必须有至少 10 小时关闭-负荷在一天中的。</string>
+    <string name="A_14_message">“加拿大的法律要求您必须具有至少 10 小时关闭-义务或卧铺-泊位或任何组合的关闭-责任和卧铺-停泊时间在 24 小时期间内根据当您考虑您的 24 小时开始。 大多数驱动程序都喜欢 mid-夜月中-夜作为其 24 小时的期限。 “</string>
+    <string name="C_14_title">必须要有最少 2 小时关闭-负荷在一天中的一部分的连续的 8 所需的时间。</string>
+    <string name="C_14_message">加拿大的法律要求最低 2 小时关闭-义务或卧铺-泊位或任何组合的关闭-责任和卧铺-泊位是不属于连续 8 小时。 关闭-工作时间必须在块中不低于 30 分钟被视为实现最低的 10 小时所需的关闭-负荷在一天中的。</string>
+    <string name="B_16_title">必须采取 20 小时关闭-责任在 2 天的延迟关闭-税时间。</string>
+    <string name="B_16_message">加拿大的法律要求最低 20 小时关闭-责任在 2 天内如果您推迟关闭-税时间。 这是总的一天 1 和天 2 的。 您不能推迟的任何部分的连续 8 小时的需要关闭-税时间。</string>
+    <string name="D_16_title">必须不超过 26 小时的驱动器的时间在 2 天。</string>
+    <string name="D_16_message">加拿大法律允许您仅有 26 小时的驱动器的时间在 2 天内如果您推迟关闭-税时间。 这是你的一天 1 和天 2 的总。</string>
+    <string name="V_25_title">不能除非驱动器连续 24 关闭-值班时间是在前 14 天。</string>
+    <string name="V_25_message">加拿大的法律, 至少需要 24 个连续关闭-工作小时或睡-泊位数小时或任何组合的关闭-责任和卧铺-泊位将采取每 14 天。 您的 24 小时可以部分循环重置如果您想。</string>
+    <string name="V_26_title">后不驾驶 70 小时-责任在 7 天。</string>
+    <string name="V_26_message">“加拿大的法律不允许您为驱动器后 70 小时值班-时间在任何一段期间的 7 天。 你可以 36 小时关闭-义务或卧铺-泊位或任何组合的重置您的周期 1 或者你可以等到第 8 天获得的时间。 ”</string>
+    <string name="B_27_title">后不驾驶 70 小时-税。 除非连续 24 关闭-值班时间。</string>
+    <string name="B_27_message">加拿大的法律不允许您为驱动器后 70 小时值班-除非您已经采取了 24 小时连续关闭-义务或在卧铺-泊位或其任何组合。 您的 24 小时可以部分循环重置如果您想。</string>
+    <string name="A_27_title">不能驱动器后 120 小时-责任在 14 天。</string>
+    <string name="A_27_message">加拿大的法律不允许您为驱动器后的 120 小时工作地点-时间在任何一段 14 天。 你可以 72 小时关闭-义务或卧铺-泊位或其任何组合为您重置周期 2 或者你可以等到第 15 天获得的时间。</string>
+    <string name="A_29_title">必须考虑最小连续 36 小时关闭-负荷切换到周期 2 的周期从 1。</string>
+    <string name="A_29_message">加拿大的法律, 至少需要 36 个小时连续关闭-义务或卧铺-泊位或任何组合的关闭-责任和睡后再切换到 2 循环周期从 1。</string>
+    <string name="US_395_3_a_3_i_title">必须在驱动器不超过 11 小时而不采取 10 小时连续关闭-责任</string>
+    <string name="US_395_3_a_3_i_message">美国法律允许您为驱动器仅 11 小时之后连续 10 小时关闭-义务或卧铺-泊位或任何组合的关闭-责任和/或卧铺-停泊。 您必须采取的另一项连续 10 小时前关闭驾驶是允许的。</string>
+    <string name="US_30min_rest_title">不能驱动如果超过 8 小时后自去年年底以来最低的 30 分钟关闭-义务或沙发床。</string>
+    <string name="US_30min_rest_message">美国的法律只允许您的驱动器最大可为 8 小时自从上次 30 分钟关闭-义务或卧铺-停泊时间。 您必须至少有 30 分钟的连续关闭-义务或卧铺-泊位或任何组合关闭-责任和卧铺-停泊。</string>
+    <string name="US_395_3_a_2_title">“后不驾驶 14 小时以下 10 个小时连续关闭-税»</string>
+    <string name="US_395_3_a_2_message">美国法律允许您仅有 14 小时的时间后 10 个小时连续关闭-义务或卧铺-泊位或任何组合关闭-责任和/或卧铺-停泊。 您必须采取的另一项连续 10 小时前关闭驾驶是允许的。 驱动程序通常会提到这是他们的工作-换档。</string>
+    <string name="US_70hr_title">后不驾驶 70 小时值班-8 内天。</string>
+    <string name="US_70hr_message">“美国的法律不允许您为驱动器后 70 小时值班-时间在任何 8 天的期间。 你可以 34 小时关闭-义务或卧铺-泊位或任何此类组合重置或您可以等到第 9 天的时间。 “</string>
+    <string name="notice_and_order">通知和订单</string>
+    <string name="box">框</string>
+    <string name="cvsa_inspection">CVSA 检查</string>
+    <string name="violation_ticket">违反票证</string>
+    <string name="incident_add_alert">您必须在-责任添加事件!</string>
+    <string name="unidentified_driving_alert">未识别的驱动程序则必须停止并重新登录到 E L D</string>
+    <string name="internet_connection_alert">请检查您的互联网连接!</string>
+    <string name="user_name_alert">请输入用户名</string>
+    <string name="password_alert">请输入密码</string>
+    <string name="login_event_description">通过身份验证的驱动程序的许可证登录活动</string>
+    <string name="term_condition_login"><![CDATA[You have to accept terms & conditions to proceed!!!]]></string>
+    <string name="altest_update_already_installed">的最新更新已安装的。</string>
+    <string name="inspect_log_title">检查</string>
+    <string name="eld_title">许可证登录</string>
+    <string name="dvir_title">DVIR 合作社</string>
+    <string name="navigation_title">导航</string>
+    <string name="message_title">消息</string>
+    <string name="tpms_title">TPMS</string>
+    <string name="more_title">更多</string>
+    <string name="settings_title">设置</string>
+    <string name="logout_title">注销</string>
+    <string name="logout_offduty_alert">不允许您登录退出, 直到您在关税。</string>
+    <string name="continue_personal_user_confirmation">您希望继续个人使用吗?</string>
+    <string name="contine_driving_confirmation">您想要继续驾驶? 否则请更改状态的</string>
+    <string name="btb_connection_title">BTB 连接失败的</string>
+    <string name="btb_connection_message">问题同时连接到 BTB。 请重新启动设备以继续。</string>
+    <string name="btb_connection_progress_title">BTB 连接进行中</string>
+    <string name="btb_connection_progress_message">请等待 ELD 是连接到的 BTB ...</string>
+    <string name="ignition_on_title">打开点火开关</string>
+    <string name="ignition_on_message">请打开点火开关...</string>
+    <string name="driving_mode_message">您确定要在驾驶模式?</string>
+    <string name="driving_mode_title">驾驶模式确认</string>
+    <string name="active_driver_message_inmotion">您不能为活动驱动程序当车辆在行驶中!</string>
+    <string name="active_driver">活动驱动程序</string>
+    <string name="uncertified_log_message">您未经核证的日志!!!</string>
+    <string name="logout_confirmation">注销确认</string>
+    <string name="logout_alert">“您确定要退出吗? “</string>
+    <string name="logout_event_description">经过身份验证的驱动程序的许可证注销活动</string>
+    <string name="powerup_event_conventional_description">发动机功率-与传统的位置精度</string>
+    <string name="powerup_event_reduced_description">发动机功率-与降低位置精度</string>
+    <string name="shutdown_event_conventional_description">发动机停机与传统的位置精度</string>
+    <string name="shutdown_event_reduced_description">发动机停机降低位置精度</string>
+    <string name="pc_ym_yt_cleared">指示驱动程序的 PC, YM 和 WT 清除</string>
+    <string name="IL_conventional_description">中间记录的常规位置精度</string>
+    <string name="IL_reduced_description">中间日志降低位置精度</string>
+    <string name="device_BTB_unsupport">设备岂不支持蓝牙。</string>
+    <string name="inspection">检查</string>
+    <string name="new_inspection">新的检查</string>
+    <string name="edit_event">编辑事件</string>
+    <string name="progress_update">的更新已经在进行中请稍候...</string>
+    <string name="special_category_configure_PU">您的配置类别授权个人使用的 CMV</string>
+    <string name="special_category_configure_YM">您配置的类别是院子里的移动</string>
+    <string name="special_category_configure_none">您没有类别配置</string>
+    <string name="special_category_configure_PU_YM">您的配置类别的授权个人使用的 CMV 和院子里的移动</string>
+    <string name="uncertified_log_exists">您未经核证的日志!!!</string>
+    <string name="add_notice_order">添加公告和顺序</string>
+    <string name="map_initialized">初始化地图的</string>
+    <string name="upcoming_maintenance">即将进行的维护</string>
+    <string name="maintenance_due">保养</string>
+    <string name="yesterday">昨天到期</string>
+    <string name="future_time_alert">请不要选择未来的时间。</string>
+    <string name="valid_password">请输入有效的密码!</string>
+    <string name="driving_shortening_alert">缩短驾驶时间是不允许的!</string>
+    <string name="cancel">取消</string>
+    <string name="usb_attach_alert">请连接 USB 驱动器的第一次</string>
+    <string name="send_method_alert">请选择发送方法!</string>
+    <string name="pick_an_email_provider">选择电子邮件提供商提供的</string>
+    <string name="file_not_found">文件没有找到</string>
+    <string name="delete_page_title">删除页面</string>
+    <string name="delete_page_message">您确实想要删除此页面吗?</string>
+    <string name="score_deducted">分数扣减</string>
+    <string name="duration">时间</string>
+    <string name="driving_points_gained">“驾驶点所获得的时间: “</string>
+    <string name="system">系统</string>
+    <string name="display">显示</string>
+    <string name="sound">声音</string>
+    <string name="eld_app_exit">应用程序的许可证将被停机 3 秒。</string>
+    <string name="device_internet_not_connected">设备未连接到互联网。 请稍后再试!</string>
+    <string name="unidentified_driver_record_missing">帐户身份不明的驱动程序帐户类型是缺失的!</string>
+    <string name="hook_trailer_title">拖车钩</string>
+    <string name="hook_trailer_message">您确定。 您想要钩拖车吗?</string>
+    <string name="please_select_record">请选择记录!</string>
+    <string name="drivers">“驱动程序”</string>
+    <string name="th_certification">\ “次认证的每日记录</string>
+    <string name="assuming_events_title">假定事件的</string>
+    <string name="today_hours">总数的小时</string>
+
+    <string name="violation_present">违反本</string>
+    <string name="invoice_alert">Please enter Invoice No!</string>
+    <string name="part_cost_alert">Please enter Part Cost!</string>
+    <string name="labour_cost_alert">Please enter Labour Cost!</string>
+    <string name="pending">Pending</string>
+    <string name="completed">Completed</string>
+    <string name="upcoming_due_maintenance">Upcoming/Due Maintenance</string>
+    <string name="maintenance_completed">Maintenance Completed</string>
+    <string name="confirm">Confirm</string>
+    <string name="reject">Reject</string>
+    <string name="application_exit">Application Exit</string>
+    <string name="installer_id_valid_alert">Please enter valid Installer Id!</string>
+    <string name="feature_na_alert">This Feature is not available for your company. Please contact Hutch Systems to avail this feature.</string>
+    <string name="geofence_detail">Geofence Detail</string>
+    <string name="please_verify_if_navigation_is_loaded_properly_prior_to_proceeding">Please verify if navigation is loaded properly prior to proceeding!</string>
+    <string name="document_no">Document No</string>
+    <string name="document_type">Document Type</string>
+    <string name="document_detail">Document Detail</string>
+    <string name="add_document_onduty_alert">You must be on-duty to add document</string>
+    <string name="scanning">Scanning</string>
+    <string name="dispatch_no">Dispatch No</string>
+    <string name="booking_no">Booking No</string>
+    <string name="container_no">Container No</string>
+    <string name="manufacturing_date">Manufacturing Date</string>
+    <string name="max_gross_weight">Max Gross Weight</string>
+    <string name="tare_weight">Tare Weight</string>
+    <string name="seal_no1">Seal No 1</string>
+    <string name="seal_no2">Seal No 2</string>
+    <string name="max_pay_load">Max Pay Load</string>
+    <string name="container_no_alert">Please enter Container No!</string>
+    <string name="drayage">Drayage</string>
+    <string name="dispatch_detail">Dispatch Detail</string>
+    <string name="container_detail">Container Detail</string>
+    <string name="menu_exit">Exit</string>
+    <string name="allow_access">ALLOW ACCESS</string>
+    <string name="live">Live</string>
+ <string name="trial">Trial</string>
+    <string name="light_duty">Light Duty</string>
+    <string name="production">Production</string>
+    <string name="free_trial">Free Trial</string>
+    <string name="setting">Setting</string>
+    <string name="internet_connection_test">Internet Connection Test</string>
+    <string name="internet_connection_setup">Internet Connection</string>
+    <string name="title_set_protocol">Set Protocol</string>
+    <string name="configuration">Configuration</string>
+    <string name="split_sleep_alert">Previous event is qualified for Split Sleep. Do you want to use Split Sleep?</string>
+
+</resources>
+

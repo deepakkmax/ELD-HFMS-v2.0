@@ -1,0 +1,177 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/GreyLight"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/llv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/inspect_elog_header_land"
+            android:orientation="horizontal"
+            android:padding="@dimen/_8sdp">
+
+            <TextView
+                android:id="@+id/tvRecordDate"
+                style="@style/InspectLogPrimaryDetailStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_calendar_24"
+                android:drawablePadding="4dp"
+                android:drawableTint="@android:color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvDrivingRemaningHour"
+                style="@style/InspectLogPrimaryDetailStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:drawableStart="@drawable/ic_clock"
+                android:drawablePadding="4dp"
+                android:drawableTint="@android:color/white"
+                android:text="00:00 D Hrs"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvRecordDate" />
+
+
+            <TextView
+                android:id="@+id/tvDriverName"
+                style="@style/InspectLogPrimaryDetailStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_driver_24"
+                android:drawablePadding="4dp"
+                android:drawableTint="@android:color/white"
+                app:layout_constraintStart_toStartOf="@id/tvWorkShiftHour"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvWorkShiftHour"
+                style="@style/InspectLogPrimaryDetailStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:drawableStart="@drawable/ic_clock"
+                android:drawablePadding="4dp"
+                android:drawableTint="@android:color/white"
+                android:text="00:00 WS Hrs"
+                app:layout_constraintEnd_toStartOf="@id/tvRule"
+                app:layout_constraintStart_toEndOf="@id/tvDrivingRemaningHour"
+                app:layout_constraintTop_toBottomOf="@id/tvDriverName" />
+
+
+            <TextView
+                android:id="@+id/tvRule"
+                style="@style/InspectLogPrimaryDetailStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:drawableStart="@drawable/ic_rule"
+                android:drawablePadding="4dp"
+                android:drawableTint="@android:color/white"
+                android:text="00:00 Hrs"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvDriverName" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/tvCurrentLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="@dimen/_5sdp"
+            android:textSize="@dimen/_10sdp"
+
+            android:textStyle="bold|italic" />
+
+        <ListView
+            android:id="@+id/lvEvent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/llv"
+            android:choiceMode="singleChoice"
+            android:divider="@color/e5e5e5"
+            android:dividerHeight="1dp">
+
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/fab_margin_right"
+        android:layout_marginBottom="@dimen/fab_margin_bottom"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layoutOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <ImageButton
+                android:id="@+id/fab_mid_night"
+                android:layout_width="@dimen/fab_size"
+                android:layout_height="@dimen/fab_size"
+                android:layout_marginBottom="@dimen/fab_margin_bottom"
+                android:adjustViewBounds="true"
+                android:background="@drawable/custom_fab_button_bg"
+                android:padding="@dimen/fab_padding"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_fab_save" />
+
+            <ImageButton
+                android:id="@+id/fab_post"
+                android:layout_width="@dimen/fab_size"
+                android:layout_height="@dimen/fab_size"
+                android:layout_marginBottom="@dimen/fab_margin_bottom"
+                android:adjustViewBounds="true"
+                android:background="@drawable/custom_fab_button_bg"
+                android:padding="@dimen/fab_padding"
+                android:scaleType="fitCenter"
+                android:src="@drawable/databases" />
+
+            <ImageButton
+                android:id="@+id/imgSync"
+                android:layout_width="@dimen/fab_size"
+                android:layout_height="@dimen/fab_size"
+                android:layout_gravity="bottom|start"
+                android:layout_marginBottom="@dimen/fab_margin_bottom"
+                android:background="@drawable/custom_fab_button_bg"
+                android:src="@drawable/ic_fab_sync" />
+
+            <ImageButton
+                android:id="@+id/fab_certify"
+                android:layout_width="@dimen/fab_size"
+                android:layout_height="@dimen/fab_size"
+                android:layout_gravity="bottom|right"
+                android:layout_marginBottom="@dimen/fab_margin_bottom"
+                android:background="@drawable/custom_fab_button_bg"
+                android:src="@drawable/ic_fab_uncertified_red" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/imgAction"
+            style="@style/fab_btn_style_new"
+            android:layout_marginBottom="@dimen/fab_margin_bottom"
+            android:src="@drawable/add_plus_button" />
+    </LinearLayout>
+</RelativeLayout>

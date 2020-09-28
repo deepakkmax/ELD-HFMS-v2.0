@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true" >
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:openDrawer="start">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:theme="@style/AppTheme.AppBarOverlay">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    app:contentInsetRight="0dp"
+                    app:contentInsetLeft="0dp"
+                    app:contentInsetStartWithNavigation="0dp"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="?attr/colorPrimary"
+                    app:titleTextAppearance="@style/toolbarStyle" />
+
+                <LinearLayout
+                    android:id="@+id/flagBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/image_flagbar"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="@dimen/_8sdp"
+                  android:paddingTop="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                   android:paddingStart="@dimen/_8sdp">
+
+                    <ImageView
+                        android:id="@+id/ivDriver"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_3sdp"
+                        android:background="@drawable/ic_flagbar_driver_inactive" />
+
+                    <ImageView
+                        android:id="@+id/icGPS"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_3sdp"
+                        android:background="@drawable/ic_flagbar_gps_off" />
+
+                    <ImageView
+                        android:id="@+id/icNetwork"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_3sdp"
+                        android:background="@drawable/ic_flagbar_network_off" />
+
+                    <ImageView
+                        android:id="@+id/icWifi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_3sdp"
+                        android:background="@drawable/ic_flagbar_wifi_on" />
+
+                    <ImageView
+                        android:id="@+id/icWebService"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_3sdp"
+                        android:background="@drawable/ic_flagbar_web_service_on" />
+
+                    <ImageView
+                        android:id="@+id/icCanbus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_3sdp"
+                        android:background="@drawable/ic_flagbar_canbus_disconnect" />
+
+                    <ImageView
+                        android:id="@+id/icBattery"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_3sdp"
+                        android:src="@drawable/ic_flagbar_battery_full" />
+
+                    <ImageView
+                        android:id="@+id/icInspection"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_3sdp"
+                        android:background="@drawable/ic_flagbar_dvir_pending" />
+
+
+                    <ImageView
+                        android:id="@+id/icMessage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_3sdp"
+                        android:background="@drawable/ic_flagbar_message" />
+
+                    <ImageView
+                        android:id="@+id/icViolation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_3sdp"
+                        android:background="@drawable/ic_flagbar_violation" />
+
+                    <ImageView
+                        android:id="@+id/icCertify_Log"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_3sdp"
+                        android:background="@drawable/ic_flagbar_certify" />
+
+                    <ImageView android:visibility="gone"
+                        android:id="@+id/icTPMS"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_3sdp"
+                        android:background="@drawable/ic_flagbar_tpms" />
+
+
+                    <TextView
+                        android:id="@+id/tvLoginName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Gary"
+                        android:ellipsize="marquee"
+                        android:marqueeRepeatLimit="marquee_forever"
+                  android:gravity="right"
+                        android:singleLine="true"
+                        android:textColor="@color/green2"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <include layout="@layout/alertbtb" />
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <include layout="@layout/content_drawer" />
+
+
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <!--  <include
+              layout="@layout/app_bar_drawer"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" />-->
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="@dimen/drawer_width"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:visibility="invisible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/my"
+                    layout="@layout/nav_header_drawer" />
+
+                <ListView
+                    android:id="@+id/lvDrawer"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:divider="#1A000000"
+                    android:dividerHeight="1dp" />
+            </LinearLayout>
+        </com.google.android.material.navigation.NavigationView>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+    <View
+        android:id="@+id/restView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:clickable="true"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/tvFreeze"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/freeze_background"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/ivDrivingImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/login_freeze"
+            android:visibility="gone"
+            android:layout_centerInParent="true"/>
+
+        <include
+            layout="@layout/freeze_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+    <include
+        layout="@layout/alert_layout_unit_mismatch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <include
+        layout="@layout/alertlayoutforinternet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <include
+        layout="@layout/alertlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <include
+        layout="@layout/balancealertlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/layoutMapConfirmation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="48dp"
+            android:background="@color/white"
+            android:elevation="8dp"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@color/blue1">
+
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="16dp"
+                android:paddingTop="6dp">
+
+                <ImageView
+                    android:id="@+id/imgIcon"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="32dp"
+                    android:layout_marginTop="8dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_wait" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvHeader"
+                        style="@style/DialogTitleStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginTop="12dp"
+                        android:text="Map is Initializing"
+                        android:textColor="@color/blue1" />
+
+                    <TextView
+                        android:id="@+id/tvMessage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginRight="12dp"
+                        android:text="@string/please_verify_if_navigation_is_loaded_properly_prior_to_proceeding"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f6f6f6"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnProceedMap"
+                    style="@style/ButtonStyle"
+                    android:layout_width="120dp"
+                    android:layout_height="44dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/button_bg"
+                    android:text="@string/proceed"
+                    android:textAllCaps="false"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    <include
+        android:id="@+id/fab_layout"
+        layout="@layout/fab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <RelativeLayout
+        android:id="@+id/loadingPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true" />
+    </RelativeLayout>
+
+</FrameLayout>

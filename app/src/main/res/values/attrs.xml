@@ -1,0 +1,35 @@
+<resources>
+
+    <declare-styleable name="CTAppTheme">
+        <attr name="TextColor" format="color" />
+        <attr name="WhiteTextColor" format="color" />
+        <attr name="BlueTextColor" format="color" />
+        <attr name="progressbarSmall" format="integer" />
+        <attr name="progressbarBig" format="integer" />
+        <attr name="backgroundColor" format="color" />
+        <attr name="dividerColor" format="color"/>
+        <attr name="Header" format="integer"/>
+        <attr name="IconBackground" format="integer"/>
+        <attr name="ProgressBarSmallBg" format="integer"/>
+        <attr name="ProgressBarBigBg" format="integer"/>
+        <attr name="SmallCircle" format="integer"/>
+        <attr name="BigCircle" format="integer"/>
+        <attr name="StatusBar" format="integer"/>
+        <attr name="Graph" format="integer"/>
+        <attr name="DutyHour" format="integer"/>
+        <attr name="Bottom" format="integer"/>
+        <attr name="OdometerBackGround" format="integer"/>
+        <attr name="TotalMilesBackground" format="integer"/>
+        <attr name="Bell" format="integer"/>
+        <attr name="BoxBackGround" format="integer"/>
+        <attr name="SpeedBackground" format="integer"/>
+        <attr name="SpeedIndicator" format="integer"/>
+        <attr name="RPMBackground" format="integer"/>
+        <attr name="VehicleDataBg" format="integer"/>
+        <attr name="VehicleDataRedBg" format="integer"/>
+        <attr name="BackgroundTintColor" format="color"/>
+        <attr name="Background" format="integer"/>
+        <attr name="Background_layout" format="integer"/>
+
+    </declare-styleable>
+</resources>

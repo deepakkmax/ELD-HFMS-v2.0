@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/f5f5f5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/imgCancel"
+            style="@style/DialogCloseStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageview"
+            style="@style/DialogIconStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            style="@style/DialogTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/duty_status_label"
+            app:layout_constraintBottom_toBottomOf="@+id/imageview"
+            app:layout_constraintLeft_toRightOf="@+id/imageview"
+            app:layout_constraintTop_toTopOf="@+id/imageview" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_6sdp">
+
+
+                <Button
+                    android:id="@+id/butDutyStatusSave"
+                    style="@style/ButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@drawable/button_bg"
+                    android:elevation="1dp"
+                    android:outlineProvider="none"
+                    android:text="@string/change"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/layoutWaitingTime" />
+
+                <Button
+                    android:id="@+id/btnAnnotation1"
+                    style="@style/AnnotationStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/annotation_string_6"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/dynamicLayout2"
+                    app:layout_constraintWidth_percent="0.32" />
+
+                <Button
+                    android:id="@+id/btnAnnotation2"
+                    style="@style/AnnotationStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_6sdp"
+                    android:clickable="true"
+                    android:text="@string/annotation_string_7"
+                    app:layout_constraintLeft_toRightOf="@+id/btnAnnotation1"
+                    app:layout_constraintTop_toBottomOf="@+id/dynamicLayout2"
+                    app:layout_constraintWidth_percent="0.32" />
+
+                <Button
+                    android:id="@+id/btnAnnotation3"
+                    style="@style/AnnotationStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_6sdp"
+                    android:clickable="true"
+                    android:text="@string/annotation_string_5"
+                    app:layout_constraintLeft_toRightOf="@+id/btnAnnotation2"
+                    app:layout_constraintTop_toBottomOf="@+id/dynamicLayout2"
+                    app:layout_constraintWidth_percent="0.32" />
+
+                <Button
+                    android:id="@+id/btnAnnotation4"
+                    style="@style/AnnotationStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/annotation_string_height"
+
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:clickable="true"
+                    android:text="@string/annotation_string_4"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnAnnotation1"
+                    app:layout_constraintWidth_percent="0.32" />
+
+                <Button
+                    android:id="@+id/btnAnnotation5"
+                    style="@style/AnnotationStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/annotation_string_height"
+                    android:layout_marginLeft="@dimen/_6sdp"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:layout_marginRight="0dp"
+                    android:layout_weight="2"
+                    android:clickable="true"
+                    android:text="@string/annotation_string_3"
+                    app:layout_constraintLeft_toRightOf="@+id/btnAnnotation4"
+                    app:layout_constraintTop_toBottomOf="@+id/btnAnnotation1"
+                    app:layout_constraintWidth_percent="0.66" />
+
+                <Button
+                    android:id="@+id/btnAnnotation6"
+                    style="@style/AnnotationStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/annotation_string_height"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:clickable="true"
+                    android:text="@string/annotation_string_2"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnAnnotation4"
+                    app:layout_constraintWidth_percent="0.49" />
+
+
+                <Button
+                    android:id="@+id/btnAnnotation7"
+                    style="@style/AnnotationStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/annotation_string_height"
+                    android:layout_marginLeft="@dimen/_6sdp"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:layout_marginRight="0dp"
+                    android:clickable="true"
+                    android:text="@string/annotation_string_1"
+                    app:layout_constraintLeft_toRightOf="@+id/btnAnnotation6"
+                    app:layout_constraintTop_toBottomOf="@+id/btnAnnotation5"
+                    app:layout_constraintWidth_percent="0.49" />
+
+
+                <EditText
+                    android:id="@+id/edLocation"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:imeActionLabel="Done"
+                    android:maxLength="60"
+                    android:paddingEnd="@dimen/_26sdp"
+                    android:singleLine="true"
+                    android:textColorHint="@color/GreyLight"
+                    android:textSize="@dimen/_10ssp"
+                    android:visibility="visible"
+
+                    app:layout_constraintBottom_toBottomOf="@id/tvLocation"
+                    app:layout_constraintLeft_toRightOf="@id/tvLocation"
+                    app:layout_constraintRight_toRightOf="@id/btnLocation"
+                    app:layout_constraintTop_toBottomOf="@id/ll" />
+
+                <ImageButton
+                    android:id="@+id/btnLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/zxing_transparent"
+                    android:src="@drawable/ic_location_ballon_24"
+                    android:tint="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ll" />
+
+                <TextView
+                    android:id="@+id/tvCoordinates"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:textSize="@dimen/_8ssp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:visibility="gone"
+                    app:layout_constraintTop_toBottomOf="@id/edLocation" />
+
+                <EditText
+                    android:id="@+id/edDutyStatusAnnotation"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:imeActionLabel="Done"
+                    android:maxLength="60"
+                    android:singleLine="true"
+                    android:textColorHint="@color/GreyLight"
+                    android:textSize="@dimen/_10ssp"
+
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvAnnotation"
+                    app:layout_constraintLeft_toRightOf="@+id/tvAnnotation"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+                <LinearLayout
+                    android:id="@+id/ll"
+                    style="@style/DialogTitleSeprator"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toBottomOf="@+id/clButOnDuty">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dynamicLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:orientation="horizontal"
+
+                    app:layout_constraintTop_toBottomOf="@+id/edDutyStatusAnnotation">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dynamicLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toBottomOf="@+id/dynamicLayout">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dynamicLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toBottomOf="@+id/dynamicLayout1">
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:text="@string/location_man"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ll" />
+
+
+                <TextView
+                    android:id="@+id/tvAnnotation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:text="@string/annotation"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvCoordinates" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clButOffDuty"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.33">
+
+                    <Button
+                        android:id="@+id/butOffDuty"
+                        style="@style/CircleButtonTextStyle"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:background="@drawable/circle_button"
+                        android:text="@string/off_duty"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clButSleeper"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintLeft_toRightOf="@+id/clButOffDuty"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.33">
+
+                    <Button
+                        android:id="@+id/butSleeper"
+                        style="@style/CircleButtonTextStyle"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:background="@drawable/circle_button"
+                        android:text="@string/sleeper"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clButDriving"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintLeft_toRightOf="@+id/clButSleeper"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.33">
+
+                    <Button
+                        android:id="@+id/butDriving"
+                        style="@style/CircleButtonTextStyle"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:background="@drawable/circle_button"
+                        android:text="@string/driving"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clButOnDuty"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/clButOffDuty"
+                    app:layout_constraintWidth_percent="0.33">
+
+                    <Button
+                        android:id="@+id/butOnDuty"
+                        style="@style/CircleButtonTextStyle"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:background="@drawable/circle_button"
+                        android:text="@string/on_duty"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/lPersonalUse"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    app:layout_constraintLeft_toRightOf="@+id/clButOnDuty"
+                    app:layout_constraintTop_toBottomOf="@+id/clButSleeper"
+                    app:layout_constraintWidth_percent="0.33">
+
+                    <Button
+                        android:id="@+id/butPersonalUse"
+                        style="@style/CircleButtonTextStyle"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:background="@drawable/circle_button"
+                        android:text="@string/personal_use"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/lYardMove"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    app:layout_constraintLeft_toRightOf="@+id/lPersonalUse"
+                    app:layout_constraintTop_toBottomOf="@+id/clButDriving"
+                    app:layout_constraintWidth_percent="0.33">
+
+                    <Button
+                        android:id="@+id/butYardMove"
+                        style="@style/CircleButtonTextStyle"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:background="@drawable/circle_button"
+                        android:text="@string/yard_move"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+
+                    android:id="@+id/layoutWaitingTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_span="2"
+                    android:background="@drawable/input_bg"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_8sdp"
+                    app:layout_constraintTop_toBottomOf="@+id/btnAnnotation7">
+
+                    <ImageView
+                        android:id="@+id/iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_2sdp"
+                        android:src="@drawable/ic_splitsleep"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <Switch
+                        android:id="@+id/switchWaitingTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/width_percent_1"
+                        android:thumb="@drawable/switch_thumb"
+                        android:track="@drawable/switch_track"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:text="Waiting or standby time"
+                        android:textColor="@color/ColorPrimaryDark"
+                        android:textSize="@dimen/_12sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="@+id/iv"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:id="@+id/view"
+        style="@style/DialogTitleSeprator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_2sdp"
+        app:layout_constraintTop_toBottomOf="@+id/clv">
+
+    </View>
+
+
+</LinearLayout>

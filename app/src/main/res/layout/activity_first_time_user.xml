@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hutchsystems.hutchconnect.FirstTimeUser">
+
+    <LinearLayout
+        android:id="@+id/layoutWarningMessage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#4D000000"
+            android:paddingLeft="@dimen/width_percent_5"
+            android:paddingRight="@dimen/width_percent_5"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_percent_60"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="7"
+                android:background="#fff"
+                android:elevation="16dp"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/width_percent_2"
+                android:paddingRight="@dimen/width_percent_2">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight="5"
+                    android:src="@drawable/setup_welcome_logo" />
+
+                <TextView
+                    style="@style/SetupTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="0dp"
+                    android:layout_weight="2"
+                    android:gravity="center_horizontal"
+                    android:text="@string/please_scroll_and_read_all_terms"
+                    android:textSize="24sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutTerms"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#4D000000"
+        android:padding="@dimen/width_8"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="7"
+            android:background="#fff"
+            android:elevation="4dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TermsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/terms_and_conditions" />
+
+            <!--   <ScrollView
+                   android:id="@+id/svTerms"
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="1">-->
+
+            <!--     <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:orientation="vertical"
+                     android:padding="16dp">-->
+
+            <com.hutchsystems.hutchconnect.common.ObservableWebView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/webViewTerms"
+                style="@style/TermText"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".8" />
+
+            <!-- </LinearLayout>-->
+
+            <!--  </ScrollView>-->
+
+            <Button
+                android:id="@+id/btnAccept"
+                style="@style/TermsButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                android:layout_weight=".1"
+                android:background="@drawable/button_bg"
+                android:enabled="false"
+                android:text="@string/accept"
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setup_title_height"
+        android:background="@drawable/setup_screen_bg"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="92dp"
+            android:layout_height="92dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_setup_user" />
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/SetupTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/first_time_user" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/width_8"
+                    android:src="@drawable/ic_setup_schedule" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/SettingsLabelStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/set_default_service_rule" />
+
+                    <Spinner
+                        android:id="@+id/spinnerRule"
+                        style="@style/BigTextLabelStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/width_8"
+                    android:src="@drawable/ic_setup_schedule" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvLanguage"
+                        style="@style/SettingsLabelStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/settings_support_language" />
+
+                    <RadioGroup
+                        android:id="@+id/rgSelectLanguage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rbEnglish"
+                            style="@style/BigTextLabelStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="12dp"
+                            android:checked="true"
+                            android:text="@string/settings_language_eg" />
+
+                        <RadioButton
+                            android:id="@+id/rbPunjabi"
+                            style="@style/BigTextLabelStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="12dp"
+                            android:text="@string/settings_language_pb" />
+
+                        <RadioButton
+                            android:id="@+id/rbSpanish"
+                            style="@style/BigTextLabelStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="12dp"
+                            android:text="@string/settings_language_sp" />
+
+                        <RadioButton
+                            android:id="@+id/rbFrench"
+                            style="@style/BigTextLabelStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/settings_language_french" />
+                    </RadioGroup>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/btnNext"
+        android:layout_width="@dimen/width_32"
+        android:layout_height="@dimen/width_32"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/width_4"
+        android:layout_marginTop="@dimen/width_4"
+        android:background="@drawable/setup_screen_button"
+        android:elevation="6dp"
+        android:padding="22dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_arrow_next_white_48dp" />
+
+
+</LinearLayout>

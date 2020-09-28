@@ -1,0 +1,289 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:background="@color/f5f5f5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/imgCancel"
+            style="@style/DialogCloseStyleNew"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_5sdp"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageview"
+            style="@style/DialogIconStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            style="@style/DialogTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_color"
+            app:layout_constraintBottom_toBottomOf="@+id/imageview"
+            app:layout_constraintLeft_toRightOf="@+id/imageview"
+            app:layout_constraintTop_toTopOf="@+id/imageview" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        style="@style/DialogTitleSeprator"
+        android:layout_width="match_parent"
+        android:layout_height="2dp">
+
+    </View>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="12dp"
+        android:orientation="vertical">
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/butColor1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:background="@color/dark_yellow"/>
+
+            <Button
+                android:id="@+id/butColor2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:background="@color/dark_yellow"/>
+
+            <Button
+                android:id="@+id/butColor3"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:background="@color/dark_yellow"/>
+
+            <Button
+                android:id="@+id/butColor4"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:background="@color/dark_yellow"/>
+
+            <Button
+                android:id="@+id/butColor5"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:background="@color/dark_yellow"/>
+
+            <Button
+                android:id="@+id/butColor6"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:background="@color/dark_yellow"/>
+
+            <Button
+                android:id="@+id/butColor7"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:background="@color/dark_yellow"/>
+
+            <Button
+                android:id="@+id/butColor8"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:background="@color/dark_yellow"/>
+        </LinearLayout>
+        </HorizontalScrollView>
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/butColor9"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:background="@color/dark_yellow"/>
+
+            <Button
+                android:id="@+id/butColor10"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:background="@color/dark_yellow"/>
+
+            <Button
+                android:id="@+id/butColor11"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:background="@color/dark_yellow"/>
+
+            <Button
+                android:id="@+id/butColor12"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:background="@color/dark_yellow"/>
+
+            <Button
+                android:id="@+id/butColor13"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:background="@color/dark_yellow"/>
+
+            <Button
+                android:id="@+id/butColor14"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:background="@color/dark_yellow"/>
+
+            <Button
+                android:id="@+id/butColor15"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:background="@color/dark_yellow"/>
+
+            <Button
+                android:id="@+id/butColor16"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:background="@color/dark_yellow"/>
+        </LinearLayout>
+        </HorizontalScrollView>
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/butColor17"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:background="@color/dark_yellow"/>
+
+            <Button
+                android:id="@+id/butColor18"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:background="@color/dark_yellow"/>
+
+            <Button
+                android:id="@+id/butColor19"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:background="@color/dark_yellow"/>
+
+            <Button
+                android:id="@+id/butColor20"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:background="@color/dark_yellow"/>
+
+            <Button
+                android:id="@+id/butColor21"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:background="@color/dark_yellow"/>
+
+            <Button
+                android:id="@+id/butColor22"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:background="@color/dark_yellow"/>
+
+            <Button
+                android:id="@+id/butColor23"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:background="@color/dark_yellow"/>
+
+            <Button
+                android:id="@+id/butColor24"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:background="@color/dark_yellow"/>
+        </LinearLayout>
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/SettingsLabelStyle"
+                android:layout_margin="0dp"
+                android:text="@string/selected_color" />
+
+            <Button
+                android:id="@+id/butSelectedColor"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/dark_yellow"/>
+
+            <Button
+                android:id="@+id/butSave"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/footer_button_height"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:background="@drawable/button_bg"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                style="@style/ButtonStyle"
+                android:text="Set" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

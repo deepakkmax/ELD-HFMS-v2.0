@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_texture_permission_screen"
+    android:paddingBottom="20dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/bg_permission_screen" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_15sdp"
+        android:padding="@dimen/_15sdp"
+        android:background="@drawable/layout_bg_round_nine">
+
+
+        <RelativeLayout
+            android:id="@+id/layoutHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_configuration"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:text="Permission"
+                android:textColor="@color/darkBlue_fab"
+                android:textSize="@dimen/header_text_size"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/appLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/hutch_logo_header" />
+
+            <TextView
+                android:id="@+id/tvAppVersion"
+                style="@style/list_subtitle_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/appLogo"
+                android:text="@string/version"
+                android:textSize="@dimen/version_text_size" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+
+            app:layout_constraintTop_toBottomOf="@+id/layoutHeader"
+            android:background="@color/e5e5e5" />
+        <TextView
+            android:id="@+id/tvPermission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/_8sdp"
+            android:drawableStart="@drawable/permission_yellow_img"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="@dimen/_7sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintTop_toBottomOf="@+id/view"
+            android:text="ELD requires few permissions to work properly. It is mandatory to ask for these permission for all Android 6.0 and higher phones."
+            android:textColor="@color/darkBlue_fab"
+            android:textSize="@dimen/title_text_size"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/lvPermission"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:layout_constraintTop_toBottomOf="@+id/tvPermission"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="@dimen/_6sdp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btnAllowAccess"
+        style="@style/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/footer_button_height"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="@dimen/_40sdp"
+        android:layout_marginRight="@dimen/_40sdp"
+        android:background="@drawable/btn_allow_access"
+        android:text="@string/allow_access"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="@dimen/_10sdp" />
+
+
+    <LinearLayout
+        android:id="@+id/layoutStatus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:elevation="10dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="48dp"
+            android:background="@color/white"
+            android:elevation="8dp"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@color/red">
+
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="12dp"
+                android:paddingTop="12dp">
+
+                <ImageView
+
+                    android:layout_width="92dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_flagbar_violation" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvTitle"
+                        style="@style/DialogTitleStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/device_battery_low"
+                        android:textColor="@color/red" />
+
+                    <TextView
+
+                        android:id="@+id/tvMessage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginRight="12dp"
+                        android:text="@string/please_reconnect_to_power_immediately"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
